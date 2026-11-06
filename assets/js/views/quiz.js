@@ -1,4 +1,4 @@
-import data from '../data.js';
+﻿import data from '../data.js';
 import store from '../store.js';
 import { esc, icon, pct, toast } from '../ui.js';
 
@@ -107,14 +107,6 @@ function finish(mid) {
   store.quizSave(mid, run.score, run.list.length);
   const card = document.getElementById('quizStage');
   card.innerHTML = resultHtml(mid);
-  const retry = document.getElementById('retryWrong');
-  if (retry) {
-    retry.addEventListener('click', () => {
-      run.list = run.wrong.slice();
-      run.idx = 0; run.score = 0; run.wrong = []; run.answered = false; run.finished = false;
-      renderQuestionStage(mid);
-    });
-  }
 }
 
 function renderQuestionStage(mid) {
@@ -191,10 +183,25 @@ export default {
     const mid = params.moduleId;
     if (!mid || !quizData.modules[mid]) return;
     renderQuestionStage(mid);
-    document.getElementById('nextBtn').addEventListener('click', () => {
-      if (run.idx === run.list.length - 1) { finish(mid); return; }
-      run.idx++; run.answered = false;
-      renderQuestionStage(mid);
+    const stage = document.getElementById('quizStage');
+    // 事件委托：题卡会整体重绘，按钮监听需要挂在容器上
+    stage.addEventListener('click', (e) => {
+      const next = e.target.closest('#nextBtn');
+      if (next) {
+        if (run.finished) return;
+        if (run.idx === run.list.length - 1) { finish(mid); return; }
+        run.idx++; run.answered = false;
+        renderQuestionStage(mid);
+        return;
+      }
+      const retry = e.target.closest('#retryWrong');
+      if (retry) {
+        run.list = run.wrong.slice();
+        run.idx = 0; run.score = 0; run.wrong = []; run.answered = false; run.finished = false;
+        renderQuestionStage(mid);
+      }
     });
   }
 };
+
+
