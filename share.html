@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>分享访问 · 材质工坊</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .share-wrap { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+    .share-card { border: 1px solid var(--line); border-radius: var(--radius-l); background: rgba(255,255,255,.035); padding: 28px; margin-top: 22px; }
+    .share-card h3 { font-size: 18px; display: flex; align-items: center; gap: 10px; }
+    .share-card .hint { color: var(--muted); font-size: 13px; line-height: 1.8; margin-top: 8px; }
+    .url-box { display: flex; gap: 10px; align-items: center; margin-top: 16px; flex-wrap: wrap; }
+    .url-box code { flex: 1; min-width: 240px; padding: 13px 15px; border-radius: 11px; background: rgba(0,0,0,.35);
+      border: 1px dashed rgba(255,255,255,.16); font-family: var(--mono); font-size: 12.5px; word-break: break-all; color: #ffe0c4; }
+    .qr-host { display: flex; gap: 26px; align-items: center; margin-top: 18px; flex-wrap: wrap; }
+    .qr-host .qr { background: #fff; padding: 10px; border-radius: 12px; line-height: 0; }
+    .qr-host .qr svg { width: 168px; height: 168px; }
+    .qr-host .qr-tip { font-size: 12.5px; color: var(--muted); line-height: 1.9; max-width: 360px; }
+    .status { display: inline-flex; gap: 7px; align-items: center; font-size: 12px; color: var(--ok); }
+    .status i { width: 6px; height: 6px; border-radius: 50%; background: var(--ok); }
+    .brand-mini { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--copper-2); margin-top: 26px; font-weight: 700; font-size: 13.5px; }
+  </style>
+</head>
+<body>
+  <div class="bg-stage" aria-hidden="true"><div class="bg-grid"></div><div class="bg-glow g1"></div><div class="bg-glow g2"></div><div class="bg-noise"></div></div>
+  <main class="share-wrap">
+    <div class="brand-mini">
+      <img src="assets/img/favicon.svg" width="34" height="34" alt="">
+      <div>
+        <div style="font-weight:800;font-size:17px;letter-spacing:.04em">材质工坊</div>
+        <div style="font-size:10.5px;color:var(--muted);letter-spacing:.1em">SP 基础 · SUBSTANCE PAINTER 学习空间</div>
+      </div>
+    </div>
+    <div class="eyebrow">Share &amp; Access</div>
+    <h1 style="font-size:clamp(26px,3.6vw,38px)">把学习空间分享出去</h1>
+    <p style="color:var(--muted);margin-top:12px;line-height:1.8;max-width:640px">
+      这个页面由你电脑上的“启动学习平台”脚本生成。同学用手机扫码、或复制下面的链接，就能访问同一套课程、视频与练习；学习数据各自保存在自己的浏览器里。
+    </p>
+
+    <div class="share-card">
+      <h3>📱 手机 / 外网访问 <span class="status" id="v6state"><i></i>检测中</span></h3>
+      <p class="hint">这是通过你家宽带的公网 IPv6 地址直连，速度快、可播视频。<strong>电脑需保持开机并运行启动脚本</strong>；手机建议用 4G/5G 流量（大部分运营商已支持 IPv6）。</p>
+      <div class="url-box">
+        <code id="urlV6">读取中…</code>
+        <button class="btn btn-primary btn-sm" id="copyV6">复制链接</button>
+      </div>
+      <div class="qr-host">
+        <div class="qr" id="qrV6"></div>
+        <div class="qr-tip">
+          手机扫码直接打开。<br>
+          若扫码打不开：① 手机用流量再试；② 检查路由器是否开启了“IPv6 防火墙/防蹭网”拦截入站；③ 改用下方隧道地址。
+        </div>
+      </div>
+    </div>
+
+    <div class="share-card">
+      <h3>🌐 备用隧道（IPv4 网络也能访问） <span class="status" id="tunnelState" style="color:var(--warn)"><i style="background:var(--warn)"></i>等待中</span></h3>
+      <p class="hint">如果对方网络只有 IPv4（部分老旧宽带/校园网），可用这个隧道地址。隧道经境外中转，<strong>打开页面会稍慢，视频可能缓冲</strong>，适合看讲义、查知识库、做练习。</p>
+      <div class="url-box">
+        <code id="urlTunnel">启动脚本会自动生成…</code>
+        <button class="btn btn-ghost btn-sm" id="copyTunnel">复制链接</button>
+      </div>
+    </div>
+
+    <div class="share-card">
+      <h3>🏫 同一 WiFi / 教室局域网</h3>
+      <p class="hint">如果同学和你在同一个网络（比如教室或家里的 WiFi），可以直接用局域网地址，速度最快：</p>
+      <div class="url-box">
+        <code id="urlLan">读取中…</code>
+        <button class="btn btn-ghost btn-sm" id="copyLan">复制链接</button>
+      </div>
+    </div>
+
+    <p style="color:var(--muted);font-size:12px;margin-top:22px;line-height:1.8">
+      提示：公网 IPv6 地址可能随路由器重启变化；每次启动脚本都会重新检测并更新本页。关闭启动脚本窗口后，以上链接会失效。
+    </p>
+    <a class="back-link" href="index.html">← 返回学习空间</a>
+  </main>
+  <script src="assets/js/qrcode.js"></script>
+  <script>
+    const setQR = (hostEl, text) => {
+      if (!text || !window.qrcode) return;
+      try {
+        const qr = qrcode(0, 'M');
+        qr.addData(text);
+        qr.make();
+        hostEl.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 2 });
+      } catch (e) { hostEl.textContent = '二维码生成失败'; }
+    };
+    const copy = async (text) => {
+      try { await navigator.clipboard.writeText(text); } catch (e) {}
+    };
+    fetch('data/endpoints.json', { cache: 'no-cache' })
+      .then(r => r.json())
+      .then(d => {
+        if (d.ipv6) {
+          document.getElementById('urlV6').textContent = d.ipv6;
+          setQR(document.getElementById('qrV6'), d.ipv6);
+          document.getElementById('v6state').innerHTML = '<i></i>已就绪';
+          document.getElementById('copyV6').onclick = () => copy(d.ipv6);
+        }
+        if (d.lan) {
+          document.getElementById('urlLan').textContent = d.lan;
+          document.getElementById('copyLan').onclick = () => copy(d.lan);
+        }
+        if (d.tunnel) {
+          document.getElementById('urlTunnel').textContent = d.tunnel;
+          document.getElementById('tunnelState').innerHTML = '<i style="background:var(--ok)"></i>已就绪';
+          document.getElementById('copyTunnel').onclick = () => copy(d.tunnel);
+        }
+      })
+      .catch(() => {
+        document.getElementById('urlV6').textContent = '请先运行“启动学习平台”脚本';
+      });
+    setInterval(() => {
+      fetch('data/endpoints.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
+        if (d.tunnel) {
+          document.getElementById('urlTunnel').textContent = d.tunnel;
+          document.getElementById('tunnelState').innerHTML = '<i style="background:var(--ok)"></i>已就绪';
+        }
+      }).catch(() => {});
+    }, 4000);
+  </script>
+</body>
+</html>

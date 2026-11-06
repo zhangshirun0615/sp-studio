@@ -1,0 +1,295 @@
+{
+ "generatedAt": "2026-11-07 00:35",
+ "videos": {
+  "1": {
+   "src": "media/encoded/lesson-01.mp4",
+   "poster": "assets/posters/lesson-01.jpg",
+   "sizeBytes": 33636867
+  },
+  "2": {
+   "src": "media/encoded/lesson-02.mp4",
+   "poster": "assets/posters/lesson-02.jpg",
+   "sizeBytes": 39648418
+  },
+  "3": {
+   "src": "media/encoded/lesson-03.mp4",
+   "poster": "assets/posters/lesson-03.jpg",
+   "sizeBytes": 33746113
+  },
+  "4": {
+   "src": "media/encoded/lesson-04.mp4",
+   "poster": "assets/posters/lesson-04.jpg",
+   "sizeBytes": 32175706
+  },
+  "5": {
+   "src": "media/encoded/lesson-05.mp4",
+   "poster": "assets/posters/lesson-05.jpg",
+   "sizeBytes": 24948817
+  },
+  "6": {
+   "src": "media/encoded/lesson-06.mp4",
+   "poster": "assets/posters/lesson-06.jpg",
+   "sizeBytes": 44710904
+  },
+  "8": {
+   "src": "media/encoded/lesson-08.mp4",
+   "poster": "assets/posters/lesson-08.jpg",
+   "sizeBytes": 42132519
+  },
+  "9": {
+   "src": "media/encoded/lesson-09.mp4",
+   "poster": "assets/posters/lesson-09.jpg",
+   "sizeBytes": 34327251
+  },
+  "10": {
+   "src": "media/encoded/lesson-10.mp4",
+   "poster": "assets/posters/lesson-10.jpg",
+   "sizeBytes": 30316041
+  },
+  "11": {
+   "src": "media/encoded/lesson-11.mp4",
+   "poster": "assets/posters/lesson-11.jpg",
+   "sizeBytes": 41084660
+  },
+  "12": {
+   "src": "media/encoded/lesson-12.mp4",
+   "poster": "assets/posters/lesson-12.jpg",
+   "sizeBytes": 31728664
+  },
+  "13": {
+   "src": "media/encoded/lesson-13.mp4",
+   "poster": "assets/posters/lesson-13.jpg",
+   "sizeBytes": 44008158
+  },
+  "14": {
+   "src": "media/encoded/lesson-14.mp4",
+   "poster": "assets/posters/lesson-14.jpg",
+   "sizeBytes": 42142806
+  },
+  "15": {
+   "src": "media/encoded/lesson-15.mp4",
+   "poster": "assets/posters/lesson-15.jpg",
+   "sizeBytes": 42792872
+  },
+  "16": {
+   "src": "media/encoded/lesson-16.mp4",
+   "poster": "assets/posters/lesson-16.jpg",
+   "sizeBytes": 49941196
+  },
+  "17": {
+   "src": "media/encoded/lesson-17.mp4",
+   "poster": "assets/posters/lesson-17.jpg",
+   "sizeBytes": 44209465
+  },
+  "18": {
+   "src": "media/encoded/lesson-18.mp4",
+   "poster": "assets/posters/lesson-18.jpg",
+   "sizeBytes": 48599023
+  },
+  "19": {
+   "src": "media/encoded/lesson-19.mp4",
+   "poster": "assets/posters/lesson-19.jpg",
+   "sizeBytes": 41443351
+  },
+  "20": {
+   "src": "media/encoded/lesson-20.mp4",
+   "poster": "assets/posters/lesson-20.jpg",
+   "sizeBytes": 46816496
+  },
+  "21": {
+   "src": "media/encoded/lesson-21.mp4",
+   "poster": "assets/posters/lesson-21.jpg",
+   "sizeBytes": 39405462
+  },
+  "22": {
+   "src": "media/encoded/lesson-22.mp4",
+   "poster": "assets/posters/lesson-22.jpg",
+   "sizeBytes": 43170444
+  },
+  "23": {
+   "src": "media/encoded/lesson-23.mp4",
+   "poster": "assets/posters/lesson-23.jpg",
+   "sizeBytes": 39861932
+  },
+  "24": {
+   "src": "media/encoded/lesson-24.mp4",
+   "poster": "assets/posters/lesson-24.jpg",
+   "sizeBytes": 47443849
+  },
+  "25": {
+   "src": "media/encoded/lesson-25.mp4",
+   "poster": "assets/posters/lesson-25.jpg",
+   "sizeBytes": 42855550
+  },
+  "26": {
+   "src": "media/encoded/lesson-26.mp4",
+   "poster": "assets/posters/lesson-26.jpg",
+   "sizeBytes": 49838944
+  },
+  "27": {
+   "src": "media/encoded/lesson-27.mp4",
+   "poster": "assets/posters/lesson-27.jpg",
+   "sizeBytes": 38595133
+  },
+  "28": {
+   "src": "media/encoded/lesson-28.mp4",
+   "poster": "assets/posters/lesson-28.jpg",
+   "sizeBytes": 58848840
+  },
+  "29": {
+   "src": "media/encoded/lesson-29.mp4",
+   "poster": "assets/posters/lesson-29.jpg",
+   "sizeBytes": 44348381
+  },
+  "30": {
+   "src": "media/encoded/lesson-30.mp4",
+   "poster": "assets/posters/lesson-30.jpg",
+   "sizeBytes": 37456152
+  },
+  "31": {
+   "src": "media/encoded/lesson-31.mp4",
+   "poster": "assets/posters/lesson-31.jpg",
+   "sizeBytes": 48659306
+  },
+  "32": {
+   "src": "media/encoded/lesson-32.mp4",
+   "poster": "assets/posters/lesson-32.jpg",
+   "sizeBytes": 45728236
+  },
+  "33": {
+   "src": "media/encoded/lesson-33.mp4",
+   "poster": "assets/posters/lesson-33.jpg",
+   "sizeBytes": 53275065
+  },
+  "34": {
+   "src": "media/encoded/lesson-34.mp4",
+   "poster": "assets/posters/lesson-34.jpg",
+   "sizeBytes": 53759297
+  },
+  "35": {
+   "src": "media/encoded/lesson-35.mp4",
+   "poster": "assets/posters/lesson-35.jpg",
+   "sizeBytes": 44989193
+  },
+  "36": {
+   "src": "media/encoded/lesson-36.mp4",
+   "poster": "assets/posters/lesson-36.jpg",
+   "sizeBytes": 44000850
+  },
+  "37": {
+   "src": "media/encoded/lesson-37.mp4",
+   "poster": "assets/posters/lesson-37.jpg",
+   "sizeBytes": 47894739
+  },
+  "38": {
+   "src": "media/encoded/lesson-38.mp4",
+   "poster": "assets/posters/lesson-38.jpg",
+   "sizeBytes": 45608492
+  },
+  "39": {
+   "src": "media/encoded/lesson-39.mp4",
+   "poster": "assets/posters/lesson-39.jpg",
+   "sizeBytes": 41390772
+  },
+  "40": {
+   "src": "media/encoded/lesson-40.mp4",
+   "poster": "assets/posters/lesson-40.jpg",
+   "sizeBytes": 45523526
+  },
+  "41": {
+   "src": "media/encoded/lesson-41.mp4",
+   "poster": "assets/posters/lesson-41.jpg",
+   "sizeBytes": 45443124
+  },
+  "42": {
+   "src": "media/encoded/lesson-42.mp4",
+   "poster": "assets/posters/lesson-42.jpg",
+   "sizeBytes": 42236722
+  },
+  "43": {
+   "src": "media/encoded/lesson-43.mp4",
+   "poster": "assets/posters/lesson-43.jpg",
+   "sizeBytes": 48968411
+  },
+  "44": {
+   "src": "media/encoded/lesson-44.mp4",
+   "poster": "assets/posters/lesson-44.jpg",
+   "sizeBytes": 49425018
+  },
+  "45": {
+   "src": "media/encoded/lesson-45.mp4",
+   "poster": "assets/posters/lesson-45.jpg",
+   "sizeBytes": 41380919
+  },
+  "46": {
+   "src": "media/encoded/lesson-46.mp4",
+   "poster": "assets/posters/lesson-46.jpg",
+   "sizeBytes": 41250473
+  },
+  "47": {
+   "src": "media/encoded/lesson-47.mp4",
+   "poster": "assets/posters/lesson-47.jpg",
+   "sizeBytes": 43466713
+  },
+  "48": {
+   "src": "media/encoded/lesson-48.mp4",
+   "poster": "assets/posters/lesson-48.jpg",
+   "sizeBytes": 54633776
+  },
+  "49": {
+   "src": "media/encoded/lesson-49.mp4",
+   "poster": "assets/posters/lesson-49.jpg",
+   "sizeBytes": 40644214
+  },
+  "50": {
+   "src": "media/encoded/lesson-50.mp4",
+   "poster": "assets/posters/lesson-50.jpg",
+   "sizeBytes": 48369945
+  },
+  "51": {
+   "src": "media/encoded/lesson-51.mp4",
+   "poster": "assets/posters/lesson-51.jpg",
+   "sizeBytes": 50366021
+  },
+  "52": {
+   "src": "media/encoded/lesson-52.mp4",
+   "poster": "assets/posters/lesson-52.jpg",
+   "sizeBytes": 52200065
+  },
+  "53": {
+   "src": "media/encoded/lesson-53.mp4",
+   "poster": "assets/posters/lesson-53.jpg",
+   "sizeBytes": 51145617
+  },
+  "54": {
+   "src": "media/encoded/lesson-54.mp4",
+   "poster": "assets/posters/lesson-54.jpg",
+   "sizeBytes": 52296750
+  },
+  "55": {
+   "src": "media/encoded/lesson-55.mp4",
+   "poster": "assets/posters/lesson-55.jpg",
+   "sizeBytes": 44374521
+  },
+  "56": {
+   "src": "media/encoded/lesson-56.mp4",
+   "poster": "assets/posters/lesson-56.jpg",
+   "sizeBytes": 41698412
+  },
+  "57": {
+   "src": "media/encoded/lesson-57.mp4",
+   "poster": "assets/posters/lesson-57.jpg",
+   "sizeBytes": 46325648
+  },
+  "58": {
+   "src": "media/encoded/lesson-58.mp4",
+   "poster": "assets/posters/lesson-58.jpg",
+   "sizeBytes": 50131604
+  },
+  "59": {
+   "src": "media/encoded/lesson-59.mp4",
+   "poster": "assets/posters/lesson-59.jpg",
+   "sizeBytes": 36248310
+  }
+ }
+}
