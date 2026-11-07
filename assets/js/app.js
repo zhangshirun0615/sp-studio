@@ -18,7 +18,9 @@ const routes = [
   { re: /^\/kb\/?$/, view: kb, nav: 'kb' },
   { re: /^\/quiz\/?$/, view: quiz, nav: 'quiz' },
   { re: /^\/quiz\/([\w-]+)\/?$/, view: quiz, nav: 'quiz', keys: ['moduleId'] },
-  { re: /^\/admin\/?$/, view: admin, nav: 'admin' }
+  { re: /^\/admin\/?$/, view: admin, nav: 'admin' },
+  // 教师端：不在导航中显示，按需加载（学生端不会请求这段代码）
+  { re: /^\/teacher\/?$/, nav: '', loader: () => import('./views/teacher.js').then(m => m.default) }
 ];
 
 const app = document.getElementById('app');
@@ -88,11 +90,14 @@ async function renderRoute() {
   app.innerHTML = loadingHtml;
   window.scrollTo(0, 0);
   try {
-    if (target.view.preload) await target.view.preload(params);
-    const html = await target.view.render(params);
+    let view = target.view;
+    if (!view && target.loader) view = await target.loader();
+    if (token !== renderToken) return;
+    if (view.preload) await view.preload(params);
+    const html = await view.render(params);
     if (token !== renderToken) return;
     app.innerHTML = html;
-    if (target.view.mount) await target.view.mount(Object.assign({ query }, params));
+    if (view.mount) await view.mount(Object.assign({ query }, params));
     observeReveal();
   } catch (err) {
     console.error(err);
