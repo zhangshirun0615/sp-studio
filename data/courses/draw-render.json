@@ -19,7 +19,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/environment value block-in.mp4",
      "rootIndex": 0,
      "durationSec": 864.1,
-     "sizeMB": 246.91
+     "sizeMB": 246.91,
+     "keypoints": [
+      "把复杂环境归纳成三到五个明度层级，先铺大块面，再找细节",
+      "起稿用软边大笔刷统一光源方向，避免过早陷入局部刻画",
+      "用眯眼观察与明度检查工具确认画面黑白分布是否成立"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/environment value block-in.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 2,
@@ -28,7 +38,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/p037.mp4",
      "rootIndex": 0,
      "durationSec": 705.8,
-     "sizeMB": 121.68
+     "sizeMB": 121.68,
+     "keypoints": [
+      "跟着随书步骤逐段复现：先定地平线与主体方块，再补结构线",
+      "用辅助线检查线条是否收敛到同一灭点，这是等距透视的第一步",
+      "示范中反复回到整体比例校对，避免局部越画越偏"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/p037.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 3,
@@ -37,7 +57,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 008 How_to_Draw_Introduction.mp4",
      "rootIndex": 0,
      "durationSec": 190.4,
-     "sizeMB": 43.5
+     "sizeMB": 43.5,
+     "keypoints": [
+      "绘画是可拆解的构造过程：结构、透视、光影三个变量共同成立",
+      "建立正确的作画姿态，长线靠肩部带动而不是手腕蹭线",
+      "区分观察性绘画与构造性绘画的适用场景，先练构造再练感受"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 008 How_to_Draw_Introduction.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 4,
@@ -46,7 +76,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 031 cone of vision one point 02.mp4",
      "rootIndex": 0,
      "durationSec": 1316.3,
-     "sizeMB": 202.02
+     "sizeMB": 202.02,
+     "keypoints": [
+      "视锥约六十度以内画面变形可接受，超出范围边缘会明显拉伸",
+      "一点透视里所有深度线都收敛到视平线上的同一个灭点",
+      "用视锥圆与测点确定取景范围与比例尺度，再落主体"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 031 cone of vision one point 02.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 5,
@@ -55,7 +95,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 084 ortho views + transferring a side view.mp4",
      "rootIndex": 0,
      "durationSec": 2035.6,
-     "sizeMB": 278.68
+     "sizeMB": 278.68,
+     "keypoints": [
+      "正交视图没有透视变形，可直接量取长宽高的真实比例",
+      "把侧视图的轮廓点投影到透视图的深度轴上完成转移",
+      "转移时先定关键点再连轮廓线，避免整体轮廓偏移"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 084 ortho views + transferring a side view.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 6,
@@ -64,7 +114,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 099 X-Y-Z section drawing.mp4",
      "rootIndex": 0,
      "durationSec": 3216.8,
-     "sizeMB": 593.88
+     "sizeMB": 593.88,
+     "keypoints": [
+      "沿 X、Y、Z 三个轴向切出截面，用截面的鼓与凹控制曲面形体",
+      "先在正交视图中画出截面对应线，再放入透视空间",
+      "截面密度由曲率决定，转折处必须加密否则体块会塌"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 099 X-Y-Z section drawing.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 7,
@@ -73,7 +133,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 101 line weight.mp4",
      "rootIndex": 0,
      "durationSec": 1344.2,
-     "sizeMB": 277.98
+     "sizeMB": 277.98,
+     "keypoints": [
+      "轮廓线最重、结构线次之、辅助线最轻，用线宽交代前后与转折",
+      "近端线条加粗、远端减弱，用轻重制造空间纵深",
+      "避免全画重线导致画面发闷，保留可读的层次差"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 101 line weight.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 8,
@@ -82,7 +152,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 120 outdoor environment step-by-step.mp4",
      "rootIndex": 0,
      "durationSec": 1696.0,
-     "sizeMB": 321.69
+     "sizeMB": 321.69,
+     "keypoints": [
+      "户外场景先定地平线与消失点，再分近景、中景、远景三层",
+      "用空气透视与明度对比控制远近：远处对比弱、饱和度低",
+      "先铺大形与光影关系，再进入建筑与植被的具体刻画"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 120 outdoor environment step-by-step.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 9,
@@ -91,7 +171,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 165 vehicle quick sketching.mp4",
      "rootIndex": 0,
      "durationSec": 2818.0,
-     "sizeMB": 466.95
+     "sizeMB": 466.95,
+     "keypoints": [
+      "载具速写先抓轮距、轴距与整体比例，再谈细节与表面",
+      "用三视图快速验证造型的立体一致性",
+      "草图阶段保留思考痕迹，不追求干净线条"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 165 vehicle quick sketching.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 10,
@@ -100,7 +190,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 204  SRD You Tube channel overview(720p).MP4",
      "rootIndex": 0,
      "durationSec": 97.2,
-     "sizeMB": 9.23
+     "sizeMB": 9.23,
+     "keypoints": [
+      "SRD 频道以透视、载具与工业设计的示范内容为主",
+      "按主题与页码检索配套视频，与书中章节对照学习",
+      "看示范先看整体流程，第二遍再逐段暂停临摹"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 204  SRD You Tube channel overview(720p).vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 11,
@@ -109,7 +209,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 205  SRW overview(720p).MP4",
      "rootIndex": 0,
      "durationSec": 181.2,
-     "sizeMB": 22.82
+     "sizeMB": 22.82,
+     "keypoints": [
+      "SRW 是配套的培训与课程体系，按基础绘图、工业设计、概念设计分层",
+      "课程强调动手作业与批改反馈，适合系统练基本功",
+      "把线上课程与随书练习结合，排成可执行的学习计划"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 205  SRW overview(720p).vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 12,
@@ -118,7 +228,18 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_011_materials_and_skills.mp4",
      "rootIndex": 0,
      "durationSec": 1271.3,
-     "sizeMB": 248.04
+     "sizeMB": 248.04,
+     "keypoints": [
+      "常用媒材：铅笔（2H 到 6B）、针管笔、马克笔、喷枪与数位板",
+      "铅笔硬度对应不同明度层与线条轻重，HB 适合起稿",
+      "纸张克数与纹理影响运笔手感和叠色效果",
+      "数位板的压感曲线决定线条粗细与虚实变化"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_011_materials_and_skills.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 13,
@@ -127,7 +248,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_018_freehand_ellipses.mp4",
      "rootIndex": 0,
      "durationSec": 553.8,
-     "sizeMB": 102.99
+     "sizeMB": 102.99,
+     "keypoints": [
+      "徒手椭圆靠肩部带动、手腕固定，一笔画完避免蹭线",
+      "先练长短轴方向明确的正圆变形，再练任意角度",
+      "透视里的圆始终是椭圆，短轴指向圆面法线方向"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_018_freehand_ellipses.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 14,
@@ -136,7 +267,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_053_transferring_scale.mp4",
      "rootIndex": 0,
      "durationSec": 658.5,
-     "sizeMB": 117.83
+     "sizeMB": 117.83,
+     "keypoints": [
+      "用对角线法按比例放大或缩小图形，倍率改变但比例不变",
+      "以已知尺寸的参考物为基准，用锚点距离推算未知尺寸",
+      "转移后回到整体检查，避免逐段累积误差"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_053_transferring_scale.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 15,
@@ -145,7 +286,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_056_brewer_method_02.mp4",
      "rootIndex": 0,
      "durationSec": 793.2,
-     "sizeMB": 137.59
+     "sizeMB": 137.59,
+     "keypoints": [
+      "布鲁尔方法用矩形框与对角线快速确定形体的比例关系",
+      "先框外接矩形，再用对角线与中线定位关键点",
+      "适合把参考图上的复杂轮廓快速转移到画纸"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_056_brewer_method_02.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 16,
@@ -154,7 +305,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_072_drawing_ellipses.mp4",
      "rootIndex": 0,
      "durationSec": 695.2,
-     "sizeMB": 111.12
+     "sizeMB": 111.12,
+     "keypoints": [
+      "绘制椭圆先定长轴与短轴，四点定框后连弧",
+      "两点透视中椭圆的短轴指向对应面的法线方向",
+      "用切线检查椭圆左右是否对称、是否超出外框"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_072_drawing_ellipses.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 17,
@@ -163,7 +324,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_075_hinging_and_rotating (1).mp4",
      "rootIndex": 0,
      "durationSec": 582.2,
-     "sizeMB": 94.59
+     "sizeMB": 94.59,
+     "keypoints": [
+      "铰接结构以旋转轴为基准，所有部件绕同一轴心保持同心",
+      "旋转体先画轴心与旋转轨迹，再补轮廓",
+      "注意遮挡关系随角度变化，用截面校正旋转后的形体"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_075_hinging_and_rotating+(1).vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 18,
@@ -172,7 +343,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_078_subdviding_ellipses_02.mp4",
      "rootIndex": 0,
      "durationSec": 1240.2,
-     "sizeMB": 234.01
+     "sizeMB": 234.01,
+     "keypoints": [
+      "把椭圆按四等分或八等分细分，用等分点检查透视准确性",
+      "细分后连接对应点，得到可靠的圆柱与曲面轮廓",
+      "细分密度按曲率决定，转折处加密、平缓处可放宽"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_078_subdviding_ellipses_02.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 19,
@@ -181,7 +362,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_114_atmospheric_perspective (1).mp4",
      "rootIndex": 0,
      "durationSec": 1207.7,
-     "sizeMB": 172.09
+     "sizeMB": 172.09,
+     "keypoints": [
+      "距离越远对比度越低、饱和度下降、色相偏向环境色",
+      "空气透视要配合线性透视，两者一起才做出真实纵深",
+      "用明度阶梯控制远近层次，避免前景与远景粘在一起"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_114_atmospheric_perspective (1).vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 20,
@@ -190,7 +381,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_115_sketching_an_interior_space.mp4",
      "rootIndex": 0,
      "durationSec": 734.4,
-     "sizeMB": 128.5
+     "sizeMB": 128.5,
+     "keypoints": [
+      "室内空间先定视高与地平线，人眼高度通常在一点五到一点七米",
+      "用墙角线与地砖网格建立透视尺度参照",
+      "家具按比例先占位再细化，保证空间尺度可信"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_115_sketching_an_interior_space.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 21,
@@ -199,7 +400,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_117_environment_value_block_in.mp4",
      "rootIndex": 0,
      "durationSec": 864.0,
-     "sizeMB": 99.16
+     "sizeMB": 99.16,
+     "keypoints": [
+      "把环境拆成天光、地面反射、遮挡暗部三组明度关系",
+      "先定最亮与最暗两端，再安排中间调的层次",
+      "块面概括阶段不要加纹理，专注大关系对比"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_117_environment_value_block_in.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 22,
@@ -208,7 +419,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_118_wide_angle_lens_grids.mp4",
      "rootIndex": 0,
      "durationSec": 570.7,
-     "sizeMB": 98.22
+     "sizeMB": 98.22,
+     "keypoints": [
+      "广角镜头视锥更大，画面边缘的拉伸与透视夸张更明显",
+      "建广角网格时把消失点拉到画面外，保证线条收敛一致",
+      "广角适合强调空间纵深，人像与建筑立面要慎用"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_118_wide_angle_lens_grids.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 23,
@@ -217,7 +438,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_122_airplane_sketching.mp4",
      "rootIndex": 0,
      "durationSec": 1837.0,
-     "sizeMB": 333.29
+     "sizeMB": 333.29,
+     "keypoints": [
+      "飞机先抓中轴线与翼展比例，再处理机身曲面",
+      "从三个正交视图推导透视轮廓，保证左右对称",
+      "发动机、座舱等部件用截面控制体量"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_122_airplane_sketching.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 24,
@@ -226,7 +457,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_154_visual_research.mp4",
      "rootIndex": 0,
      "durationSec": 2071.3,
-     "sizeMB": 259.64
+     "sizeMB": 259.64,
+     "keypoints": [
+      "视觉调研按结构、材质、光照、细节四类收集参考",
+      "建立参考板并按功能分组，避免边画边找图",
+      "从参考中提炼可复用的设计语言，而不是照抄"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_154_visual_research.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 25,
@@ -235,7 +476,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_156_observational_drawing.mp4",
      "rootIndex": 0,
      "durationSec": 620.2,
-     "sizeMB": 106.7
+     "sizeMB": 106.7,
+     "keypoints": [
+      "观察写生先看整体比例与重心，再落笔定轮廓",
+      "用负空间与透视线检查形状是否画偏",
+      "保持视线与纸面距离一致，减少透视误差"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_156_observational_drawing.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 26,
@@ -244,7 +495,18 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_159_colorizing_and_weathering_in_Photoshop.mp4",
      "rootIndex": 0,
      "durationSec": 1236.6,
-     "sizeMB": 152.19
+     "sizeMB": 152.19,
+     "keypoints": [
+      "灰度稿上用正片叠底铺色、叠加提亮，保持原有明度关系",
+      "做旧用噪波、蒙版与笔刷在边缘与缝隙堆积脏迹",
+      "分图层管理：底色、材质、脏迹、高光、后期",
+      "上色后回到灰度检查明度，防止颜色破坏体积"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_159_colorizing_and_weathering_in_Photoshop.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 27,
@@ -253,7 +515,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_160_vehicle_packaging.mp4",
      "rootIndex": 0,
      "durationSec": 1631.7,
-     "sizeMB": 190.09
+     "sizeMB": 190.09,
+     "keypoints": [
+      "载具包装是在结构基础上加面板分割、贴花与品牌元素",
+      "先用包络线定外形轮廓，再切分功能区块",
+      "贴花与分割线必须遵循透视与曲面走向"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_160_vehicle_packaging.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 28,
@@ -262,7 +534,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_185_car_drawing_step-by-step.mp4",
      "rootIndex": 0,
      "durationSec": 2494.6,
-     "sizeMB": 463.55
+     "sizeMB": 463.55,
+     "keypoints": [
+      "汽车先定轮拱与腰线，再确定前后悬与车顶弧线",
+      "用环境条带表现车漆反射，注意曲面上的反射压缩",
+      "分步推进：线稿、明度、材质、反射、高光"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_185_car_drawing_step-by-step.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 29,
@@ -271,7 +553,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_188_quick_marker_sketch.mp4",
      "rootIndex": 0,
      "durationSec": 951.9,
-     "sizeMB": 138.11
+     "sizeMB": 138.11,
+     "keypoints": [
+      "马克笔靠宽头铺面、细头勾线，先浅后深",
+      "同色叠涂出明暗层次，等干再叠避免糊色",
+      "留出纸面最亮处，比后期提白更自然"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_188_quick_marker_sketch.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 30,
@@ -280,7 +572,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_191_sci-fi_truck_sketch.mp4",
      "rootIndex": 0,
      "durationSec": 1964.7,
-     "sizeMB": 379.18
+     "sizeMB": 379.18,
+     "keypoints": [
+      "科幻载具先在正交视图定比例，再拆成方块与圆柱体块",
+      "用驾驶舱、货箱、动力三块功能区组织造型逻辑",
+      "草图阶段强调剪影识别度，细节留到后段"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_191_sci-fi_truck_sketch.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 31,
@@ -289,7 +591,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_195_copic_marker_pilot_hi_tec_pen.mp4",
      "rootIndex": 0,
      "durationSec": 1338.3,
-     "sizeMB": 262.71
+     "sizeMB": 262.71,
+     "keypoints": [
+      "针管笔负责结构与轮廓，马克笔负责明暗与色彩",
+      "针管笔走线匀速、起收笔干净，避免反复描",
+      "先淡后浓、先大后小，防止深色盖掉关键结构线"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_195_copic_marker_pilot_hi_tec_pen.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 32,
@@ -298,7 +610,17 @@
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_197_Pentel_Pocket_Brush_pen.mp4",
      "rootIndex": 0,
      "durationSec": 655.1,
-     "sizeMB": 102.35
+     "sizeMB": 102.35,
+     "keypoints": [
+      "毛笔笔锋有粗细变化，适合表现有张力的轮廓与肌理",
+      "靠提按控制线宽：起笔重、行笔稳、收笔提",
+      "先用大笔铺剪影，再用尖锋补结构"
+     ],
+     "subtitle": {
+      "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_197_Pentel_Pocket_Brush_pen.vtt",
+      "rootIndex": 0,
+      "label": "中文 / English"
+     }
     },
     {
      "no": 33,
@@ -307,7 +629,12 @@
      "file": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap1.mp4",
      "rootIndex": 0,
      "durationSec": 7273.9,
-     "sizeMB": 355.41
+     "sizeMB": 355.41,
+     "keypoints": [
+      "示范开篇先定主题与构图，规划画面主次与视觉动线",
+      "起稿用大笔刷概括剪影与明暗大关系，不急于线稿",
+      "建立图层结构：草稿、上色、光影、细节分层管理"
+     ]
     },
     {
      "no": 34,
@@ -316,7 +643,12 @@
      "file": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap2.mp4",
      "rootIndex": 0,
      "durationSec": 668.3,
-     "sizeMB": 54.26
+     "sizeMB": 54.26,
+     "keypoints": [
+      "局部示范笔刷运笔与压感控制，用轻重变化塑造体积",
+      "边缘处理：硬边定结构、软边做过渡",
+      "反复用吸管取色保持色调统一"
+     ]
     },
     {
      "no": 35,
@@ -325,7 +657,12 @@
      "file": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap3.mp4",
      "rootIndex": 0,
      "durationSec": 899.5,
-     "sizeMB": 64.38
+     "sizeMB": 64.38,
+     "keypoints": [
+      "光影过渡与明暗交界线位置的判断决定体积可信度",
+      "用叠加图层与颜色减淡提亮高光，避免直接涂白",
+      "注意反光与投影的色彩倾向，不要画成灰色"
+     ]
     },
     {
      "no": 36,
@@ -334,7 +671,12 @@
      "file": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap4.mp4",
      "rootIndex": 0,
      "durationSec": 7912.0,
-     "sizeMB": 262.19
+     "sizeMB": 262.19,
+     "keypoints": [
+      "从线稿到铺色的转换：先铺中间调，再压暗提亮",
+      "大色块阶段控制饱和度，避免过早艳丽",
+      "用图层混合模式统一整体色调"
+     ]
     },
     {
      "no": 37,
@@ -343,7 +685,12 @@
      "file": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap5.mp4",
      "rootIndex": 0,
      "durationSec": 7597.4,
-     "sizeMB": 498.05
+     "sizeMB": 498.05,
+     "keypoints": [
+      "光影阶段按主光、环境光、反射光三层叠加",
+      "暗部保留细节与色彩，不做成死黑",
+      "随时用明度检查查看黑白关系是否成立"
+     ]
     },
     {
      "no": 38,
@@ -352,7 +699,12 @@
      "file": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap6.mp4",
      "rootIndex": 0,
      "durationSec": 6601.7,
-     "sizeMB": 336.6
+     "sizeMB": 336.6,
+     "keypoints": [
+      "材质表现：金属高光集中、哑光高光弥散",
+      "用环境反射塑造曲面朝向，注意菲涅尔边缘提亮",
+      "材质的粗糙度差异决定高光形状"
+     ]
     },
     {
      "no": 39,
@@ -361,7 +713,12 @@
      "file": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap7.mp4",
      "rootIndex": 0,
      "durationSec": 7537.7,
-     "sizeMB": 423.24
+     "sizeMB": 423.24,
+     "keypoints": [
+      "细节刻画与边缘控制：视觉中心最实，四周逐渐虚化",
+      "用笔刷纹理叠加表现皮肤、布料与金属的质感差异",
+      "局部放大时不断缩小检查整体，防止细节抢主体"
+     ]
     },
     {
      "no": 40,
@@ -370,7 +727,12 @@
      "file": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap8.mp4",
      "rootIndex": 0,
      "durationSec": 4534.9,
-     "sizeMB": 232.88
+     "sizeMB": 232.88,
+     "keypoints": [
+      "色调统一靠曲线与色彩平衡收拢冷暖",
+      "加入雾气、光晕等氛围层，强化空间与情绪",
+      "控制整体对比重心，引导视线落点"
+     ]
     },
     {
      "no": 41,
@@ -379,7 +741,12 @@
      "file": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap9.mp4",
      "rootIndex": 0,
      "durationSec": 9704.3,
-     "sizeMB": 301.56
+     "sizeMB": 301.56,
+     "keypoints": [
+      "收尾阶段统一明度、修正边缘、锐化视觉中心",
+      "输出前检查色彩配置与画布尺寸，按用途导出",
+      "复盘整个示范流程，整理成可复用的个人工作流"
+     ]
     }
    ],
    "goal": "以《How to Draw》随书示范为主线，建立从透视网格到复杂形体草图的可靠手绘流程。",
@@ -405,7 +772,12 @@
      "file": "1.原书视频+素材（对应页码）/p033.mp4",
      "rootIndex": 1,
      "durationSec": 317.7,
-     "sizeMB": 56.14
+     "sizeMB": 56.14,
+     "keypoints": [
+      "渲染先建立明度阶梯：白、亮灰、中灰、暗灰、黑",
+      "先定光源方向与强度，再分配各个面的明度",
+      "用最亮与最暗锚定画面，中间调按材质反射率填充"
+     ]
     },
     {
      "no": 43,
@@ -414,7 +786,12 @@
      "file": "1.原书视频+素材（对应页码）/p037.mp4",
      "rootIndex": 1,
      "durationSec": 452.0,
-     "sizeMB": 72.77
+     "sizeMB": 72.77,
+     "keypoints": [
+      "光的衰减：距离越远强度越弱，点光源近似按平方反比衰减",
+      "投影方向由光源位置决定，投影长度与光源高度成反比",
+      "接触阴影让物体真正落地，是最容易被忽略的暗部"
+     ]
     },
     {
      "no": 44,
@@ -423,7 +800,12 @@
      "file": "1.原书视频+素材（对应页码）/p042.mp4",
      "rootIndex": 1,
      "durationSec": 448.6,
-     "sizeMB": 75.52
+     "sizeMB": 75.52,
+     "keypoints": [
+      "明暗交界线不是一条线，而是从亮到暗的转折带",
+      "交界线位置随光源角度移动，是塑造体积的关键",
+      "反光在暗部靠环境一侧，亮度低于亮部、高于投影"
+     ]
     },
     {
      "no": 45,
@@ -432,7 +814,12 @@
      "file": "1.原书视频+素材（对应页码）/p062.mp4",
      "rootIndex": 1,
      "durationSec": 260.9,
-     "sizeMB": 44.02
+     "sizeMB": 44.02,
+     "keypoints": [
+      "三大面加五大调：高光、亮部、明暗交界线、反光、投影",
+      "先分三大面再细分五大调，避免一上来就抠细节",
+      "高光大小取决于材质光滑度与光源面积"
+     ]
     },
     {
      "no": 46,
@@ -441,7 +828,12 @@
      "file": "1.原书视频+素材（对应页码）/p064.mp4",
      "rootIndex": 1,
      "durationSec": 207.4,
-     "sizeMB": 34.1
+     "sizeMB": 34.1,
+     "keypoints": [
+      "光源面积越大阴影边缘越软，日光下阴影边缘相对硬",
+      "半影区宽度与光源尺寸、遮挡距离有关",
+      "用软硬对比区分不同光源与空间层次"
+     ]
     },
     {
      "no": 47,
@@ -450,7 +842,12 @@
      "file": "1.原书视频+素材（对应页码）/p079.mp4",
      "rootIndex": 1,
      "durationSec": 745.4,
-     "sizeMB": 127.91
+     "sizeMB": 127.91,
+     "keypoints": [
+      "反射规律：入射角等于反射角，反射像在镜面后方对称位置",
+      "曲面反射沿法线方向弯曲，边缘处反射被压缩",
+      "先画环境条带，再让条带贴合曲面走向"
+     ]
     },
     {
      "no": 48,
@@ -459,7 +856,12 @@
      "file": "1.原书视频+素材（对应页码）/p092.mp4",
      "rootIndex": 1,
      "durationSec": 1777.4,
-     "sizeMB": 309.33
+     "sizeMB": 309.33,
+     "keypoints": [
+      "菲涅尔效应：视线越接近掠射角，反射越强",
+      "金属反射率高且带自身颜色，非金属反射弱且接近白",
+      "用菲涅尔控制边缘提亮，避免所有表面一样亮"
+     ]
     },
     {
      "no": 49,
@@ -468,7 +870,12 @@
      "file": "1.原书视频+素材（对应页码）/p094.mp4",
      "rootIndex": 1,
      "durationSec": 1042.7,
-     "sizeMB": 195.94
+     "sizeMB": 195.94,
+     "keypoints": [
+      "反射率与粗糙度决定高光的锐利程度",
+      "粗糙表面高光弥散，清晰反射消失",
+      "分区域打乱反射率能立刻打破塑料感"
+     ]
     },
     {
      "no": 50,
@@ -477,7 +884,12 @@
      "file": "1.原书视频+素材（对应页码）/p099.mp4",
      "rootIndex": 1,
      "durationSec": 1838.3,
-     "sizeMB": 346.02
+     "sizeMB": 346.02,
+     "keypoints": [
+      "高光形状跟随表面法线与光源形状",
+      "长条形光源在圆柱上形成纵向高光带",
+      "高光位置的偏移可以提示表面凹凸与曲面变化"
+     ]
     },
     {
      "no": 51,
@@ -486,7 +898,12 @@
      "file": "1.原书视频+素材（对应页码）/p124.mp4",
      "rootIndex": 1,
      "durationSec": 2112.5,
-     "sizeMB": 319.88
+     "sizeMB": 319.88,
+     "keypoints": [
+      "环境反射决定金属的可信度，需要有可反射的环境信息",
+      "用 HDRI 或手绘环境条带补足反射内容",
+      "反射内容随距离与角度变化，注意压缩与拉伸"
+     ]
     },
     {
      "no": 52,
@@ -495,7 +912,12 @@
      "file": "1.原书视频+素材（对应页码）/p162.mp4",
      "rootIndex": 1,
      "durationSec": 258.9,
-     "sizeMB": 40.58
+     "sizeMB": 40.58,
+     "keypoints": [
+      "哑光材质高光弥散、无清晰反射，明度对比柔和",
+      "哑光表面靠明度层次而不是靠高光塑造体积",
+      "粗糙度接近一，需加强接触阴影让物体落地"
+     ]
     },
     {
      "no": 53,
@@ -504,7 +926,12 @@
      "file": "1.原书视频+素材（对应页码）/p164.mp4",
      "rootIndex": 1,
      "durationSec": 2510.2,
-     "sizeMB": 379.42
+     "sizeMB": 379.42,
+     "keypoints": [
+      "金属反射率高、带自身色相、明暗对比强",
+      "金属高光锐利，暗部也能反射环境",
+      "金属几乎没有漫反射，颜色主要来自反射内容"
+     ]
     },
     {
      "no": 54,
@@ -513,7 +940,12 @@
      "file": "1.原书视频+素材（对应页码）/p167.mp4",
      "rootIndex": 1,
      "durationSec": 3033.6,
-     "sizeMB": 451.7
+     "sizeMB": 451.7,
+     "keypoints": [
+      "玻璃是折射、反射、透射三者叠加的材质",
+      "厚玻璃有体积感，边缘因折射出现明暗带",
+      "用背景的错位与边缘高光表现透明度"
+     ]
     },
     {
      "no": 55,
@@ -522,7 +954,12 @@
      "file": "1.原书视频+素材（对应页码）/p172.mp4",
      "rootIndex": 1,
      "durationSec": 3010.5,
-     "sizeMB": 467.22
+     "sizeMB": 467.22,
+     "keypoints": [
+      "漆面、镀铬、橡胶这类复合材质需要分层渲染",
+      "在同一物体上区分不同反射率的区域",
+      "用脏迹与磨损把不同材质自然衔接"
+     ]
     },
     {
      "no": 56,
@@ -531,7 +968,12 @@
      "file": "1.原书视频+素材（对应页码）/p189.mp4",
      "rootIndex": 1,
      "durationSec": 2183.5,
-     "sizeMB": 337.45
+     "sizeMB": 337.45,
+     "keypoints": [
+      "光照方案里主光、补光、轮廓光分工明确",
+      "主光决定明度结构，补光控制暗部通透度",
+      "轮廓光把主体从背景中分离，强度要克制"
+     ]
     },
     {
      "no": 57,
@@ -540,7 +982,12 @@
      "file": "1.原书视频+素材（对应页码）/p193.mp4",
      "rootIndex": 1,
      "durationSec": 1401.2,
-     "sizeMB": 216.47
+     "sizeMB": 216.47,
+     "keypoints": [
+      "环境渲染要处理天光、地面反射与远景空气感",
+      "室外投影需符合太阳高度角与方位",
+      "用雾与景深区分前中后景层次"
+     ]
     },
     {
      "no": 58,
@@ -549,7 +996,12 @@
      "file": "1.原书视频+素材（对应页码）/p195.mp4",
      "rootIndex": 1,
      "durationSec": 1075.5,
-     "sizeMB": 205.52
+     "sizeMB": 205.52,
+     "keypoints": [
+      "材质对比是画面张力的来源：粗糙与光滑、明与暗并置",
+      "同一光源下不同反射率材质的明度差异要拉开",
+      "避免整体发灰，保留一处纯黑与一处接近纯白"
+     ]
     },
     {
      "no": 59,
@@ -558,7 +1010,12 @@
      "file": "1.原书视频+素材（对应页码）/p209.mp4",
      "rootIndex": 1,
      "durationSec": 1517.6,
-     "sizeMB": 234.92
+     "sizeMB": 234.92,
+     "keypoints": [
+      "综合示范：从明度块面到材质细化再到氛围统一",
+      "分阶段锁定，每个阶段只解决一个问题",
+      "用图层与蒙版管理不同阶段，便于回退修改"
+     ]
     },
     {
      "no": 60,
@@ -567,7 +1024,12 @@
      "file": "1.原书视频+素材（对应页码）/p214.mp4",
      "rootIndex": 1,
      "durationSec": 3361.0,
-     "sizeMB": 509.1
+     "sizeMB": 509.1,
+     "keypoints": [
+      "载具渲染重点在曲面反射与结构转折处的明暗",
+      "轮毂、玻璃、车漆三类反射率分别处理",
+      "用高光条带强化形体的流线与饱满度"
+     ]
     },
     {
      "no": 61,
@@ -576,7 +1038,12 @@
      "file": "1.原书视频+素材（对应页码）/p218.mp4",
      "rootIndex": 1,
      "durationSec": 826.8,
-     "sizeMB": 148.72
+     "sizeMB": 148.72,
+     "keypoints": [
+      "工业产品渲染强调比例、分割线与材质精度",
+      "控制投影与接触阴影，让产品真正落在环境里",
+      "背景明度与产品明度要拉开对比"
+     ]
     },
     {
      "no": 62,
@@ -585,7 +1052,12 @@
      "file": "1.原书视频+素材（对应页码）/p222.mp4",
      "rootIndex": 1,
      "durationSec": 1491.5,
-     "sizeMB": 228.98
+     "sizeMB": 228.98,
+     "keypoints": [
+      "场景的空间层次靠空气透视、景深与遮挡建立",
+      "主次分明：视觉中心最实，其余适当弱化",
+      "整体色调统一后再做局部色彩强调"
+     ]
     },
     {
      "no": 63,
@@ -594,7 +1066,12 @@
      "file": "1.原书视频+素材（对应页码）/p226.mp4",
      "rootIndex": 1,
      "durationSec": 508.4,
-     "sizeMB": 89.86
+     "sizeMB": 89.86,
+     "keypoints": [
+      "氛围与后期：用曲线、色阶统一明度与冷暖",
+      "加光晕、雾气、粒子提升画面感染力",
+      "锐化视觉中心、加轻微暗角引导视线"
+     ]
     },
     {
      "no": 64,
@@ -603,7 +1080,12 @@
      "file": "1.原书视频+素材（对应页码）/p239.mp4",
      "rootIndex": 1,
      "durationSec": 2253.7,
-     "sizeMB": 344.21
+     "sizeMB": 344.21,
+     "keypoints": [
+      "机械结构复杂，先拆成基础几何体再细化",
+      "金属件按反射率与表面处理工艺分组",
+      "用倒角与磨损交代工业感与使用痕迹"
+     ]
     },
     {
      "no": 65,
@@ -612,7 +1094,12 @@
      "file": "1.原书视频+素材（对应页码）/p240.mp4",
      "rootIndex": 1,
      "durationSec": 585.4,
-     "sizeMB": 102.39
+     "sizeMB": 102.39,
+     "keypoints": [
+      "螺栓、面板缝隙、铆钉靠投影与高光呈现",
+      "缝隙内部压暗、边缘提亮，做出厚度",
+      "脏迹沿重力与缝隙分布，避免均匀撒尘"
+     ]
     },
     {
      "no": 66,
@@ -621,7 +1108,12 @@
      "file": "1.原书视频+素材（对应页码）/p247.mp4",
      "rootIndex": 1,
      "durationSec": 1515.8,
-     "sizeMB": 280.52
+     "sizeMB": 280.52,
+     "keypoints": [
+      "统一光源逻辑，检查明度关系是否前后一致",
+      "修正相互矛盾的投影方向与反射内容",
+      "输出前做整体对比度与色彩检查"
+     ]
     },
     {
      "no": 67,
@@ -630,7 +1122,12 @@
      "file": "1.原书视频+素材（对应页码）/p249.mp4",
      "rootIndex": 1,
      "durationSec": 3098.5,
-     "sizeMB": 542.82
+     "sizeMB": 542.82,
+     "keypoints": [
+      "复盘点：形体准确度、明度层次、材质可信度",
+      "对照参考逐项打分，定位最弱的一环",
+      "把问题拆成可练习的单项，逐个突破"
+     ]
     },
     {
      "no": 68,
@@ -639,7 +1136,12 @@
      "file": "1.原书视频+素材（对应页码）/p251.mp4",
      "rootIndex": 1,
      "durationSec": 2960.4,
-     "sizeMB": 448.87
+     "sizeMB": 448.87,
+     "keypoints": [
+      "最终成稿分层保存，按用途输出不同尺寸",
+      "保留过程文件便于修改与复盘",
+      "把可复用的材质与光照方案沉淀成模板"
+     ]
     },
     {
      "no": 69,
@@ -648,7 +1150,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 101a Sketch Book Pro intro.mp4",
      "rootIndex": 1,
      "durationSec": 727.0,
-     "sizeMB": 29.46
+     "sizeMB": 29.46,
+     "keypoints": [
+      "SketchBook Pro 的画笔、橡皮与图层体系适合快速概念草图",
+      "压感可映射到笔刷大小与不透明度，调出顺手的速写笔",
+      "轻量工具链突出效率，适合大量草图迭代"
+     ]
     },
     {
      "no": 70,
@@ -657,7 +1164,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 101b Photoshop introduction.mp4",
      "rootIndex": 1,
      "durationSec": 833.6,
-     "sizeMB": 243.0
+     "sizeMB": 243.0,
+     "keypoints": [
+      "图层、蒙版与混合模式是 Photoshop 渲染的基础结构",
+      "画笔设置关注不透明度、流量、间距与压感动态",
+      "用调整图层与剪贴蒙版做非破坏性渲染"
+     ]
     },
     {
      "no": 71,
@@ -666,7 +1178,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 115 value rendering XYZ forms.mp4",
      "rootIndex": 1,
      "durationSec": 1865.9,
-     "sizeMB": 156.44
+     "sizeMB": 156.44,
+     "keypoints": [
+      "用 XYZ 三个轴向的方块、圆柱、球体做明度渲染练习",
+      "同一光源下不同朝向面的明度阶梯要稳定可复用",
+      "渲染顺序：明度分区、边缘过渡、环境反射"
+     ]
     },
     {
      "no": 72,
@@ -675,7 +1192,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 129  matte car rendering(720p).MP4",
      "rootIndex": 1,
      "durationSec": 3615.2,
-     "sizeMB": 202.12
+     "sizeMB": 202.12,
+     "keypoints": [
+      "哑光车漆高光弥散，靠大面积明度过渡塑造曲面",
+      "反射内容模糊，但仍需体现环境色",
+      "控制车身边缘清晰度，防止看起来像塑料"
+     ]
     },
     {
      "no": 73,
@@ -684,7 +1206,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 132  mech value steps(720p).MP4",
      "rootIndex": 1,
      "durationSec": 2704.6,
-     "sizeMB": 106.11
+     "sizeMB": 106.11,
+     "keypoints": [
+      "机械明度先分大面，再处理倒角与缝隙的暗部",
+      "金属件之间用明度差区分层次",
+      "步骤化推进：块面、结构线、明暗交界、局部强化"
+     ]
     },
     {
      "no": 74,
@@ -693,7 +1220,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 135  matte bunny rendering(720p).MP4",
      "rootIndex": 1,
      "durationSec": 1074.9,
-     "sizeMB": 36.65
+     "sizeMB": 36.65,
+     "keypoints": [
+      "柔软曲面的明暗过渡要平缓，避免硬边",
+      "用接触阴影与闭塞区强化形体交叠处",
+      "高光过多会让软质表面看起来像硬塑料"
+     ]
     },
     {
      "no": 75,
@@ -702,7 +1234,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 137  colorizing greyscale images(720p).MP4",
      "rootIndex": 1,
      "durationSec": 280.1,
-     "sizeMB": 8.4
+     "sizeMB": 8.4,
+     "keypoints": [
+      "灰度稿上色用正片叠底铺色、叠加提亮，保持明度关系",
+      "先定主色相与冷暖，再局部加入材质色偏移",
+      "调色后回到灰度检查明度是否被破坏"
+     ]
     },
     {
      "no": 76,
@@ -711,7 +1248,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 194  red airplane outdoor(720p).MP4",
      "rootIndex": 1,
      "durationSec": 3418.3,
-     "sizeMB": 119.96
+     "sizeMB": 119.96,
+     "keypoints": [
+      "户外光照下飞机的高光来自天空与太阳，两者反射差异明显",
+      "红色漆面强光下饱和度下降、暗部偏环境色",
+      "投影边缘随云与环境光变化，避免死板"
+     ]
     },
     {
      "no": 77,
@@ -720,7 +1262,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 203  rendering outdoor reflections(720p).MP4",
      "rootIndex": 1,
      "durationSec": 6532.3,
-     "sizeMB": 217.54
+     "sizeMB": 217.54,
+     "keypoints": [
+      "户外反射包含天空、地面与远景，反射随曲面弯曲",
+      "车漆、玻璃、金属的反射强度与模糊度不同",
+      "先用环境条带快速表现反射，再局部修正"
+     ]
     },
     {
      "no": 78,
@@ -729,7 +1276,12 @@
      "file": "1.原书视频+素材（对应页码）/re 补充/page 241  mech rendering(720p).MP4",
      "rootIndex": 1,
      "durationSec": 3093.4,
-     "sizeMB": 221.04
+     "sizeMB": 221.04,
+     "keypoints": [
+      "机械渲染完整流程：结构、明度、材质、反射、细节",
+      "金属表面按处理工艺分组：抛光、拉丝、喷砂",
+      "用磨损与油迹交代真实使用状态"
+     ]
     }
    ],
    "goal": "以《How to Render》随书示范为主线，掌握光影、明度与材质渲染的完整表现流程。",
@@ -879,262 +1431,6 @@
    "name": "必备播放软件与使用说明.rar",
    "label": "必备播放软件与使用说明",
    "sizeMB": 25.65,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/environment value block-in.srt",
-   "name": "environment value block-in.srt",
-   "label": "环境 明度 块面概括",
-   "sizeMB": 0.03,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/p037.srt",
-   "name": "p037.srt",
-   "label": "p037",
-   "sizeMB": 0.01,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 008 How_to_Draw_Introduction.srt",
-   "name": "page 008 How_to_Draw_Introduction.srt",
-   "label": "第 008 绘画基础 入门",
-   "sizeMB": 0.01,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 031 cone of vision one point 02.srt",
-   "name": "page 031 cone of vision one point 02.srt",
-   "label": "第 031 视锥 一点透视 02",
-   "sizeMB": 0.04,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 084 ortho views + transferring a side view.srt",
-   "name": "page 084 ortho views + transferring a side view.srt",
-   "label": "第 084 正交视图 + 侧视图转移",
-   "sizeMB": 0.06,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 099 X-Y-Z section drawing.srt",
-   "name": "page 099 X-Y-Z section drawing.srt",
-   "label": "第 099 X Y Z 截面绘制",
-   "sizeMB": 0.09,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 101 line weight.srt",
-   "name": "page 101 line weight.srt",
-   "label": "第 101 线条 轻重",
-   "sizeMB": 0.04,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 120 outdoor environment step-by-step.srt",
-   "name": "page 120 outdoor environment step-by-step.srt",
-   "label": "第 120 户外 环境 step by step",
-   "sizeMB": 0.05,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 165 vehicle quick sketching.srt",
-   "name": "page 165 vehicle quick sketching.srt",
-   "label": "第 165 载具 快速 草图",
-   "sizeMB": 0.09,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 204  SRD You Tube channel overview(720p).srt",
-   "name": "page 204  SRD You Tube channel overview(720p).srt",
-   "label": "第 204 SRD You Tube 频道 介绍(720p)",
-   "sizeMB": 0.0,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 205  SRW overview(720p).srt",
-   "name": "page 205  SRW overview(720p).srt",
-   "label": "第 205 SRW 介绍(720p)",
-   "sizeMB": 0.01,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_011_materials_and_skills.srt",
-   "name": "page_011_materials_and_skills.srt",
-   "label": "第 011 材质s and 技法",
-   "sizeMB": 0.04,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_018_freehand_ellipses.srt",
-   "name": "page_018_freehand_ellipses.srt",
-   "label": "第 018 徒手 椭圆",
-   "sizeMB": 0.02,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_053_transferring_scale.srt",
-   "name": "page_053_transferring_scale.srt",
-   "label": "第 053 转移 比例",
-   "sizeMB": 0.02,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_056_brewer_method_02.srt",
-   "name": "page_056_brewer_method_02.srt",
-   "label": "第 056 布鲁尔 方法 02",
-   "sizeMB": 0.02,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_072_drawing_ellipses.srt",
-   "name": "page_072_drawing_ellipses.srt",
-   "label": "第 072 绘制 椭圆",
-   "sizeMB": 0.02,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_075_hinging_and_rotating+(1).srt",
-   "name": "page_075_hinging_and_rotating+(1).srt",
-   "label": "第 075 铰接 and 旋转+(1)",
-   "sizeMB": 0.02,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_078_subdviding_ellipses_02.srt",
-   "name": "page_078_subdviding_ellipses_02.srt",
-   "label": "第 078 细分 椭圆 02",
-   "sizeMB": 0.03,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_114_atmospheric_perspective (1).srt",
-   "name": "page_114_atmospheric_perspective (1).srt",
-   "label": "第 114 空气透视 透视 (1)",
-   "sizeMB": 0.04,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_115_sketching_an_interior_space.srt",
-   "name": "page_115_sketching_an_interior_space.srt",
-   "label": "第 115 草图 an 室内 space",
-   "sizeMB": 0.02,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_117_environment_value_block_in.srt",
-   "name": "page_117_environment_value_block_in.srt",
-   "label": "第 117 环境 明度 块面概括",
-   "sizeMB": 0.03,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_118_wide_angle_lens_grids.srt",
-   "name": "page_118_wide_angle_lens_grids.srt",
-   "label": "第 118 广角 角度 镜头 网格",
-   "sizeMB": 0.02,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_122_airplane_sketching.srt",
-   "name": "page_122_airplane_sketching.srt",
-   "label": "第 122 飞机 草图",
-   "sizeMB": 0.06,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_154_visual_research.srt",
-   "name": "page_154_visual_research.srt",
-   "label": "第 154 视觉 调研",
-   "sizeMB": 0.07,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_156_observational_drawing.srt",
-   "name": "page_156_observational_drawing.srt",
-   "label": "第 156 观察 绘制",
-   "sizeMB": 0.02,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_159_colorizing_and_weathering_in_Photoshop.srt",
-   "name": "page_159_colorizing_and_weathering_in_Photoshop.srt",
-   "label": "第 159 上色 and 做旧 in Photoshop",
-   "sizeMB": 0.04,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_160_vehicle_packaging.srt",
-   "name": "page_160_vehicle_packaging.srt",
-   "label": "第 160 载具 包装",
-   "sizeMB": 0.05,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_185_car_drawing_step-by-step.srt",
-   "name": "page_185_car_drawing_step-by-step.srt",
-   "label": "第 185 汽车 绘制 step by step",
-   "sizeMB": 0.07,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_188_quick_marker_sketch.srt",
-   "name": "page_188_quick_marker_sketch.srt",
-   "label": "第 188 快速 马克笔 草图",
-   "sizeMB": 0.03,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_191_sci-fi_truck_sketch.srt",
-   "name": "page_191_sci-fi_truck_sketch.srt",
-   "label": "第 191 sci fi 卡车 草图",
-   "sizeMB": 0.06,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_195_copic_marker_pilot_hi_tec_pen.srt",
-   "name": "page_195_copic_marker_pilot_hi_tec_pen.srt",
-   "label": "第 195 马克笔 马克笔 百乐 hi tec 笔",
-   "sizeMB": 0.04,
-   "rootIndex": 0
-  },
-  {
-   "kind": "file",
-   "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_197_Pentel_Pocket_Brush_pen.srt",
-   "name": "page_197_Pentel_Pocket_Brush_pen.srt",
-   "label": "第 197 Pentel 便携 笔刷 笔",
-   "sizeMB": 0.02,
    "rootIndex": 0
   },
   {
@@ -2177,6 +2473,7 @@
    ]
   }
  ],
+ "chapters": [],
  "outline": {
   "objectives": [
    "掌握一点、两点、三点透视的作图方法，能用视锥、地平线与灭点系统搭建可信的三维空间。",
@@ -2217,6 +2514,558 @@
    "完成 1 辆载具的快速草图 10 张，其中 3 张进入包络线收形并标出至少 3 个关键截面。",
    "选 1 张线稿完成灰度渲染，明确标出亮面、暗面、明暗交界线、反光与投影五个区域。",
    "用 Photoshop 完成 1 张彩色渲染，包含 2 种以上材质，并加入 1 处做旧或磨损效果。"
+  ]
+ },
+ "graph": {
+  "nodes": [
+   {
+    "id": "course",
+    "label": "绘画与渲染：透视、形体与光影",
+    "type": "course",
+    "group": 0
+   },
+   {
+    "id": "m1",
+    "label": "绘画基础 · 随书示范",
+    "type": "module",
+    "group": 1
+   },
+   {
+    "id": "m1-k0",
+    "label": "视锥、地平线与灭点系统，一点透视与两点透视网格的绘制",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k1",
+    "label": "正交视图转移与 X-Y-Z 截面法塑造复杂曲面形体",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k2",
+    "label": "手绘椭圆、椭圆细分与旋转、铰接结构的画法",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k3",
+    "label": "线条轻重与透视准确度的自查方法",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k4",
+    "label": "载具、飞机与室内外环境的快速草图及包络线收形",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k5",
+    "label": "把复杂环境归纳成三到五个明度层级，先铺大块面，再找细节",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k6",
+    "label": "起稿用软边大笔刷统一光源方向，避免过早陷入局部刻画",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k7",
+    "label": "用眯眼观察与明度检查工具确认画面黑白分布是否成立",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k8",
+    "label": "跟着随书步骤逐段复现：先定地平线与主体方块，再补结构线",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k9",
+    "label": "用辅助线检查线条是否收敛到同一灭点，这是等距透视的第一步",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k10",
+    "label": "示范中反复回到整体比例校对，避免局部越画越偏",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k11",
+    "label": "绘画是可拆解的构造过程：结构、透视、光影三个变量共同成立",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k12",
+    "label": "建立正确的作画姿态，长线靠肩部带动而不是手腕蹭线",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k13",
+    "label": "区分观察性绘画与构造性绘画的适用场景，先练构造再练感受",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k14",
+    "label": "视锥约六十度以内画面变形可接受，超出范围边缘会明显拉伸",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k15",
+    "label": "一点透视里所有深度线都收敛到视平线上的同一个灭点",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m2",
+    "label": "渲染表现 · 随书示范",
+    "type": "module",
+    "group": 2
+   },
+   {
+    "id": "m2-k0",
+    "label": "明度块面概括与三大面五大调的建立",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k1",
+    "label": "光源类型、光衰减与明暗交界线的处理",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k2",
+    "label": "反射规律、菲涅尔效果与反射率控制",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k3",
+    "label": "哑光、金属、玻璃与复合材质的渲染差异",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k4",
+    "label": "SketchBook Pro 与 Photoshop 的图层结构、上色及做旧流程",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k5",
+    "label": "渲染先建立明度阶梯：白、亮灰、中灰、暗灰、黑",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k6",
+    "label": "先定光源方向与强度，再分配各个面的明度",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k7",
+    "label": "用最亮与最暗锚定画面，中间调按材质反射率填充",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k8",
+    "label": "光的衰减：距离越远强度越弱，点光源近似按平方反比衰减",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k9",
+    "label": "投影方向由光源位置决定，投影长度与光源高度成反比",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k10",
+    "label": "接触阴影让物体真正落地，是最容易被忽略的暗部",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k11",
+    "label": "明暗交界线不是一条线，而是从亮到暗的转折带",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k12",
+    "label": "交界线位置随光源角度移动，是塑造体积的关键",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k13",
+    "label": "反光在暗部靠环境一侧，亮度低于亮部、高于投影",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k14",
+    "label": "三大面加五大调：高光、亮部、明暗交界线、反光、投影",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k15",
+    "label": "先分三大面再细分五大调，避免一上来就抠细节",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "root-k0",
+    "label": "视锥（60°/90°）对画面变形范围的控制与地平线、灭点系统的搭建",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k1",
+    "label": "一点透视与两点透视的测量点法、比例传递与网格复用",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k2",
+    "label": "正交视图向透视图转移的方法，以及 X-Y-Z 截面绘制",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k3",
+    "label": "自由手绘椭圆、椭圆细分、铰接与旋转体的画法",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k4",
+    "label": "线条轻重（line weight）表达前后层次与体块转折",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k5",
+    "label": "明度块面概括（value block-in）与亮面、暗面、明暗交界线、反光、投影五区划分",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k6",
+    "label": "光源类型与光衰减、投影的几何构造（日光、天光、人工光）",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k7",
+    "label": "反射规律、菲涅尔效果与反射率控制，区分哑光、金属、玻璃材质",
+    "type": "concept",
+    "group": 0
+   }
+  ],
+  "links": [
+   {
+    "source": "course",
+    "target": "m1"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k0"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k1"
+   },
+   {
+    "source": "m1-k0",
+    "target": "m1-k1"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k2"
+   },
+   {
+    "source": "m1-k1",
+    "target": "m1-k2"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k3"
+   },
+   {
+    "source": "m1-k2",
+    "target": "m1-k3"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k4"
+   },
+   {
+    "source": "m1-k3",
+    "target": "m1-k4"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k5"
+   },
+   {
+    "source": "m1-k4",
+    "target": "m1-k5"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k6"
+   },
+   {
+    "source": "m1-k5",
+    "target": "m1-k6"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k7"
+   },
+   {
+    "source": "m1-k6",
+    "target": "m1-k7"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k8"
+   },
+   {
+    "source": "m1-k7",
+    "target": "m1-k8"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k9"
+   },
+   {
+    "source": "m1-k8",
+    "target": "m1-k9"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k10"
+   },
+   {
+    "source": "m1-k9",
+    "target": "m1-k10"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k11"
+   },
+   {
+    "source": "m1-k10",
+    "target": "m1-k11"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k12"
+   },
+   {
+    "source": "m1-k11",
+    "target": "m1-k12"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k13"
+   },
+   {
+    "source": "m1-k12",
+    "target": "m1-k13"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k14"
+   },
+   {
+    "source": "m1-k13",
+    "target": "m1-k14"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k15"
+   },
+   {
+    "source": "m1-k14",
+    "target": "m1-k15"
+   },
+   {
+    "source": "course",
+    "target": "m2"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k0"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k1"
+   },
+   {
+    "source": "m2-k0",
+    "target": "m2-k1"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k2"
+   },
+   {
+    "source": "m2-k1",
+    "target": "m2-k2"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k3"
+   },
+   {
+    "source": "m2-k2",
+    "target": "m2-k3"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k4"
+   },
+   {
+    "source": "m2-k3",
+    "target": "m2-k4"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k5"
+   },
+   {
+    "source": "m2-k4",
+    "target": "m2-k5"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k6"
+   },
+   {
+    "source": "m2-k5",
+    "target": "m2-k6"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k7"
+   },
+   {
+    "source": "m2-k6",
+    "target": "m2-k7"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k8"
+   },
+   {
+    "source": "m2-k7",
+    "target": "m2-k8"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k9"
+   },
+   {
+    "source": "m2-k8",
+    "target": "m2-k9"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k10"
+   },
+   {
+    "source": "m2-k9",
+    "target": "m2-k10"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k11"
+   },
+   {
+    "source": "m2-k10",
+    "target": "m2-k11"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k12"
+   },
+   {
+    "source": "m2-k11",
+    "target": "m2-k12"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k13"
+   },
+   {
+    "source": "m2-k12",
+    "target": "m2-k13"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k14"
+   },
+   {
+    "source": "m2-k13",
+    "target": "m2-k14"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k15"
+   },
+   {
+    "source": "m2-k14",
+    "target": "m2-k15"
+   },
+   {
+    "source": "course",
+    "target": "root-k0"
+   },
+   {
+    "source": "course",
+    "target": "root-k1"
+   },
+   {
+    "source": "course",
+    "target": "root-k2"
+   },
+   {
+    "source": "course",
+    "target": "root-k3"
+   },
+   {
+    "source": "course",
+    "target": "root-k4"
+   },
+   {
+    "source": "course",
+    "target": "root-k5"
+   },
+   {
+    "source": "course",
+    "target": "root-k6"
+   },
+   {
+    "source": "course",
+    "target": "root-k7"
+   }
   ]
  }
 }

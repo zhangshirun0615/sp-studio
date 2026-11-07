@@ -30,6 +30,23 @@ function resGroup(id, items) {
   return (items || []).map(r => r.kind === 'images' ? resImageLink(id, r) : resLink(id, r)).join('');
 }
 
+function chaptersHtml(id, chapters, meta) {
+  if (!chapters || !chapters.length) return '';
+  return `<section class="lesson-section" id="chapters-${id}">
+    <h2>章节考核</h2>
+    <p style="color:var(--muted);font-size:13px;line-height:1.8;margin-bottom:14px">按章节阅读教材并完成考核任务，章节题库可在「闯关练习」中作答。</p>
+    <div class="chapter-grid">
+      ${chapters.map(ch => `<article class="chapter-card">
+        <h3>${esc(ch.title)}</h3>
+        ${ch.goal ? `<p class="ch-goal">${esc(ch.goal)}</p>` : ''}
+        ${(ch.lessons || []).length ? `<h5>本章要点</h5><ul>${ch.lessons.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+        ${(ch.assessment || []).length ? `<h5>考核任务</h5><ul>${ch.assessment.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+        ${(ch.questions || []).length ? `<a class="btn btn-ghost btn-sm ch-quiz" href="#/quiz/${id}">${icon('bolt', 14)} 本章 ${ch.questions.length} 题闯关</a>` : ''}
+      </article>`).join('')}
+    </div>
+  </section>`;
+}
+
 function outlineHtml(o, courseId) {
   if (!o) return '';
   const blocks = [];
@@ -135,6 +152,8 @@ export default {
           ${pan ? `<a class="btn btn-ghost" href="${esc(pan.url)}" target="_blank" rel="noopener">${icon('external', 15)} 网盘资源</a>` : ''}
           ${meta.type === 'external' && meta.url ? `<a class="btn btn-primary" href="${esc(meta.url)}" target="_blank" rel="noopener">${icon('external', 15)} 打开课程</a>` : ''}
           ${resources.length ? `<a class="btn btn-ghost" href="#resources-${id}">${icon('book', 15)} 课程资料</a>` : ''}
+          ${meta.hasQuiz ? `<a class="btn btn-ghost" href="#/quiz/${id}">${icon('bolt', 15)} 闯关练习</a>` : ''}
+          <a class="btn btn-ghost" href="#/graph/${id}">${icon('target', 15)} 知识图谱</a>
           ${total ? `<span class="ch-progress">已学 ${done} / ${total} · ${progress}%</span>` : ''}
         </div>
         ${total ? `<div class="module-progress" style="margin-top:16px;max-width:420px"><i style="width:${progress}%;--m-color:${meta.accent}"></i></div>` : ''}
@@ -146,6 +165,7 @@ export default {
         <h2>课程内容</h2>
         <p style="color:var(--muted);line-height:1.9">这门课程以图文教材为主，点击下方资料在线阅读，或进入图片资料逐页浏览。</p>
       </section>` : `<div class="section-head" style="margin-bottom:18px"><div><div class="eyebrow">课程目录</div><h2 class="section-title" style="font-size:26px">课程目录</h2></div></div>${modulesHtml}`}
+      ${chaptersHtml(id, d.chapters, meta)}
       ${resHtml}
       <div class="lesson-nav" style="margin-top:26px">
         <a href="#/courses"><span class="nl">${icon('arrow-left', 12)} 返回</span><span class="nt">课程中心</span></a>

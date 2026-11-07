@@ -54,7 +54,7 @@ export default {
       ['bot', 'AI 答疑助教', '概念、参数、排错，中文提问即时回答（SP 课程内置本地知识引擎）', '#/assistant'],
       ['sparkles', 'AIGC 工具箱', '材质参考、PBR 拆解、作品文案等提示词，一键复制到任意 AI', '#/toolbox'],
       ['book', '术语知识库', '133 条 Substance Painter 术语，中英对照、分类检索', '#/kb'],
-      ['bolt', '闯关练习', '119 道 SP 课程练习题，即时解析与错题重练', '#/quiz'],
+      ['bolt', '闯关练习', '覆盖 10 门课程的模块闯关题，即时解析与错题重练', '#/quiz'],
       ['user', '学生登录', '学号 + 口令查看实训任务、成绩与教师评语（本地服务器）', '#/student']
     ].map(([ic, title, desc, href]) => `<a class="card hoverable feature-card reveal" href="${href}">
       <span class="f-icon">${icon(ic, 20)}</span><h3>${title}</h3><p>${desc}</p>

@@ -3,6 +3,7 @@ import home from './views/home.js';
 import courses from './views/courses.js';
 import course from './views/course.js';
 import gallery from './views/gallery.js';
+import graph from './views/graph.js';
 import lessonView from './views/lesson.js';
 import assistant from './views/assistant.js';
 import toolbox from './views/toolbox.js';
@@ -24,7 +25,8 @@ const routes = [
   { re: /^\/toolbox\/?$/, view: toolbox, nav: 'toolbox' },
   { re: /^\/kb\/?$/, view: kb, nav: 'kb' },
   { re: /^\/quiz\/?$/, view: quiz, nav: 'quiz' },
-  { re: /^\/quiz\/([\w-]+)\/?$/, view: quiz, nav: 'quiz', keys: ['moduleId'] },
+  { re: /^\/quiz\/([\w-]+)\/?$/, view: quiz, nav: 'quiz', keys: ['courseId'] },
+  { re: /^\/graph\/([\w-]+)\/?$/, view: graph, nav: 'courses', keys: ['id'] },
   { re: /^\/admin\/?$/, view: admin, nav: 'admin' },
   { re: /^\/student\/?$/, view: student, nav: 'student' },
   // 教师端：不在导航中显示，按需加载（学生端不会请求这段代码）

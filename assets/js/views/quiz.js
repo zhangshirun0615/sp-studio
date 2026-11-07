@@ -1,40 +1,55 @@
-﻿import data from '../data.js';
+import data from '../data.js';
 import store from '../store.js';
 import { esc, icon, pct, toast } from '../ui.js';
 
 let quizData = null;
+let catalogCache = null;
 let run = null; // { mid, list, idx, score, wrong, answered, finished }
+let currentCourse = null;
 
 const KEYS = ['A', 'B', 'C', 'D'];
 
-function pickerHtml() {
-  const mods = quizData.modules;
-  let totalQ = 0;
-  Object.values(mods).forEach(m => { totalQ += m.questions.length; });
-  const attempted = Object.keys(store.get().quiz).length;
-  let sumPct = 0, cnt = 0;
-  Object.values(store.get().quiz).forEach(s => { sumPct += pct(s.best, s.total); cnt++; });
+function courseBest(cid) {
+  const prefix = cid + ':';
+  let sum = 0, cnt = 0;
+  Object.entries(store.get().quiz || {}).forEach(([k, v]) => {
+    if (k.startsWith(prefix)) { sum += pct(v.best, v.total); cnt++; }
+  });
+  return cnt ? Math.round(sum / cnt) : null;
+}
 
-  const cards = Object.entries(mods).map(([mid, m], i) => {
-    const meta = quizData.moduleMeta && quizData.moduleMeta[mid] ? quizData.moduleMeta[mid] : null;
-    const title = meta ? meta.title : `模块 ${i + 1}`;
-    const color = meta ? (meta.color || '#ff8a3d') : '#ff8a3d';
-    const s = store.get().quiz[mid];
-    const sp = s ? pct(s.best, s.total) : 0;
-    return `<article class="card quiz-module reveal" style="--m-color:${color}">
+async function getCatalog() {
+  if (!catalogCache) catalogCache = await data.catalog();
+  return catalogCache;
+}
+
+async function coursePicker() {
+  const cat = await getCatalog();
+  const courses = (cat.courses || []).filter(c => c.hasQuiz);
+  let indexMap = {};
+  try {
+    const res = await fetch('data/quizzes/index.json', { cache: 'no-store' });
+    if (res.ok) {
+      const j = await res.json();
+      (j.courses || []).forEach(x => { indexMap[x.id] = x; });
+    }
+  } catch (e) { /* 忽略 */ }
+  const cards = courses.map((c, i) => {
+    const best = courseBest(c.id);
+    const idx = indexMap[c.id];
+    return `<article class="card quiz-module reveal" style="--m-color:${c.accent || '#ff8a3d'}">
       <div class="q-head">
-        <span class="q-num" style="color:${color}">MODULE ${String(i + 1).padStart(2, '0')}</span>
-        ${s ? `<span class="quiz-score-pill ${sp >= 80 ? 'good' : ''}" style="margin-left:auto">最高 ${sp}%</span>` : '<span class="tag" style="margin-left:auto">未挑战</span>'}
+        <span class="q-num" style="color:${c.accent || '#ff8a3d'}">第 ${String(i + 1).padStart(2, '0')} 门</span>
+        ${best != null ? `<span class="quiz-score-pill ${best >= 80 ? 'good' : ''}" style="margin-left:auto">最高 ${best}%</span>` : '<span class="tag" style="margin-left:auto">未挑战</span>'}
       </div>
-      <h3>${esc(title)}</h3>
+      <h3>${esc(c.title)}</h3>
       <div class="q-meta">
-        <span>${icon('bolt', 13)} ${m.questions.length} 题</span>
-        <span>${icon('target', 13)} 基础 ${m.questions.filter(q => q.level === '基础').length} · 进阶 ${m.questions.filter(q => q.level === '进阶').length}</span>
-        ${s ? `<span>已挑战 ${s.attempts} 次</span>` : ''}
+        <span>${icon('book', 13)} ${esc(c.category)}</span>
+        <span>${icon('bolt', 13)} ${idx ? idx.questions : '多'} 道题</span>
+        <span>${icon('grid', 13)} ${idx ? idx.modules : '多'} 个板块</span>
       </div>
-      <div class="module-progress" style="margin:4px 0 6px"><i style="width:${sp}%"></i></div>
-      <a class="btn ${s ? 'btn-ghost' : 'btn-primary'} btn-sm" href="#/quiz/${mid}" style="align-self:flex-start">
-        ${icon('play', 14)} ${s ? '再挑战一次' : '开始闯关'}
+      <a class="btn ${best != null ? 'btn-ghost' : 'btn-primary'} btn-sm" href="#/quiz/${c.id}" style="align-self:flex-start">
+        ${icon('play', 14)} ${best != null ? '继续闯关' : '开始闯关'}
       </a>
     </article>`;
   }).join('');
@@ -43,20 +58,58 @@ function pickerHtml() {
   <div class="page-head">
     <div class="eyebrow">闯关练习</div>
     <h1>闯关练习</h1>
-    <p class="lead">按模块逐个闯关，答完立即看解析；答错的题可以“只练错题”重来。共 ${totalQ} 道题，覆盖 7 大模块的全部核心知识点。</p>
+    <p class="lead">所有课程都配了模块化闯关练习：答完立即看解析，答错的题可以“只练错题”重来。先选一门课程开始。</p>
+  </div>
+  <div class="quiz-picker" style="margin-top:24px">${cards || '<p style="color:var(--muted)">题库正在生成中…</p>'}</div>
+</div>`;
+}
+
+function modulePicker() {
+  const mods = quizData.modules || {};
+  const list = Object.values(mods).sort((a, b) => (a.index || 0) - (b.index || 0));
+  let totalQ = 0;
+  list.forEach(m => { totalQ += (m.questions || []).length; });
+  const prefix = currentCourse.id + ':';
+  const attempted = Object.keys(store.get().quiz || {}).filter(k => k.startsWith(prefix)).length;
+  const cards = list.map((m, i) => {
+    const s = store.get().quiz[prefix + m.id];
+    const sp = s ? pct(s.best, s.total) : 0;
+    const color = currentCourse.accent || '#ff8a3d';
+    return `<article class="card quiz-module reveal" style="--m-color:${color}">
+      <div class="q-head">
+        <span class="q-num" style="color:${color}">板块 ${String(i + 1).padStart(2, '0')}</span>
+        ${s ? `<span class="quiz-score-pill ${sp >= 80 ? 'good' : ''}" style="margin-left:auto">最高 ${sp}%</span>` : '<span class="tag" style="margin-left:auto">未挑战</span>'}
+      </div>
+      <h3>${esc(m.title)}</h3>
+      <div class="q-meta">
+        <span>${icon('bolt', 13)} ${(m.questions || []).length} 题</span>
+        <span>${icon('target', 13)} 基础 ${(m.questions || []).filter(q => q.level === '基础').length} · 进阶 ${(m.questions || []).filter(q => q.level === '进阶').length}</span>
+      </div>
+      <div class="module-progress" style="margin:4px 0 6px"><i style="width:${sp}%;--m-color:${color}"></i></div>
+      <a class="btn ${s ? 'btn-ghost' : 'btn-primary'} btn-sm" href="#/quiz/${currentCourse.id}?m=${m.id}" style="align-self:flex-start">
+        ${icon('play', 14)} ${s ? '再挑战一次' : '开始闯关'}
+      </a>
+    </article>`;
+  }).join('');
+
+  return `<div class="container">
+  <div class="breadcrumb"><a href="#/quiz">闯关练习</a> ${icon('chevron-right', 12)} <a href="#/course/${currentCourse.id}">${esc(currentCourse.title)}</a> ${icon('chevron-right', 12)} <span>题库</span></div>
+  <div class="page-head">
+    <div class="eyebrow">闯关练习</div>
+    <h1>${esc(currentCourse.title)} · 闯关练习</h1>
+    <p class="lead">共 ${list.length} 个板块、${totalQ} 道题，全部围绕本课程知识点；每个板块独立计分，可反复挑战。</p>
   </div>
   <div class="kpi-grid" style="margin-top:26px;grid-template-columns:repeat(3,1fr)">
-    <div class="kpi"><div class="k-lbl">题库总量</div><div class="k-val">${totalQ}<small>题</small></div><div class="k-sub">7 个模块 · 即时解析</div></div>
-    <div class="kpi"><div class="k-lbl">已挑战模块</div><div class="k-val">${attempted}<small>/ 7</small></div><div class="k-sub">每个模块独立计分</div></div>
-    <div class="kpi"><div class="k-lbl">平均最高正确率</div><div class="k-val">${cnt ? Math.round(sumPct / cnt) : 0}<small>%</small></div><div class="k-sub">${cnt ? '继续冲 90%+' : '先从模块 1 开始'}</div></div>
+    <div class="kpi"><div class="k-lbl">题库总量</div><div class="k-val">${totalQ}<small>题</small></div><div class="k-sub">${list.length} 个板块 · 即时解析</div></div>
+    <div class="kpi"><div class="k-lbl">已挑战板块</div><div class="k-val">${attempted}<small>/ ${list.length}</small></div><div class="k-sub">每个板块独立计分</div></div>
+    <div class="kpi"><div class="k-lbl">本课最高正确率</div><div class="k-val">${courseBest(currentCourse.id) || 0}<small>%</small></div><div class="k-sub">继续冲 90%+</div></div>
   </div>
   <div class="quiz-picker">${cards}</div>
 </div>`;
 }
 
-function questionHtml(mid) {
+function questionHtml() {
   const q = run.list[run.idx];
-  const m = quizData.modules[mid];
   const opts = q.options.map((o, i) => `<button class="quiz-option" data-opt="${i}" data-ans="${q.answer}">
       <span class="opt-key">${KEYS[i]}</span><span>${esc(o)}</span>
     </button>`).join('');
@@ -74,7 +127,7 @@ function questionHtml(mid) {
   </div>`;
 }
 
-function resultHtml(mid) {
+function resultHtml() {
   const total = run.list.length;
   const p = pct(run.score, total);
   const title = p >= 90 ? '稳了，可以出师了' : p >= 70 ? '不错，再补几个细节' : p >= 50 ? '基础还行，错题要重练' : '别急，先回看对应课程';
@@ -93,30 +146,29 @@ function resultHtml(mid) {
       <h2>${title}</h2>
       <p class="res-sub">答对 ${run.score} / ${total} 题 · ${run.wrong.length ? `还有 ${run.wrong.length} 个知识点要补` : '本轮全对'}</p>
       <div class="res-actions">
-        <a class="btn btn-ghost" href="#/quiz">${icon('grid', 15)} 返回模块选择</a>
+        <a class="btn btn-ghost" href="#/quiz/${currentCourse.id}">${icon('grid', 15)} 返回板块选择</a>
         <button class="btn btn-primary" id="retryWrong" ${run.wrong.length ? '' : 'disabled'}>${icon('refresh', 15)} 只练错题</button>
-        <a class="btn btn-ghost" href="#/map">${icon('map', 15)} 回课程地图</a>
+        <a class="btn btn-ghost" href="#/course/${currentCourse.id}">${icon('map', 15)} 回课程目录</a>
       </div>
     </div>
     ${wrongHtml}
   </div></div>`;
 }
 
-function finish(mid) {
+function finish() {
   run.finished = true;
-  store.quizSave(mid, run.score, run.list.length);
-  const card = document.getElementById('quizStage');
-  card.innerHTML = resultHtml(mid);
+  store.quizSave(currentCourse.id, run.mid, run.score, run.list.length);
+  document.getElementById('quizStage').innerHTML = resultHtml();
 }
 
-function renderQuestionStage(mid) {
+function renderQuestionStage() {
   const stage = document.getElementById('quizStage');
-  stage.innerHTML = questionHtml(mid);
+  stage.innerHTML = questionHtml();
   const q = run.list[run.idx];
   const p = pct(run.idx, run.list.length);
   const bar = document.getElementById('quizBar');
-  const label = document.getElementById('quizCounter');
   if (bar) bar.style.width = p + '%';
+  const label = document.getElementById('quizCounter');
   if (label) label.textContent = `${run.idx + 1} / ${run.list.length}`;
   document.getElementById('quizScore').textContent = `${run.score} 分`;
 
@@ -145,13 +197,12 @@ function renderQuestionStage(mid) {
   });
 }
 
-function runnerHtml(mid) {
-  const m = quizData.modules[mid];
-  const meta = quizData.moduleMeta && quizData.moduleMeta[mid] ? quizData.moduleMeta[mid] : null;
+function runnerHtml() {
+  const m = quizData.modules[run.mid];
   return `<div class="container"><div class="quiz-run">
     <div class="quiz-topbar">
-      <a class="icon-btn" href="#/quiz" aria-label="返回模块选择">${icon('arrow-left', 16)}</a>
-      <span style="font-weight:700;color:var(--text)">${esc(meta ? meta.title : mid)}</span>
+      <a class="icon-btn" href="#/quiz/${currentCourse.id}" aria-label="返回板块选择">${icon('arrow-left', 16)}</a>
+      <span style="font-weight:700;color:var(--text)">${esc(m.title)}</span>
       <div class="quiz-progress"><i id="quizBar" style="width:0%"></i></div>
       <span id="quizCounter">1 / ${m.questions.length}</span>
       <span id="quizScore" style="color:var(--copper-2);font-weight:700">0 分</span>
@@ -166,42 +217,44 @@ function initRun(mid) {
 }
 
 export default {
-  async preload() { quizData = await data.quiz(); },
-
   async render(params) {
-    const qd = quizData || await data.quiz();
-    quizData = qd;
-    const mid = params.moduleId;
-    if (mid && qd.modules[mid]) {
+    const cat = await getCatalog();
+    const cid = params.courseId;
+    if (!cid) return coursePicker();
+    const meta = (cat.courses || []).find(c => c.id === cid);
+    if (!meta) return coursePicker();
+    currentCourse = meta;
+    quizData = await data.quizOf(cid);
+    if (!quizData) return coursePicker();
+    const mid = params.query && params.query.m;
+    if (mid && quizData.modules[mid]) {
       initRun(mid);
-      return runnerHtml(mid);
+      return runnerHtml();
     }
-    return pickerHtml();
+    return modulePicker();
   },
 
   mount(params) {
-    const mid = params.moduleId;
+    if (!quizData || !currentCourse) return;
+    const mid = params.query && params.query.m;
     if (!mid || !quizData.modules[mid]) return;
-    renderQuestionStage(mid);
+    renderQuestionStage();
     const stage = document.getElementById('quizStage');
-    // 事件委托：题卡会整体重绘，按钮监听需要挂在容器上
     stage.addEventListener('click', (e) => {
       const next = e.target.closest('#nextBtn');
       if (next) {
         if (run.finished) return;
-        if (run.idx === run.list.length - 1) { finish(mid); return; }
+        if (run.idx === run.list.length - 1) { finish(); return; }
         run.idx++; run.answered = false;
-        renderQuestionStage(mid);
+        renderQuestionStage();
         return;
       }
       const retry = e.target.closest('#retryWrong');
       if (retry) {
         run.list = run.wrong.slice();
         run.idx = 0; run.score = 0; run.wrong = []; run.answered = false; run.finished = false;
-        renderQuestionStage(mid);
+        renderQuestionStage();
       }
     });
   }
 };
-
-

@@ -58,8 +58,11 @@ function panPlayer(course, lesson, s) {
 function playerHtml(course, lesson, s) {
   if (s.source === 'bilibili') return `<div class="player-wrap bili-player" id="playerWrap">${bilibiliPlayer(lesson)}</div>`;
   if (s.source === 'direct') {
-    return `<div class="player-wrap" id="playerWrap"><video id="lessonVideo" controls playsinline preload="metadata">
-      <source src="${esc(s.directSrc)}" type="video/mp4"></video></div>`;
+    const track = lesson.subtitle
+      ? `<track kind="subtitles" src="${esc(data.mediaUrl(course.meta.id, lesson.subtitle.path, lesson.subtitle.rootIndex))}" srclang="zh" label="${esc(lesson.subtitle.label || '中英字幕')}" default>`
+      : '';
+    return `<div class="player-wrap" id="playerWrap"><video id="lessonVideo" controls playsinline preload="metadata" crossorigin="anonymous">
+      <source src="${esc(s.directSrc)}" type="video/mp4">${track}</video></div>`;
   }
   if (s.source === 'pan') return `<div class="player-wrap pan-wrap" id="playerWrap">${panPlayer(course, lesson, s)}</div>`;
   if (s.isMirror) {
@@ -231,6 +234,7 @@ export default {
           ${isSP && lesson.difficulty ? `<span class="tag ${levelClass(lesson.difficulty)}">${esc(lesson.difficulty)}</span>` : ''}
           ${lesson.durationSec ? `<span class="tag">${icon('clock', 12)} ${fmtDur(lesson.durationSec)}</span>` : ''}
           <span class="tag">第 ${lesson.no} / ${lessons.length} 节</span>
+          ${lesson.subtitle ? `<span class="tag teal">${icon('book', 12)} 中英字幕</span>` : ''}
           ${isDone ? `<span class="tag teal">${icon('check', 12)} 已完成</span>` : ''}
         </div>
       </div>
@@ -243,7 +247,10 @@ export default {
       <section class="lesson-section"><h2>学习目标</h2><ul class="obj-list">${objectives || '<li style="color:var(--muted)">暂无</li>'}</ul></section>
       <section class="lesson-section"><h2>核心知识点</h2><div class="kp-grid">${keypoints || '<div style="color:var(--muted)">暂无</div>'}</div></section>
       ${lesson.practice ? `<section class="lesson-section"><h2>动手练一练</h2><div class="practice-box">${esc(lesson.practice)}</div></section>` : ''}`
-        : `<section class="lesson-section"><h2>课程信息</h2>
+        : `<section class="lesson-section"><h2>本节知识点</h2>
+        ${(lesson.keypoints || []).length ? `<div class="kp-grid">${keypoints}</div>` : `<div class="kp-inline">${(mod.keypoints || []).slice(0, 4).map(k => `<span class="chip">${esc(k)}</span>`).join('') || '<span style="color:var(--muted)">知识点整理中</span>'}</div>`}
+      </section>
+      <section class="lesson-section"><h2>课程信息</h2>
         <p style="color:var(--text-2);line-height:1.9">本课属于《${esc(meta.title)}》${esc(mod.title ? '· ' + mod.title : '')}。${esc(meta.description || '')}</p>
         ${resources.length ? `<p style="margin-top:10px"><a class="link-arrow" href="#/course/${cid}">查看课程资料（${resources.length} 份）${icon('arrow-right', 13)}</a></p>` : ''}
       </section>`}
@@ -288,6 +295,10 @@ export default {
       </div>
       ${isSP ? `<div class="card side-card"><h3>标签</h3><div style="display:flex;flex-wrap:wrap;gap:7px">${tags || '<span style="color:var(--muted);font-size:13px">暂无</span>'}</div></div>` : ''}
       ${resources.length ? `<div class="card side-card"><h3>课程资料</h3><a class="link-arrow" href="#/course/${cid}">${resources.length} 份资料 ${icon('arrow-right', 13)}</a></div>` : ''}
+      <div class="card side-card"><h3>知识图谱</h3>
+        <a class="link-arrow" href="#/graph/${cid}">查看本课知识图谱 ${icon('arrow-right', 13)}</a>
+        ${meta.hasQuiz ? `<div style="margin-top:8px"><a class="link-arrow" href="#/quiz/${cid}">${icon('bolt', 13)} 本课闯关练习</a></div>` : ''}
+      </div>
     </aside>
   </div>
 </div>`;

@@ -16,7 +16,12 @@
      "cid": 885189624,
      "durationSec": 539,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "远景交代环境、规模与人物关系，人物在画面中占比很小",
+      "远景常用于开场定场与结尾收束，营造宏大或孤独感",
+      "镜头停留时间较长，给观众消化空间信息的时间"
+     ]
     },
     {
      "no": 2,
@@ -26,7 +31,12 @@
      "cid": 884380838,
      "durationSec": 536,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "全景完整呈现人物全身与所处环境，动作与姿态清晰可读",
+      "全景是动作场面与打斗、舞蹈的基础景别",
+      "取景注意头顶留白与脚下空间，避免切脚"
+     ]
     },
     {
      "no": 3,
@@ -36,7 +46,12 @@
      "cid": 884376580,
      "durationSec": 660,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "中近景取人物腰部以上，兼顾表情与肢体语言",
+      "对话场景最常用，信息量与情绪表达平衡",
+      "过肩中近景带出对方肩部，建立对话关系"
+     ]
     },
     {
      "no": 4,
@@ -46,7 +61,12 @@
      "cid": 884410820,
      "durationSec": 806,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "近景取胸部以上，突出表情与情绪变化",
+      "近景压缩环境信息，把注意力拉向人物内心",
+      "对表演与光线要求更高，瑕疵会被放大"
+     ]
     },
     {
      "no": 5,
@@ -56,7 +76,12 @@
      "cid": 884377031,
      "durationSec": 604,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "取景边界要避开关节处切割，头顶留白适度",
+      "视线方向要留出空间，不要让人物看向画面边缘之外",
+      "景别选择服从叙事目的：交代、推进还是强调"
+     ]
     }
    ],
    "goal": "掌握五种景别的信息量与情绪差异，能按叙事需要选择取景范围。",
@@ -82,7 +107,13 @@
      "cid": 41905096997,
      "durationSec": 5498,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "影视后期流程：素材整理、粗剪、精剪、调色、混音、输出交付",
+      "岗位分工：剪辑、调色、特效、包装、制片各自职责不同",
+      "接单变现路径：作品集、渠道、报价与合同规范",
+      "工程文件管理与命名规范决定协作效率"
+     ]
     }
    ],
    "goal": "建立影视后期从入门到接单变现的全流程认知，明确学习路径与职业方向。",
@@ -108,7 +139,12 @@
      "cid": 884381919,
      "durationSec": 551,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "三分法把画面分为九宫格，主体放在交点或分割线上",
+      "引导线（道路、栏杆、光线）把视线引向主体",
+      "地平线放在上三分线或下三分线，避免居中切割画面"
+     ]
     },
     {
      "no": 8,
@@ -118,7 +154,12 @@
      "cid": 884400293,
      "durationSec": 346,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "留白给画面呼吸感，也用于表达孤独、悬念与期待",
+      "人物视线前方留白多于身后，符合观众心理预期",
+      "留白不等于空，背景需有信息但不抢主体"
+     ]
     },
     {
      "no": 9,
@@ -128,7 +169,12 @@
      "cid": 884382005,
      "durationSec": 410,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "中心构图把主体放在画面正中，强调稳定与仪式感",
+      "适合正面人物、建筑对称与强冲击画面",
+      "中心易呆板，可用光影或前景打破僵局"
+     ]
     },
     {
      "no": 10,
@@ -138,7 +184,12 @@
      "cid": 884385643,
      "durationSec": 420,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "对称构图制造平衡、秩序与庄重感",
+      "严格对称适合建筑与仪式场景，近似对称更自然",
+      "对称画面里可故意留一处破点，避免机械"
+     ]
     },
     {
      "no": 11,
@@ -148,7 +199,12 @@
      "cid": 884387967,
      "durationSec": 491,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "框架式构图用门窗、树枝、拱形等前景框住主体",
+      "框架增加纵深感与窥视感，引导视线聚焦",
+      "框架本身要虚化或压暗，不能抢主体"
+     ]
     },
     {
      "no": 12,
@@ -158,7 +214,12 @@
      "cid": 884384308,
      "durationSec": 443,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "浅景深虚化背景，把主体从环境中分离出来",
+      "色调统一或对比都能强化主体：冷暖对比、明暗对比",
+      "景深与色调共同决定画面的层次与情绪"
+     ]
     }
    ],
    "goal": "用引导线、留白、对称、框架等构图方法组织画面视觉重心。",
@@ -185,7 +246,12 @@
      "cid": 884386968,
      "durationSec": 516,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "硬光方向性强、阴影边缘锐利，适合表现力量与冲突",
+      "柔光过渡平缓，适合人物与美感表达",
+      "光源面积决定光的软硬，面积越大越柔"
+     ]
     },
     {
      "no": 14,
@@ -195,7 +261,12 @@
      "cid": 884387329,
      "durationSec": 573,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "测光决定曝光基准：点测光、中央重点、评价测光适用不同场景",
+      "高光不过曝、暗部保留细节是曝光基本原则",
+      "大光比场景用包围曝光或补光平衡"
+     ]
     },
     {
      "no": 15,
@@ -205,7 +276,12 @@
      "cid": 884392112,
      "durationSec": 390,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "逆光勾出主体轮廓，制造剪影与氛围感",
+      "逆光需要补光或反光板提亮面部，避免死黑",
+      "注意镜头眩光与对比度下降"
+     ]
     },
     {
      "no": 16,
@@ -215,7 +291,12 @@
      "cid": 884389599,
      "durationSec": 301,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "顶光压抑、底光诡异、侧光立体，方向决定人物气质暗示",
+      "三点布光：主光、补光、轮廓光分工明确",
+      "台灯、霓虹等实用光源入画可增强真实感"
+     ]
     },
     {
      "no": 17,
@@ -225,7 +306,12 @@
      "cid": 884390567,
      "durationSec": 457,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "色温低偏暖（约 3200K 钨丝灯），色温高偏冷（约 5600K 日光）",
+      "白平衡决定画面整体色调倾向与情绪",
+      "故意偏色可制造冷暖对比与风格化氛围"
+     ]
     }
    ],
    "goal": "理解光的质感、方向与色温，能用光线塑造人物与氛围。",
@@ -252,7 +338,12 @@
      "cid": 884396225,
      "durationSec": 424,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "正面机位平等、直接，适合对话与人物介绍",
+      "正面缺乏纵深容易呆板，需靠光线与背景补救",
+      "正面近景有强烈的直视压迫感"
+     ]
     },
     {
      "no": 19,
@@ -262,7 +353,12 @@
      "cid": 884395846,
      "durationSec": 317,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "侧面强调人物轮廓与运动方向，适合行走与追逐",
+      "侧面隐藏表情，制造神秘或疏离感",
+      "侧面构图要注意视线方向的空间分配"
+     ]
     },
     {
      "no": 20,
@@ -272,7 +368,12 @@
      "cid": 884396933,
      "durationSec": 449,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "斜侧面（四分之三侧）最接近日常观察，立体感强",
+      "兼顾轮廓与表情，是对话场景常用机位",
+      "配合下颌线光影可强化人物立体感"
+     ]
     },
     {
      "no": 21,
@@ -282,7 +383,12 @@
      "cid": 884395242,
      "durationSec": 195,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "背面机位制造悬念，让观众代入人物视角",
+      "适合表现孤独、离别与未知",
+      "背面镜头常与正面镜头组接形成揭示"
+     ]
     },
     {
      "no": 22,
@@ -292,7 +398,12 @@
      "cid": 884398254,
      "durationSec": 284,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "仰视放大主体、压缩背景，表现权威与压迫",
+      "使人显得高大，适合英雄化处理",
+      "低机位贴地可强化速度与冲击"
+     ]
     },
     {
      "no": 23,
@@ -302,7 +413,12 @@
      "cid": 884397355,
      "durationSec": 314,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "俯视压缩空间、弱化主体，表现渺小与无助",
+      "常用于交代空间关系与人物位置",
+      "大俯视（鸟瞰）适合宏大场景与地理交代"
+     ]
     },
     {
      "no": 24,
@@ -312,7 +428,12 @@
      "cid": 884407810,
      "durationSec": 535,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "不稳定构图靠倾斜地平线制造紧张与失衡",
+      "荷兰角表现心理不安或危机",
+      "倾斜角度要有目的，过度使用会让观众疲劳"
+     ]
     }
    ],
    "goal": "掌握机位方向与高度对人物权力关系和观众心理的影响。",
@@ -338,7 +459,12 @@
      "cid": 884405990,
      "durationSec": 612,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "推镜引导观众靠近主体，强化情绪与关注",
+      "推镜速度决定紧迫感，缓慢推营造沉浸与悬念",
+      "起幅与落幅要稳，避免卡顿与失焦"
+     ]
     },
     {
      "no": 26,
@@ -348,7 +474,12 @@
      "cid": 895511896,
      "durationSec": 278,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "拉镜揭示环境、交代人物处境，制造孤立感",
+      "常作为结尾镜头，形成情绪抽离",
+      "拉镜时注意背景信息的逐步显露"
+     ]
     },
     {
      "no": 27,
@@ -358,7 +489,12 @@
      "cid": 895511498,
      "durationSec": 298,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "摇镜在同一机位转动，用于展示空间或跟随视线",
+      "摇镜速度与内容节奏匹配，避免过快造成模糊",
+      "可连接两个空间信息，形成因果暗示"
+     ]
     },
     {
      "no": 28,
@@ -368,7 +504,12 @@
      "cid": 895509941,
      "durationSec": 255,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "移镜平行移动，主体比例稳定而背景透视持续变化",
+      "横移适合展示环境与人物行走",
+      "移动路径要稳定，可用轨道或稳定器"
+     ]
     },
     {
      "no": 29,
@@ -378,7 +519,12 @@
      "cid": 895515915,
      "durationSec": 324,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "跟镜跟随主体运动，保持主体在画面中相对稳定",
+      "跟拍制造沉浸感与参与感，适合追逐场面",
+      "注意背景流动速度与景深控制"
+     ]
     },
     {
      "no": 30,
@@ -388,7 +534,12 @@
      "cid": 895513027,
      "durationSec": 485,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "环绕镜头围绕主体旋转，全方位展示人物与环境",
+      "适合表现对峙、浪漫与英雄登场",
+      "推拉摇移跟环绕的选择服从叙事与情绪目标"
+     ]
     }
    ],
    "goal": "掌握推、拉、摇、移、跟、环绕六种运动镜头的表意与实现方式。",
@@ -415,7 +566,12 @@
      "cid": 895514817,
      "durationSec": 491,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "骑轴即摄像机位于关系轴线上，正对人物拍摄",
+      "骑轴镜头压迫感强，常用于对话开场与主观视角",
+      "骑轴会暴露轴线位置，需要谨慎使用"
+     ]
     },
     {
      "no": 32,
@@ -425,7 +581,12 @@
      "cid": 895516198,
      "durationSec": 277,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "越轴会导致人物视线方向反置，观众失去空间方位感",
+      "合法越轴手段：移动摄影机、中性镜头过渡、人物走位",
+      "空境可作为越轴缓冲，帮助观众重置方位感"
+     ]
     },
     {
      "no": 33,
@@ -435,7 +596,12 @@
      "cid": 895519204,
      "durationSec": 333,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "广角焦距短、视角大，透视夸张、纵深感强",
+      "近距离广角放大前景，拉开前景与背景的距离",
+      "广角适合环境交代与主观视角，人物近拍容易变形"
+     ]
     },
     {
      "no": 34,
@@ -445,7 +611,12 @@
      "cid": 895517545,
      "durationSec": 291,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "中焦约 50mm，接近人眼视角，透视自然",
+      "适合对话与写实叙事，人物不易变形",
+      "在有限空间内兼顾人物与环境"
+     ]
     },
     {
      "no": 35,
@@ -455,7 +626,12 @@
      "cid": 895519862,
      "durationSec": 267,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "长焦压缩空间、虚化背景，突出主体",
+      "适合远距离观察，制造偷窥感与疏离感",
+      "长焦景深浅、跟焦难度大，需注意焦点控制"
+     ]
     },
     {
      "no": 36,
@@ -465,7 +641,12 @@
      "cid": 895521109,
      "durationSec": 271,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "移焦用焦点的转移引导观众注意力",
+      "逆向变焦边移动边变焦，制造眩晕与心理冲击",
+      "希区柯克变焦需主体大小不变而背景剧烈变化"
+     ]
     },
     {
      "no": 37,
@@ -475,7 +656,12 @@
      "cid": 895524854,
      "durationSec": 294,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "升格以高帧率拍摄，按正常帧率播放形成慢动作",
+      "慢动作强调瞬间，放大情绪与力量",
+      "帧率越高越吃光，拍摄需要额外补光"
+     ]
     },
     {
      "no": 38,
@@ -485,7 +671,12 @@
      "cid": 895518148,
      "durationSec": 265,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "逐格以帧为单位逐帧拍摄，形成定格动画",
+      "定格冻结画面强调瞬间，常与音效配合使用",
+      "两者都能制造时间停顿的叙事效果"
+     ]
     },
     {
      "no": 39,
@@ -495,7 +686,12 @@
      "cid": 895521666,
      "durationSec": 340,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "延时拍摄以低频间隔拍摄，压缩长时间过程",
+      "适合表现时间流逝、光影变化与城市节奏",
+      "间隔时间与拍摄时长共同决定成片速度"
+     ]
     },
     {
      "no": 40,
@@ -505,7 +701,12 @@
      "cid": 895523425,
      "durationSec": 331,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "抽帧有意丢帧，制造卡顿与风格化节奏",
+      "常用于打斗、节奏强化与意识流段落",
+      "抽帧要与音乐节拍配合，避免观感不适"
+     ]
     }
    ],
    "goal": "理解轴线规律与越轴处理，保证镜头之间的空间关系连贯。",
@@ -532,7 +733,12 @@
      "cid": 895523070,
      "durationSec": 512,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "常见设备：单反、微单、电影机、稳定器、三脚架与滑轨",
+      "卡口与画幅尺寸影响景深与视角",
+      "录音与监看设备同样决定成片质量"
+     ]
     },
     {
      "no": 42,
@@ -542,7 +748,12 @@
      "cid": 895529131,
      "durationSec": 341,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "光圈 f 值越小进光越多、景深越浅",
+      "光圈同时影响画面亮度与虚化程度",
+      "大光圈适合人像，小光圈适合风景与全景深"
+     ]
     },
     {
      "no": 43,
@@ -552,7 +763,12 @@
      "cid": 895523345,
      "durationSec": 243,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "快门速度控制曝光时间，也决定运动物体是清晰还是拖影",
+      "常用 180 度规则，快门速度约为帧率的两倍",
+      "高速快门凝固动作，慢速快门制造流动感"
+     ]
     },
     {
      "no": 44,
@@ -562,7 +778,12 @@
      "cid": 895524065,
      "durationSec": 241,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "ISO 控制传感器感光灵敏度，越高画面越亮但噪点越多",
+      "低 ISO 保证画质，弱光下才适当提高",
+      "ISO 与光圈、快门共同构成曝光三角"
+     ]
     },
     {
      "no": 45,
@@ -572,7 +793,12 @@
      "cid": 895533822,
      "durationSec": 406,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "焦距决定视角与透视：短焦广、长焦窄",
+      "景深随光圈、焦距、物距变化：光圈小、焦距短、物距远则景深大",
+      "对焦位置决定主体的清晰范围"
+     ]
     },
     {
      "no": 46,
@@ -582,7 +808,12 @@
      "cid": 895525601,
      "durationSec": 473,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "曝光三角：光圈、快门、ISO 三者此消彼长",
+      "焦距与景深的组合决定画面观感与叙事距离",
+      "设备参数要为叙事服务，不是堆参数"
+     ]
     }
    ],
    "goal": "理解光圈、快门、ISO、焦距与景深的物理关系，能读懂并记录拍摄参数。",
@@ -609,7 +840,12 @@
      "cid": 895524944,
      "durationSec": 214,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "蒙太奇是通过镜头组接产生新含义的剪辑思维",
+      "单镜头本身中性，组接后才形成因果、情绪与观点",
+      "库里肖夫效应说明观众会主动补全镜头间的关系"
+     ]
     },
     {
      "no": 48,
@@ -619,7 +855,12 @@
      "cid": 895528011,
      "durationSec": 342,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "平行蒙太奇同时叙述两条或多条线索，交替出现",
+      "常用于制造悬念与对比，强化主题关联",
+      "线索之间用相似元素或节奏呼应"
+     ]
     },
     {
      "no": 49,
@@ -629,7 +870,12 @@
      "cid": 895526288,
      "durationSec": 224,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "把同时同地的两条动作线快速交替，制造紧张",
+      "常见于追逐、救援场面，节奏逐步加快",
+      "两条线通常在同一个危机时刻汇合"
+     ]
     },
     {
      "no": 50,
@@ -639,7 +885,12 @@
      "cid": 895528800,
      "durationSec": 396,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "颠倒蒙太奇打乱时间顺序，用于倒叙、插叙与悬念",
+      "打乱时间需要清晰的时间锚点，否则观众会混乱",
+      "常用于悬疑片揭示真相"
+     ]
     },
     {
      "no": 51,
@@ -649,7 +900,12 @@
      "cid": 895530241,
      "durationSec": 226,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "连续蒙太奇按时间顺序线性叙事，节奏平实",
+      "强调过程的连贯性与真实感",
+      "靠景别与机位变化避免单调"
+     ]
     },
     {
      "no": 52,
@@ -659,7 +915,12 @@
      "cid": 895532484,
      "durationSec": 437,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "心理蒙太奇表现人物内心：回忆、梦境与幻觉",
+      "常用虚实交替、变形、重复等手法",
+      "与人物心理节奏结合，服务情绪表达"
+     ]
     },
     {
      "no": 53,
@@ -669,7 +930,12 @@
      "cid": 895530065,
      "durationSec": 367,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "通过镜头并置产生比喻含义，用相似性暗示主题",
+      "隐喻意象要与叙事相关，不能生硬拼接",
+      "隐喻要节制，过度会让观众出戏"
+     ]
     },
     {
      "no": 54,
@@ -679,7 +945,12 @@
      "cid": 895534912,
      "durationSec": 362,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "把内容或形式相反的画面组接，强调差异",
+      "常用贫富、冷暖、动静三类对比",
+      "对比点要明确，避免为对比而对比"
+     ]
     },
     {
      "no": 55,
@@ -689,7 +960,12 @@
      "cid": 895543006,
      "durationSec": 589,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "广义剪辑包括镜头选择、顺序安排与节奏控制",
+      "节奏由镜头时长、景别变化与音乐共同决定",
+      "剪辑服务叙事逻辑与观众注意力管理"
+     ]
     },
     {
      "no": 56,
@@ -699,7 +975,12 @@
      "cid": 895539897,
      "durationSec": 739,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "动接动：前后镜头的运动方向或速度要衔接",
+      "静接静：静态镜头组接保持视觉稳定",
+      "动静转换需过渡镜头或匹配动作，避免突兀"
+     ]
     }
    ],
    "goal": "掌握七种蒙太奇类型与剪辑连接原则，能用镜头组接生成新的含义。",
@@ -725,7 +1006,12 @@
      "cid": 895535653,
      "durationSec": 332,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "RGB 是加色模式（屏幕发光），CMYK 是减色模式（印刷油墨）",
+      "视频调色工作在 RGB 空间，印刷输出需转 CMYK",
+      "色域不同导致屏幕与印刷的颜色偏差"
+     ]
     },
     {
      "no": 58,
@@ -735,7 +1021,12 @@
      "cid": 895537060,
      "durationSec": 268,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "互补色在色环上相对：红青、蓝橙、绿品红，对比强烈",
+      "相邻色搭配协调统一，适合日常氛围",
+      "互补色强调冲突，相邻色统一基调"
+     ]
     },
     {
      "no": 59,
@@ -745,7 +1036,12 @@
      "cid": 895535990,
      "durationSec": 146,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "HSL 分别表示色相、饱和度、亮度三个维度",
+      "可单独调整某一色相而不影响整体明度",
+      "HSL 二级调色用于肤色与天空的精准控制"
+     ]
     },
     {
      "no": 60,
@@ -755,7 +1051,12 @@
      "cid": 895546323,
      "durationSec": 779,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "暖色调传达热情、危险与温暖",
+      "冷色调传达冷静、科技与疏离",
+      "低饱和低对比偏文艺复古，高饱和高对比偏商业冲击"
+     ]
     },
     {
      "no": 61,
@@ -765,7 +1066,12 @@
      "cid": 895554656,
      "durationSec": 282,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "蓝橙、青橙、黑金、莫兰迪低饱和是常见的电影感配色",
+      "互补撞色适合海报与商业片头",
+      "统一色相后加入一个跳色作为视觉重点"
+     ]
     },
     {
      "no": 62,
@@ -775,7 +1081,12 @@
      "cid": 895547543,
      "durationSec": 1093,
      "sizeMB": 0,
-     "bvid": "BV1Tv4y1S7CJ"
+     "bvid": "BV1Tv4y1S7CJ",
+     "keypoints": [
+      "Lumetri 一级校正：白平衡、曝光、对比度先做准",
+      "二级风格化用色轮与曲线分别调整阴影、中间调、高光",
+      "输出前用示波器检查亮度与饱和度是否超限"
+     ]
     }
    ],
    "goal": "掌握色彩原理与 Lumetri 调色流程，完成一级校正与风格化调色。",
@@ -836,6 +1147,2286 @@
    "用同一段素材剪 2 个版本（紧张与舒缓），只改变镜头顺序与单镜时长。",
    "完成 1 段 30 秒练习，组合延时拍摄与抽帧手法，并解释节奏设计。",
    "用 Lumetri 完成 1 段素材的一级校正与风格化调色，输出前后对比图。"
+  ]
+ },
+ "graph": {
+  "nodes": [
+   {
+    "id": "course",
+    "label": "63 节视听语言课",
+    "type": "course",
+    "group": 0
+   },
+   {
+    "id": "m1",
+    "label": "景别",
+    "type": "module",
+    "group": 1
+   },
+   {
+    "id": "m1-k0",
+    "label": "远景与全景交代环境、规模与人物关系",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k1",
+    "label": "中近景与近景承载情绪、表情与关键细节",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k2",
+    "label": "取景边界处理：头顶留白、关节切点、视线空间",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k3",
+    "label": "景别与单镜时长、剪辑节奏的配合",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k4",
+    "label": "远景交代环境、规模与人物关系，人物在画面中占比很小",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k5",
+    "label": "远景常用于开场定场与结尾收束，营造宏大或孤独感",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k6",
+    "label": "镜头停留时间较长，给观众消化空间信息的时间",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k7",
+    "label": "全景完整呈现人物全身与所处环境，动作与姿态清晰可读",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k8",
+    "label": "全景是动作场面与打斗、舞蹈的基础景别",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k9",
+    "label": "取景注意头顶留白与脚下空间，避免切脚",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k10",
+    "label": "中近景取人物腰部以上，兼顾表情与肢体语言",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k11",
+    "label": "对话场景最常用，信息量与情绪表达平衡",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k12",
+    "label": "过肩中近景带出对方肩部，建立对话关系",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k13",
+    "label": "近景取胸部以上，突出表情与情绪变化",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k14",
+    "label": "近景压缩环境信息，把注意力拉向人物内心",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k15",
+    "label": "对表演与光线要求更高，瑕疵会被放大",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m2",
+    "label": "全部课时",
+    "type": "module",
+    "group": 2
+   },
+   {
+    "id": "m2-k0",
+    "label": "影视后期工作流程：素材接收、粗剪、精剪、调色、输出、交付",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k1",
+    "label": "常见岗位分工与技能要求",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k2",
+    "label": "素材管理与项目管理规范",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k3",
+    "label": "接单流程、报价参考与交付标准",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k4",
+    "label": "影视后期流程：素材整理、粗剪、精剪、调色、混音、输出交付",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k5",
+    "label": "岗位分工：剪辑、调色、特效、包装、制片各自职责不同",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k6",
+    "label": "接单变现路径：作品集、渠道、报价与合同规范",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k7",
+    "label": "工程文件管理与命名规范决定协作效率",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m3",
+    "label": "构图",
+    "type": "module",
+    "group": 3
+   },
+   {
+    "id": "m3-k0",
+    "label": "三分法与引导线的视线牵引",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k1",
+    "label": "留白的呼吸感与情绪留白",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k2",
+    "label": "中心法与对称法营造仪式感、稳定感",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k3",
+    "label": "框架式构图的纵深感与窥视感",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k4",
+    "label": "景深与色调对主体的分离作用",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k5",
+    "label": "三分法把画面分为九宫格，主体放在交点或分割线上",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k6",
+    "label": "引导线（道路、栏杆、光线）把视线引向主体",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k7",
+    "label": "地平线放在上三分线或下三分线，避免居中切割画面",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k8",
+    "label": "留白给画面呼吸感，也用于表达孤独、悬念与期待",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k9",
+    "label": "人物视线前方留白多于身后，符合观众心理预期",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k10",
+    "label": "留白不等于空，背景需有信息但不抢主体",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k11",
+    "label": "中心构图把主体放在画面正中，强调稳定与仪式感",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k12",
+    "label": "适合正面人物、建筑对称与强冲击画面",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k13",
+    "label": "中心易呆板，可用光影或前景打破僵局",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k14",
+    "label": "对称构图制造平衡、秩序与庄重感",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k15",
+    "label": "严格对称适合建筑与仪式场景，近似对称更自然",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m4",
+    "label": "打光",
+    "type": "module",
+    "group": 4
+   },
+   {
+    "id": "m4-k0",
+    "label": "硬光与软光的质感差异及阴影边缘特征",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k1",
+    "label": "测光方式与曝光控制",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k2",
+    "label": "逆光、轮廓光与剪影效果",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k3",
+    "label": "白平衡与色温带来的情绪偏移",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k4",
+    "label": "辅助光、眼神光与阴影提亮",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k5",
+    "label": "硬光方向性强、阴影边缘锐利，适合表现力量与冲突",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k6",
+    "label": "柔光过渡平缓，适合人物与美感表达",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k7",
+    "label": "光源面积决定光的软硬，面积越大越柔",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k8",
+    "label": "测光决定曝光基准：点测光、中央重点、评价测光适用不同场景",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k9",
+    "label": "高光不过曝、暗部保留细节是曝光基本原则",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k10",
+    "label": "大光比场景用包围曝光或补光平衡",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k11",
+    "label": "逆光勾出主体轮廓，制造剪影与氛围感",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k12",
+    "label": "逆光需要补光或反光板提亮面部，避免死黑",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k13",
+    "label": "注意镜头眩光与对比度下降",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k14",
+    "label": "顶光压抑、底光诡异、侧光立体，方向决定人物气质暗示",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k15",
+    "label": "三点布光：主光、补光、轮廓光分工明确",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m5",
+    "label": "机位",
+    "type": "module",
+    "group": 5
+   },
+   {
+    "id": "m5-k0",
+    "label": "正面、侧面、斜侧面、背面机位的信息量与情绪",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k1",
+    "label": "仰视与俯视形成的权力关系",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k2",
+    "label": "不稳定构图与倾斜地平线的焦虑感",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k3",
+    "label": "机位与景别、焦距的组合效果",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k4",
+    "label": "正面机位平等、直接，适合对话与人物介绍",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k5",
+    "label": "正面缺乏纵深容易呆板，需靠光线与背景补救",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k6",
+    "label": "正面近景有强烈的直视压迫感",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k7",
+    "label": "侧面强调人物轮廓与运动方向，适合行走与追逐",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k8",
+    "label": "侧面隐藏表情，制造神秘或疏离感",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k9",
+    "label": "侧面构图要注意视线方向的空间分配",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k10",
+    "label": "斜侧面（四分之三侧）最接近日常观察，立体感强",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k11",
+    "label": "兼顾轮廓与表情，是对话场景常用机位",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k12",
+    "label": "配合下颌线光影可强化人物立体感",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k13",
+    "label": "背面机位制造悬念，让观众代入人物视角",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k14",
+    "label": "适合表现孤独、离别与未知",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k15",
+    "label": "背面镜头常与正面镜头组接形成揭示",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m6",
+    "label": "摄像机移动",
+    "type": "module",
+    "group": 6
+   },
+   {
+    "id": "m6-k0",
+    "label": "推镜的强调作用与拉镜的信息揭示",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k1",
+    "label": "摇镜的空间展示与视线转移",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k2",
+    "label": "移镜与跟镜带来的代入感和跟随感",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k3",
+    "label": "环绕镜头的仪式感与实拍、特效实现方式",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k4",
+    "label": "运动镜头的起幅落幅与稳定控制",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k5",
+    "label": "推镜引导观众靠近主体，强化情绪与关注",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k6",
+    "label": "推镜速度决定紧迫感，缓慢推营造沉浸与悬念",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k7",
+    "label": "起幅与落幅要稳，避免卡顿与失焦",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k8",
+    "label": "拉镜揭示环境、交代人物处境，制造孤立感",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k9",
+    "label": "常作为结尾镜头，形成情绪抽离",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k10",
+    "label": "拉镜时注意背景信息的逐步显露",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k11",
+    "label": "摇镜在同一机位转动，用于展示空间或跟随视线",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k12",
+    "label": "摇镜速度与内容节奏匹配，避免过快造成模糊",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k13",
+    "label": "可连接两个空间信息，形成因果暗示",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k14",
+    "label": "移镜平行移动，主体比例稳定而背景透视持续变化",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k15",
+    "label": "横移适合展示环境与人物行走",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m7",
+    "label": "轴线",
+    "type": "module",
+    "group": 7
+   },
+   {
+    "id": "m7-k0",
+    "label": "关系轴线与运动轴线的判定",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k1",
+    "label": "骑轴镜头的用法与适用场合",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k2",
+    "label": "三种合法越轴手段：移动镜头、空镜、中性镜头",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k3",
+    "label": "焦距与景别变化对轴线感知的影响",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k4",
+    "label": "双人对话场景的机位三角形布置",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k5",
+    "label": "骑轴即摄像机位于关系轴线上，正对人物拍摄",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k6",
+    "label": "骑轴镜头压迫感强，常用于对话开场与主观视角",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k7",
+    "label": "骑轴会暴露轴线位置，需要谨慎使用",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k8",
+    "label": "越轴会导致人物视线方向反置，观众失去空间方位感",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k9",
+    "label": "合法越轴手段：移动摄影机、中性镜头过渡、人物走位",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k10",
+    "label": "空境可作为越轴缓冲，帮助观众重置方位感",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k11",
+    "label": "广角焦距短、视角大，透视夸张、纵深感强",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k12",
+    "label": "近距离广角放大前景，拉开前景与背景的距离",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k13",
+    "label": "广角适合环境交代与主观视角，人物近拍容易变形",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k14",
+    "label": "中焦约 50mm，接近人眼视角，透视自然",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k15",
+    "label": "适合对话与写实叙事，人物不易变形",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m8",
+    "label": "摄像机基础",
+    "type": "module",
+    "group": 8
+   },
+   {
+    "id": "m8-k0",
+    "label": "光圈与进光量、景深的关系",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k1",
+    "label": "快门速度与运动模糊",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k2",
+    "label": "ISO 与画面噪点",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k3",
+    "label": "焦点、焦距与景深范围",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k4",
+    "label": "拍摄设备与辅助器材的认识",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k5",
+    "label": "常见设备：单反、微单、电影机、稳定器、三脚架与滑轨",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k6",
+    "label": "卡口与画幅尺寸影响景深与视角",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k7",
+    "label": "录音与监看设备同样决定成片质量",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k8",
+    "label": "光圈 f 值越小进光越多、景深越浅",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k9",
+    "label": "光圈同时影响画面亮度与虚化程度",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k10",
+    "label": "大光圈适合人像，小光圈适合风景与全景深",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k11",
+    "label": "快门速度控制曝光时间，也决定运动物体是清晰还是拖影",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k12",
+    "label": "常用 180 度规则，快门速度约为帧率的两倍",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k13",
+    "label": "高速快门凝固动作，慢速快门制造流动感",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k14",
+    "label": "ISO 控制传感器感光灵敏度，越高画面越亮但噪点越多",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m8-k15",
+    "label": "低 ISO 保证画质，弱光下才适当提高",
+    "type": "concept",
+    "group": 8
+   },
+   {
+    "id": "m9",
+    "label": "蒙太奇",
+    "type": "module",
+    "group": 9
+   },
+   {
+    "id": "m9-k0",
+    "label": "平行、交叉、颠倒、连续蒙太奇的结构差异",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k1",
+    "label": "心理、隐喻、对比蒙太奇的表达机制",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k2",
+    "label": "广义剪辑与镜头内部剪辑",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k3",
+    "label": "动接动、静接静的连接原则与例外",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k4",
+    "label": "蒙太奇是通过镜头组接产生新含义的剪辑思维",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k5",
+    "label": "单镜头本身中性，组接后才形成因果、情绪与观点",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k6",
+    "label": "库里肖夫效应说明观众会主动补全镜头间的关系",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k7",
+    "label": "平行蒙太奇同时叙述两条或多条线索，交替出现",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k8",
+    "label": "常用于制造悬念与对比，强化主题关联",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k9",
+    "label": "线索之间用相似元素或节奏呼应",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k10",
+    "label": "把同时同地的两条动作线快速交替，制造紧张",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k11",
+    "label": "常见于追逐、救援场面，节奏逐步加快",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k12",
+    "label": "两条线通常在同一个危机时刻汇合",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k13",
+    "label": "颠倒蒙太奇打乱时间顺序，用于倒叙、插叙与悬念",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k14",
+    "label": "打乱时间需要清晰的时间锚点，否则观众会混乱",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m9-k15",
+    "label": "常用于悬疑片揭示真相",
+    "type": "concept",
+    "group": 9
+   },
+   {
+    "id": "m10",
+    "label": "调色",
+    "type": "module",
+    "group": 10
+   },
+   {
+    "id": "m10-k0",
+    "label": "RGB 与 CMYK 的差异与适用场景",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k1",
+    "label": "互补色与相邻色的配色规律",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k2",
+    "label": "HSL 色彩空间的三个维度",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k3",
+    "label": "色彩印象与常见电影配色",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k4",
+    "label": "Lumetri 范围、基础校正、创意、曲线、色轮与 HSL 辅助的使用顺序",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k5",
+    "label": "RGB 是加色模式（屏幕发光），CMYK 是减色模式（印刷油墨）",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k6",
+    "label": "视频调色工作在 RGB 空间，印刷输出需转 CMYK",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k7",
+    "label": "色域不同导致屏幕与印刷的颜色偏差",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k8",
+    "label": "互补色在色环上相对：红青、蓝橙、绿品红，对比强烈",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k9",
+    "label": "相邻色搭配协调统一，适合日常氛围",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k10",
+    "label": "互补色强调冲突，相邻色统一基调",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k11",
+    "label": "HSL 分别表示色相、饱和度、亮度三个维度",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k12",
+    "label": "可单独调整某一色相而不影响整体明度",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k13",
+    "label": "HSL 二级调色用于肤色与天空的精准控制",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k14",
+    "label": "暖色调传达热情、危险与温暖",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "m10-k15",
+    "label": "冷色调传达冷静、科技与疏离",
+    "type": "concept",
+    "group": 10
+   },
+   {
+    "id": "root-k0",
+    "label": "景别划分与取景：远景、全景、中近景、近景的信息量与情绪差异",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k1",
+    "label": "构图方法：引导线三分法、留白、中心法、对称法、框架式、景深与色调",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k2",
+    "label": "光线：光的质感、测光、逆光、白平衡与色温情绪",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k3",
+    "label": "机位：正面、侧面、斜侧面、背面，仰视与俯视，不稳定构图",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k4",
+    "label": "摄像机移动：推、拉、摇、移、跟、环绕的起幅落幅处理",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k5",
+    "label": "轴线规律、骑轴镜头与三种合法越轴手段",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k6",
+    "label": "镜头焦距：广角、中焦、长焦，焦点与逆向变焦",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k7",
+    "label": "时间技巧：升格、逐格与定格、延时拍摄、抽帧",
+    "type": "concept",
+    "group": 0
+   }
+  ],
+  "links": [
+   {
+    "source": "course",
+    "target": "m1"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k0"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k1"
+   },
+   {
+    "source": "m1-k0",
+    "target": "m1-k1"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k2"
+   },
+   {
+    "source": "m1-k1",
+    "target": "m1-k2"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k3"
+   },
+   {
+    "source": "m1-k2",
+    "target": "m1-k3"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k4"
+   },
+   {
+    "source": "m1-k3",
+    "target": "m1-k4"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k5"
+   },
+   {
+    "source": "m1-k4",
+    "target": "m1-k5"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k6"
+   },
+   {
+    "source": "m1-k5",
+    "target": "m1-k6"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k7"
+   },
+   {
+    "source": "m1-k6",
+    "target": "m1-k7"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k8"
+   },
+   {
+    "source": "m1-k7",
+    "target": "m1-k8"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k9"
+   },
+   {
+    "source": "m1-k8",
+    "target": "m1-k9"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k10"
+   },
+   {
+    "source": "m1-k9",
+    "target": "m1-k10"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k11"
+   },
+   {
+    "source": "m1-k10",
+    "target": "m1-k11"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k12"
+   },
+   {
+    "source": "m1-k11",
+    "target": "m1-k12"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k13"
+   },
+   {
+    "source": "m1-k12",
+    "target": "m1-k13"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k14"
+   },
+   {
+    "source": "m1-k13",
+    "target": "m1-k14"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k15"
+   },
+   {
+    "source": "m1-k14",
+    "target": "m1-k15"
+   },
+   {
+    "source": "course",
+    "target": "m2"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k0"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k1"
+   },
+   {
+    "source": "m2-k0",
+    "target": "m2-k1"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k2"
+   },
+   {
+    "source": "m2-k1",
+    "target": "m2-k2"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k3"
+   },
+   {
+    "source": "m2-k2",
+    "target": "m2-k3"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k4"
+   },
+   {
+    "source": "m2-k3",
+    "target": "m2-k4"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k5"
+   },
+   {
+    "source": "m2-k4",
+    "target": "m2-k5"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k6"
+   },
+   {
+    "source": "m2-k5",
+    "target": "m2-k6"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k7"
+   },
+   {
+    "source": "m2-k6",
+    "target": "m2-k7"
+   },
+   {
+    "source": "course",
+    "target": "m3"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k0"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k1"
+   },
+   {
+    "source": "m3-k0",
+    "target": "m3-k1"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k2"
+   },
+   {
+    "source": "m3-k1",
+    "target": "m3-k2"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k3"
+   },
+   {
+    "source": "m3-k2",
+    "target": "m3-k3"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k4"
+   },
+   {
+    "source": "m3-k3",
+    "target": "m3-k4"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k5"
+   },
+   {
+    "source": "m3-k4",
+    "target": "m3-k5"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k6"
+   },
+   {
+    "source": "m3-k5",
+    "target": "m3-k6"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k7"
+   },
+   {
+    "source": "m3-k6",
+    "target": "m3-k7"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k8"
+   },
+   {
+    "source": "m3-k7",
+    "target": "m3-k8"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k9"
+   },
+   {
+    "source": "m3-k8",
+    "target": "m3-k9"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k10"
+   },
+   {
+    "source": "m3-k9",
+    "target": "m3-k10"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k11"
+   },
+   {
+    "source": "m3-k10",
+    "target": "m3-k11"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k12"
+   },
+   {
+    "source": "m3-k11",
+    "target": "m3-k12"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k13"
+   },
+   {
+    "source": "m3-k12",
+    "target": "m3-k13"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k14"
+   },
+   {
+    "source": "m3-k13",
+    "target": "m3-k14"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k15"
+   },
+   {
+    "source": "m3-k14",
+    "target": "m3-k15"
+   },
+   {
+    "source": "course",
+    "target": "m4"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k0"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k1"
+   },
+   {
+    "source": "m4-k0",
+    "target": "m4-k1"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k2"
+   },
+   {
+    "source": "m4-k1",
+    "target": "m4-k2"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k3"
+   },
+   {
+    "source": "m4-k2",
+    "target": "m4-k3"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k4"
+   },
+   {
+    "source": "m4-k3",
+    "target": "m4-k4"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k5"
+   },
+   {
+    "source": "m4-k4",
+    "target": "m4-k5"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k6"
+   },
+   {
+    "source": "m4-k5",
+    "target": "m4-k6"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k7"
+   },
+   {
+    "source": "m4-k6",
+    "target": "m4-k7"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k8"
+   },
+   {
+    "source": "m4-k7",
+    "target": "m4-k8"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k9"
+   },
+   {
+    "source": "m4-k8",
+    "target": "m4-k9"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k10"
+   },
+   {
+    "source": "m4-k9",
+    "target": "m4-k10"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k11"
+   },
+   {
+    "source": "m4-k10",
+    "target": "m4-k11"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k12"
+   },
+   {
+    "source": "m4-k11",
+    "target": "m4-k12"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k13"
+   },
+   {
+    "source": "m4-k12",
+    "target": "m4-k13"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k14"
+   },
+   {
+    "source": "m4-k13",
+    "target": "m4-k14"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k15"
+   },
+   {
+    "source": "m4-k14",
+    "target": "m4-k15"
+   },
+   {
+    "source": "course",
+    "target": "m5"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k0"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k1"
+   },
+   {
+    "source": "m5-k0",
+    "target": "m5-k1"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k2"
+   },
+   {
+    "source": "m5-k1",
+    "target": "m5-k2"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k3"
+   },
+   {
+    "source": "m5-k2",
+    "target": "m5-k3"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k4"
+   },
+   {
+    "source": "m5-k3",
+    "target": "m5-k4"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k5"
+   },
+   {
+    "source": "m5-k4",
+    "target": "m5-k5"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k6"
+   },
+   {
+    "source": "m5-k5",
+    "target": "m5-k6"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k7"
+   },
+   {
+    "source": "m5-k6",
+    "target": "m5-k7"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k8"
+   },
+   {
+    "source": "m5-k7",
+    "target": "m5-k8"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k9"
+   },
+   {
+    "source": "m5-k8",
+    "target": "m5-k9"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k10"
+   },
+   {
+    "source": "m5-k9",
+    "target": "m5-k10"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k11"
+   },
+   {
+    "source": "m5-k10",
+    "target": "m5-k11"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k12"
+   },
+   {
+    "source": "m5-k11",
+    "target": "m5-k12"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k13"
+   },
+   {
+    "source": "m5-k12",
+    "target": "m5-k13"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k14"
+   },
+   {
+    "source": "m5-k13",
+    "target": "m5-k14"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k15"
+   },
+   {
+    "source": "m5-k14",
+    "target": "m5-k15"
+   },
+   {
+    "source": "course",
+    "target": "m6"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k0"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k1"
+   },
+   {
+    "source": "m6-k0",
+    "target": "m6-k1"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k2"
+   },
+   {
+    "source": "m6-k1",
+    "target": "m6-k2"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k3"
+   },
+   {
+    "source": "m6-k2",
+    "target": "m6-k3"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k4"
+   },
+   {
+    "source": "m6-k3",
+    "target": "m6-k4"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k5"
+   },
+   {
+    "source": "m6-k4",
+    "target": "m6-k5"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k6"
+   },
+   {
+    "source": "m6-k5",
+    "target": "m6-k6"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k7"
+   },
+   {
+    "source": "m6-k6",
+    "target": "m6-k7"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k8"
+   },
+   {
+    "source": "m6-k7",
+    "target": "m6-k8"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k9"
+   },
+   {
+    "source": "m6-k8",
+    "target": "m6-k9"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k10"
+   },
+   {
+    "source": "m6-k9",
+    "target": "m6-k10"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k11"
+   },
+   {
+    "source": "m6-k10",
+    "target": "m6-k11"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k12"
+   },
+   {
+    "source": "m6-k11",
+    "target": "m6-k12"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k13"
+   },
+   {
+    "source": "m6-k12",
+    "target": "m6-k13"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k14"
+   },
+   {
+    "source": "m6-k13",
+    "target": "m6-k14"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k15"
+   },
+   {
+    "source": "m6-k14",
+    "target": "m6-k15"
+   },
+   {
+    "source": "course",
+    "target": "m7"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k0"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k1"
+   },
+   {
+    "source": "m7-k0",
+    "target": "m7-k1"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k2"
+   },
+   {
+    "source": "m7-k1",
+    "target": "m7-k2"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k3"
+   },
+   {
+    "source": "m7-k2",
+    "target": "m7-k3"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k4"
+   },
+   {
+    "source": "m7-k3",
+    "target": "m7-k4"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k5"
+   },
+   {
+    "source": "m7-k4",
+    "target": "m7-k5"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k6"
+   },
+   {
+    "source": "m7-k5",
+    "target": "m7-k6"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k7"
+   },
+   {
+    "source": "m7-k6",
+    "target": "m7-k7"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k8"
+   },
+   {
+    "source": "m7-k7",
+    "target": "m7-k8"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k9"
+   },
+   {
+    "source": "m7-k8",
+    "target": "m7-k9"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k10"
+   },
+   {
+    "source": "m7-k9",
+    "target": "m7-k10"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k11"
+   },
+   {
+    "source": "m7-k10",
+    "target": "m7-k11"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k12"
+   },
+   {
+    "source": "m7-k11",
+    "target": "m7-k12"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k13"
+   },
+   {
+    "source": "m7-k12",
+    "target": "m7-k13"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k14"
+   },
+   {
+    "source": "m7-k13",
+    "target": "m7-k14"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k15"
+   },
+   {
+    "source": "m7-k14",
+    "target": "m7-k15"
+   },
+   {
+    "source": "course",
+    "target": "m8"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k0"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k1"
+   },
+   {
+    "source": "m8-k0",
+    "target": "m8-k1"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k2"
+   },
+   {
+    "source": "m8-k1",
+    "target": "m8-k2"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k3"
+   },
+   {
+    "source": "m8-k2",
+    "target": "m8-k3"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k4"
+   },
+   {
+    "source": "m8-k3",
+    "target": "m8-k4"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k5"
+   },
+   {
+    "source": "m8-k4",
+    "target": "m8-k5"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k6"
+   },
+   {
+    "source": "m8-k5",
+    "target": "m8-k6"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k7"
+   },
+   {
+    "source": "m8-k6",
+    "target": "m8-k7"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k8"
+   },
+   {
+    "source": "m8-k7",
+    "target": "m8-k8"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k9"
+   },
+   {
+    "source": "m8-k8",
+    "target": "m8-k9"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k10"
+   },
+   {
+    "source": "m8-k9",
+    "target": "m8-k10"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k11"
+   },
+   {
+    "source": "m8-k10",
+    "target": "m8-k11"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k12"
+   },
+   {
+    "source": "m8-k11",
+    "target": "m8-k12"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k13"
+   },
+   {
+    "source": "m8-k12",
+    "target": "m8-k13"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k14"
+   },
+   {
+    "source": "m8-k13",
+    "target": "m8-k14"
+   },
+   {
+    "source": "m8",
+    "target": "m8-k15"
+   },
+   {
+    "source": "m8-k14",
+    "target": "m8-k15"
+   },
+   {
+    "source": "course",
+    "target": "m9"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k0"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k1"
+   },
+   {
+    "source": "m9-k0",
+    "target": "m9-k1"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k2"
+   },
+   {
+    "source": "m9-k1",
+    "target": "m9-k2"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k3"
+   },
+   {
+    "source": "m9-k2",
+    "target": "m9-k3"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k4"
+   },
+   {
+    "source": "m9-k3",
+    "target": "m9-k4"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k5"
+   },
+   {
+    "source": "m9-k4",
+    "target": "m9-k5"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k6"
+   },
+   {
+    "source": "m9-k5",
+    "target": "m9-k6"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k7"
+   },
+   {
+    "source": "m9-k6",
+    "target": "m9-k7"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k8"
+   },
+   {
+    "source": "m9-k7",
+    "target": "m9-k8"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k9"
+   },
+   {
+    "source": "m9-k8",
+    "target": "m9-k9"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k10"
+   },
+   {
+    "source": "m9-k9",
+    "target": "m9-k10"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k11"
+   },
+   {
+    "source": "m9-k10",
+    "target": "m9-k11"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k12"
+   },
+   {
+    "source": "m9-k11",
+    "target": "m9-k12"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k13"
+   },
+   {
+    "source": "m9-k12",
+    "target": "m9-k13"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k14"
+   },
+   {
+    "source": "m9-k13",
+    "target": "m9-k14"
+   },
+   {
+    "source": "m9",
+    "target": "m9-k15"
+   },
+   {
+    "source": "m9-k14",
+    "target": "m9-k15"
+   },
+   {
+    "source": "course",
+    "target": "m10"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k0"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k1"
+   },
+   {
+    "source": "m10-k0",
+    "target": "m10-k1"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k2"
+   },
+   {
+    "source": "m10-k1",
+    "target": "m10-k2"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k3"
+   },
+   {
+    "source": "m10-k2",
+    "target": "m10-k3"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k4"
+   },
+   {
+    "source": "m10-k3",
+    "target": "m10-k4"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k5"
+   },
+   {
+    "source": "m10-k4",
+    "target": "m10-k5"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k6"
+   },
+   {
+    "source": "m10-k5",
+    "target": "m10-k6"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k7"
+   },
+   {
+    "source": "m10-k6",
+    "target": "m10-k7"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k8"
+   },
+   {
+    "source": "m10-k7",
+    "target": "m10-k8"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k9"
+   },
+   {
+    "source": "m10-k8",
+    "target": "m10-k9"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k10"
+   },
+   {
+    "source": "m10-k9",
+    "target": "m10-k10"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k11"
+   },
+   {
+    "source": "m10-k10",
+    "target": "m10-k11"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k12"
+   },
+   {
+    "source": "m10-k11",
+    "target": "m10-k12"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k13"
+   },
+   {
+    "source": "m10-k12",
+    "target": "m10-k13"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k14"
+   },
+   {
+    "source": "m10-k13",
+    "target": "m10-k14"
+   },
+   {
+    "source": "m10",
+    "target": "m10-k15"
+   },
+   {
+    "source": "m10-k14",
+    "target": "m10-k15"
+   },
+   {
+    "source": "course",
+    "target": "root-k0"
+   },
+   {
+    "source": "course",
+    "target": "root-k1"
+   },
+   {
+    "source": "course",
+    "target": "root-k2"
+   },
+   {
+    "source": "course",
+    "target": "root-k3"
+   },
+   {
+    "source": "course",
+    "target": "root-k4"
+   },
+   {
+    "source": "course",
+    "target": "root-k5"
+   },
+   {
+    "source": "course",
+    "target": "root-k6"
+   },
+   {
+    "source": "course",
+    "target": "root-k7"
+   }
   ]
  }
 }

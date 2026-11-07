@@ -16,7 +16,13 @@
      "cid": 31111121306,
      "durationSec": 5048,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "项目、序列、素材的层级关系：项目装序列，序列装素材",
+      "粗剪→精剪→转场字幕→调色混音→输出的完整剪辑流程",
+      "剪辑师与剪辑助理的岗位分工及交付标准",
+      "新手学习路径与高频快捷键的练习方法"
+     ]
     }
    ],
    "goal": "建立剪辑的整体认知，了解影视剪辑的工作流程与学习路径。",
@@ -42,7 +48,13 @@
      "cid": 30854414960,
      "durationSec": 281,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "首选项里设置自动保存间隔与项目自动备份",
+      "媒体缓存与临时文件放到独立磁盘，避免占满系统盘",
+      "音频硬件、默认时间基（帧率）等基础参数设置",
+      "保存自定义工作区，固定常用面板布局"
+     ]
     },
     {
      "no": 3,
@@ -52,7 +64,13 @@
      "cid": 30854414826,
      "durationSec": 607,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "项目、源监视器、节目监视器、时间轴四大面板的分工",
+      "面板拖拽分组与浮动窗口的使用方式",
+      "工作区菜单切换及面板菜单（汉堡菜单）操作",
+      "双击面板标题最大化、快捷键快速定位面板"
+     ]
     },
     {
      "no": 4,
@@ -62,7 +80,13 @@
      "cid": 30854415353,
      "durationSec": 548,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "按剪辑习惯自定义工作区并保存，下次一键恢复",
+      "重置为保存的布局，解决面板拖乱的问题",
+      "把面板拖到第二显示器扩展工作区",
+      "面板分组与快捷键配合提升操作效率"
+     ]
     },
     {
      "no": 5,
@@ -72,7 +96,13 @@
      "cid": 30854415421,
      "durationSec": 333,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "用媒体浏览器或直接拖拽把素材导入项目",
+      "双击项目面板空白处打开导入窗口，支持多选多素材",
+      "导入时创建素材箱并规范命名",
+      "分层 PSD、序列与音频文件的导入选项设置"
+     ]
     },
     {
      "no": 6,
@@ -82,7 +112,13 @@
      "cid": 30854415492,
      "durationSec": 541,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "图标视图与列表视图切换，理解各信息列含义",
+      "新建素材箱按项目、场次、素材类型分类整理",
+      "列表视图查看帧率、时长、媒体起始与文件路径",
+      "用搜索框按名称查找并筛选素材"
+     ]
     },
     {
      "no": 7,
@@ -92,7 +128,13 @@
      "cid": 30854415788,
      "durationSec": 612,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "文件→新建→序列，或对素材使用“从剪辑新建序列”匹配参数",
+      "自定义序列参数：分辨率、帧率、像素长宽比、场序",
+      "帧率与素材不一致会卡顿或抖动，先确认拍摄参数",
+      "音频采样率通常设 48kHz，序列按规范命名"
+     ]
     },
     {
      "no": 8,
@@ -102,7 +144,13 @@
      "cid": 30854416061,
      "durationSec": 620,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "轨道头的锁定、隐藏（视频）与静音（音频）按钮",
+      "目标轨道决定插入/覆盖编辑的落点",
+      "同步锁定影响波纹编辑与插入是否带动其他轨道",
+      "轨道高度调节与关键帧显示方式"
+     ]
     },
     {
      "no": 9,
@@ -112,7 +160,13 @@
      "cid": 30854416262,
      "durationSec": 598,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "吸附开关让素材边缘与其他剪辑点、标记对齐",
+      "链接选择控制视频与音频的联动选择",
+      "时间轴显示设置可切换显示视频/音频关键帧",
+      "序列零点、时间显示格式与缩放滑块的用法"
+     ]
     },
     {
      "no": 10,
@@ -122,7 +176,13 @@
      "cid": 30854416504,
      "durationSec": 462,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "快捷键 M 在播放头位置添加标记",
+      "标记可设名称、注释与颜色，用于节奏与场次标注",
+      "标记与背景音乐鼓点对位，辅助卡点剪辑",
+      "标记可快速跳转定位，也便于团队沟通"
+     ]
     },
     {
      "no": 11,
@@ -132,7 +192,13 @@
      "cid": 30854416777,
      "durationSec": 1299,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "选择工具（V）用于移动、框选与拖动素材",
+      "剃刀工具（C）在播放头处切分素材，可配合波纹删除",
+      "比率拉伸工具（R）改变素材速度并相应改变时长",
+      "滑移工具（Y）在不改变位置与时长下调整素材内容"
+     ]
     },
     {
      "no": 12,
@@ -142,7 +208,13 @@
      "cid": 30854417507,
      "durationSec": 545,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "钢笔工具绘制贝塞尔曲线遮罩，做局部效果与抠像",
+      "矩形、椭圆工具快速创建规则遮罩",
+      "文字工具（T）直接创建字幕与图形文本",
+      "手形（H）与缩放（Z）工具配合浏览时间轴与画面"
+     ]
     },
     {
      "no": 13,
@@ -152,7 +224,13 @@
      "cid": 30854418350,
      "durationSec": 279,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "子项目把序列打包成独立项目文件，便于跨工程复用",
+      "用“文件→新建→子项目”创建并在项目面板打开编辑",
+      "修改子项目会同步影响引用它的序列内容",
+      "子项目适合包装片头、片尾等可复用段落"
+     ]
     },
     {
      "no": 14,
@@ -162,7 +240,13 @@
      "cid": 30854418384,
      "durationSec": 884,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "新建项包含序列、素材箱、颜色遮罩、调整图层、透明视频等",
+      "颜色遮罩可作纯色背景，配合混合模式做底",
+      "调整图层把效果统一作用于下方所有轨道",
+      "倒计时片头与脱机文件解决测试片与素材丢失问题"
+     ]
     }
    ],
    "goal": "掌握界面、项目、序列、时间轴与工具栏等软件基础操作。",
@@ -189,7 +273,13 @@
      "cid": 30854480221,
      "durationSec": 1175,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "插入编辑（,）与覆盖编辑（.）按目标轨道决定落点",
+      "波纹删除（Shift+Delete）删除素材并自动合拢空隙",
+      "时间重映射做升格、降格与变速曲线",
+      "匹配帧与替换素材，在保持剪辑点不变的前提下换镜头"
+     ]
     },
     {
      "no": 16,
@@ -199,7 +289,13 @@
      "cid": 30854481568,
      "durationSec": 435,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "视频过渡包括交叉溶解、黑场、白场、划像等类别",
+      "Ctrl+D 在剪辑点添加默认视频过渡",
+      "转场需要两侧素材留出余量，否则出现重复帧或黑帧",
+      "过渡时长可在时间轴上拖拽边缘调整"
+     ]
     },
     {
      "no": 17,
@@ -209,7 +305,13 @@
      "cid": 30854481663,
      "durationSec": 567,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "效果面板可按类别浏览或搜索效果名称",
+      "常用视频效果：高斯模糊、裁剪、变换、色彩校正、锐化",
+      "效果控件里调参数并用关键帧做动画",
+      "调整图层叠加效果可统一作用于多段素材"
+     ]
     },
     {
      "no": 18,
@@ -219,7 +321,13 @@
      "cid": 30854482168,
      "durationSec": 448,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "超级键（Ultra Key）用吸管拾取背景色生成键控遮罩",
+      "调整遮罩生成、边缘收细与溢出抑制消除绿边",
+      "绿幕布光均匀、人物远离背景是抠干净的前提",
+      "用蒙版修补保留人物投影与半透明边缘"
+     ]
     },
     {
      "no": 19,
@@ -229,7 +337,13 @@
      "cid": 30854482920,
      "durationSec": 421,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "Ctrl+Shift+D 在音频剪辑点添加默认音频过渡",
+      "恒定功率适合交叉淡化，恒定增益适合等响度过渡",
+      "音频过渡时长决定淡入淡出的速度",
+      "转场处避免相位抵消与突兀断音"
+     ]
     },
     {
      "no": 20,
@@ -239,7 +353,13 @@
      "cid": 30854482870,
      "durationSec": 650,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "常用音频效果：降噪、参数均衡器、压缩器、混响与延迟",
+      "降噪处理底噪与电流声，EQ 修正频段问题",
+      "压缩器控制动态范围，让对白更平稳",
+      "效果器顺序影响音色，一般先降噪再 EQ 再压缩"
+     ]
     },
     {
      "no": 21,
@@ -249,7 +369,13 @@
      "cid": 30854483342,
      "durationSec": 349,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "基本声音面板按对话、音乐、音效、环境四类处理素材",
+      "自动匹配响度让不同素材的音量齐平",
+      "修复选项可减少噪声、消除齿音与多余混响",
+      "均衡与清晰度处理让对白更易听清"
+     ]
     },
     {
      "no": 22,
@@ -259,7 +385,13 @@
      "cid": 30854483467,
      "durationSec": 379,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "音轨混合器显示每条轨道的音量推子与电平表",
+      "声像旋钮控制声音在左右声道中的分布",
+      "通过发送把一组声音送到子混音轨统一处理",
+      "主音轨电平决定最终输出响度，峰值不宜超过 0dB"
+     ]
     },
     {
      "no": 23,
@@ -269,7 +401,13 @@
      "cid": 30854483722,
      "durationSec": 496,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "基本图形面板编辑文字、形状与字幕属性",
+      "字幕可用开放字幕或隐藏字幕方式制作",
+      "调整字号、字体、描边、对齐与安全框位置",
+      "导入 MOGRT 动态图形模板并替换文字内容"
+     ]
     },
     {
      "no": 24,
@@ -279,7 +417,13 @@
      "cid": 30854483864,
      "durationSec": 236,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "波形图看亮度分布，判断过曝与欠曝",
+      "矢量示波器看色相与饱和度，肤色应落在肤色线附近",
+      "RGB 分量图判断偏色与通道剪切",
+      "YCbCr 波形用于广播标准下的亮度色度检查"
+     ]
     },
     {
      "no": 25,
@@ -289,7 +433,13 @@
      "cid": 30854545467,
      "durationSec": 608,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "一级校正：白平衡（色温/色调）、曝光与对比度",
+      "高光、阴影、白色、黑色分别控制不同亮度区间",
+      "饱和度与自然饱和度控制色彩浓淡",
+      "先做曝光与白平衡校正，再做风格化调色"
+     ]
     },
     {
      "no": 26,
@@ -299,7 +449,13 @@
      "cid": 30854545944,
      "durationSec": 360,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "创意面板提供 Look 预设，可快速套用风格",
+      "强度滑杆控制 Look 的应用比例",
+      "褪色胶片、阴影/高光着色做旧片氛围",
+      "锐化补偿画面柔化，过强会产生噪点"
+     ]
     },
     {
      "no": 27,
@@ -309,7 +465,13 @@
      "cid": 30854546128,
      "durationSec": 750,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "RGB 曲线用 S 形增强对比，抬黑压白做胶片感",
+      "色相饱和度曲线按颜色选区调整饱和度与亮度",
+      "曲线可精确控制单个亮度段落的颜色偏移",
+      "曲线调整要小步微调，避免通道剪切"
+     ]
     },
     {
      "no": 28,
@@ -319,7 +481,13 @@
      "cid": 30854546499,
      "durationSec": 342,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "三色轮分别控制阴影、中间调、高光的色相与饱和度",
+      "色轮旁的亮度滑杆可单独提亮或压暗对应区域",
+      "比较视图左右分屏对比原始与调色结果",
+      "颜色匹配用参考帧自动对齐白平衡与色调"
+     ]
     },
     {
      "no": 29,
@@ -329,7 +497,13 @@
      "cid": 30854546801,
      "durationSec": 601,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "HSL 辅助按色相、饱和度、亮度圈定要调整的颜色",
+      "降噪与模糊参数让选区边缘过渡自然",
+      "更正区域可单独偏移所选颜色的色相、饱和度、亮度",
+      "配合蒙版限制调整区域，避免影响其他颜色"
+     ]
     },
     {
      "no": 30,
@@ -339,7 +513,13 @@
      "cid": 30854548408,
      "durationSec": 429,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "导出界面设置格式、分辨率、帧率与码率",
+      "网络发布常用 H.264，存档可选高码率或 ProRes",
+      "勾选匹配源可沿用序列尺寸与帧率",
+      "音频选 AAC，采样率 48kHz，码率按平台要求"
+     ]
     },
     {
      "no": 31,
@@ -349,7 +529,13 @@
      "cid": 270993772,
      "durationSec": 262,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "按音乐节拍点添加标记，让画面剪辑与鼓点对位",
+      "广告音乐结构：前奏—主歌—副歌—尾声，匹配 15/30/60 秒",
+      "用音轨混合器与关键帧控制音乐淡入淡出",
+      "压低音乐响度，避免盖过旁白与音效"
+     ]
     },
     {
      "no": 32,
@@ -359,7 +545,13 @@
      "cid": 288243434,
      "durationSec": 31,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "4K 序列设为 3840×2160，确认素材与序列帧率一致",
+      "为 4K 素材生成代理文件，提升剪辑流畅度",
+      "导出 4K 注意码率、磁盘空间与渲染时间",
+      "导演剪辑版强调镜头顺序与节奏，保留选剪版本"
+     ]
     }
    ],
    "goal": "掌握视频效果、转场、键控、基本图形、音频处理与 Lumetri 调色的实操。",
@@ -386,7 +578,13 @@
      "cid": 30854611797,
      "durationSec": 102,
      "sizeMB": 0,
-     "bvid": "BV1AK411g7xc"
+     "bvid": "BV1AK411g7xc",
+     "keypoints": [
+      "成片自检：黑场、闪帧、音画同步、字幕错别字",
+      "工程归档：收集素材、打包项目、备份字幕与音乐",
+      "输出参数按平台适配：横竖屏、码率、时长",
+      "命名规范与版本管理，方便返工与交付"
+     ]
     }
    ],
    "goal": "回顾全流程，完成从素材整理到成片交付的规范化收尾。",
@@ -446,6 +644,794 @@
    "完成 1 段绿幕抠像合成，处理边缘溢色并保留人物投影。",
    "为 1 段视频添加字幕、基本图形标题与背景音乐，完成混音与导出。",
    "用 Lumetri 完成 1 段素材的校正与风格化调色，输出前后对比图。"
+  ]
+ },
+ "graph": {
+  "nodes": [
+   {
+    "id": "course",
+    "label": "PR 零基础入门教程",
+    "type": "course",
+    "group": 0
+   },
+   {
+    "id": "m1",
+    "label": "零基础篇",
+    "type": "module",
+    "group": 1
+   },
+   {
+    "id": "m1-k0",
+    "label": "剪辑的工作流程与岗位分工",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k1",
+    "label": "项目、序列、素材三者的关系",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k2",
+    "label": "常用快捷键与操作习惯",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k3",
+    "label": "成片交付的基本标准",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k4",
+    "label": "项目、序列、素材的层级关系：项目装序列，序列装素材",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k5",
+    "label": "粗剪→精剪→转场字幕→调色混音→输出的完整剪辑流程",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k6",
+    "label": "剪辑师与剪辑助理的岗位分工及交付标准",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k7",
+    "label": "新手学习路径与高频快捷键的练习方法",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m2",
+    "label": "基础篇",
+    "type": "module",
+    "group": 2
+   },
+   {
+    "id": "m2-k0",
+    "label": "软件基础设置与工作区布局",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k1",
+    "label": "项目窗口、素材箱、子项目与新建项",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k2",
+    "label": "新建序列的方式与序列参数含义",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k3",
+    "label": "轨道按钮、时间轴小按钮与标记点",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k4",
+    "label": "工具栏各工具（选择、剃刀、滑移、比率拉伸等）的使用场景",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k5",
+    "label": "首选项里设置自动保存间隔与项目自动备份",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k6",
+    "label": "媒体缓存与临时文件放到独立磁盘，避免占满系统盘",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k7",
+    "label": "音频硬件、默认时间基（帧率）等基础参数设置",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k8",
+    "label": "保存自定义工作区，固定常用面板布局",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k9",
+    "label": "项目、源监视器、节目监视器、时间轴四大面板的分工",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k10",
+    "label": "面板拖拽分组与浮动窗口的使用方式",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k11",
+    "label": "工作区菜单切换及面板菜单（汉堡菜单）操作",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k12",
+    "label": "双击面板标题最大化、快捷键快速定位面板",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k13",
+    "label": "按剪辑习惯自定义工作区并保存，下次一键恢复",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k14",
+    "label": "重置为保存的布局，解决面板拖乱的问题",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k15",
+    "label": "把面板拖到第二显示器扩展工作区",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m3",
+    "label": "进阶篇",
+    "type": "module",
+    "group": 3
+   },
+   {
+    "id": "m3-k0",
+    "label": "视频过渡、视频效果与键控（绿幕抠像）",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k1",
+    "label": "音频过渡、声音效果、基本声音面板与音轨混合器",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k2",
+    "label": "基本图形与字幕",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k3",
+    "label": "Lumetri 范围、基础校正、创意、曲线、色轮与 HSL 辅助",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k4",
+    "label": "输出设置与码率选择",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k5",
+    "label": "插入编辑（,）与覆盖编辑（.）按目标轨道决定落点",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k6",
+    "label": "波纹删除（Shift+Delete）删除素材并自动合拢空隙",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k7",
+    "label": "时间重映射做升格、降格与变速曲线",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k8",
+    "label": "匹配帧与替换素材，在保持剪辑点不变的前提下换镜头",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k9",
+    "label": "视频过渡包括交叉溶解、黑场、白场、划像等类别",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k10",
+    "label": "Ctrl+D 在剪辑点添加默认视频过渡",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k11",
+    "label": "转场需要两侧素材留出余量，否则出现重复帧或黑帧",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k12",
+    "label": "过渡时长可在时间轴上拖拽边缘调整",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k13",
+    "label": "效果面板可按类别浏览或搜索效果名称",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k14",
+    "label": "常用视频效果：高斯模糊、裁剪、变换、色彩校正、锐化",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k15",
+    "label": "效果控件里调参数并用关键帧做动画",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m4",
+    "label": "最终篇",
+    "type": "module",
+    "group": 4
+   },
+   {
+    "id": "m4-k0",
+    "label": "全流程复盘与成片检查清单",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k1",
+    "label": "工程整理、工程归档与素材打包",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k2",
+    "label": "输出参数与平台适配",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k3",
+    "label": "常见问题排查（黑场、音画不同步、渲染慢）",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k4",
+    "label": "成片自检：黑场、闪帧、音画同步、字幕错别字",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k5",
+    "label": "工程归档：收集素材、打包项目、备份字幕与音乐",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k6",
+    "label": "输出参数按平台适配：横竖屏、码率、时长",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k7",
+    "label": "命名规范与版本管理，方便返工与交付",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "root-k0",
+    "label": "软件基础设置与工作区布局",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k1",
+    "label": "项目窗口、素材箱、子项目与新建项",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k2",
+    "label": "序列参数：分辨率、帧率、像素长宽比、场序",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k3",
+    "label": "时间轴、轨道按钮、时间轴小按钮与标记点",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k4",
+    "label": "工具栏：选择、剃刀、滑移、比率拉伸等工具的用途",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k5",
+    "label": "视频过渡、视频效果与键控抠像",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k6",
+    "label": "音频过渡、声音效果、基本声音面板与音轨混合器",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k7",
+    "label": "基本图形与字幕制作",
+    "type": "concept",
+    "group": 0
+   }
+  ],
+  "links": [
+   {
+    "source": "course",
+    "target": "m1"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k0"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k1"
+   },
+   {
+    "source": "m1-k0",
+    "target": "m1-k1"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k2"
+   },
+   {
+    "source": "m1-k1",
+    "target": "m1-k2"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k3"
+   },
+   {
+    "source": "m1-k2",
+    "target": "m1-k3"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k4"
+   },
+   {
+    "source": "m1-k3",
+    "target": "m1-k4"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k5"
+   },
+   {
+    "source": "m1-k4",
+    "target": "m1-k5"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k6"
+   },
+   {
+    "source": "m1-k5",
+    "target": "m1-k6"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k7"
+   },
+   {
+    "source": "m1-k6",
+    "target": "m1-k7"
+   },
+   {
+    "source": "course",
+    "target": "m2"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k0"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k1"
+   },
+   {
+    "source": "m2-k0",
+    "target": "m2-k1"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k2"
+   },
+   {
+    "source": "m2-k1",
+    "target": "m2-k2"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k3"
+   },
+   {
+    "source": "m2-k2",
+    "target": "m2-k3"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k4"
+   },
+   {
+    "source": "m2-k3",
+    "target": "m2-k4"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k5"
+   },
+   {
+    "source": "m2-k4",
+    "target": "m2-k5"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k6"
+   },
+   {
+    "source": "m2-k5",
+    "target": "m2-k6"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k7"
+   },
+   {
+    "source": "m2-k6",
+    "target": "m2-k7"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k8"
+   },
+   {
+    "source": "m2-k7",
+    "target": "m2-k8"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k9"
+   },
+   {
+    "source": "m2-k8",
+    "target": "m2-k9"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k10"
+   },
+   {
+    "source": "m2-k9",
+    "target": "m2-k10"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k11"
+   },
+   {
+    "source": "m2-k10",
+    "target": "m2-k11"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k12"
+   },
+   {
+    "source": "m2-k11",
+    "target": "m2-k12"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k13"
+   },
+   {
+    "source": "m2-k12",
+    "target": "m2-k13"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k14"
+   },
+   {
+    "source": "m2-k13",
+    "target": "m2-k14"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k15"
+   },
+   {
+    "source": "m2-k14",
+    "target": "m2-k15"
+   },
+   {
+    "source": "course",
+    "target": "m3"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k0"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k1"
+   },
+   {
+    "source": "m3-k0",
+    "target": "m3-k1"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k2"
+   },
+   {
+    "source": "m3-k1",
+    "target": "m3-k2"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k3"
+   },
+   {
+    "source": "m3-k2",
+    "target": "m3-k3"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k4"
+   },
+   {
+    "source": "m3-k3",
+    "target": "m3-k4"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k5"
+   },
+   {
+    "source": "m3-k4",
+    "target": "m3-k5"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k6"
+   },
+   {
+    "source": "m3-k5",
+    "target": "m3-k6"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k7"
+   },
+   {
+    "source": "m3-k6",
+    "target": "m3-k7"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k8"
+   },
+   {
+    "source": "m3-k7",
+    "target": "m3-k8"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k9"
+   },
+   {
+    "source": "m3-k8",
+    "target": "m3-k9"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k10"
+   },
+   {
+    "source": "m3-k9",
+    "target": "m3-k10"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k11"
+   },
+   {
+    "source": "m3-k10",
+    "target": "m3-k11"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k12"
+   },
+   {
+    "source": "m3-k11",
+    "target": "m3-k12"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k13"
+   },
+   {
+    "source": "m3-k12",
+    "target": "m3-k13"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k14"
+   },
+   {
+    "source": "m3-k13",
+    "target": "m3-k14"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k15"
+   },
+   {
+    "source": "m3-k14",
+    "target": "m3-k15"
+   },
+   {
+    "source": "course",
+    "target": "m4"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k0"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k1"
+   },
+   {
+    "source": "m4-k0",
+    "target": "m4-k1"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k2"
+   },
+   {
+    "source": "m4-k1",
+    "target": "m4-k2"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k3"
+   },
+   {
+    "source": "m4-k2",
+    "target": "m4-k3"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k4"
+   },
+   {
+    "source": "m4-k3",
+    "target": "m4-k4"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k5"
+   },
+   {
+    "source": "m4-k4",
+    "target": "m4-k5"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k6"
+   },
+   {
+    "source": "m4-k5",
+    "target": "m4-k6"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k7"
+   },
+   {
+    "source": "m4-k6",
+    "target": "m4-k7"
+   },
+   {
+    "source": "course",
+    "target": "root-k0"
+   },
+   {
+    "source": "course",
+    "target": "root-k1"
+   },
+   {
+    "source": "course",
+    "target": "root-k2"
+   },
+   {
+    "source": "course",
+    "target": "root-k3"
+   },
+   {
+    "source": "course",
+    "target": "root-k4"
+   },
+   {
+    "source": "course",
+    "target": "root-k5"
+   },
+   {
+    "source": "course",
+    "target": "root-k6"
+   },
+   {
+    "source": "course",
+    "target": "root-k7"
+   }
   ]
  }
 }

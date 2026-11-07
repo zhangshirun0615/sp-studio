@@ -1747,5 +1747,1707 @@
     }
    ]
   }
- ]
+ ],
+ "graph": {
+  "nodes": [
+   {
+    "id": "course",
+    "label": "《Substance Painter 2019》材质表现系统课",
+    "type": "course",
+    "group": 0
+   },
+   {
+    "id": "m1",
+    "label": "基础入门 · 认识 SP 与工作流",
+    "type": "module",
+    "group": 1
+   },
+   {
+    "id": "m1-k0",
+    "label": "Perpetual 永久授权与订阅版在功能与许可上的差异",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k1",
+    "label": "Preferences 中缓存路径、自动保存间隔与撤销步数的设置",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k2",
+    "label": "显卡驱动与视口性能：分辨率缩放与稀疏虚拟纹理",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k3",
+    "label": "资源架默认路径与自定义素材库目录的关联",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k4",
+    "label": "新建项目向导里模板、贴图分辨率与法线格式的选择",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k5",
+    "label": "纹理集列表中一组 UV 对应一套独立材质与图层栈",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k6",
+    "label": "PBR Metal-Rough 着色器中 Base Color、Roughness、Metallic 的含义",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k7",
+    "label": "图层按叠加顺序从下往上生效，上层遮挡下层",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k8",
+    "label": "每个纹理集拥有自己的贴图分辨率与烘焙数据",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k9",
+    "label": "着色器设置里 sRGB、Alpha 混合与法线格式的开关",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k10",
+    "label": "导入模型时选择保留原有 UV 或让软件自动展开",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k11",
+    "label": "烘焙网格贴图是使用生成器与曲率类遮罩的前提",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k12",
+    "label": "纹理集分辨率与最终导出贴图尺寸的对应关系",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k13",
+    "label": "材质制作顺序：基础色块、粗糙度金属度、细节遮罩",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k14",
+    "label": "导出模板决定各通道如何打包成贴图",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m1-k15",
+    "label": "视口显示设置：通道切换、材质球预览与后处理开关",
+    "type": "concept",
+    "group": 1
+   },
+   {
+    "id": "m2",
+    "label": "数据信息贴图 · 烘焙与底层数据",
+    "type": "module",
+    "group": 2
+   },
+   {
+    "id": "m2-k0",
+    "label": "Normal 记录表面朝向，曲率与边缘判断都依赖它推导",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k1",
+    "label": "Ambient Occlusion 记录缝隙遮蔽，用于积灰与暗部",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k2",
+    "label": "Curvature 区分凸边与凹缝，是磨损与脏迹的核心数据",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k3",
+    "label": "ID 贴图按模型分件上色，用于区域选择与分区",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k4",
+    "label": "Position 记录空间坐标，Thickness 记录射线穿透厚度",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k5",
+    "label": "高低模命名后缀与匹配规则，高模可多件合并",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k6",
+    "label": "Max Frontal Distance 与 Max Rear Distance 控制投射范围",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k7",
+    "label": "抗锯齿与高精度网格烘焙在质量与耗时间的取舍",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k8",
+    "label": "法线翻转、UV 接缝错位与射线穿透的排查思路",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k9",
+    "label": "烘焙前统一切线空间与法线格式，避免红绿通道反相",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k10",
+    "label": "ID 贴图依赖分件赋纯色，烘焙时关闭抗锯齿避免混色",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k11",
+    "label": "Position 可输出世界或物体空间坐标，适合做纵向渐变",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k12",
+    "label": "Thickness 的射线数量与最大距离决定精度与耗时",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k13",
+    "label": "三张贴图接入生成器与遮罩的典型组合",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k14",
+    "label": "分辨率不足导致的色块、锯齿与边缘溢出问题",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m2-k15",
+    "label": "资源架面板的分类标签与搜索框过滤方式",
+    "type": "concept",
+    "group": 2
+   },
+   {
+    "id": "m3",
+    "label": "图层与实例 · 材质的搭建逻辑",
+    "type": "module",
+    "group": 3
+   },
+   {
+    "id": "m3-k0",
+    "label": "参考图按材质、磨损、颜色分区归档，先定调再动手",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k1",
+    "label": "低模保留合理 UV，高模保留倒角细节，命名成对匹配",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k2",
+    "label": "统一单位与坐标轴，避免导入后比例与朝向错乱",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k3",
+    "label": "按材质分区与贴图密度划分纹理集，而非按模型分件",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k4",
+    "label": "新建工程时选定法线格式、是否自动展开 UV 与烘焙分辨率",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k5",
+    "label": "填充层覆盖整张 UV，可同时写入多个通道",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k6",
+    "label": "颜色、粗糙度、金属度、高度通道的分别设定与联动",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k7",
+    "label": "图层顺序决定遮挡关系，文件夹可整体调透明度",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k8",
+    "label": "正常、正片叠底、叠加等混合模式的直观差异",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k9",
+    "label": "填充层缩略图反映各通道合成的最终效果",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k10",
+    "label": "噪波、Grunge、渐变等程序贴图可接入任意通道",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k11",
+    "label": "图层属性里颜色抖动、高度缩放与粗糙度偏移的用法",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k12",
+    "label": "遮罩是灰度图，白显黑隐，可手绘也可调生成器",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k13",
+    "label": "遮罩反相、遮罩叠加与遮罩编辑器的基本逻辑",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k14",
+    "label": "图层不透明度与单通道不透明度的区别",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m3-k15",
+    "label": "生成器本质是把数据贴图按规则组合成遮罩的节点组",
+    "type": "concept",
+    "group": 3
+   },
+   {
+    "id": "m4",
+    "label": "光照与特效 · 让材质活起来",
+    "type": "module",
+    "group": 4
+   },
+   {
+    "id": "m4-k0",
+    "label": "环境面板更换 HDR 贴图与背景显示开关",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k1",
+    "label": "环境旋转、曝光与视口渲染设置的关系",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k2",
+    "label": "工作室灯光中主光、补光、轮廓光的强度与角度",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k3",
+    "label": "相机焦距、景深与锁定视角的操作",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k4",
+    "label": "光照预设的保存与 Iray 渲染参数设置",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k5",
+    "label": "绘制层特效作用于笔触本身，不改变图层结构",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k6",
+    "label": "填充层特效可作用在通道与遮罩上，复用程序数据",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k7",
+    "label": "锚点把某一层的遮罩或位置信息发布出去供他人引用",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k8",
+    "label": "特效与遮罩的上下关系决定效果是局部还是全局",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k9",
+    "label": "多个特效串联时先结构后质感的排序原则",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k10",
+    "label": "锚点由图层发布，名称在同一纹理集内保持唯一",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k11",
+    "label": "锚点可传递遮罩形状、位置与朝向信息",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k12",
+    "label": "锚点不支持循环引用，引用链必须保持单向",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k13",
+    "label": "在生成器或特效的输入里选择锚点名称完成引用",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k14",
+    "label": "跨纹理集使用锚点时要注意坐标系与命名匹配",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m4-k15",
+    "label": "遮罩加模糊与色阶可控制软硬与扩散范围",
+    "type": "concept",
+    "group": 4
+   },
+   {
+    "id": "m5",
+    "label": "遮罩与置换 · 细节的深度",
+    "type": "module",
+    "group": 5
+   },
+   {
+    "id": "m5-k0",
+    "label": "遮罩本质是 0 到 1 的灰度，对比就是压缩过渡区",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k1",
+    "label": "直方图扫描把连续灰度二值化，边缘更硬更干净",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k2",
+    "label": "遮罩叠加支持相加、相减、相乘与叠加模式",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k3",
+    "label": "遮罩组的遮罩可统一控制组内多个图层",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k4",
+    "label": "对比过度导致锯齿与细节丢失的取舍",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k5",
+    "label": "纹理集设置里的置换开关、高度缩放与置换强度",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k6",
+    "label": "细分等级与自适应细分在性能与精度间的平衡",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k7",
+    "label": "置换依赖网格密度，低模需先提高细分才能出形",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k8",
+    "label": "置换只用于视口预览，导出后需渲染器重现",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k9",
+    "label": "置换与法线、AO 同时使用时的顺序与冲突",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k10",
+    "label": "高度转法线效果的输入高度与输出法线强度",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k11",
+    "label": "高度先轻微模糊再转法线可避免噪点",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k12",
+    "label": "法线强度过高会产生虚假的边缘高光",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k13",
+    "label": "置换强度与法线强度需匹配，否则侧视穿帮",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k14",
+    "label": "结合 AO 与曲率重新修正边缘暗部",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m5-k15",
+    "label": "先分析栓钉位置对应的高度与法线数据再动手",
+    "type": "concept",
+    "group": 5
+   },
+   {
+    "id": "m6",
+    "label": "映射与笔刷 · 绘制表达能力",
+    "type": "module",
+    "group": 6
+   },
+   {
+    "id": "m6-k0",
+    "label": "UV 投影依赖展好的 UV，最准确但会被拉伸",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k1",
+    "label": "平面投影适合平板与墙面，可多轴向分别设置",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k2",
+    "label": "三平面投影沿三个轴向自动混合，适合不规则模型",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k3",
+    "label": "贴图的缩放、旋转、偏移与重复次数控制",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k4",
+    "label": "投影失败导致的贴图错位与接缝处理",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k5",
+    "label": "投影的三维操纵器移动、旋转、缩放与吸附",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k6",
+    "label": "投影轴向、投影深度与忽略背面的设置",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k7",
+    "label": "对齐到面与拟合包围盒的快捷操作",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k8",
+    "label": "变形校正在曲面上修正贴图拉伸",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k9",
+    "label": "投影设置随图层复制保留，便于批量调整",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k10",
+    "label": "复制粘贴图层到另一纹理集会保留属性与遮罩",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k11",
+    "label": "跨纹理集投影要求 UV 空间一致或手工对齐",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k12",
+    "label": "纹理集缩放比例与位置偏移造成的错位",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k13",
+    "label": "跨纹理集复制素材时的资源路径依赖",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k14",
+    "label": "统一分辨率与填充值可减少接缝差异",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m6-k15",
+    "label": "绘制层直接绘制与先遮罩后绘制的区别",
+    "type": "concept",
+    "group": 6
+   },
+   {
+    "id": "m7",
+    "label": "UV 拆分与整理 · 从模型到贴图",
+    "type": "module",
+    "group": 7
+   },
+   {
+    "id": "m7-k0",
+    "label": "UV 把三维表面展开到 0 到 1 的二维空间",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k1",
+    "label": "UV 岛之间的断开处在模型上形成接缝",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k2",
+    "label": "UV 面积与模型面积的比值决定贴图精度",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k3",
+    "label": "同一像素被多个面共享导致精度分配不均",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k4",
+    "label": "UV 重叠、翻转面与共线点是材质阶段的隐患",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k5",
+    "label": "变形来自曲面展平时的角度与面积变化",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k6",
+    "label": "切割线优先放在硬边、遮挡面与材质分界处",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k7",
+    "label": "沿对称轴切割可减少接缝数量",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k8",
+    "label": "过度切割导致 UV 岛碎片化、接缝变多",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k9",
+    "label": "切割后需检查法线与切线空间的连续性",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k10",
+    "label": "UDIM 以 1001、1002 递增编号对应不同 UV 象限",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k11",
+    "label": "SP 按 UDIM 自动切分为多个纹理集分别绘制",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k12",
+    "label": "每个象限独立分辨率与贴图集，导出按编号命名",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k13",
+    "label": "UVLayout 的三视图、编辑区与工具面板",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k14",
+    "label": "UDIM 与单张贴图在显存与精度上的取舍",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "m7-k15",
+    "label": "边模式切割、面模式选择区域、点模式微调",
+    "type": "concept",
+    "group": 7
+   },
+   {
+    "id": "root-k0",
+    "label": "纹理集按 UV 图块划分，一组 UV 岛对应一套独立图层栈、分辨率与烘焙数据，与建模材质名无关",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k1",
+    "label": "PBR 金属粗糙度工作流中 Base Color、Metallic、Roughness、Normal、Height 的含义与导出打包方式",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k2",
+    "label": "高低模烘焙的关键参数：投射距离、抗锯齿、包围笼与法线格式，以及烘焙质量对曲率、AO、厚度的连锁影响",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k3",
+    "label": "填充层叠加程序贴图再用遮罩限定范围，图层顺序、混合模式与文件夹遮罩的优先级决定最终效果",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k4",
+    "label": "生成器把曲率、AO、位置等数据组合成遮罩，再用色阶、直方图扫描与模糊整形为可用选区",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k5",
+    "label": "锚点由图层发布、被其他图层引用，可传递遮罩形状与位置，但引用链必须单向，不能循环",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k6",
+    "label": "置换需开启并配合细分等级才能把高度顶起表面，由高度生成法线时强度要与置换匹配",
+    "type": "concept",
+    "group": 0
+   },
+   {
+    "id": "root-k7",
+    "label": "投影方式的选择：UV 投影依赖展好的 UV，平面投影适合平板，三平面投影适合不规则模型，柱状与球形投影各有适用面",
+    "type": "concept",
+    "group": 0
+   }
+  ],
+  "links": [
+   {
+    "source": "course",
+    "target": "m1"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k0"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k1"
+   },
+   {
+    "source": "m1-k0",
+    "target": "m1-k1"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k2"
+   },
+   {
+    "source": "m1-k1",
+    "target": "m1-k2"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k3"
+   },
+   {
+    "source": "m1-k2",
+    "target": "m1-k3"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k4"
+   },
+   {
+    "source": "m1-k3",
+    "target": "m1-k4"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k5"
+   },
+   {
+    "source": "m1-k4",
+    "target": "m1-k5"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k6"
+   },
+   {
+    "source": "m1-k5",
+    "target": "m1-k6"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k7"
+   },
+   {
+    "source": "m1-k6",
+    "target": "m1-k7"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k8"
+   },
+   {
+    "source": "m1-k7",
+    "target": "m1-k8"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k9"
+   },
+   {
+    "source": "m1-k8",
+    "target": "m1-k9"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k10"
+   },
+   {
+    "source": "m1-k9",
+    "target": "m1-k10"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k11"
+   },
+   {
+    "source": "m1-k10",
+    "target": "m1-k11"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k12"
+   },
+   {
+    "source": "m1-k11",
+    "target": "m1-k12"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k13"
+   },
+   {
+    "source": "m1-k12",
+    "target": "m1-k13"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k14"
+   },
+   {
+    "source": "m1-k13",
+    "target": "m1-k14"
+   },
+   {
+    "source": "m1",
+    "target": "m1-k15"
+   },
+   {
+    "source": "m1-k14",
+    "target": "m1-k15"
+   },
+   {
+    "source": "course",
+    "target": "m2"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k0"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k1"
+   },
+   {
+    "source": "m2-k0",
+    "target": "m2-k1"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k2"
+   },
+   {
+    "source": "m2-k1",
+    "target": "m2-k2"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k3"
+   },
+   {
+    "source": "m2-k2",
+    "target": "m2-k3"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k4"
+   },
+   {
+    "source": "m2-k3",
+    "target": "m2-k4"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k5"
+   },
+   {
+    "source": "m2-k4",
+    "target": "m2-k5"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k6"
+   },
+   {
+    "source": "m2-k5",
+    "target": "m2-k6"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k7"
+   },
+   {
+    "source": "m2-k6",
+    "target": "m2-k7"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k8"
+   },
+   {
+    "source": "m2-k7",
+    "target": "m2-k8"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k9"
+   },
+   {
+    "source": "m2-k8",
+    "target": "m2-k9"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k10"
+   },
+   {
+    "source": "m2-k9",
+    "target": "m2-k10"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k11"
+   },
+   {
+    "source": "m2-k10",
+    "target": "m2-k11"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k12"
+   },
+   {
+    "source": "m2-k11",
+    "target": "m2-k12"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k13"
+   },
+   {
+    "source": "m2-k12",
+    "target": "m2-k13"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k14"
+   },
+   {
+    "source": "m2-k13",
+    "target": "m2-k14"
+   },
+   {
+    "source": "m2",
+    "target": "m2-k15"
+   },
+   {
+    "source": "m2-k14",
+    "target": "m2-k15"
+   },
+   {
+    "source": "course",
+    "target": "m3"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k0"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k1"
+   },
+   {
+    "source": "m3-k0",
+    "target": "m3-k1"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k2"
+   },
+   {
+    "source": "m3-k1",
+    "target": "m3-k2"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k3"
+   },
+   {
+    "source": "m3-k2",
+    "target": "m3-k3"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k4"
+   },
+   {
+    "source": "m3-k3",
+    "target": "m3-k4"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k5"
+   },
+   {
+    "source": "m3-k4",
+    "target": "m3-k5"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k6"
+   },
+   {
+    "source": "m3-k5",
+    "target": "m3-k6"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k7"
+   },
+   {
+    "source": "m3-k6",
+    "target": "m3-k7"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k8"
+   },
+   {
+    "source": "m3-k7",
+    "target": "m3-k8"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k9"
+   },
+   {
+    "source": "m3-k8",
+    "target": "m3-k9"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k10"
+   },
+   {
+    "source": "m3-k9",
+    "target": "m3-k10"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k11"
+   },
+   {
+    "source": "m3-k10",
+    "target": "m3-k11"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k12"
+   },
+   {
+    "source": "m3-k11",
+    "target": "m3-k12"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k13"
+   },
+   {
+    "source": "m3-k12",
+    "target": "m3-k13"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k14"
+   },
+   {
+    "source": "m3-k13",
+    "target": "m3-k14"
+   },
+   {
+    "source": "m3",
+    "target": "m3-k15"
+   },
+   {
+    "source": "m3-k14",
+    "target": "m3-k15"
+   },
+   {
+    "source": "course",
+    "target": "m4"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k0"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k1"
+   },
+   {
+    "source": "m4-k0",
+    "target": "m4-k1"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k2"
+   },
+   {
+    "source": "m4-k1",
+    "target": "m4-k2"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k3"
+   },
+   {
+    "source": "m4-k2",
+    "target": "m4-k3"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k4"
+   },
+   {
+    "source": "m4-k3",
+    "target": "m4-k4"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k5"
+   },
+   {
+    "source": "m4-k4",
+    "target": "m4-k5"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k6"
+   },
+   {
+    "source": "m4-k5",
+    "target": "m4-k6"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k7"
+   },
+   {
+    "source": "m4-k6",
+    "target": "m4-k7"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k8"
+   },
+   {
+    "source": "m4-k7",
+    "target": "m4-k8"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k9"
+   },
+   {
+    "source": "m4-k8",
+    "target": "m4-k9"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k10"
+   },
+   {
+    "source": "m4-k9",
+    "target": "m4-k10"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k11"
+   },
+   {
+    "source": "m4-k10",
+    "target": "m4-k11"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k12"
+   },
+   {
+    "source": "m4-k11",
+    "target": "m4-k12"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k13"
+   },
+   {
+    "source": "m4-k12",
+    "target": "m4-k13"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k14"
+   },
+   {
+    "source": "m4-k13",
+    "target": "m4-k14"
+   },
+   {
+    "source": "m4",
+    "target": "m4-k15"
+   },
+   {
+    "source": "m4-k14",
+    "target": "m4-k15"
+   },
+   {
+    "source": "course",
+    "target": "m5"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k0"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k1"
+   },
+   {
+    "source": "m5-k0",
+    "target": "m5-k1"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k2"
+   },
+   {
+    "source": "m5-k1",
+    "target": "m5-k2"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k3"
+   },
+   {
+    "source": "m5-k2",
+    "target": "m5-k3"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k4"
+   },
+   {
+    "source": "m5-k3",
+    "target": "m5-k4"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k5"
+   },
+   {
+    "source": "m5-k4",
+    "target": "m5-k5"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k6"
+   },
+   {
+    "source": "m5-k5",
+    "target": "m5-k6"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k7"
+   },
+   {
+    "source": "m5-k6",
+    "target": "m5-k7"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k8"
+   },
+   {
+    "source": "m5-k7",
+    "target": "m5-k8"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k9"
+   },
+   {
+    "source": "m5-k8",
+    "target": "m5-k9"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k10"
+   },
+   {
+    "source": "m5-k9",
+    "target": "m5-k10"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k11"
+   },
+   {
+    "source": "m5-k10",
+    "target": "m5-k11"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k12"
+   },
+   {
+    "source": "m5-k11",
+    "target": "m5-k12"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k13"
+   },
+   {
+    "source": "m5-k12",
+    "target": "m5-k13"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k14"
+   },
+   {
+    "source": "m5-k13",
+    "target": "m5-k14"
+   },
+   {
+    "source": "m5",
+    "target": "m5-k15"
+   },
+   {
+    "source": "m5-k14",
+    "target": "m5-k15"
+   },
+   {
+    "source": "course",
+    "target": "m6"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k0"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k1"
+   },
+   {
+    "source": "m6-k0",
+    "target": "m6-k1"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k2"
+   },
+   {
+    "source": "m6-k1",
+    "target": "m6-k2"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k3"
+   },
+   {
+    "source": "m6-k2",
+    "target": "m6-k3"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k4"
+   },
+   {
+    "source": "m6-k3",
+    "target": "m6-k4"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k5"
+   },
+   {
+    "source": "m6-k4",
+    "target": "m6-k5"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k6"
+   },
+   {
+    "source": "m6-k5",
+    "target": "m6-k6"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k7"
+   },
+   {
+    "source": "m6-k6",
+    "target": "m6-k7"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k8"
+   },
+   {
+    "source": "m6-k7",
+    "target": "m6-k8"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k9"
+   },
+   {
+    "source": "m6-k8",
+    "target": "m6-k9"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k10"
+   },
+   {
+    "source": "m6-k9",
+    "target": "m6-k10"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k11"
+   },
+   {
+    "source": "m6-k10",
+    "target": "m6-k11"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k12"
+   },
+   {
+    "source": "m6-k11",
+    "target": "m6-k12"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k13"
+   },
+   {
+    "source": "m6-k12",
+    "target": "m6-k13"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k14"
+   },
+   {
+    "source": "m6-k13",
+    "target": "m6-k14"
+   },
+   {
+    "source": "m6",
+    "target": "m6-k15"
+   },
+   {
+    "source": "m6-k14",
+    "target": "m6-k15"
+   },
+   {
+    "source": "course",
+    "target": "m7"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k0"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k1"
+   },
+   {
+    "source": "m7-k0",
+    "target": "m7-k1"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k2"
+   },
+   {
+    "source": "m7-k1",
+    "target": "m7-k2"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k3"
+   },
+   {
+    "source": "m7-k2",
+    "target": "m7-k3"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k4"
+   },
+   {
+    "source": "m7-k3",
+    "target": "m7-k4"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k5"
+   },
+   {
+    "source": "m7-k4",
+    "target": "m7-k5"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k6"
+   },
+   {
+    "source": "m7-k5",
+    "target": "m7-k6"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k7"
+   },
+   {
+    "source": "m7-k6",
+    "target": "m7-k7"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k8"
+   },
+   {
+    "source": "m7-k7",
+    "target": "m7-k8"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k9"
+   },
+   {
+    "source": "m7-k8",
+    "target": "m7-k9"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k10"
+   },
+   {
+    "source": "m7-k9",
+    "target": "m7-k10"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k11"
+   },
+   {
+    "source": "m7-k10",
+    "target": "m7-k11"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k12"
+   },
+   {
+    "source": "m7-k11",
+    "target": "m7-k12"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k13"
+   },
+   {
+    "source": "m7-k12",
+    "target": "m7-k13"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k14"
+   },
+   {
+    "source": "m7-k13",
+    "target": "m7-k14"
+   },
+   {
+    "source": "m7",
+    "target": "m7-k15"
+   },
+   {
+    "source": "m7-k14",
+    "target": "m7-k15"
+   },
+   {
+    "source": "course",
+    "target": "root-k0"
+   },
+   {
+    "source": "course",
+    "target": "root-k1"
+   },
+   {
+    "source": "course",
+    "target": "root-k2"
+   },
+   {
+    "source": "course",
+    "target": "root-k3"
+   },
+   {
+    "source": "course",
+    "target": "root-k4"
+   },
+   {
+    "source": "course",
+    "target": "root-k5"
+   },
+   {
+    "source": "course",
+    "target": "root-k6"
+   },
+   {
+    "source": "course",
+    "target": "root-k7"
+   }
+  ]
+ }
 }

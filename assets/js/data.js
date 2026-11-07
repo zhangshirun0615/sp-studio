@@ -88,6 +88,12 @@ const data = {
     catch (e) { return { videos: {} }; }
   },
   async quiz() { return getJson(this.base + 'quiz.json'); },
+  async quizOf(courseId) {
+    if (courseId === 'sp') {
+      try { return await getJson(this.base + 'quizzes/sp.json'); } catch (e) { return getJson(this.base + 'quiz.json'); }
+    }
+    try { return await getJson(this.base + 'quizzes/' + courseId + '.json'); } catch (e) { return null; }
+  },
   async kb() { return getJson(this.base + 'kb.json'); },
   async toolbox() { return getJson(this.base + 'toolbox.json'); },
   async faq() {

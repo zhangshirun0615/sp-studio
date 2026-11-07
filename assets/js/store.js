@@ -115,17 +115,18 @@ const store = {
   setLast(no) { store.setLastIn('sp', String(no)); },
 
   /* ---------- 答题 / AI / 知识库 ---------- */
-  quizSave(moduleId, score, total) {
+  quizSave(courseId, moduleId, score, total) {
     const s = load();
-    const prev = s.quiz[moduleId];
-    s.quiz[moduleId] = {
+    const key = courseId + ':' + moduleId;
+    const prev = s.quiz[key];
+    s.quiz[key] = {
       best: Math.max(prev ? prev.best : 0, score),
       last: score,
       total,
       attempts: (prev ? prev.attempts : 0) + 1,
       lastAt: Date.now()
     };
-    store.activity('quiz', { module: moduleId });
+    store.activity('quiz', { course: courseId, module: moduleId });
     save();
   },
 
