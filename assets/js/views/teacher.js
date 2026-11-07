@@ -22,8 +22,48 @@ const TABS = [
   ['classes', '班级学生', 'user'],
   ['tasks', '实训任务', 'target'],
   ['eval', '实训评估', 'layers'],
-  ['grades', '成绩汇总', 'grid']
+  ['grades', '成绩汇总', 'grid'],
+  ['server', '发布与访问', 'external']
 ];
+
+/* ===== 学生账号与工具 ===== */
+function ensureStudent(s) {
+  s.enabled = s.enabled !== false;
+  s.role = s.role || 'student';
+  s.permissions = Object.assign({ viewGrades: true }, s.permissions || {});
+  return s;
+}
+async function hashPassword(sid, password) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(sid + ':' + password));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+function defaultPassword(sid) {
+  const digits = String(sid || '').replace(/\D/g, '');
+  return digits.length >= 6 ? digits.slice(-6) : String(sid || '');
+}
+let xlsxLoading = null;
+function loadXlsx() {
+  if (window.XLSX) return Promise.resolve(window.XLSX);
+  if (xlsxLoading) return xlsxLoading;
+  xlsxLoading = new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = 'assets/js/vendor/xlsx.full.min.js';
+    s.onload = () => resolve(window.XLSX);
+    s.onerror = () => reject(new Error('Excel 解析库加载失败'));
+    document.head.appendChild(s);
+  });
+  return xlsxLoading;
+}
+
+let serverState = { info: null, key: '', access: null, endpoints: null };
+
+async function api(path, opts) {
+  const res = await fetch(path, opts);
+  let data = {};
+  try { data = await res.json(); } catch (e) { }
+  if (!res.ok) throw new Error(data.error || ('接口错误 ' + res.status));
+  return data;
+}
 
 function uid(p) { return p + '-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 6); }
 function allStudents() {
@@ -156,22 +196,63 @@ function overviewTab() {
 
 function classesTab() {
   const d = core.data;
-  return `<div class="dash-grid" style="grid-template-columns:1fr 1.2fr">
+  return `<div class="dash-grid" style="grid-template-columns:1fr 1.2fr;align-items:start">
     <div class="dash-card">
       <h3>新建班级</h3>
       <div class="d-sub">名单支持「学号 姓名」每行一条，也支持只写姓名</div>
       <input class="t-input" id="className" placeholder="班级名称，如：数字媒体 2401">
-      <textarea class="t-input t-area" id="classRoster" rows="8" placeholder="20240101 张同学&#10;20240102 李同学"></textarea>
-      <button class="btn btn-primary btn-sm" id="addClass">${icon('check', 15)} 创建班级</button>
+      <textarea class="t-input t-area" id="classRoster" rows="6" placeholder="20240101 张同学&#10;20240102 李同学"></textarea>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn btn-primary btn-sm" id="addClass">${icon('check', 15)} 创建班级</button>
+        <button class="btn btn-ghost btn-sm" id="importExcel">${icon('download', 15)} 导入 Excel / CSV</button>
+        <input type="file" id="excelInput" accept=".xlsx,.xls,.csv" style="display:none">
+      </div>
+      <div class="settings-note" style="margin-top:14px">
+        Excel 识别规则：表头包含「学号 / 姓名」列即可（如：学号、姓名、班级）；没有表头时默认第 1 列学号、第 2 列姓名。
+        导入时选择「并入已有班级」或「新建班级」。
+      </div>
     </div>
     <div class="dash-card">
       <h3>班级列表</h3>
-      <div class="d-sub">共 ${(d.classes || []).length} 个班级</div>
-      ${(d.classes || []).length ? (d.classes || []).map(c => `<div class="teacher-class">
-        <div class="tc-head"><b>${esc(c.name)}</b><span>${(c.students || []).length} 人</span>
-          <button class="icon-btn" data-del-class="${c.id}" title="删除班级">${icon('close', 14)}</button></div>
-        <div class="tc-students">${(c.students || []).map(s => `<span class="tag">${esc(s.sid ? s.sid + ' ' : '')}${esc(s.name)}</span>`).join('') || '<span style="color:var(--muted);font-size:12px">暂无学生</span>'}</div>
-      </div>`).join('') : '<p style="color:var(--muted);font-size:13px">还没有班级。左侧创建，或从已有名单粘贴导入。</p>'}
+      <div class="d-sub">共 ${(d.classes || []).length} 个班级 · 点学生可管理登录与权限</div>
+      ${(d.classes || []).length ? (d.classes || []).map(c => {
+        const students = (c.students || []).map(ensureStudent);
+        const disabled = students.filter(s => !s.enabled).length;
+        return `<div class="teacher-class">
+        <div class="tc-head"><b>${esc(c.name)}</b>
+          <span>${students.length} 人${disabled ? ' · 停用 ' + disabled : ''}</span>
+          <div class="tc-head-actions">
+            <button class="btn btn-ghost btn-xs" data-export-class="${c.id}">${icon('download', 12)} 导出名单</button>
+            <button class="icon-btn" data-del-class="${c.id}" title="删除班级">${icon('close', 14)}</button>
+          </div>
+        </div>
+        <div class="student-table-wrap">
+          <table class="data student-table">
+            <thead><tr><th>学号</th><th>姓名</th><th>角色</th><th>登录</th><th>看成绩</th><th>口令</th><th style="width:150px">操作</th></tr></thead>
+            <tbody>
+              ${students.map(s => `<tr data-student="${esc(s.sid || s.name)}" data-class="${c.id}">
+                <td class="mono">${esc(s.sid || '-')}</td>
+                <td>${esc(s.name)}</td>
+                <td><span class="tag ${s.role === 'leader' ? 'gold' : ''}">${s.role === 'leader' ? '课代表' : '学生'}</span></td>
+                <td><button class="chip ${s.enabled ? 'active' : ''}" data-toggle-student="${esc(s.sid || s.name)}" data-class="${c.id}" data-field="enabled">${s.enabled ? '启用' : '停用'}</button></td>
+                <td><button class="chip ${s.permissions.viewGrades ? 'active' : ''}" data-toggle-student="${esc(s.sid || s.name)}" data-class="${c.id}" data-field="viewGrades">${s.permissions.viewGrades ? '可见' : '隐藏'}</button></td>
+                <td>${s.passwordHash ? '<span class="tag teal">已设置</span>' : '<span class="tag">默认</span>'}</td>
+                <td class="student-ops">
+                  <button class="btn btn-ghost btn-xs" data-edit-student="${esc(s.sid || s.name)}" data-class="${c.id}">编辑</button>
+                  <button class="btn btn-ghost btn-xs" data-pwd-student="${esc(s.sid || s.name)}" data-class="${c.id}">口令</button>
+                  <button class="btn btn-ghost btn-xs" data-del-student="${esc(s.sid || s.name)}" data-class="${c.id}">移除</button>
+                </td>
+              </tr>`).join('') || '<tr><td colspan="7" style="color:var(--muted)">暂无学生，可导入 Excel 或手动添加</td></tr>'}
+            </tbody>
+          </table>
+        </div>
+        <div class="student-add">
+          <input class="t-input" data-add-sid="${c.id}" placeholder="学号" style="max-width:150px">
+          <input class="t-input" data-add-name="${c.id}" placeholder="姓名" style="max-width:120px">
+          <button class="btn btn-primary btn-xs" data-add-student="${c.id}">${icon('check', 12)} 添加学生</button>
+        </div>
+      </div>`;
+      }).join('') : '<p style="color:var(--muted);font-size:13px">还没有班级。左侧创建，或从 Excel 名单导入。</p>'}
     </div>
   </div>`;
 }
@@ -352,11 +433,305 @@ function gradesTab() {
   </div>`;
 }
 
+/* ===== 发布与访问 ===== */
+function serverTab() {
+  return `<div class="dash-grid" style="grid-template-columns:1fr 1fr;align-items:start">
+    <div class="dash-card">
+      <h3>本地服务器状态</h3>
+      <div class="d-sub">学生登录、访问控制依赖启动器提供的本地服务</div>
+      <div id="serverStatus" class="server-status">检测中…</div>
+      <div class="server-entry" id="serverEntry" style="display:none"></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+        <button class="btn btn-primary btn-sm" id="publishBtn">${icon('external', 15)} 发布名单与成绩到服务器</button>
+        <button class="btn btn-ghost btn-sm" id="resetPwAll">重置全部初始口令</button>
+        <button class="btn btn-ghost btn-sm" id="refreshServer">${icon('refresh', 14)} 刷新状态</button>
+      </div>
+      <div class="settings-note" style="margin-top:14px">
+        发布内容：班级与学生名单（含口令哈希）、实训任务、成绩与评语。学生用「学号 + 口令」在
+        <code>#/student</code> 查看任务和成绩；名单只存在本地服务器，不会进入在线镜像。
+        默认初始口令为学号后 6 位（无数字则用完整学号）。
+      </div>
+    </div>
+    <div class="dash-card">
+      <h3>访问控制（最高权限）</h3>
+      <div class="d-sub">教师端仅本机可管理；这里控制其他地址能否访问平台</div>
+      <div id="accessPanel" class="access-panel">检测中…</div>
+      <div class="access-actions" id="accessActions" style="display:none">
+        <button class="btn btn-primary btn-sm" id="saveAccess">${icon('check', 15)} 保存访问设置</button>
+        <button class="btn btn-ghost btn-sm" id="pauseAccess" style="color:var(--warn)">立即禁止其他地址访问</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderAccessPanel(access) {
+  const el = document.getElementById('accessPanel');
+  const actions = document.getElementById('accessActions');
+  if (!el) return;
+  const mode = (access && access.mode) || 'all';
+  const wl = ((access && access.whitelist) || []).join('\n');
+  const modes = [
+    ['all', '全部放开', '学生、外网 IPv6/隧道均可访问'],
+    ['lan', '仅局域网', '只允许同一 WiFi/局域网内设备访问'],
+    ['local', '仅本机', '禁止其他地址访问，只留教师本机使用'],
+    ['whitelist', '仅白名单', '只允许下面列出的 IP 地址']
+  ];
+  el.innerHTML = `<div class="access-modes">${modes.map(([k, name, desc]) => `
+    <label class="access-opt ${mode === k ? 'active' : ''}">
+      <input type="radio" name="accessMode" value="${k}" ${mode === k ? 'checked' : ''}>
+      <span><b>${name}</b><em>${desc}</em></span>
+    </label>`).join('')}</div>
+    <textarea class="t-input t-area" id="whitelist" rows="3" placeholder="白名单 IP，每行一个，例如 192.168.1.50">${esc(wl)}</textarea>
+    <div class="access-current">当前模式：<b>${modes.find(m => m[0] === mode)?.[1] || mode}</b>${access && access.updatedAt ? ` · 更新于 ${esc(access.updatedAt)}` : ''}</div>`;
+  if (actions) actions.style.display = '';
+}
+const API_PREFIX = ['http:', 'https:'].includes(location.protocol) && !/\.github\.io$/i.test(location.hostname) ? '' : null;
+
+async function ensureServer() {
+  if (API_PREFIX === null) throw new Error('在线镜像不支持本地服务接口，请在教室电脑上运行启动器');
+  const info = await api('/api/health');
+  serverState.info = info;
+  if (!info.local) throw new Error('当前不是教师本机访问，无法管理服务器');
+  const k = await api('/api/teacher/key');
+  serverState.key = k.key;
+  serverState.access = await api('/api/access', { headers: { 'X-Teacher-Key': serverState.key } });
+  return true;
+}
+
+async function initServerTab(statusEl) {
+  try {
+    await ensureServer();
+    const info = serverState.info;
+    statusEl.className = 'server-status ok';
+    statusEl.innerHTML = `${icon('check', 15)} 本地服务正常 · 当前访问模式：<b>${esc(info.mode)}</b> · ${esc(info.time)}`;
+    renderAccessPanel(serverState.access);
+    try {
+      const ep = await fetch('data/endpoints.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null);
+      serverState.endpoints = ep;
+      const entry = document.getElementById('serverEntry');
+      if (ep && entry) {
+        entry.style.display = '';
+        entry.innerHTML = `<div class="d-sub">学生访问地址</div>
+          <div class="server-url"><code>${esc(ep.lan || '')}</code>（局域网）</div>
+          ${ep.ipv6 ? `<div class="server-url"><code>${esc(ep.ipv6)}</code>（公网 IPv6）</div>` : ''}
+          <div style="margin-top:8px"><a class="btn btn-ghost btn-sm" href="#/student" target="_blank">打开学生登录页</a></div>`;
+      }
+    } catch (e) { }
+  } catch (e) {
+    statusEl.className = 'server-status err';
+    statusEl.innerHTML = `${icon('info', 15)} ${esc(e.message)}`;
+    const panel = document.getElementById('accessPanel');
+    if (panel) panel.innerHTML = '<p style="color:var(--muted);font-size:13px">访问控制需要本地服务，请在运行启动器的电脑上打开教师端。</p>';
+  }
+}
+
+function buildPublishPayload() {
+  const students = [];
+  (core.data.classes || []).forEach(c => (c.students || []).forEach(raw => {
+    const s = ensureStudent(raw);
+    if (!s.sid) return;
+    students.push({
+      sid: s.sid, name: s.name, className: c.name,
+      enabled: s.enabled !== false, role: s.role || 'student',
+      permissions: s.permissions, passwordHash: s.passwordHash || ''
+    });
+  }));
+  const tasks = (core.data.tasks || []).map(t => ({
+    id: t.id, title: t.title, desc: t.desc, deadline: t.deadline,
+    minRes: t.minRes, requiredMaps: t.requiredMaps, weights: t.weights
+  }));
+  const grades = (core.data.evaluations || []).filter(e => e.studentId).map(e => ({
+    sid: e.studentId, studentName: e.studentName, folderName: e.folderName,
+    taskId: e.taskId, scores: e.scores, total: e.total, comment: e.comment,
+    updatedAt: e.updatedAt
+  }));
+  return { students, tasks, grades };
+}
+
+async function publishToServer() {
+  if (!serverState.key) { toast('请先刷新并连接本地服务'); return; }
+  let hashed = 0;
+  for (const c of core.data.classes || []) for (const raw of c.students || []) {
+    const s = ensureStudent(raw);
+    if (s.sid && !s.passwordHash) {
+      s.passwordHash = await hashPassword(s.sid, defaultPassword(s.sid));
+      s.passwordHint = 'sid6';
+      hashed++;
+    }
+  }
+  await core.save();
+  const payload = buildPublishPayload();
+  const r = await api('/api/teacher/publish', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Teacher-Key': serverState.key },
+    body: JSON.stringify(payload)
+  });
+  toast(`已发布：${r.students} 名学生、${r.tasks} 个任务、${r.grades} 条成绩${hashed ? `（新生成 ${hashed} 个默认口令）` : ''}`, 'ok');
+}
+
+/* ===== Excel 导入 ===== */
+async function importExcelFile(file) {
+  const XLSX = await loadXlsx();
+  const buf = await file.arrayBuffer();
+  const wb = XLSX.read(buf, { type: 'array' });
+  const ws = wb.Sheets[wb.SheetNames[0]];
+  const rows = XLSX.utils.sheet_to_json(ws, { header: 1, blankrows: false, defval: '' });
+  if (!rows.length) throw new Error('表格没有内容');
+  let headerIdx = -1, sidCol = 0, nameCol = 1;
+  for (let i = 0; i < Math.min(rows.length, 8); i++) {
+    const cells = rows[i].map(c => String(c).trim().toLowerCase());
+    const si = cells.findIndex(c => /学号|学生学号|sid|编号/.test(c));
+    const ni = cells.findIndex(c => /姓名|名字|学生姓名|name/.test(c));
+    if (si >= 0 || ni >= 0) {
+      headerIdx = i;
+      sidCol = si >= 0 ? si : 0;
+      nameCol = ni >= 0 ? ni : (si === 0 ? 1 : 0);
+      break;
+    }
+  }
+  const students = [];
+  for (let i = headerIdx + 1; i < rows.length; i++) {
+    const r = rows[i] || [];
+    const sid = String(r[sidCol] == null ? '' : r[sidCol]).trim();
+    const name = String(r[nameCol] == null ? '' : r[nameCol]).trim();
+    if (!sid && !name) continue;
+    students.push({ sid, name: name || sid });
+  }
+  if (!students.length) throw new Error('没有识别到学生数据（请检查是否包含学号/姓名列）');
+  showExcelPreview(file.name, students);
+}
+
+function showExcelPreview(fileName, students) {
+  const d = core.data;
+  const suggested = String(fileName || '导入班级').replace(/\.(xlsx|xls|csv)$/i, '');
+  const bd = document.createElement('div');
+  bd.className = 'modal-backdrop show';
+  bd.innerHTML = `<div class="modal" style="position:relative;max-width:680px">
+    <button class="icon-btn m-close">${icon('close', 16)}</button>
+    <h2>导入名单预览</h2>
+    <p style="color:var(--muted);font-size:13px;margin-top:8px">识别到 <b style="color:var(--gold)">${students.length}</b> 名学生（来自 ${esc(fileName)}）</p>
+    <div class="table-wrap" style="max-height:240px;overflow:auto"><table class="data"><thead><tr><th>#</th><th>学号</th><th>姓名</th></tr></thead><tbody>
+      ${students.slice(0, 12).map((s, i) => `<tr><td class="mono">${i + 1}</td><td class="mono">${esc(s.sid)}</td><td>${esc(s.name)}</td></tr>`).join('')}
+    </tbody></table></div>
+    ${students.length > 12 ? `<p style="color:var(--muted);font-size:12px">仅显示前 12 条…</p>` : ''}
+    <div class="t-grid2" style="margin-top:14px">
+      <label>导入方式
+        <select class="t-input" id="excelTarget">
+          <option value="__new">新建班级：${esc(suggested)}</option>
+          ${(d.classes || []).map(c => `<option value="${c.id}">并入已有班级：${esc(c.name)}</option>`).join('')}
+        </select>
+      </label>
+      <label>新建班级名称<input class="t-input" id="excelClassName" value="${esc(suggested)}"></label>
+    </div>
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:16px">
+      <button class="btn btn-ghost btn-sm" id="excelCancel">取消</button>
+      <button class="btn btn-primary btn-sm" id="excelConfirm">${icon('check', 15)} 确认导入</button>
+    </div>
+  </div>`;
+  document.body.appendChild(bd);
+  const close = () => bd.remove();
+  bd.querySelector('.m-close').onclick = close;
+  bd.querySelector('#excelCancel').onclick = close;
+  bd.querySelector('#excelConfirm').onclick = async () => {
+    const target = bd.querySelector('#excelTarget').value;
+    let cls;
+    if (target === '__new') {
+      const name = bd.querySelector('#excelClassName').value.trim() || suggested;
+      cls = { id: uid('cls'), name, students: [], createdAt: Date.now() };
+      core.data.classes.push(cls);
+    } else {
+      cls = core.data.classes.find(c => c.id === target);
+    }
+    if (!cls) return;
+    cls.students = cls.students || [];
+    let added = 0, updated = 0;
+    students.forEach(st => {
+      const existed = cls.students.find(x => (st.sid && x.sid === st.sid) || (!st.sid && x.name === st.name));
+      if (existed) { existed.name = st.name || existed.name; updated++; }
+      else { cls.students.push(ensureStudent({ sid: st.sid, name: st.name })); added++; }
+    });
+    await core.save();
+    close();
+    toast(`导入完成：新增 ${added} 人${updated ? '，更新 ' + updated + ' 人' : ''}`, 'ok');
+    rerender();
+  };
+}
+
+/* ===== 学生管理弹窗 ===== */
+function studentModal(classId, key, type) {
+  const cls = core.data.classes.find(c => c.id === classId);
+  if (!cls) return;
+  const s = (cls.students || []).map(ensureStudent).find(x => (x.sid || x.name) === key);
+  if (!s) return;
+  const bd = document.createElement('div');
+  bd.className = 'modal-backdrop show';
+  const edit = type === 'edit';
+  bd.innerHTML = `<div class="modal" style="position:relative;max-width:480px">
+    <button class="icon-btn m-close">${icon('close', 16)}</button>
+    <h2>${edit ? '编辑学生' : '设置登录口令'}</h2>
+    ${edit ? `<div class="t-grid2" style="margin-top:14px">
+      <label>学号<input class="t-input" id="sSid" value="${esc(s.sid || '')}"></label>
+      <label>姓名<input class="t-input" id="sName" value="${esc(s.name || '')}"></label>
+    </div>
+    <label>角色<select class="t-input" id="sRole">
+      <option value="student" ${s.role !== 'leader' ? 'selected' : ''}>学生</option>
+      <option value="leader" ${s.role === 'leader' ? 'selected' : ''}>课代表</option>
+    </select></label>`
+      : `<p style="color:var(--muted);font-size:13px;margin-top:10px">为 <b>${esc(s.name)}</b>（${esc(s.sid || '无学号')}）设置新口令。默认规则：学号后 6 位。</p>
+    <label>新口令<input class="t-input" id="sPwd" placeholder="输入新口令，留空则用默认规则"></label>`}
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:16px">
+      <button class="btn btn-ghost btn-sm" id="sCancel">取消</button>
+      <button class="btn btn-primary btn-sm" id="sSave">${icon('check', 15)} 保存</button>
+    </div>
+  </div>`;
+  document.body.appendChild(bd);
+  const close = () => bd.remove();
+  bd.querySelector('.m-close').onclick = close;
+  bd.querySelector('#sCancel').onclick = close;
+  bd.querySelector('#sSave').onclick = async () => {
+    if (edit) {
+      const nsid = bd.querySelector('#sSid').value.trim();
+      const nname = bd.querySelector('#sName').value.trim();
+      if (!nname) return toast('姓名不能为空');
+      const dup = (cls.students || []).find(x => x !== s && nsid && x.sid === nsid);
+      if (dup) return toast('学号已存在');
+      s.sid = nsid; s.name = nname; s.role = bd.querySelector('#sRole').value;
+    } else {
+      const pwd = bd.querySelector('#sPwd').value.trim() || defaultPassword(s.sid);
+      if (pwd.length < 6) return toast('口令至少 6 位');
+      s.passwordHash = await hashPassword(s.sid, pwd);
+      s.passwordHint = bd.querySelector('#sPwd').value.trim() ? 'custom' : 'sid6';
+    }
+    await core.save();
+    close();
+    toast('已保存', 'ok');
+    rerender();
+  };
+}
+
+function exportClassRoster(classId) {
+  const cls = core.data.classes.find(c => c.id === classId);
+  if (!cls) return;
+  loadXlsx().then(XLSX => {
+    const rows = [['学号', '姓名', '班级', '角色', '登录', '看成绩', '口令状态']];
+    (cls.students || []).map(ensureStudent).forEach(s => {
+      rows.push([s.sid || '', s.name || '', cls.name, s.role === 'leader' ? '课代表' : '学生',
+        s.enabled ? '启用' : '停用', s.permissions.viewGrades ? '可见' : '隐藏', s.passwordHash ? '已设置' : '默认']);
+    });
+    const ws = XLSX.utils.aoa_to_sheet(rows);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, '名单');
+    XLSX.writeFile(wb, cls.name + '-学生名单.xlsx');
+    toast('名单已导出', 'ok');
+  }).catch(e => toast('导出失败：' + e.message, 'err'));
+}
+
 function bodyForTab() {
   if (state.tab === 'classes') return classesTab();
   if (state.tab === 'tasks') return tasksTab();
   if (state.tab === 'eval') return evalTab();
   if (state.tab === 'grades') return gradesTab();
+  if (state.tab === 'server') return serverTab();
   return overviewTab();
 }
 
@@ -643,16 +1018,64 @@ function bindTab() {
   if (addClass) addClass.onclick = async () => {
     const name = document.getElementById('className').value.trim();
     if (!name) return toast('请填写班级名称');
-    const students = parseRoster(document.getElementById('classRoster').value);
+    const students = parseRoster(document.getElementById('classRoster').value).map(s => ensureStudent(s));
     core.data.classes.push({ id: uid('cls'), name, students, createdAt: Date.now() });
     await core.save();
     toast('班级已创建：' + students.length + ' 名学生', 'ok');
     rerender();
   };
+  const importExcel = document.getElementById('importExcel');
+  const excelInput = document.getElementById('excelInput');
+  if (importExcel && excelInput) {
+    importExcel.onclick = () => excelInput.click();
+    excelInput.onchange = async () => {
+      const f = excelInput.files[0];
+      if (!f) return;
+      try { await importExcelFile(f); }
+      catch (e) { toast('导入失败：' + e.message, 'err'); }
+      excelInput.value = '';
+    };
+  }
   body.querySelectorAll('[data-del-class]').forEach(b => b.onclick = async () => {
     if (!confirm('删除该班级及名单？')) return;
     core.data.classes = core.data.classes.filter(c => c.id !== b.dataset.delClass);
     await core.save();
+    rerender();
+  });
+  body.querySelectorAll('[data-export-class]').forEach(b => b.onclick = () => exportClassRoster(b.dataset.exportClass));
+  body.querySelectorAll('[data-toggle-student]').forEach(b => b.onclick = async () => {
+    const cls = core.data.classes.find(c => c.id === b.dataset.class);
+    const s = (cls ? cls.students : []).map(ensureStudent).find(x => (x.sid || x.name) === b.dataset.toggleStudent);
+    if (!s) return;
+    if (b.dataset.field === 'enabled') s.enabled = !s.enabled;
+    else s.permissions.viewGrades = !s.permissions.viewGrades;
+    await core.save();
+    rerender();
+  });
+  body.querySelectorAll('[data-edit-student]').forEach(b => b.onclick = () => studentModal(b.dataset.class, b.dataset.editStudent, 'edit'));
+  body.querySelectorAll('[data-pwd-student]').forEach(b => b.onclick = () => studentModal(b.dataset.class, b.dataset.pwdStudent, 'pwd'));
+  body.querySelectorAll('[data-del-student]').forEach(b => b.onclick = async () => {
+    if (!confirm('移出该学生？')) return;
+    const cls = core.data.classes.find(c => c.id === b.dataset.class);
+    if (!cls) return;
+    cls.students = (cls.students || []).filter(x => (x.sid || x.name) !== b.dataset.delStudent);
+    await core.save();
+    rerender();
+  });
+  body.querySelectorAll('[data-add-student]').forEach(b => b.onclick = async () => {
+    const cid = b.dataset.addStudent;
+    const cls = core.data.classes.find(c => c.id === cid);
+    if (!cls) return;
+    const sidEl = body.querySelector(`[data-add-sid="${cid}"]`);
+    const nameEl = body.querySelector(`[data-add-name="${cid}"]`);
+    const sid = sidEl.value.trim();
+    const name = nameEl.value.trim();
+    if (!name) return toast('请填写姓名');
+    cls.students = cls.students || [];
+    if (cls.students.find(x => sid && x.sid === sid)) return toast('学号已存在');
+    cls.students.push(ensureStudent({ sid, name }));
+    await core.save();
+    toast('已添加', 'ok');
     rerender();
   });
 
@@ -800,6 +1223,66 @@ function bindTab() {
       toCsv(rows, ['学生', '学号', '任务', '完整性', '贴图质量', 'UV与结构', '展示', '创意', '总分', '评估时间']));
     toast('成绩已导出', 'ok');
   };
+
+  // 发布与访问
+  const serverStatus = document.getElementById('serverStatus');
+  if (serverStatus) {
+    initServerTab(serverStatus);
+    const publishBtn = document.getElementById('publishBtn');
+    if (publishBtn) publishBtn.onclick = async () => {
+      if (!serverState.key) return toast('请先连接本地服务');
+      try {
+        const origToast = toast;
+        await publishToServer();
+      } catch (e) { toast('发布失败：' + e.message, 'err'); }
+    };
+    const resetPwAll = document.getElementById('resetPwAll');
+    if (resetPwAll) resetPwAll.onclick = async () => {
+      if (!confirm('把所有学生的口令重置为默认规则（学号后 6 位）？')) return;
+      let n = 0;
+      for (const c of core.data.classes || []) for (const raw of c.students || []) {
+        const s = ensureStudent(raw);
+        if (!s.sid) continue;
+        s.passwordHash = await hashPassword(s.sid, defaultPassword(s.sid));
+        s.passwordHint = 'sid6';
+        n++;
+      }
+      await core.save();
+      toast('已重置 ' + n + ' 名学生的口令（需重新发布生效）', 'ok');
+      rerender();
+    };
+    const refresh = document.getElementById('refreshServer');
+    if (refresh) refresh.onclick = () => initServerTab(serverStatus);
+    const saveAccess = document.getElementById('saveAccess');
+    if (saveAccess) saveAccess.onclick = async () => {
+      try {
+        const mode = document.querySelector('input[name="accessMode"]:checked')?.value || 'all';
+        const whitelist = (document.getElementById('whitelist')?.value || '').split(/\r?\n/).map(x => x.trim()).filter(Boolean);
+        await api('/api/access', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'X-Teacher-Key': serverState.key },
+          body: JSON.stringify({ mode, whitelist })
+        });
+        serverState.access = await api('/api/access', { headers: { 'X-Teacher-Key': serverState.key } });
+        renderAccessPanel(serverState.access);
+        toast('访问设置已保存', 'ok');
+      } catch (e) { toast('保存失败：' + e.message, 'err'); }
+    };
+    const pauseAccess = document.getElementById('pauseAccess');
+    if (pauseAccess) pauseAccess.onclick = async () => {
+      if (!confirm('立即禁止其他地址访问？设置后只有本机能打开平台，学生端会显示访问受限。')) return;
+      try {
+        await api('/api/access', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'X-Teacher-Key': serverState.key },
+          body: JSON.stringify({ mode: 'local', whitelist: [] })
+        });
+        serverState.access = await api('/api/access', { headers: { 'X-Teacher-Key': serverState.key } });
+        renderAccessPanel(serverState.access);
+        toast('已禁止其他地址访问（仅本机可用）', 'ok');
+      } catch (e) { toast('操作失败：' + e.message, 'err'); }
+    };
+  }
 }
 
 function switchTab(id) {
@@ -809,7 +1292,6 @@ function switchTab(id) {
   if (body) body.innerHTML = bodyForTab();
   bindTab();
 }
-
 function rerender() {
   const app = document.getElementById('app');
   if (app) app.innerHTML = renderShell();

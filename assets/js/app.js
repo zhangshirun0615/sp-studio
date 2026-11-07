@@ -7,6 +7,7 @@ import toolbox from './views/toolbox.js';
 import kb from './views/kb.js';
 import quiz from './views/quiz.js';
 import admin from './views/admin.js';
+import student from './views/student.js';
 import { observeReveal, icon, esc } from './ui.js';
 
 const routes = [
@@ -19,6 +20,7 @@ const routes = [
   { re: /^\/quiz\/?$/, view: quiz, nav: 'quiz' },
   { re: /^\/quiz\/([\w-]+)\/?$/, view: quiz, nav: 'quiz', keys: ['moduleId'] },
   { re: /^\/admin\/?$/, view: admin, nav: 'admin' },
+  { re: /^\/student\/?$/, view: student, nav: 'student' },
   // 教师端：不在导航中显示，按需加载（学生端不会请求这段代码）
   { re: /^\/teacher\/?$/, nav: '', loader: () => import('./views/teacher.js').then(m => m.default) }
 ];

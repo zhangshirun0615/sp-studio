@@ -135,3 +135,61 @@ label { font-size: 12.5px; color: var(--muted); }
 .settings-note { margin-top: 16px; padding: 12px 14px; border: 1px dashed var(--line-strong); border-radius: 11px;
   font-size: 12px; color: var(--muted); line-height: 1.85; }
 .settings-note b { color: var(--text-2); }
+
+/* ===== 学生管理表格 ===== */
+.student-table-wrap { overflow-x: auto; margin-top: 10px; }
+.student-table th, .student-table td { padding: 7px 8px; font-size: 12px; }
+.student-table .chip { padding: 3px 8px; font-size: 11px; }
+.student-ops { display: flex; gap: 4px; }
+.student-ops .btn { padding: 4px 6px; font-size: 11px; }
+.student-add { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; align-items: flex-end; }
+.student-add .t-input { margin: 0; }
+.tc-head-actions { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+
+/* ===== 发布与访问 ===== */
+.server-status { padding: 14px 16px; border-radius: 11px; border: 1px solid var(--line);
+  background: rgba(255,255,255,.03); font-size: 13px; color: var(--text-2); line-height: 1.8; }
+.server-status.ok { border-color: rgba(99,214,159,.35); background: rgba(99,214,159,.06); }
+.server-status.err { border-color: rgba(255,191,94,.35); background: rgba(255,191,94,.06); color: #ffe0b0; }
+.server-entry { margin-top: 14px; }
+.server-url { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.server-url code { font-family: var(--mono); color: #ffe0c4; }
+.access-panel { margin-top: 4px; }
+.access-modes { display: flex; flex-direction: column; gap: 8px; }
+.access-opt { display: flex; align-items: flex-start; gap: 9px; padding: 10px 12px; border-radius: 10px;
+  border: 1px solid var(--line); background: rgba(255,255,255,.02); cursor: pointer; }
+.access-opt.active { border-color: rgba(255,138,61,.45); background: rgba(255,138,61,.07); }
+.access-opt input { margin-top: 3px; accent-color: var(--copper); }
+.access-opt span { display: flex; flex-direction: column; gap: 2px; }
+.access-opt b { font-size: 13px; color: var(--text); }
+.access-opt em { font-style: normal; font-size: 11.5px; color: var(--muted); }
+.access-current { margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+.access-current b { color: var(--gold); }
+.access-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+
+/* ===== 学生门户 ===== */
+.student-shell { padding: 36px 0 70px; }
+.student-login-card, .student-unavailable { max-width: 520px; margin: 0 auto; padding: 34px; text-align: center; }
+.student-login-icon { width: 62px; height: 62px; border-radius: 18px; display: grid; place-items: center; margin: 0 auto 14px;
+  background: linear-gradient(135deg, rgba(126,224,195,.22), rgba(126,224,195,.05)); border: 1px solid rgba(126,224,195,.3); color: var(--teal); }
+.student-login-card h3, .student-unavailable h3 { font-size: 20px; }
+.student-login-card p, .student-unavailable p { color: var(--muted); font-size: 13px; line-height: 1.8; margin: 8px 0 16px; }
+.student-login-form { display: flex; flex-direction: column; gap: 10px; }
+.student-login-form .t-input { margin: 0; text-align: center; }
+.student-login-msg { margin-top: 12px; min-height: 18px; color: var(--bad); font-size: 12.5px; }
+.student-who { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.03); margin-bottom: 16px; }
+.student-who b { font-size: 18px; display: block; }
+.student-who span { font-size: 12.5px; color: var(--muted); }
+.student-task { margin-bottom: 14px; }
+.st-head { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.st-head b { font-size: 16px; }
+.st-desc { color: var(--muted); font-size: 13px; line-height: 1.75; margin-top: 8px; }
+.st-comment { margin-top: 10px; padding: 12px 14px; border-radius: 10px; border-left: 3px solid var(--teal);
+  background: rgba(126,224,195,.06); color: #d6efe8; font-size: 13px; line-height: 1.8; }
+.st-comment b { display: block; font-size: 11.5px; letter-spacing: .1em; color: var(--teal); margin-bottom: 4px; }
+.st-scores { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.st-score { min-width: 84px; padding: 8px 10px; border-radius: 9px; border: 1px solid var(--line); background: rgba(255,255,255,.03); }
+.st-score span { display: block; font-size: 10.5px; color: var(--muted); }
+.st-score b { font-size: 18px; color: var(--gold); }
+.student-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px; }
