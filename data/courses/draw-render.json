@@ -15,7 +15,7 @@
     {
      "no": 1,
      "id": "l1",
-     "title": "环境 明度 块面概括",
+     "title": "环境明度块面概括",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/environment value block-in.mp4",
      "rootIndex": 0,
      "durationSec": 864.1,
@@ -33,7 +33,7 @@
     {
      "no": 3,
      "id": "l3",
-     "title": "第 8 页 · 绘画基础 入门",
+     "title": "第 8 页 · 绘画基础入门",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 008 How_to_Draw_Introduction.mp4",
      "rootIndex": 0,
      "durationSec": 190.4,
@@ -42,7 +42,7 @@
     {
      "no": 4,
      "id": "l4",
-     "title": "第 31 页 · 视锥 一点透视 02",
+     "title": "第 31 页 · 视锥一点透视",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 031 cone of vision one point 02.mp4",
      "rootIndex": 0,
      "durationSec": 1316.3,
@@ -60,7 +60,7 @@
     {
      "no": 6,
      "id": "l6",
-     "title": "第 99 页 · X Y Z 截面绘制",
+     "title": "第 99 页 · XYZ 截面绘制",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 099 X-Y-Z section drawing.mp4",
      "rootIndex": 0,
      "durationSec": 3216.8,
@@ -69,7 +69,7 @@
     {
      "no": 7,
      "id": "l7",
-     "title": "第 101 页 · 线条 weight",
+     "title": "第 101 页 · 线条轻重",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 101 line weight.mp4",
      "rootIndex": 0,
      "durationSec": 1344.2,
@@ -78,7 +78,7 @@
     {
      "no": 8,
      "id": "l8",
-     "title": "第 120 页 · outdoor 环境 step by step",
+     "title": "第 120 页 · 户外环境分步示范",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 120 outdoor environment step-by-step.mp4",
      "rootIndex": 0,
      "durationSec": 1696.0,
@@ -87,7 +87,7 @@
     {
      "no": 9,
      "id": "l9",
-     "title": "第 165 页 · 载具 quick sketching",
+     "title": "第 165 页 · 载具快速草图",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 165 vehicle quick sketching.mp4",
      "rootIndex": 0,
      "durationSec": 2818.0,
@@ -96,7 +96,7 @@
     {
      "no": 10,
      "id": "l10",
-     "title": "第 204 页 · SRD You Tube channel overview(720p)",
+     "title": "第 204 页 · SRD 视频频道介绍",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 204  SRD You Tube channel overview(720p).MP4",
      "rootIndex": 0,
      "durationSec": 97.2,
@@ -105,7 +105,7 @@
     {
      "no": 11,
      "id": "l11",
-     "title": "第 205 页 · SRW overview(720p)",
+     "title": "第 205 页 · SRW 介绍",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 205  SRW overview(720p).MP4",
      "rootIndex": 0,
      "durationSec": 181.2,
@@ -114,7 +114,7 @@
     {
      "no": 12,
      "id": "l12",
-     "title": "第 011 材质s and skills",
+     "title": "第 11 页 · 材质s and 技法",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_011_materials_and_skills.mp4",
      "rootIndex": 0,
      "durationSec": 1271.3,
@@ -123,7 +123,7 @@
     {
      "no": 13,
      "id": "l13",
-     "title": "第 018 freehand ellipses",
+     "title": "第 18 页 · 徒手椭圆",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_018_freehand_ellipses.mp4",
      "rootIndex": 0,
      "durationSec": 553.8,
@@ -132,7 +132,7 @@
     {
      "no": 14,
      "id": "l14",
-     "title": "第 053 转移 scale",
+     "title": "第 53 页 · 转移比例",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_053_transferring_scale.mp4",
      "rootIndex": 0,
      "durationSec": 658.5,
@@ -141,7 +141,7 @@
     {
      "no": 15,
      "id": "l15",
-     "title": "第 056 brewer method",
+     "title": "第 56 页 · 布鲁尔方法",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_056_brewer_method_02.mp4",
      "rootIndex": 0,
      "durationSec": 793.2,
@@ -150,7 +150,7 @@
     {
      "no": 16,
      "id": "l16",
-     "title": "第 072 绘制 ellipses",
+     "title": "第 72 页 · 绘制椭圆",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_072_drawing_ellipses.mp4",
      "rootIndex": 0,
      "durationSec": 695.2,
@@ -159,7 +159,7 @@
     {
      "no": 17,
      "id": "l17",
-     "title": "第 075 hinging and rotating (1)",
+     "title": "第 75 页 · 铰接 and 旋转",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_075_hinging_and_rotating (1).mp4",
      "rootIndex": 0,
      "durationSec": 582.2,
@@ -168,7 +168,7 @@
     {
      "no": 18,
      "id": "l18",
-     "title": "第 078 subdviding ellipses",
+     "title": "第 78 页 · 细分椭圆",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_078_subdviding_ellipses_02.mp4",
      "rootIndex": 0,
      "durationSec": 1240.2,
@@ -177,7 +177,7 @@
     {
      "no": 19,
      "id": "l19",
-     "title": "第 114 atmospheric 透视 (1)",
+     "title": "第 114 页 · 空气透视透视",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_114_atmospheric_perspective (1).mp4",
      "rootIndex": 0,
      "durationSec": 1207.7,
@@ -186,7 +186,7 @@
     {
      "no": 20,
      "id": "l20",
-     "title": "第 115 sketching an interior space",
+     "title": "第 115 页 · 草图 an 室内 space",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_115_sketching_an_interior_space.mp4",
      "rootIndex": 0,
      "durationSec": 734.4,
@@ -195,7 +195,7 @@
     {
      "no": 21,
      "id": "l21",
-     "title": "第 117 环境 明度 块面概括",
+     "title": "第 117 页 · 环境明度块面概括",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_117_environment_value_block_in.mp4",
      "rootIndex": 0,
      "durationSec": 864.0,
@@ -204,7 +204,7 @@
     {
      "no": 22,
      "id": "l22",
-     "title": "第 118 wide angle lens grids",
+     "title": "第 118 页 · 广角镜头网格",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_118_wide_angle_lens_grids.mp4",
      "rootIndex": 0,
      "durationSec": 570.7,
@@ -213,7 +213,7 @@
     {
      "no": 23,
      "id": "l23",
-     "title": "第 122 airplane sketching",
+     "title": "第 122 页 · 飞机草图",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_122_airplane_sketching.mp4",
      "rootIndex": 0,
      "durationSec": 1837.0,
@@ -222,7 +222,7 @@
     {
      "no": 24,
      "id": "l24",
-     "title": "第 154 视觉 research",
+     "title": "第 154 页 · 视觉调研",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_154_visual_research.mp4",
      "rootIndex": 0,
      "durationSec": 2071.3,
@@ -231,7 +231,7 @@
     {
      "no": 25,
      "id": "l25",
-     "title": "第 156 observational 绘制",
+     "title": "第 156 页 · 观察写生",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_156_observational_drawing.mp4",
      "rootIndex": 0,
      "durationSec": 620.2,
@@ -240,7 +240,7 @@
     {
      "no": 26,
      "id": "l26",
-     "title": "第 159 colorizing and weathering in Photoshop",
+     "title": "第 159 页 · 上色与做旧 in Photoshop",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_159_colorizing_and_weathering_in_Photoshop.mp4",
      "rootIndex": 0,
      "durationSec": 1236.6,
@@ -249,7 +249,7 @@
     {
      "no": 27,
      "id": "l27",
-     "title": "第 160 载具 packaging",
+     "title": "第 160 页 · 载具包装",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_160_vehicle_packaging.mp4",
      "rootIndex": 0,
      "durationSec": 1631.7,
@@ -258,7 +258,7 @@
     {
      "no": 28,
      "id": "l28",
-     "title": "第 185 car 绘制 step by step",
+     "title": "第 185 页 · 汽车绘制分步示范",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_185_car_drawing_step-by-step.mp4",
      "rootIndex": 0,
      "durationSec": 2494.6,
@@ -267,7 +267,7 @@
     {
      "no": 29,
      "id": "l29",
-     "title": "第 188 quick marker 草图",
+     "title": "第 188 页 · 马克笔速写",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_188_quick_marker_sketch.mp4",
      "rootIndex": 0,
      "durationSec": 951.9,
@@ -276,7 +276,7 @@
     {
      "no": 30,
      "id": "l30",
-     "title": "第 191 sci fi truck 草图",
+     "title": "第 191 页 · 科幻卡车草图",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_191_sci-fi_truck_sketch.mp4",
      "rootIndex": 0,
      "durationSec": 1964.7,
@@ -285,7 +285,7 @@
     {
      "no": 31,
      "id": "l31",
-     "title": "第 195 copic marker pilot hi tec pen",
+     "title": "第 195 页 · 马克笔百乐针管笔",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_195_copic_marker_pilot_hi_tec_pen.mp4",
      "rootIndex": 0,
      "durationSec": 1338.3,
@@ -294,7 +294,7 @@
     {
      "no": 32,
      "id": "l32",
-     "title": "第 197 Pentel Pocket Brush pen",
+     "title": "第 197 页 · 便携毛笔",
      "file": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_197_Pentel_Pocket_Brush_pen.mp4",
      "rootIndex": 0,
      "durationSec": 655.1,
@@ -644,7 +644,7 @@
     {
      "no": 69,
      "id": "l69",
-     "title": "第 101 页 · a 草图 Book Pro 入门",
+     "title": "第 101 页 · a 速写本入门",
      "file": "1.原书视频+素材（对应页码）/re 补充/page 101a Sketch Book Pro intro.mp4",
      "rootIndex": 1,
      "durationSec": 727.0,
@@ -662,7 +662,7 @@
     {
      "no": 71,
      "id": "l71",
-     "title": "第 115 页 · 明度 渲染ing XYZ forms",
+     "title": "第 115 页 · 明度渲染ing XYZ 形体",
      "file": "1.原书视频+素材（对应页码）/re 补充/page 115 value rendering XYZ forms.mp4",
      "rootIndex": 1,
      "durationSec": 1865.9,
@@ -671,7 +671,7 @@
     {
      "no": 72,
      "id": "l72",
-     "title": "第 129 页 · matte car 渲染ing(720p)",
+     "title": "第 129 页 · 哑光汽车渲染",
      "file": "1.原书视频+素材（对应页码）/re 补充/page 129  matte car rendering(720p).MP4",
      "rootIndex": 1,
      "durationSec": 3615.2,
@@ -680,7 +680,7 @@
     {
      "no": 73,
      "id": "l73",
-     "title": "第 132 页 · mech 明度 steps(720p)",
+     "title": "第 132 页 · 机械明度步骤",
      "file": "1.原书视频+素材（对应页码）/re 补充/page 132  mech value steps(720p).MP4",
      "rootIndex": 1,
      "durationSec": 2704.6,
@@ -689,7 +689,7 @@
     {
      "no": 74,
      "id": "l74",
-     "title": "第 135 页 · matte bunny 渲染ing(720p)",
+     "title": "第 135 页 · 哑光兔子渲染ing",
      "file": "1.原书视频+素材（对应页码）/re 补充/page 135  matte bunny rendering(720p).MP4",
      "rootIndex": 1,
      "durationSec": 1074.9,
@@ -698,7 +698,7 @@
     {
      "no": 75,
      "id": "l75",
-     "title": "第 137 页 · colorizing greyscale images(720p)",
+     "title": "第 137 页 · 上色灰度图像",
      "file": "1.原书视频+素材（对应页码）/re 补充/page 137  colorizing greyscale images(720p).MP4",
      "rootIndex": 1,
      "durationSec": 280.1,
@@ -707,7 +707,7 @@
     {
      "no": 76,
      "id": "l76",
-     "title": "第 194 页 · red airplane outdoor(720p)",
+     "title": "第 194 页 · red 飞机户外",
      "file": "1.原书视频+素材（对应页码）/re 补充/page 194  red airplane outdoor(720p).MP4",
      "rootIndex": 1,
      "durationSec": 3418.3,
@@ -716,7 +716,7 @@
     {
      "no": 77,
      "id": "l77",
-     "title": "第 203 页 · 渲染ing outdoor 反射s(720p)",
+     "title": "第 203 页 · 渲染ing 户外反射s",
      "file": "1.原书视频+素材（对应页码）/re 补充/page 203  rendering outdoor reflections(720p).MP4",
      "rootIndex": 1,
      "durationSec": 6532.3,
@@ -725,7 +725,7 @@
     {
      "no": 78,
      "id": "l78",
-     "title": "第 241 页 · mech 渲染ing(720p)",
+     "title": "第 241 页 · 机械渲染ing",
      "file": "1.原书视频+素材（对应页码）/re 补充/page 241  mech rendering(720p).MP4",
      "rootIndex": 1,
      "durationSec": 3093.4,
@@ -933,7 +933,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 101 line weight.srt",
    "name": "page 101 line weight.srt",
-   "label": "第 101 线条 weight",
+   "label": "第 101 线条 轻重",
    "sizeMB": 0.04,
    "rootIndex": 0
   },
@@ -941,7 +941,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 120 outdoor environment step-by-step.srt",
    "name": "page 120 outdoor environment step-by-step.srt",
-   "label": "第 120 outdoor 环境 step by step",
+   "label": "第 120 户外 环境 step by step",
    "sizeMB": 0.05,
    "rootIndex": 0
   },
@@ -949,7 +949,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 165 vehicle quick sketching.srt",
    "name": "page 165 vehicle quick sketching.srt",
-   "label": "第 165 载具 quick sketching",
+   "label": "第 165 载具 快速 草图",
    "sizeMB": 0.09,
    "rootIndex": 0
   },
@@ -957,7 +957,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 204  SRD You Tube channel overview(720p).srt",
    "name": "page 204  SRD You Tube channel overview(720p).srt",
-   "label": "第 204 SRD You Tube channel overview(720p)",
+   "label": "第 204 SRD You Tube 频道 介绍(720p)",
    "sizeMB": 0.0,
    "rootIndex": 0
   },
@@ -965,7 +965,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page 205  SRW overview(720p).srt",
    "name": "page 205  SRW overview(720p).srt",
-   "label": "第 205 SRW overview(720p)",
+   "label": "第 205 SRW 介绍(720p)",
    "sizeMB": 0.01,
    "rootIndex": 0
   },
@@ -973,7 +973,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_011_materials_and_skills.srt",
    "name": "page_011_materials_and_skills.srt",
-   "label": "第 011 材质s and skills",
+   "label": "第 011 材质s and 技法",
    "sizeMB": 0.04,
    "rootIndex": 0
   },
@@ -981,7 +981,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_018_freehand_ellipses.srt",
    "name": "page_018_freehand_ellipses.srt",
-   "label": "第 018 freehand ellipses",
+   "label": "第 018 徒手 椭圆",
    "sizeMB": 0.02,
    "rootIndex": 0
   },
@@ -989,7 +989,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_053_transferring_scale.srt",
    "name": "page_053_transferring_scale.srt",
-   "label": "第 053 转移 scale",
+   "label": "第 053 转移 比例",
    "sizeMB": 0.02,
    "rootIndex": 0
   },
@@ -997,7 +997,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_056_brewer_method_02.srt",
    "name": "page_056_brewer_method_02.srt",
-   "label": "第 056 brewer method 02",
+   "label": "第 056 布鲁尔 方法 02",
    "sizeMB": 0.02,
    "rootIndex": 0
   },
@@ -1005,7 +1005,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_072_drawing_ellipses.srt",
    "name": "page_072_drawing_ellipses.srt",
-   "label": "第 072 绘制 ellipses",
+   "label": "第 072 绘制 椭圆",
    "sizeMB": 0.02,
    "rootIndex": 0
   },
@@ -1013,7 +1013,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_075_hinging_and_rotating+(1).srt",
    "name": "page_075_hinging_and_rotating+(1).srt",
-   "label": "第 075 hinging and rotating+(1)",
+   "label": "第 075 铰接 and 旋转+(1)",
    "sizeMB": 0.02,
    "rootIndex": 0
   },
@@ -1021,7 +1021,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_078_subdviding_ellipses_02.srt",
    "name": "page_078_subdviding_ellipses_02.srt",
-   "label": "第 078 subdviding ellipses 02",
+   "label": "第 078 细分 椭圆 02",
    "sizeMB": 0.03,
    "rootIndex": 0
   },
@@ -1029,7 +1029,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_114_atmospheric_perspective (1).srt",
    "name": "page_114_atmospheric_perspective (1).srt",
-   "label": "第 114 atmospheric 透视 (1)",
+   "label": "第 114 空气透视 透视 (1)",
    "sizeMB": 0.04,
    "rootIndex": 0
   },
@@ -1037,7 +1037,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_115_sketching_an_interior_space.srt",
    "name": "page_115_sketching_an_interior_space.srt",
-   "label": "第 115 sketching an interior space",
+   "label": "第 115 草图 an 室内 space",
    "sizeMB": 0.02,
    "rootIndex": 0
   },
@@ -1053,7 +1053,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_118_wide_angle_lens_grids.srt",
    "name": "page_118_wide_angle_lens_grids.srt",
-   "label": "第 118 wide angle lens grids",
+   "label": "第 118 广角 角度 镜头 网格",
    "sizeMB": 0.02,
    "rootIndex": 0
   },
@@ -1061,7 +1061,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_122_airplane_sketching.srt",
    "name": "page_122_airplane_sketching.srt",
-   "label": "第 122 airplane sketching",
+   "label": "第 122 飞机 草图",
    "sizeMB": 0.06,
    "rootIndex": 0
   },
@@ -1069,7 +1069,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_154_visual_research.srt",
    "name": "page_154_visual_research.srt",
-   "label": "第 154 视觉 research",
+   "label": "第 154 视觉 调研",
    "sizeMB": 0.07,
    "rootIndex": 0
   },
@@ -1077,7 +1077,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_156_observational_drawing.srt",
    "name": "page_156_observational_drawing.srt",
-   "label": "第 156 observational 绘制",
+   "label": "第 156 观察 绘制",
    "sizeMB": 0.02,
    "rootIndex": 0
   },
@@ -1085,7 +1085,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_159_colorizing_and_weathering_in_Photoshop.srt",
    "name": "page_159_colorizing_and_weathering_in_Photoshop.srt",
-   "label": "第 159 colorizing and weathering in Photoshop",
+   "label": "第 159 上色 and 做旧 in Photoshop",
    "sizeMB": 0.04,
    "rootIndex": 0
   },
@@ -1093,7 +1093,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_160_vehicle_packaging.srt",
    "name": "page_160_vehicle_packaging.srt",
-   "label": "第 160 载具 packaging",
+   "label": "第 160 载具 包装",
    "sizeMB": 0.05,
    "rootIndex": 0
   },
@@ -1101,7 +1101,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_185_car_drawing_step-by-step.srt",
    "name": "page_185_car_drawing_step-by-step.srt",
-   "label": "第 185 car 绘制 step by step",
+   "label": "第 185 汽车 绘制 step by step",
    "sizeMB": 0.07,
    "rootIndex": 0
   },
@@ -1109,7 +1109,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_188_quick_marker_sketch.srt",
    "name": "page_188_quick_marker_sketch.srt",
-   "label": "第 188 quick marker 草图",
+   "label": "第 188 快速 马克笔 草图",
    "sizeMB": 0.03,
    "rootIndex": 0
   },
@@ -1117,7 +1117,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_191_sci-fi_truck_sketch.srt",
    "name": "page_191_sci-fi_truck_sketch.srt",
-   "label": "第 191 sci fi truck 草图",
+   "label": "第 191 sci fi 卡车 草图",
    "sizeMB": 0.06,
    "rootIndex": 0
   },
@@ -1125,7 +1125,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_195_copic_marker_pilot_hi_tec_pen.srt",
    "name": "page_195_copic_marker_pilot_hi_tec_pen.srt",
-   "label": "第 195 copic marker pilot hi tec pen",
+   "label": "第 195 马克笔 马克笔 百乐 hi tec 笔",
    "sizeMB": 0.04,
    "rootIndex": 0
   },
@@ -1133,7 +1133,7 @@
    "kind": "file",
    "path": "1.How to draw随书视频（对应页码）（AI双语字幕版）/视频与SRT字幕文件/page_197_Pentel_Pocket_Brush_pen.srt",
    "name": "page_197_Pentel_Pocket_Brush_pen.srt",
-   "label": "第 197 Pentel Pocket Brush pen",
+   "label": "第 197 Pentel 便携 笔刷 笔",
    "sizeMB": 0.02,
    "rootIndex": 0
   },
@@ -1149,7 +1149,7 @@
    "kind": "file",
    "path": "8.赠送资源/大触超漂亮作品示范全过程NAP/nap/wlop_brush_2.0.abr",
    "name": "wlop_brush_2.0.abr",
-   "label": "wlop brush 2.0",
+   "label": "wlop 笔刷 2.0",
    "sizeMB": 32.65,
    "rootIndex": 0
   },
@@ -1632,7 +1632,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_99_truck_value_digital_BONUS.psd",
    "name": "pg_99_truck_value_digital_BONUS.psd",
-   "label": "pg 99 truck 明度 digital 赠送",
+   "label": "pg 99 卡车 明度 digital 赠送",
    "sizeMB": 122.65,
    "rootIndex": 1
   },
@@ -1648,7 +1648,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_158_photo_ref_car_rendering.psd",
    "name": "pg_158_photo_ref_car_rendering.psd",
-   "label": "pg 158 photo ref car 渲染ing",
+   "label": "pg 158 photo ref 汽车 渲染ing",
    "sizeMB": 34.36,
    "rootIndex": 1
   },
@@ -1696,7 +1696,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_167_horiz_cyl_construction.psd",
    "name": "pg_167_horiz_cyl_construction.psd",
-   "label": "pg 167 horiz cyl construction",
+   "label": "pg 167 horiz cyl 构造",
    "sizeMB": 29.95,
    "rootIndex": 1
   },
@@ -1704,7 +1704,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_167_matte_cyl_stripe_ball_cyl.psd",
    "name": "pg_167_matte_cyl_stripe_ball_cyl.psd",
-   "label": "pg 167 matte cyl stripe ball cyl",
+   "label": "pg 167 哑光 cyl stripe ball cyl",
    "sizeMB": 40.58,
    "rootIndex": 1
   },
@@ -1744,7 +1744,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_200_toy_car_demo.psd",
    "name": "pg_200_toy_car_demo.psd",
-   "label": "pg 200 toy car 示范",
+   "label": "pg 200 toy 汽车 示范",
    "sizeMB": 13.14,
    "rootIndex": 1
   },
@@ -1760,7 +1760,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_203_outdoor_reflections(1).psd",
    "name": "pg_203_outdoor_reflections(1).psd",
-   "label": "pg 203 outdoor 反射s(1)",
+   "label": "pg 203 户外 反射s(1)",
    "sizeMB": 211.25,
    "rootIndex": 1
   },
@@ -1768,7 +1768,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_203_outdoor_reflections_bonus.psd",
    "name": "pg_203_outdoor_reflections_bonus.psd",
-   "label": "pg 203 outdoor 反射s 赠送",
+   "label": "pg 203 户外 反射s 赠送",
    "sizeMB": 14.27,
    "rootIndex": 1
   },
@@ -1776,7 +1776,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_214_metallic_airplane.psd",
    "name": "pg_214_metallic_airplane.psd",
-   "label": "pg 214 metallic airplane",
+   "label": "pg 214 metallic 飞机",
    "sizeMB": 79.99,
    "rootIndex": 1
   },
@@ -1808,7 +1808,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_226_semi_gloss_weathering.psd",
    "name": "pg_226_semi_gloss_weathering.psd",
-   "label": "pg 226 semi gloss weathering",
+   "label": "pg 226 semi gloss 做旧",
    "sizeMB": 226.13,
    "rootIndex": 1
   },
@@ -1824,7 +1824,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_240_quick_weathering.psd",
    "name": "pg_240_quick_weathering.psd",
-   "label": "pg 240 quick weathering",
+   "label": "pg 240 快速 做旧",
    "sizeMB": 67.94,
    "rootIndex": 1
   },
@@ -1832,7 +1832,7 @@
    "kind": "file",
    "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_241_weathered_mech.psd",
    "name": "pg_241_weathered_mech.psd",
-   "label": "pg 241 weathered mech",
+   "label": "pg 241 weathered 机械",
    "sizeMB": 62.52,
    "rootIndex": 1
   },
