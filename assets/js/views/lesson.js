@@ -16,7 +16,7 @@ function resolveSource(course, lesson) {
 
   let directSrc = '';
   if (meta.type === 'sp' && ctx && ctx.spVideo && ctx.spVideo.src) directSrc = ctx.spVideo.src;
-  if (meta.type === 'video' && lesson.file) directSrc = data.mediaUrl(meta.id, lesson.file);
+  if (meta.type === 'video' && lesson.file) directSrc = data.mediaUrl(meta.id, lesson.file, lesson.rootIndex);
   if (isMirror) directSrc = '';
 
   let source = 'none';

@@ -38,7 +38,7 @@ export default {
 
     return `<div class="container">
   <div class="page-head">
-    <div class="eyebrow">AIGC Toolbox</div>
+    <div class="eyebrow">AIGC 工具箱</div>
     <h1>AIGC 创作工具箱</h1>
     <p class="lead">把 AI 变成你的材质助手：生成参考图、拆解 PBR 参数、规划 UV 策略、排查报错、写作品文案。每条提示词都可以直接复制到豆包、即梦、DeepSeek、ChatGPT 等工具里使用。</p>
   </div>

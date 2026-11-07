@@ -112,7 +112,7 @@ export default {
     <section class="section">
       <div class="container">
         <div class="section-head">
-          <div><div class="eyebrow">Course Center</div>
+          <div><div class="eyebrow">课程中心</div>
             <h2 class="section-title">课程中心</h2>
             <p class="section-sub">按方向选择课程：三维与材质、概念设计、影视与分镜、平面构成、色彩与绘画、剪辑。</p></div>
           <a class="link-arrow" href="#/courses">全部 ${courses.length} 门 ${icon('arrow-right', 14)}</a>
@@ -123,7 +123,7 @@ export default {
     </section>
 
     ${sp ? `<section class="section tight"><div class="container">
-      <div class="section-head"><div><div class="eyebrow">Featured</div>
+      <div class="section-head"><div><div class="eyebrow">核心课程</div>
         <h2 class="section-title" style="font-size:28px">核心课程 · ${esc(sp.title)}</h2>
         <p class="section-sub">${esc(sp.description || '')}</p></div>
         <a class="link-arrow" href="#/course/sp">进入课程 ${icon('arrow-right', 14)}</a></div>
@@ -134,7 +134,7 @@ export default {
 
     <section class="section">
       <div class="container">
-        <div class="section-head"><div><div class="eyebrow">Learning Suite</div>
+        <div class="section-head"><div><div class="eyebrow">学习工具</div>
           <h2 class="section-title">学习工具</h2>
           <p class="section-sub">课程之外，这些工具帮你把「看懂」变成「学会」。</p></div></div>
         <div class="feature-grid" style="grid-template-columns:repeat(3,1fr)">${features}</div>

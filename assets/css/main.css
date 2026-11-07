@@ -807,3 +807,25 @@ table.data .mono { font-family: var(--mono); }
 .bili-wrap { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; }
 .bili-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .player-wrap.bili-player { aspect-ratio: auto; }
+
+/* ===== 课程体系 / 模块要点 / 资料分组 ===== */
+.outline-section { margin-top: 8px; }
+.outline-grid { display: flex; flex-direction: column; gap: 18px; }
+.outline-block h4 { font-size: 12px; letter-spacing: .12em; color: var(--muted); margin-bottom: 10px; }
+.outline-list { display: flex; flex-direction: column; gap: 7px; }
+.outline-list li { position: relative; padding-left: 17px; color: var(--text-2); font-size: 13.5px; line-height: 1.75; }
+.outline-list li::before { content: ""; position: absolute; left: 4px; top: 9px; width: 5px; height: 5px; border-radius: 50%; background: var(--copper); }
+.outline-tasks { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.task-card { border: 1px solid var(--line); border-radius: 13px; padding: 16px 18px; background: rgba(255,255,255,.025); }
+.task-card h4 { font-size: 13px; color: var(--copper-2); margin-bottom: 8px; }
+.task-card ul { display: flex; flex-direction: column; gap: 6px; }
+.task-card li { position: relative; padding-left: 15px; font-size: 12.5px; color: var(--text-2); line-height: 1.7; }
+.task-card li::before { content: "·"; position: absolute; left: 2px; color: var(--muted); }
+.module-kps { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.module-kps .chip { font-size: 11.5px; padding: 3px 9px; }
+.module-tasks { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line); }
+.module-tasks span { font-size: 12px; color: var(--muted); line-height: 1.7; }
+.module-tasks b { color: var(--copper-2); margin-right: 8px; font-size: 11.5px; }
+.res-section { margin-bottom: 18px; }
+.res-section h4 { font-size: 13px; color: var(--text-2); margin-bottom: 8px; padding-left: 10px; border-left: 3px solid var(--copper); }
+@media (max-width: 640px) { .outline-tasks { grid-template-columns: 1fr; } }

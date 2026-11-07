@@ -4,6 +4,49 @@ import { esc, icon, fmtDur, pct } from '../ui.js';
 
 function hours(sec) { return (sec / 3600).toFixed(1); }
 
+function resLink(id, r) {
+  const href = data.mediaUrl(id, r.path, r.rootIndex);
+  const label = esc(r.label || r.name);
+  const size = r.sizeMB ? `${r.sizeMB} MB` : '';
+  return `<a class="res-item" href="${href}" target="_blank" rel="noopener">
+    <span class="res-icon">${icon(r.kind === 'video' ? 'play' : 'book', 16)}</span>
+    <span class="res-name">${label}</span>
+    <span class="res-size">${size}</span>
+    <span class="res-open">${icon('external', 14)}</span>
+  </a>`;
+}
+
+function resImageLink(id, r) {
+  const href = `#/gallery/${id}?dir=${encodeURIComponent(r.dir)}&root=${encodeURIComponent(r.rootIndex || 0)}`;
+  return `<a class="res-item" href="${href}">
+    <span class="res-icon">${icon('grid', 16)}</span>
+    <span class="res-name">${esc(r.label || r.name)}</span>
+    <span class="res-size">${r.count} 张 · ${r.totalMB} MB</span>
+    <span class="res-open">${icon('arrow-right', 14)}</span>
+  </a>`;
+}
+
+function resGroup(id, items) {
+  return (items || []).map(r => r.kind === 'images' ? resImageLink(id, r) : resLink(id, r)).join('');
+}
+
+function outlineHtml(o, courseId) {
+  if (!o) return '';
+  const blocks = [];
+  if (o.objectives && o.objectives.length) blocks.push(`<div class="outline-block"><h4>学习目标</h4><ul class="obj-list">${o.objectives.map((x, i) => `<li><span class="dot">${i + 1}</span><span>${esc(x)}</span></li>`).join('')}</ul></div>`);
+  if (o.keypoints && o.keypoints.length) blocks.push(`<div class="outline-block"><h4>核心知识点</h4><div class="kp-grid">${o.keypoints.map((x, i) => `<div class="kp-item"><i>${String(i + 1).padStart(2, '0')}</i><span>${esc(x)}</span></div>`).join('')}</div></div>`);
+  if (o.assessment && o.assessment.length) blocks.push(`<div class="outline-block"><h4>考查方式</h4><ul class="outline-list">${o.assessment.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`);
+  const tasks = [];
+  if (o.theoryTasks && o.theoryTasks.length) tasks.push(`<div class="task-card"><h4>理论任务</h4><ul>${o.theoryTasks.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`);
+  if (o.practiceTasks && o.practiceTasks.length) tasks.push(`<div class="task-card"><h4>实操任务</h4><ul>${o.practiceTasks.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`);
+  if (tasks.length) blocks.push(`<div class="outline-tasks">${tasks.join('')}</div>`);
+  if (!blocks.length) return '';
+  return `<section class="lesson-section outline-section" id="outline-${courseId}">
+    <h2>课程体系</h2>
+    <div class="outline-grid">${blocks.join('')}</div>
+  </section>`;
+}
+
 export default {
   async render(params) {
     const id = params.id;
@@ -15,7 +58,6 @@ export default {
     }
     const meta = c.meta;
     const d = c.data;
-    const isSP = meta.type === 'sp';
     const isGallery = meta.type === 'gallery' || (d.modules || []).every(m => !(m.lessons || []).length);
     const lessons = await data.lessonsOf(id);
     const done = store.doneCountIn(id);
@@ -25,7 +67,12 @@ export default {
     const last = lastKey ? lessons.find(l => l.key === lastKey) : null;
     const startLesson = last || lessons[0] || null;
     const resources = d.resources || [];
+    const sections = resources.filter(r => r && r.section);
+    const flatRes = resources.filter(r => r && !r.section);
     const pan = (meta.pan && meta.pan.url) ? meta.pan : null;
+    const isMirror = /\.github\.io$/i.test(location.hostname);
+    const outline = d.outline || meta.outline || null;
+    const resCount = flatRes.length + sections.reduce((a, s) => a + (s.items || []).length, 0);
 
     const modulesHtml = (d.modules || []).map((m, idx) => {
       const ls = m.lessons || [];
@@ -36,11 +83,12 @@ export default {
       return `<section class="map-module ${open ? 'open' : ''}" data-module="${esc(m.id)}">
         <div class="map-module-head" role="button" tabindex="0" aria-expanded="${open}">
           <span class="mm-index" style="--m-color:${meta.accent}">${String(m.index).padStart(2, '0')}</span>
-          <div><h3>${esc(m.title)}</h3><div class="mm-sub">${ls.length} 节 · ${Math.round(ls.reduce((s, l) => s + (l.durationSec || 0), 0) / 60)} 分钟</div></div>
+          <div><h3>${esc(m.title)}</h3><div class="mm-sub">${ls.length} 节 · ${Math.round(ls.reduce((s, l) => s + (l.durationSec || 0), 0) / 60)} 分钟${m.goal ? ' · ' + esc(m.goal) : ''}</div></div>
           <div class="mm-right"><span class="tag">${mp}%</span><span class="chev">${icon('chevron-down', 18)}</span></div>
         </div>
         <div class="map-module-body">
           <div class="module-progress" style="margin-bottom:12px"><i style="width:${mp}%;--m-color:${meta.accent}"></i></div>
+          ${m.keypoints && m.keypoints.length ? `<div class="module-kps">${m.keypoints.map(x => `<span class="chip">${esc(x)}</span>`).join('')}</div>` : ''}
           ${ls.map(l => {
             const isDone = store.isDoneIn(id, String(l.no));
             return `<a class="lesson-row ${isDone ? 'done' : ''}" href="#/lesson/${id}/${l.no}">
@@ -50,24 +98,16 @@ export default {
               <span class="l-state"><span class="check-dot">${isDone ? icon('check', 11) : ''}</span></span>
             </a>`;
           }).join('')}
+          ${(m.theory || m.practice) ? `<div class="module-tasks">${m.theory ? `<span><b>理论</b>${esc(m.theory)}</span>` : ''}${m.practice ? `<span><b>实操</b>${esc(m.practice)}</span>` : ''}</div>` : ''}
         </div>
       </section>`;
     }).join('');
 
-    const isMirror = /\.github\.io$/i.test(location.hostname);
-    const pdfs = resources.filter(r => r.kind === 'pdf' || r.kind === 'file');
-    const imageDirs = resources.filter(r => r.kind === 'images');
-    const resHtml = (pdfs.length || imageDirs.length) ? `<section class="lesson-section" id="resources-${id}">
+    const resHtml = (flatRes.length || sections.length) ? `<section class="lesson-section" id="resources-${id}">
       <h2>课程资料</h2>
       ${isMirror ? '<p style="color:var(--muted);font-size:12.5px;margin-bottom:10px">在线镜像不包含本地视频与图片资料，完整资料请在运行启动器的电脑上查看。</p>' : ''}
-      <div class="resource-list">
-        ${pdfs.map(r => `<a class="res-item" href="${data.mediaUrl(id, r.path)}" target="_blank" rel="noopener">
-          <span class="res-icon">${icon('book', 16)}</span><span class="res-name">${esc(r.name)}</span><span class="res-size">${r.sizeMB} MB</span><span class="res-open">${icon('external', 14)}</span>
-        </a>`).join('')}
-        ${imageDirs.map(r => `<a class="res-item" href="#/gallery/${id}?dir=${encodeURIComponent(r.dir)}">
-          <span class="res-icon">${icon('grid', 16)}</span><span class="res-name">${esc(r.name)}</span><span class="res-size">${r.count} 张 · ${r.totalMB} MB</span><span class="res-open">${icon('arrow-right', 14)}</span>
-        </a>`).join('')}
-      </div>
+      ${sections.length ? sections.map(s => `<div class="res-section"><h4>${esc(s.section)}</h4><div class="resource-list">${resGroup(id, s.items || [])}</div></div>`).join('') : ''}
+      ${flatRes.length ? `<div class="resource-list">${resGroup(id, flatRes)}</div>` : ''}
     </section>` : '';
 
     return `<div class="course-hero" style="--accent:${meta.accent || '#ff8a3d'}">
@@ -78,32 +118,34 @@ export default {
         </div>
         <div class="ch-badges">
           <span class="tag copper">${esc(meta.category)}</span>
-          <span class="tag">${meta.type === 'bilibili' ? 'B 站课程' : meta.type === 'gallery' ? '图文资料' : '视频课程'}</span>
+          <span class="tag">${meta.type === 'bilibili' ? 'B 站课程' : meta.type === 'gallery' ? '图文资料' : meta.type === 'external' ? '外部课程' : '视频课程'}</span>
           ${(meta.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('')}
         </div>
         <h1>${esc(meta.title)}</h1>
         <p class="ch-sub">${esc(meta.subtitle || '')}</p>
         <p class="ch-desc">${esc(meta.description || '')}</p>
         <div class="ch-stats">
-          <span>${icon('play', 14)} ${total} 课时</span>
+          ${total ? `<span>${icon('play', 14)} ${total} 课时</span>` : ''}
           <span>${icon('clock', 14)} ${hours(meta.durationSec || 0)} 小时</span>
           ${meta.hasQuiz ? `<span>${icon('bolt', 14)} 配套闯关练习</span>` : ''}
-          ${imageDirs.length + pdfs.length ? `<span>${icon('book', 14)} ${imageDirs.length + pdfs.length} 份资料</span>` : ''}
+          ${resCount ? `<span>${icon('book', 14)} ${resCount} 份资料</span>` : ''}
         </div>
         <div class="ch-actions">
           ${startLesson ? `<a class="btn btn-primary" href="#/lesson/${id}/${startLesson.no}">${icon('play', 16)} ${last ? '继续学习' : '开始学习'}</a>` : ''}
           ${pan ? `<a class="btn btn-ghost" href="${esc(pan.url)}" target="_blank" rel="noopener">${icon('external', 15)} 网盘资源</a>` : ''}
+          ${meta.type === 'external' && meta.url ? `<a class="btn btn-primary" href="${esc(meta.url)}" target="_blank" rel="noopener">${icon('external', 15)} 打开课程</a>` : ''}
           ${resources.length ? `<a class="btn btn-ghost" href="#resources-${id}">${icon('book', 15)} 课程资料</a>` : ''}
-          <span class="ch-progress">已学 ${done} / ${total} · ${progress}%</span>
+          ${total ? `<span class="ch-progress">已学 ${done} / ${total} · ${progress}%</span>` : ''}
         </div>
         ${total ? `<div class="module-progress" style="margin-top:16px;max-width:420px"><i style="width:${progress}%;--m-color:${meta.accent}"></i></div>` : ''}
       </div>
     </div>
     <div class="container" style="padding:34px 0 70px">
+      ${outlineHtml(outline, id)}
       ${isGallery ? `<section class="lesson-section" style="margin-top:0">
         <h2>课程内容</h2>
-        <p style="color:var(--muted);line-height:1.9">这门课程以图文资料为主（PDF 与逐页图片），点击下方资料即可在线阅读或浏览图片。</p>
-      </section>` : `<div class="section-head" style="margin-bottom:18px"><div><div class="eyebrow">Course Map</div><h2 class="section-title" style="font-size:26px">课程目录</h2></div></div>${modulesHtml}`}
+        <p style="color:var(--muted);line-height:1.9">这门课程以图文教材为主，点击下方资料在线阅读，或进入图片资料逐页浏览。</p>
+      </section>` : `<div class="section-head" style="margin-bottom:18px"><div><div class="eyebrow">课程目录</div><h2 class="section-title" style="font-size:26px">课程目录</h2></div></div>${modulesHtml}`}
       ${resHtml}
       <div class="lesson-nav" style="margin-top:26px">
         <a href="#/courses"><span class="nl">${icon('arrow-left', 12)} 返回</span><span class="nt">课程中心</span></a>
@@ -113,16 +155,14 @@ export default {
   },
 
   mount() {
-    const list = document.querySelectorAll('.map-module');
-    const toggle = (head) => {
-      const mod = head.closest('.map-module');
-      mod.classList.toggle('open');
-      head.setAttribute('aria-expanded', String(mod.classList.contains('open')));
-    };
-    list.forEach(mod => {
+    document.querySelectorAll('.map-module').forEach(mod => {
       const head = mod.querySelector('.map-module-head');
-      head.addEventListener('click', (e) => { if (!e.target.closest('a')) toggle(head); });
-      head.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(head); } });
+      const toggle = () => {
+        mod.classList.toggle('open');
+        head.setAttribute('aria-expanded', String(mod.classList.contains('open')));
+      };
+      head.addEventListener('click', (e) => { if (!e.target.closest('a')) toggle(); });
+      head.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
     });
   }
 };

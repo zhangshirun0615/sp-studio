@@ -60,7 +60,7 @@ export default {
 
     return `<div class="container">
   <div class="page-head">
-    <div class="eyebrow">Knowledge Base</div>
+    <div class="eyebrow">知识库</div>
     <h1>术语知识库</h1>
     <p class="lead">${terms.length} 条 Substance Painter 核心术语，按“基础概念 → 工作流 → 贴图 → 图层 → 材质 → 笔刷 → UV → 光照导出”分类整理。点击术语查看完整定义、相关术语与对应课程。</p>
   </div>

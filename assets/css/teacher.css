@@ -193,3 +193,20 @@ label { font-size: 12.5px; color: var(--muted); }
 .st-score span { display: block; font-size: 10.5px; color: var(--muted); }
 .st-score b { font-size: 18px; color: var(--gold); }
 .student-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px; }
+
+/* ===== 教师端 · 课程管理 ===== */
+#courseAdminBody .table-wrap { overflow-x: auto; }
+#courseAdminBody table.data { table-layout: fixed; width: 100%; min-width: 860px; }
+#courseAdminBody table.data th:nth-child(1) { width: 46%; }
+#courseAdminBody table.data th:nth-child(2) { width: 10%; }
+#courseAdminBody table.data th:nth-child(3) { width: 12%; }
+#courseAdminBody table.data th:nth-child(4) { width: 12%; }
+#courseAdminBody table.data th:nth-child(5) { width: 20%; }
+#courseAdminBody table.data td { vertical-align: middle; white-space: nowrap; }
+#courseAdminBody .ca-title { display: flex; align-items: center; gap: 12px; min-width: 0; }
+#courseAdminBody .ca-title img { width: 84px; height: 50px; object-fit: cover; border-radius: 7px; flex-shrink: 0; background: #111; border: 1px solid var(--line); }
+#courseAdminBody .ca-title b { display: block; font-size: 13px; line-height: 1.45; white-space: normal; }
+#courseAdminBody .ca-title span { display: block; font-size: 11px; color: var(--muted); margin-top: 3px; }
+#courseAdminBody .tag { white-space: nowrap; }
+#courseAdminBody .student-ops { display: flex; gap: 6px; flex-wrap: nowrap; }
+#courseAdminBody .student-ops .btn { padding: 4px 9px; font-size: 11.5px; }

@@ -52,7 +52,7 @@ export default {
 
     return `<div class="container">
   <div class="page-head">
-    <div class="eyebrow">Course Map</div>
+    <div class="eyebrow">课程目录</div>
     <h1>课程地图</h1>
     <p class="lead">7 大模块 · ${meta.totalLessons} 节课 · 约 ${meta.totalHours} 小时。点击模块展开课时，学完自动记录进度；也可以直接搜索关键词。</p>
   </div>

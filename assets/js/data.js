@@ -14,8 +14,17 @@ async function getJson(url) {
 const data = {
   base: 'data/',
 
-  /* ---------- 平台课程目录 ---------- */
-  async catalog() { return getJson(this.base + 'catalog.json'); },
+  /* ---------- 平台课程目录（本地服务器已发布目录优先） ---------- */
+  async catalog() {
+    try {
+      const res = await fetch('/api/catalog', { cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        if (data && Array.isArray(data.courses) && data.courses.length) return data;
+      }
+    } catch (e) { /* 静态镜像 / 未发布时回落到静态目录 */ }
+    return getJson(this.base + 'catalog.json');
+  },
 
   async courseList() {
     const cat = await this.catalog();
@@ -59,9 +68,11 @@ const data = {
     return list.find(l => String(l.no) === String(no)) || null;
   },
 
-  /* 本地服务器提供课程原始视频/资料 */
-  mediaUrl(courseId, rel) {
-    return '/course-media/' + encodeURIComponent(courseId) + '/' + String(rel).split('/').map(encodeURIComponent).join('/');
+  /* 本地服务器提供课程原始视频/资料（多根目录课程用 rootIndex 区分） */
+  mediaUrl(courseId, rel, rootIndex) {
+    const idx = Number(rootIndex || 0);
+    return '/course-media/' + encodeURIComponent(courseId) + '/' + idx + '/'
+      + String(rel).split('/').map(encodeURIComponent).join('/');
   },
 
   bilibiliEmbedUrl(bvid, page, cid) {

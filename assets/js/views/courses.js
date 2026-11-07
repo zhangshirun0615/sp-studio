@@ -36,7 +36,7 @@ export default {
     const q = (params.query && params.query.q) || '';
     return `<div class="container">
       <div class="page-head">
-        <div class="eyebrow">Course Center</div>
+        <div class="eyebrow">课程中心</div>
         <h1>课程中心</h1>
         <p class="lead">${esc(cat.platform.intro || '')} 共 ${courses.length} 门课程、${cat.lessonTotal} 个课时，约 ${Math.round(cat.durationTotal / 3600)} 小时。</p>
       </div>

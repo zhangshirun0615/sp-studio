@@ -41,7 +41,7 @@ function pickerHtml() {
 
   return `<div class="container">
   <div class="page-head">
-    <div class="eyebrow">Quiz Challenge</div>
+    <div class="eyebrow">闯关练习</div>
     <h1>闯关练习</h1>
     <p class="lead">按模块逐个闯关，答完立即看解析；答错的题可以“只练错题”重来。共 ${totalQ} 道题，覆盖 7 大模块的全部核心知识点。</p>
   </div>

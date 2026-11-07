@@ -29,7 +29,7 @@ async function fetchMe() {
 function shell(inner, title) {
   return `<div class="container student-shell">
     <div class="page-head">
-      <div class="eyebrow">Student Portal</div>
+      <div class="eyebrow">学生端</div>
       <h1>${title || '学生登录'}</h1>
       <p class="lead">用教师发放的学号与口令登录，查看实训任务、成绩与教师评语。学习进度仍保存在你自己的浏览器里。</p>
     </div>

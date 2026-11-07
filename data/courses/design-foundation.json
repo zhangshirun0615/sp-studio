@@ -1,0 +1,2274 @@
+{
+ "id": "design-foundation",
+ "title": "构成设计与色彩基础",
+ "type": "video",
+ "roots": [
+  "构成设计基础\\yz- 周更",
+  "构成设计基础\\何川藕片形衍九章平面构成设计入门团练课",
+  "构成设计基础\\色彩的艺术"
+ ],
+ "modules": [
+  {
+   "id": "m1",
+   "index": 1,
+   "title": "平面构成 · 周更团练",
+   "lessons": [
+    {
+     "no": 1,
+     "id": "l1",
+     "title": "构成预科作业讲评",
+     "file": "团练已完结/1.构成预科作业讲评.mp4",
+     "rootIndex": 0,
+     "durationSec": 8102.9,
+     "sizeMB": 473.57
+    },
+    {
+     "no": 2,
+     "id": "l2",
+     "title": "开班仪式",
+     "file": "团练已完结/2.开班仪式.mp4",
+     "rootIndex": 0,
+     "durationSec": 8102.9,
+     "sizeMB": 473.57
+    },
+    {
+     "no": 3,
+     "id": "l3",
+     "title": "分析参考物视觉元素 YZ",
+     "file": "团练已完结/3.分析参考物视觉元素-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 8515.3,
+     "sizeMB": 1787.69
+    },
+    {
+     "no": 4,
+     "id": "l4",
+     "title": "单个元素的变化 瓜瓜",
+     "file": "团练已完结/4.单个元素的变化-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 9745.8,
+     "sizeMB": 748.31
+    },
+    {
+     "no": 5,
+     "id": "l5",
+     "title": "改正式作业+总结问题 瓜瓜",
+     "file": "团练已完结/5.改正式作业+总结问题-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 12260.2,
+     "sizeMB": 2427.52
+    },
+    {
+     "no": 6,
+     "id": "l6",
+     "title": "不同构成手法1（理论+带练） 瓜瓜",
+     "file": "团练已完结/6.不同构成手法1（理论+带练）-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 8925.1,
+     "sizeMB": 2180.55
+    },
+    {
+     "no": 7,
+     "id": "l7",
+     "title": "不同构成手法2（理论+带练） 瓜瓜",
+     "file": "团练已完结/7.不同构成手法2（理论+带练）-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 8894.5,
+     "sizeMB": 721.27
+    },
+    {
+     "no": 8,
+     "id": "l8",
+     "title": "改正式作业+总结问题 瓜瓜",
+     "file": "团练已完结/8.改正式作业+总结问题-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 13168.0,
+     "sizeMB": 1148.81
+    },
+    {
+     "no": 9,
+     "id": "l9",
+     "title": "讲解图形语言与视觉层次 YZ",
+     "file": "团练已完结/9.讲解图形语言与视觉层次-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 8125.1,
+     "sizeMB": 561.55
+    },
+    {
+     "no": 10,
+     "id": "l10",
+     "title": "结合构图谈层次（新的构图形式） 瓜瓜",
+     "file": "团练已完结/10.结合构图谈层次（新的构图形式）-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 8143.5,
+     "sizeMB": 1785.83
+    },
+    {
+     "no": 11,
+     "id": "l11",
+     "title": "改正式作业+总结问题 YZ",
+     "file": "团练已完结/11.改正式作业+总结问题-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 11815.0,
+     "sizeMB": 641.23
+    },
+    {
+     "no": 12,
+     "id": "l12",
+     "title": "以角色命题的形衍九章 瓜瓜",
+     "file": "团练已完结/12.以角色命题的形衍九章-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 8072.3,
+     "sizeMB": 1698.34
+    },
+    {
+     "no": 13,
+     "id": "l13",
+     "title": "拓展图形联想与创意 瓜瓜",
+     "file": "团练已完结/13.拓展图形联想与创意-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 8298.5,
+     "sizeMB": 746.18
+    },
+    {
+     "no": 14,
+     "id": "l14",
+     "title": "改正式作业+总结问题 YZ",
+     "file": "团练已完结/14.改正式作业+总结问题-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 12325.2,
+     "sizeMB": 2605.03
+    }
+   ],
+   "goal": "通过每周团练，把参考物分析、元素变化与构成手法的运用练成稳定习惯",
+   "keypoints": [
+    "从参考物中提取视觉元素，判断哪些可提炼为点线面",
+    "单个元素的变化：大小、方向、位置、疏密与形态变体",
+    "不同构成手法的适用场景与组合方式",
+    "图形语言与视觉层次：用对比建立主次，并结合新的构图形式组织画面层次",
+    "以角色为命题做九章式图形推演，训练联想与创意展开"
+   ],
+   "theory": "选一件参考物，写出它的视觉元素拆解与可用的构成手法，做成一张分析图",
+   "practice": "拿一个基本元素做九个变体，按疏密与大小排出层次，再做一次构图重排"
+  },
+  {
+   "id": "m2",
+   "index": 2,
+   "title": "平面构成 · 系统课",
+   "lessons": [
+    {
+     "no": 15,
+     "id": "l15",
+     "title": "开班仪式",
+     "file": "系统已完结/2.开班仪式.mp4",
+     "rootIndex": 0,
+     "durationSec": 4103.4,
+     "sizeMB": 1120.02
+    },
+    {
+     "no": 16,
+     "id": "l16",
+     "title": "开学必看注意事项",
+     "file": "系统已完结/3.开学必看注意事项.mp4",
+     "rootIndex": 0,
+     "durationSec": 519.3,
+     "sizeMB": 30.28
+    },
+    {
+     "no": 17,
+     "id": "l17",
+     "title": "构成概论、点线面、聚散 YZ",
+     "file": "系统已完结/4.构成概论、点线面、聚散-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 8393.6,
+     "sizeMB": 1915.34
+    },
+    {
+     "no": 18,
+     "id": "l18",
+     "title": "作业课 瓜瓜",
+     "file": "系统已完结/5.作业课-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 6435.2,
+     "sizeMB": 1855.58
+    },
+    {
+     "no": 19,
+     "id": "l19",
+     "title": "631 YZ",
+     "file": "系统已完结/6.631-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 9830.6,
+     "sizeMB": 1574.7
+    },
+    {
+     "no": 20,
+     "id": "l20",
+     "title": "作业解析 瓜瓜",
+     "file": "系统已完结/7.作业解析-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 10019.3,
+     "sizeMB": 2903.77
+    },
+    {
+     "no": 21,
+     "id": "l21",
+     "title": "方圆尖、平对立、直曲 YZ",
+     "file": "系统已完结/8.方圆尖、平对立、直曲-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 10091.3,
+     "sizeMB": 2372.41
+    },
+    {
+     "no": 22,
+     "id": "l22",
+     "title": "作业课 瓜瓜",
+     "file": "系统已完结/9.作业课-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 3631.3,
+     "sizeMB": 938.18
+    },
+    {
+     "no": 23,
+     "id": "l23",
+     "title": "有机对几何、序列 YZ",
+     "file": "系统已完结/10.有机对几何、序列-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 10324.2,
+     "sizeMB": 1996.04
+    },
+    {
+     "no": 24,
+     "id": "l24",
+     "title": "作业解析 瓜瓜",
+     "file": "系统已完结/11.作业解析-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 7992.1,
+     "sizeMB": 2120.53
+    },
+    {
+     "no": 25,
+     "id": "l25",
+     "title": "总结答疑 YZ",
+     "file": "系统已完结/12.总结答疑-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 8032.7,
+     "sizeMB": 1515.05
+    },
+    {
+     "no": 26,
+     "id": "l26",
+     "title": "密度、材质对比 YZ",
+     "file": "系统已完结/13.密度、材质对比-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 8389.5,
+     "sizeMB": 2010.1
+    },
+    {
+     "no": 27,
+     "id": "l27",
+     "title": "作业课 瓜瓜",
+     "file": "系统已完结/14.作业课-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 4405.0,
+     "sizeMB": 902.1
+    },
+    {
+     "no": 28,
+     "id": "l28",
+     "title": "完整对不完整、虚实、正负形、冷门构成 YZ",
+     "file": "系统已完结/15.完整对不完整、虚实、正负形、冷门构成-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 8271.0,
+     "sizeMB": 1815.19
+    },
+    {
+     "no": 29,
+     "id": "l29",
+     "title": "作业解析 瓜瓜",
+     "file": "系统已完结/16.作业解析-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 7633.7,
+     "sizeMB": 2417.96
+    },
+    {
+     "no": 30,
+     "id": "l30",
+     "title": "总结答疑 YZ",
+     "file": "系统已完结/17.总结答疑-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 7528.9,
+     "sizeMB": 1621.84
+    },
+    {
+     "no": 31,
+     "id": "l31",
+     "title": "减法设计、极简与密度感受 YZ",
+     "file": "系统已完结/18.减法设计、极简与密度感受-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 8329.8,
+     "sizeMB": 1713.71
+    },
+    {
+     "no": 32,
+     "id": "l32",
+     "title": "作业课 瓜瓜",
+     "file": "系统已完结/19.作业课-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 4231.3,
+     "sizeMB": 1082.68
+    },
+    {
+     "no": 33,
+     "id": "l33",
+     "title": "立体构成以及与平构区分 YZ",
+     "file": "系统已完结/20.立体构成以及与平构区分-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 8999.5,
+     "sizeMB": 1972.24
+    },
+    {
+     "no": 34,
+     "id": "l34",
+     "title": "神秘嘉宾",
+     "file": "系统已完结/21.神秘嘉宾.mp4",
+     "rootIndex": 0,
+     "durationSec": 8959.4,
+     "sizeMB": 2352.75
+    },
+    {
+     "no": 35,
+     "id": "l35",
+     "title": "作业解析 瓜瓜",
+     "file": "系统已完结/22.作业解析-瓜瓜.mp4",
+     "rootIndex": 0,
+     "durationSec": 8540.2,
+     "sizeMB": 2107.97
+    },
+    {
+     "no": 36,
+     "id": "l36",
+     "title": "毕业总结与答疑 YZ",
+     "file": "系统已完结/23.毕业总结与答疑-YZ.mp4",
+     "rootIndex": 0,
+     "durationSec": 8690.2,
+     "sizeMB": 479.7
+    }
+   ],
+   "goal": "系统掌握构成的形式法则与手法，能用一套方法组织出完整画面",
+   "keypoints": [
+    "构成概论与点线面聚散：构成是组织视觉关系而非堆砌元素，疏密节奏决定画面呼吸",
+    "对立关系：方圆尖、平与立、直与曲、有机与几何",
+    "序列与渐变：重复中的变化，形成节奏与韵律",
+    "密度与材质对比、完整与不完整、虚实与正负形",
+    "减法设计与极简：删到不能再删仍成立，同时区分立体构成与平面构成的表现手段"
+   ],
+   "theory": "用对立关系清单检查一张构成作业，指出缺少哪一组对比以及补上后画面会如何变化",
+   "practice": "用重复与渐变做一张序列构成，再用减法设计删减到最简仍保持层次"
+  },
+  {
+   "id": "m3",
+   "index": 3,
+   "title": "九章平面构成（何川）",
+   "lessons": [
+    {
+     "no": 37,
+     "id": "l37",
+     "title": "【按步骤丰富图形】理论+带练1",
+     "file": "1.【按步骤丰富图形】理论+带练1.mp4",
+     "rootIndex": 1,
+     "durationSec": 8102.7,
+     "sizeMB": 1023.28
+    },
+    {
+     "no": 38,
+     "id": "l38",
+     "title": "【如何美化图形：点线面与对比】理论+带练2",
+     "file": "2.【如何美化图形：点线面与对比】理论+带练2.mp4",
+     "rootIndex": 1,
+     "durationSec": 8539.1,
+     "sizeMB": 1085.48
+    },
+    {
+     "no": 39,
+     "id": "l39",
+     "title": "【按步骤丰富图形】理论+带练3",
+     "file": "3.【按步骤丰富图形】理论+带练3.mp4",
+     "rootIndex": 1,
+     "durationSec": 8208.2,
+     "sizeMB": 1091.43
+    },
+    {
+     "no": 40,
+     "id": "l40",
+     "title": "通过创意联想让设计变有趣理论+带练4",
+     "file": "4.通过创意联想让设计变有趣理论+带练4.mp4",
+     "rootIndex": 1,
+     "durationSec": 8597.6,
+     "sizeMB": 1261.08
+    },
+    {
+     "no": 41,
+     "id": "l41",
+     "title": "营造平面中的层次让画面变丰富理论+带练5",
+     "file": "5.营造平面中的层次让画面变丰富理论+带练5.mp4",
+     "rootIndex": 1,
+     "durationSec": 10807.6,
+     "sizeMB": 1095.93
+    },
+    {
+     "no": 42,
+     "id": "l42",
+     "title": "视觉中心与视觉引导线理论+带练6",
+     "file": "6.视觉中心与视觉引导线理论+带练6.mp4",
+     "rootIndex": 1,
+     "durationSec": 7901.3,
+     "sizeMB": 995.15
+    },
+    {
+     "no": 43,
+     "id": "l43",
+     "title": "【不对称设计】理论+带练7",
+     "file": "7.【不对称设计】理论+带练7.mp4",
+     "rootIndex": 1,
+     "durationSec": 7769.5,
+     "sizeMB": 986.8
+    },
+    {
+     "no": 44,
+     "id": "l44",
+     "title": "【设计风格建立与鉴赏】理论+带练8",
+     "file": "8.【设计风格建立与鉴赏】理论+带练8.mp4",
+     "rootIndex": 1,
+     "durationSec": 8295.5,
+     "sizeMB": 1403.23
+    },
+    {
+     "no": 45,
+     "id": "l45",
+     "title": "结课分享",
+     "file": "9.结课分享.mp4",
+     "rootIndex": 1,
+     "durationSec": 9267.5,
+     "sizeMB": 1327.86
+    },
+    {
+     "no": 46,
+     "id": "l46",
+     "title": "作业课1",
+     "file": "作业课1.mp4",
+     "rootIndex": 1,
+     "durationSec": 11049.5,
+     "sizeMB": 1396.56
+    },
+    {
+     "no": 47,
+     "id": "l47",
+     "title": "作业课2",
+     "file": "作业课2.mp4",
+     "rootIndex": 1,
+     "durationSec": 10081.1,
+     "sizeMB": 1195.9
+    },
+    {
+     "no": 48,
+     "id": "l48",
+     "title": "作业课3",
+     "file": "作业课3.mp4",
+     "rootIndex": 1,
+     "durationSec": 9783.3,
+     "sizeMB": 1222.75
+    },
+    {
+     "no": 49,
+     "id": "l49",
+     "title": "作业课4",
+     "file": "作业课4.mp4",
+     "rootIndex": 1,
+     "durationSec": 10821.4,
+     "sizeMB": 1417.75
+    },
+    {
+     "no": 50,
+     "id": "l50",
+     "title": "形衍九章 平面构成设计入门公开课（何川藕片）",
+     "file": "公开课/形衍九章-平面构成设计入门公开课（何川藕片）.mp4",
+     "rootIndex": 1,
+     "durationSec": 3917.8,
+     "sizeMB": 476.31
+    }
+   ],
+   "goal": "按形衍九章的步骤法，把图形从简到繁推演成一张完整的设计稿",
+   "keypoints": [
+    "按步骤丰富图形：从基本形出发逐层叠加细节，点线面与对比是美化图形的核心手段",
+    "创意联想把无趣的图形变有趣，靠联想与替换",
+    "层次营造让平面变丰富：叠加、遮挡与大小关系",
+    "视觉中心与视觉引导线控制观看顺序",
+    "不对称设计的平衡方式与设计风格的确立"
+   ],
+   "theory": "按九章步骤为一个基本形写出逐层丰富的推演计划，标明每一步加了什么、为什么加",
+   "practice": "选一个基本形走完提取、变化、联想、层次、引入视觉中心的完整流程，成一张构成稿"
+  },
+  {
+   "id": "m4",
+   "index": 4,
+   "title": "色彩的艺术",
+   "lessons": [
+    {
+     "no": 51,
+     "id": "l51",
+     "title": "一点透视讲解",
+     "file": "【赠送】12节色彩视频课件/1一点透视讲解.mp4",
+     "rootIndex": 2,
+     "durationSec": 83.7,
+     "sizeMB": 13.66
+    },
+    {
+     "no": 52,
+     "id": "l52",
+     "title": "两点透视讲解",
+     "file": "【赠送】12节色彩视频课件/2两点透视讲解.mp4",
+     "rootIndex": 2,
+     "durationSec": 77.4,
+     "sizeMB": 10.67
+    },
+    {
+     "no": 53,
+     "id": "l53",
+     "title": "三点透视讲解",
+     "file": "【赠送】12节色彩视频课件/3三点透视讲解.mp4",
+     "rootIndex": 2,
+     "durationSec": 86.1,
+     "sizeMB": 5.41
+    },
+    {
+     "no": 54,
+     "id": "l54",
+     "title": "圆形透视讲解",
+     "file": "【赠送】12节色彩视频课件/4圆形透视讲解.mp4",
+     "rootIndex": 2,
+     "durationSec": 167.9,
+     "sizeMB": 12.98
+    },
+    {
+     "no": 55,
+     "id": "l55",
+     "title": "正方体光影规律",
+     "file": "【赠送】12节色彩视频课件/5正方体光影规律.mp4",
+     "rootIndex": 2,
+     "durationSec": 52.6,
+     "sizeMB": 1.72
+    },
+    {
+     "no": 56,
+     "id": "l56",
+     "title": "素描光影理解（球体）",
+     "file": "【赠送】12节色彩视频课件/6素描光影理解（球体）.mp4",
+     "rootIndex": 2,
+     "durationSec": 64.6,
+     "sizeMB": 18.88
+    },
+    {
+     "no": 57,
+     "id": "l57",
+     "title": "绘画三原色与光的三原色区别",
+     "file": "【赠送】12节色彩视频课件/7绘画三原色与光的三原色区别.mp4",
+     "rootIndex": 2,
+     "durationSec": 46.2,
+     "sizeMB": 5.3
+    },
+    {
+     "no": 58,
+     "id": "l58",
+     "title": "三原色演变成色环理解课件",
+     "file": "【赠送】12节色彩视频课件/8三原色演变成色环理解课件.mp4",
+     "rootIndex": 2,
+     "durationSec": 155.1,
+     "sizeMB": 11.77
+    },
+    {
+     "no": 59,
+     "id": "l59",
+     "title": ",色彩的基本概念",
+     "file": "【赠送】12节色彩视频课件/9,色彩的基本概念.mp4",
+     "rootIndex": 2,
+     "durationSec": 129.8,
+     "sizeMB": 140.43
+    },
+    {
+     "no": 60,
+     "id": "l60",
+     "title": "，色彩三原色调和方法",
+     "file": "【赠送】12节色彩视频课件/10，色彩三原色调和方法.mp4",
+     "rootIndex": 2,
+     "durationSec": 121.9,
+     "sizeMB": 150.09
+    },
+    {
+     "no": 61,
+     "id": "l61",
+     "title": "，色彩明度黑白训练课件",
+     "file": "【赠送】12节色彩视频课件/11，色彩明度黑白训练课件.mp4",
+     "rootIndex": 2,
+     "durationSec": 106.1,
+     "sizeMB": 120.07
+    },
+    {
+     "no": 62,
+     "id": "l62",
+     "title": "色彩冷暖详细理解课件",
+     "file": "【赠送】12节色彩视频课件/12色彩冷暖详细理解课件.mp4",
+     "rootIndex": 2,
+     "durationSec": 131.8,
+     "sizeMB": 80.76
+    }
+   ],
+   "goal": "建立色彩与光影的基本认知，能独立完成明度、色环与冷暖三类练习",
+   "keypoints": [
+    "透视基础（一点、两点、三点、圆形）与正方体、球体的光影规律：亮面、明暗交界、反光与投影",
+    "绘画三原色与光的三原色的区别，以及色环的推演",
+    "色彩三要素与三原色调和的方法",
+    "明度黑白训练：先看明度再看颜色",
+    "冷暖的相对性，以及冷暖配比在画面气氛中的作用"
+   ],
+   "theory": "用色环标出三组补色与三组邻近色，并说明各自适合的画面情绪与使用场景",
+   "practice": "把一张彩色图改成九级明度稿，再按明度关系重新上色，比较前后层次"
+  }
+ ],
+ "resources": [
+  {
+   "kind": "pdf",
+   "path": "团练已完结/课件/1.预科/团练课开班注意事项.pdf",
+   "name": "团练课开班注意事项.pdf",
+   "label": "团练课开班注意事项",
+   "sizeMB": 1.79,
+   "rootIndex": 0
+  },
+  {
+   "kind": "pdf",
+   "path": "系统已完结/预科/构成科目一解析（预科）.pdf",
+   "name": "构成科目一解析（预科）.pdf",
+   "label": "构成科目一解析（预科）",
+   "sizeMB": 1.89,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/【预科资料包】-团练课.zip",
+   "name": "【预科资料包】-团练课.zip",
+   "label": "【预科资料包】 团练课",
+   "sizeMB": 192.24,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/1.预科/团练预科模板-源文件.psd",
+   "name": "团练预科模板-源文件.psd",
+   "label": "团练预科模板 源文件",
+   "sizeMB": 21.69,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/2.开班仪式/7.5开班仪式瓜.psd",
+   "name": "7.5开班仪式瓜.psd",
+   "label": "5开班仪式瓜",
+   "sizeMB": 28.42,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/3.分析参考物视觉元素-YZ/7.6 分析参考物 视觉元素-yz.psd",
+   "name": "7.6 分析参考物 视觉元素-yz.psd",
+   "label": "6 分析参考物 视觉元素 yz",
+   "sizeMB": 19.13,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/4.单个元素的变化-瓜瓜/7.8 单一图形的变化-瓜.psd",
+   "name": "7.8 单一图形的变化-瓜.psd",
+   "label": "8 单一图形的变化 瓜",
+   "sizeMB": 16.03,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/5.改正式作业+总结问题-瓜瓜/7.11 周六作业解析课.psd",
+   "name": "7.11 周六作业解析课.psd",
+   "label": "11 周六作业解析课",
+   "sizeMB": 7.46,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/5.改正式作业+总结问题-瓜瓜/团练-week2课后作业模板.psd",
+   "name": "团练-week2课后作业模板.psd",
+   "label": "团练 week2课后作业模板",
+   "sizeMB": 13.51,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/5.改正式作业+总结问题-瓜瓜/团练-week2课堂跟画模板-周一.psd",
+   "name": "团练-week2课堂跟画模板-周一.psd",
+   "label": "团练 week2课堂跟画模板 周一",
+   "sizeMB": 11.21,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/6.不同构成手法1（理论+带练）-瓜瓜/7.13 不同构成手法理论与带练1-瓜.psd",
+   "name": "7.13 不同构成手法理论与带练1-瓜.psd",
+   "label": "13 不同构成手法理论与带练1 瓜",
+   "sizeMB": 35.81,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜/7.15 不同构成手法理论与带练2-瓜.psd",
+   "name": "7.15 不同构成手法理论与带练2-瓜.psd",
+   "label": "15 不同构成手法理论与带练2 瓜",
+   "sizeMB": 15.16,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/8.改正式作业+总结问题-瓜瓜/7.18 周六作业解析课.psd",
+   "name": "7.18 周六作业解析课.psd",
+   "label": "18 周六作业解析课",
+   "sizeMB": 9.96,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/9.讲解图形语言与视觉层次-YZ/7.20 讲解图形语言与视觉层级-yz.psd",
+   "name": "7.20 讲解图形语言与视觉层级-yz.psd",
+   "label": "20 讲解图形语言与视觉层级 yz",
+   "sizeMB": 12.5,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/10.结合构图谈层次（新的构图形式）-瓜瓜/7.22 通过排版优化形衍-瓜.psd",
+   "name": "7.22 通过排版优化形衍-瓜.psd",
+   "label": "22 通过排版优化形衍 瓜",
+   "sizeMB": 17.93,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/11.改正式作业+总结问题-YZ/7.25 周六作业解析课-yz.psd",
+   "name": "7.25 周六作业解析课-yz.psd",
+   "label": "25 周六作业解析课 yz",
+   "sizeMB": 2.57,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/11.改正式作业+总结问题-YZ/宝宝巴士-侧面素体男女.psd",
+   "name": "宝宝巴士-侧面素体男女.psd",
+   "label": "宝宝巴士 侧面素体男女",
+   "sizeMB": 1.96,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/12.以角色命题的形衍九章-瓜瓜/7.27 以角色命题的形衍九章-瓜.psd",
+   "name": "7.27 以角色命题的形衍九章-瓜.psd",
+   "label": "27 以角色命题的形衍九章 瓜",
+   "sizeMB": 19.5,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/13.拓展图形联想与创意-瓜瓜/瓜瓜幸运饺子.zip",
+   "name": "瓜瓜幸运饺子.zip",
+   "label": "瓜瓜幸运饺子",
+   "sizeMB": 12.96,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/13.拓展图形联想与创意-瓜瓜/补充包：xyjz已有物参考图.zip",
+   "name": "补充包：xyjz已有物参考图.zip",
+   "label": "补充包：xyjz已有物参考图",
+   "sizeMB": 5.87,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "团练已完结/课件/14.改正式作业+总结问题-YZ/8.1 周六作业解析课-yz.psd",
+   "name": "8.1 周六作业解析课-yz.psd",
+   "label": "1 周六作业解析课 yz",
+   "sizeMB": 5.0,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/6.7/06.07开班仪式yz.psd",
+   "name": "06.07开班仪式yz.psd",
+   "label": "07开班仪式yz",
+   "sizeMB": 10.11,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/6.7/06.07开班仪式瓜.psd",
+   "name": "06.07开班仪式瓜.psd",
+   "label": "07开班仪式瓜",
+   "sizeMB": 6.02,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/6.9/06.09 点线面聚散.psd",
+   "name": "06.09 点线面聚散.psd",
+   "label": "09 点线面聚散",
+   "sizeMB": 50.31,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/6.11/06.11  631.psd",
+   "name": "06.11  631.psd",
+   "label": "11 631",
+   "sizeMB": 30.37,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/6.11/可以用来做笔记的yz老师表情包.zip",
+   "name": "可以用来做笔记的yz老师表情包.zip",
+   "label": "可以用来做笔记的yz老师表情包",
+   "sizeMB": 1.05,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/6.作业课/week1周三作业课课件.zip",
+   "name": "week1周三作业课课件.zip",
+   "label": "week1周三作业课课件",
+   "sizeMB": 21.06,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/7.作业解析/week1周六作业解析课.zip",
+   "name": "week1周六作业解析课.zip",
+   "label": "week1周六作业解析课",
+   "sizeMB": 48.51,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/8.方圆尖、平对立、直曲-YZ/06.16 方圆尖、平面对立体.zip",
+   "name": "06.16 方圆尖、平面对立体.zip",
+   "label": "16 方圆尖、平面对立体",
+   "sizeMB": 28.58,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/9.有机对几何、序列-YZ/6.18有机对几何 序列.psd",
+   "name": "6.18有机对几何 序列.psd",
+   "label": "18有机对几何 序列",
+   "sizeMB": 26.66,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/10.作业解析-瓜瓜/week2周六作业解析课.psd",
+   "name": "week2周六作业解析课.psd",
+   "label": "week2周六作业解析课",
+   "sizeMB": 24.91,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/11.6.21答疑课/6.21 答疑课1.psd",
+   "name": "6.21 答疑课1.psd",
+   "label": "21 答疑课1",
+   "sizeMB": 24.66,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/12.密度、材质对比-YZ/6.23密度 材质对比.psd",
+   "name": "6.23密度 材质对比.psd",
+   "label": "23密度 材质对比",
+   "sizeMB": 45.75,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/13.作业课-瓜瓜/week3周三作业课课件.zip",
+   "name": "week3周三作业课课件.zip",
+   "label": "week3周三作业课课件",
+   "sizeMB": 4.87,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/15.完整对不完整、虚实、正负形、冷门构成-YZ/6.25完整对不完整 虚实 正负形 曲对直 冷门构成.psd",
+   "name": "6.25完整对不完整 虚实 正负形 曲对直 冷门构成.psd",
+   "label": "25完整对不完整 虚实 正负形 曲对直 冷门构成",
+   "sizeMB": 38.71,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/16.作业解析-瓜瓜/week3周六作业解析课.psd",
+   "name": "week3周六作业解析课.psd",
+   "label": "week3周六作业解析课",
+   "sizeMB": 67.41,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/17.总结答疑-YZ/6.28答疑2.psd",
+   "name": "6.28答疑2.psd",
+   "label": "28答疑2",
+   "sizeMB": 23.14,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/18.减法设计、极简与密度感受-YZ/6.30减法设计极简与密度感受.psd",
+   "name": "6.30减法设计极简与密度感受.psd",
+   "label": "30减法设计极简与密度感受",
+   "sizeMB": 25.24,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/19.作业课-瓜瓜/week4周三作业课课件.zip",
+   "name": "week4周三作业课课件.zip",
+   "label": "week4周三作业课课件",
+   "sizeMB": 51.29,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/20.立体构成以及与平构区分-YZ/7.2立体构成以及与平构区分.psd",
+   "name": "7.2立体构成以及与平构区分.psd",
+   "label": "2立体构成以及与平构区分",
+   "sizeMB": 24.4,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/21.神秘嘉宾/7.3人体模型.blend",
+   "name": "7.3人体模型.blend",
+   "label": "3人体模型",
+   "sizeMB": 0.97,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/21.神秘嘉宾/7.3嘉宾分享课-阿乐.psd",
+   "name": "7.3嘉宾分享课-阿乐.psd",
+   "label": "3嘉宾分享课 阿乐",
+   "sizeMB": 45.25,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/21.神秘嘉宾/7.3笔刷Inktober 2019 Photoshop Brushes - by ArtistMef.abr",
+   "name": "7.3笔刷Inktober 2019 Photoshop Brushes - by ArtistMef.abr",
+   "label": "3笔刷Inktober 2019 Photoshop Brushes by ArtistMef",
+   "sizeMB": 19.87,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/22.作业解析-瓜瓜/week4周六作业解析课.psd",
+   "name": "week4周六作业解析课.psd",
+   "label": "week4周六作业解析课",
+   "sizeMB": 45.85,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/23.毕业总结与答疑-YZ/7.5 答疑3.psd",
+   "name": "7.5 答疑3.psd",
+   "label": "5 答疑3",
+   "sizeMB": 18.22,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/开学必看/系统课-开学必看 (1).zip",
+   "name": "系统课-开学必看 (1).zip",
+   "label": "系统课 开学必看 (1)",
+   "sizeMB": 339.56,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/课件/开学必看/系统课-开学必看.zip",
+   "name": "系统课-开学必看.zip",
+   "label": "系统课 开学必看",
+   "sizeMB": 339.56,
+   "rootIndex": 0
+  },
+  {
+   "kind": "file",
+   "path": "系统已完结/预科/【预科作业包】-系统课.zip",
+   "name": "【预科作业包】-系统课.zip",
+   "label": "【预科作业包】 系统课",
+   "sizeMB": 2.22,
+   "rootIndex": 0
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/1.预科",
+   "count": 3,
+   "name": "团练已完结/课件/1.预科",
+   "label": "1.预科",
+   "rootIndex": 0,
+   "totalMB": 0.1,
+   "files": [
+    "团练已完结/课件/1.预科/Image_1783351513617_729.jpg",
+    "团练已完结/课件/1.预科/Image_1783351516732_863.jpg",
+    "团练已完结/课件/1.预科/Image_1783351569669_145.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/2.开班仪式",
+   "count": 1,
+   "name": "团练已完结/课件/2.开班仪式",
+   "label": "2.开班仪式",
+   "rootIndex": 0,
+   "totalMB": 10.7,
+   "files": [
+    "团练已完结/课件/2.开班仪式/7.5开班仪式瓜.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/3.分析参考物视觉元素-YZ",
+   "count": 1,
+   "name": "团练已完结/课件/3.分析参考物视觉元素-YZ",
+   "label": "3.分析参考物视觉元素 YZ",
+   "rootIndex": 0,
+   "totalMB": 2.0,
+   "files": [
+    "团练已完结/课件/3.分析参考物视觉元素-YZ/7.6 分析参考物 视觉元素-yz.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/4.单个元素的变化-瓜瓜",
+   "count": 1,
+   "name": "团练已完结/课件/4.单个元素的变化-瓜瓜",
+   "label": "4.单个元素的变化 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 4.9,
+   "files": [
+    "团练已完结/课件/4.单个元素的变化-瓜瓜/7.8 单一图形的变化-瓜.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/5.改正式作业+总结问题-瓜瓜",
+   "count": 2,
+   "name": "团练已完结/课件/5.改正式作业+总结问题-瓜瓜",
+   "label": "5.改正式作业+总结问题 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 2.6,
+   "files": [
+    "团练已完结/课件/5.改正式作业+总结问题-瓜瓜/7.11 周六作业解析课.jpg",
+    "团练已完结/课件/5.改正式作业+总结问题-瓜瓜/Image_1783956616311_103.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/6.不同构成手法1（理论+带练）-瓜瓜",
+   "count": 4,
+   "name": "团练已完结/课件/6.不同构成手法1（理论+带练）-瓜瓜",
+   "label": "6.不同构成手法1（理论+带练） 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 4.4,
+   "files": [
+    "团练已完结/课件/6.不同构成手法1（理论+带练）-瓜瓜/Image_1783956641831_187.jpg",
+    "团练已完结/课件/6.不同构成手法1（理论+带练）-瓜瓜/Image_1783956701009_352.png",
+    "团练已完结/课件/6.不同构成手法1（理论+带练）-瓜瓜/Image_1783956701659_195.jpg",
+    "团练已完结/课件/6.不同构成手法1（理论+带练）-瓜瓜/Image_1783956704378_725.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜",
+   "count": 7,
+   "name": "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜",
+   "label": "7.不同构成手法2（理论+带练） 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 4.4,
+   "files": [
+    "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜/Image_1784392283018_385.png",
+    "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜/Image_1784392283672_343.png",
+    "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜/Image_1784392284418_958.png",
+    "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜/Image_1784392285085_385.png",
+    "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜/Image_1784392286634_644.png",
+    "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜/Image_1784392287441_217.png",
+    "团练已完结/课件/7.不同构成手法2（理论+带练）-瓜瓜/Image_1784392288530_748.png"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/8.改正式作业+总结问题-瓜瓜",
+   "count": 1,
+   "name": "团练已完结/课件/8.改正式作业+总结问题-瓜瓜",
+   "label": "8.改正式作业+总结问题 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 3.0,
+   "files": [
+    "团练已完结/课件/8.改正式作业+总结问题-瓜瓜/7.18 周六作业解析课.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/9.讲解图形语言与视觉层次-YZ",
+   "count": 1,
+   "name": "团练已完结/课件/9.讲解图形语言与视觉层次-YZ",
+   "label": "9.讲解图形语言与视觉层次 YZ",
+   "rootIndex": 0,
+   "totalMB": 1.2,
+   "files": [
+    "团练已完结/课件/9.讲解图形语言与视觉层次-YZ/7.20 讲解图形语言与视觉层级-yz.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/10.结合构图谈层次（新的构图形式）-瓜瓜",
+   "count": 1,
+   "name": "团练已完结/课件/10.结合构图谈层次（新的构图形式）-瓜瓜",
+   "label": "10.结合构图谈层次（新的构图形式） 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 6.1,
+   "files": [
+    "团练已完结/课件/10.结合构图谈层次（新的构图形式）-瓜瓜/7.22 通过排版优化形衍-瓜.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/11.改正式作业+总结问题-YZ",
+   "count": 3,
+   "name": "团练已完结/课件/11.改正式作业+总结问题-YZ",
+   "label": "11.改正式作业+总结问题 YZ",
+   "rootIndex": 0,
+   "totalMB": 1.4,
+   "files": [
+    "团练已完结/课件/11.改正式作业+总结问题-YZ/7.25 周六作业解析课-yz.jpg",
+    "团练已完结/课件/11.改正式作业+总结问题-YZ/宝宝巴士-侧面素体男女.png",
+    "团练已完结/课件/11.改正式作业+总结问题-YZ/宝宝巴士-平涂画法小贴士.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/12.以角色命题的形衍九章-瓜瓜",
+   "count": 1,
+   "name": "团练已完结/课件/12.以角色命题的形衍九章-瓜瓜",
+   "label": "12.以角色命题的形衍九章 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 4.9,
+   "files": [
+    "团练已完结/课件/12.以角色命题的形衍九章-瓜瓜/7.27 以角色命题的形衍九章-瓜.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/13.拓展图形联想与创意-瓜瓜",
+   "count": 1,
+   "name": "团练已完结/课件/13.拓展图形联想与创意-瓜瓜",
+   "label": "13.拓展图形联想与创意 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 5.2,
+   "files": [
+    "团练已完结/课件/13.拓展图形联想与创意-瓜瓜/Image_1785662501622_755.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "团练已完结/课件/14.改正式作业+总结问题-YZ",
+   "count": 1,
+   "name": "团练已完结/课件/14.改正式作业+总结问题-YZ",
+   "label": "14.改正式作业+总结问题 YZ",
+   "rootIndex": 0,
+   "totalMB": 0.4,
+   "files": [
+    "团练已完结/课件/14.改正式作业+总结问题-YZ/8.1 周六作业解析课-yz.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/6.9",
+   "count": 1,
+   "name": "系统已完结/课件/6.9",
+   "label": "6.9",
+   "rootIndex": 0,
+   "totalMB": 7.3,
+   "files": [
+    "系统已完结/课件/6.9/06.09 点线面聚散.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/6.11",
+   "count": 1,
+   "name": "系统已完结/课件/6.11",
+   "label": "6.11",
+   "rootIndex": 0,
+   "totalMB": 4.5,
+   "files": [
+    "系统已完结/课件/6.11/06.11  631.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/7.作业解析",
+   "count": 1,
+   "name": "系统已完结/课件/7.作业解析",
+   "label": "7.作业解析",
+   "rootIndex": 0,
+   "totalMB": 7.5,
+   "files": [
+    "系统已完结/课件/7.作业解析/Image_1781573169359_86.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/8.方圆尖、平对立、直曲-YZ",
+   "count": 1,
+   "name": "系统已完结/课件/8.方圆尖、平对立、直曲-YZ",
+   "label": "8.方圆尖、平对立、直曲 YZ",
+   "rootIndex": 0,
+   "totalMB": 2.7,
+   "files": [
+    "系统已完结/课件/8.方圆尖、平对立、直曲-YZ/Image_1781680777409_644.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/9.有机对几何、序列-YZ",
+   "count": 1,
+   "name": "系统已完结/课件/9.有机对几何、序列-YZ",
+   "label": "9.有机对几何、序列 YZ",
+   "rootIndex": 0,
+   "totalMB": 4.4,
+   "files": [
+    "系统已完结/课件/9.有机对几何、序列-YZ/Image_1781850878073_29.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/10.作业解析-瓜瓜",
+   "count": 1,
+   "name": "系统已完结/课件/10.作业解析-瓜瓜",
+   "label": "10.作业解析 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 5.6,
+   "files": [
+    "系统已完结/课件/10.作业解析-瓜瓜/week2周六作业解析课.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/11.6.21答疑课",
+   "count": 1,
+   "name": "系统已完结/课件/11.6.21答疑课",
+   "label": "11.6.21答疑课",
+   "rootIndex": 0,
+   "totalMB": 2.5,
+   "files": [
+    "系统已完结/课件/11.6.21答疑课/Image_1782200467773_844.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/12.密度、材质对比-YZ",
+   "count": 1,
+   "name": "系统已完结/课件/12.密度、材质对比-YZ",
+   "label": "12.密度、材质对比 YZ",
+   "rootIndex": 0,
+   "totalMB": 3.9,
+   "files": [
+    "系统已完结/课件/12.密度、材质对比-YZ/Image_1782347502880_159.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/15.完整对不完整、虚实、正负形、冷门构成-YZ",
+   "count": 1,
+   "name": "系统已完结/课件/15.完整对不完整、虚实、正负形、冷门构成-YZ",
+   "label": "15.完整对不完整、虚实、正负形、冷门构成 YZ",
+   "rootIndex": 0,
+   "totalMB": 2.7,
+   "files": [
+    "系统已完结/课件/15.完整对不完整、虚实、正负形、冷门构成-YZ/Image_1782526578443_474.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/16.作业解析-瓜瓜",
+   "count": 1,
+   "name": "系统已完结/课件/16.作业解析-瓜瓜",
+   "label": "16.作业解析 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 15.6,
+   "files": [
+    "系统已完结/课件/16.作业解析-瓜瓜/Image_1782812362278_722.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/17.总结答疑-YZ",
+   "count": 1,
+   "name": "系统已完结/课件/17.总结答疑-YZ",
+   "label": "17.总结答疑 YZ",
+   "rootIndex": 0,
+   "totalMB": 5.4,
+   "files": [
+    "系统已完结/课件/17.总结答疑-YZ/6.28答疑2.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/18.减法设计、极简与密度感受-YZ",
+   "count": 1,
+   "name": "系统已完结/课件/18.减法设计、极简与密度感受-YZ",
+   "label": "18.减法设计、极简与密度感受 YZ",
+   "rootIndex": 0,
+   "totalMB": 8.1,
+   "files": [
+    "系统已完结/课件/18.减法设计、极简与密度感受-YZ/Image_1782886614491_763.png"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/20.立体构成以及与平构区分-YZ",
+   "count": 1,
+   "name": "系统已完结/课件/20.立体构成以及与平构区分-YZ",
+   "label": "20.立体构成以及与平构区分 YZ",
+   "rootIndex": 0,
+   "totalMB": 4.5,
+   "files": [
+    "系统已完结/课件/20.立体构成以及与平构区分-YZ/Image_1783063944647_807.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/21.神秘嘉宾",
+   "count": 2,
+   "name": "系统已完结/课件/21.神秘嘉宾",
+   "label": "21.神秘嘉宾",
+   "rootIndex": 0,
+   "totalMB": 2.4,
+   "files": [
+    "系统已完结/课件/21.神秘嘉宾/Image_1783096542176_256.jpg",
+    "系统已完结/课件/21.神秘嘉宾/Image_1783096545034_369.png"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/22.作业解析-瓜瓜",
+   "count": 1,
+   "name": "系统已完结/课件/22.作业解析-瓜瓜",
+   "label": "22.作业解析 瓜瓜",
+   "rootIndex": 0,
+   "totalMB": 10.3,
+   "files": [
+    "系统已完结/课件/22.作业解析-瓜瓜/week4周六作业解析课.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/23.毕业总结与答疑-YZ",
+   "count": 1,
+   "name": "系统已完结/课件/23.毕业总结与答疑-YZ",
+   "label": "23.毕业总结与答疑 YZ",
+   "rootIndex": 0,
+   "totalMB": 2.1,
+   "files": [
+    "系统已完结/课件/23.毕业总结与答疑-YZ/7.5 答疑3.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/作业纸模板",
+   "count": 5,
+   "name": "系统已完结/课件/作业纸模板",
+   "label": "作业纸模板",
+   "rootIndex": 0,
+   "totalMB": 5.0,
+   "files": [
+    "系统已完结/课件/作业纸模板/Image_1782200794918_855.jpg",
+    "系统已完结/课件/作业纸模板/Image_1782200797058_677.jpg",
+    "系统已完结/课件/作业纸模板/Image_1782200798932_301.jpg",
+    "系统已完结/课件/作业纸模板/Image_1782200800537_947.jpg",
+    "系统已完结/课件/作业纸模板/Image_1782200802142_873.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "系统已完结/课件/开学必看",
+   "count": 1,
+   "name": "系统已完结/课件/开学必看",
+   "label": "开学必看",
+   "rootIndex": 0,
+   "totalMB": 0.1,
+   "files": [
+    "系统已完结/课件/开学必看/系统课-笔记打卡模板.jpg"
+   ]
+  },
+  {
+   "kind": "pdf",
+   "path": "公开课/枝牌笔记 藕片形衍九章-平面构成设计 公开课 (1).pdf",
+   "name": "枝牌笔记 藕片形衍九章-平面构成设计 公开课 (1).pdf",
+   "label": "枝牌笔记 藕片形衍九章 平面构成设计 公开课 (1)",
+   "sizeMB": 9.29,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第一周/第一节/《几何图案构成》天津人民美术出版社.pdf",
+   "name": "《几何图案构成》天津人民美术出版社.pdf",
+   "label": "《几何图案构成》天津人民美术出版社",
+   "sizeMB": 14.51,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第一周/第一节/点线面 (瓦西里·康定斯基).pdf",
+   "name": "点线面 (瓦西里·康定斯基).pdf",
+   "label": "点线面 (瓦西里·康定斯基)",
+   "sizeMB": 19.4,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第一周/第一节/第一节课（原版）.pdf",
+   "name": "第一节课（原版）.pdf",
+   "label": "第一节课（原版）",
+   "sizeMB": 29.46,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第一周/第一节/第一节课（手写版）.pdf",
+   "name": "第一节课（手写版）.pdf",
+   "label": "第一节课（手写版）",
+   "sizeMB": 0.62,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第一周/第二节/基础图案 (陈圣谋编著) .pdf",
+   "name": "基础图案 (陈圣谋编著) .pdf",
+   "label": "基础图案 (陈圣谋编著)",
+   "sizeMB": 39.31,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第一周/第二节/德国家族纹章.pdf",
+   "name": "德国家族纹章.pdf",
+   "label": "德国家族纹章",
+   "sizeMB": 24.37,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第一周/第二节/第二节课（新版）.pdf",
+   "name": "第二节课（新版）.pdf",
+   "label": "第二节课（新版）",
+   "sizeMB": 50.67,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第一周/第二节/第二节课（旧版）.pdf",
+   "name": "第二节课（旧版）.pdf",
+   "label": "第二节课（旧版）",
+   "sizeMB": 47.42,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第三周/第五节/创意立裁Fabric Manipulation (Ruth Singer)(1).pdf",
+   "name": "创意立裁Fabric Manipulation (Ruth Singer)(1).pdf",
+   "label": "创意立裁Fabric Manipulation (Ruth Singer)(1)",
+   "sizeMB": 55.6,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第三周/第五节/第五节课ppt（板书版）.pdf",
+   "name": "第五节课ppt（板书版）.pdf",
+   "label": "第五节课ppt（板书版）",
+   "sizeMB": 48.54,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第三周/第五节/第五节课ppt（空白版）.pdf",
+   "name": "第五节课ppt（空白版）.pdf",
+   "label": "第五节课ppt（空白版）",
+   "sizeMB": 23.06,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第三周/第五节/美国视觉设计学院用书.pdf",
+   "name": "美国视觉设计学院用书.pdf",
+   "label": "美国视觉设计学院用书",
+   "sizeMB": 117.96,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第三周/第六节/第六节课ppt（板书版）.pdf",
+   "name": "第六节课ppt（板书版）.pdf",
+   "label": "第六节课ppt（板书版）",
+   "sizeMB": 16.24,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第三周/第六节/第六节课ppt（空白版） .pdf",
+   "name": "第六节课ppt（空白版） .pdf",
+   "label": "第六节课ppt（空白版）",
+   "sizeMB": 19.35,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第三周/第六节/谈绘画构图 -- 高宗英 -- 1982 -- 山东人民出版社 -- 0c00df694cd00f5afb1816f0b8e8b449 -- Anna’s Archive.pdf",
+   "name": "谈绘画构图 -- 高宗英 -- 1982 -- 山东人民出版社 -- 0c00df694cd00f5afb1816f0b8e8b449 -- Anna’s Archive.pdf",
+   "label": "谈绘画构图 高宗英 1982 山东人民出版社 0c00df694cd00f5afb1816f0b8e8b449 Anna’s Archive",
+   "sizeMB": 47.8,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第二周/第三节/第三节课PPT.pdf",
+   "name": "第三节课PPT.pdf",
+   "label": "第三节课PPT",
+   "sizeMB": 31.74,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第二周/第四节/符号与象征.pdf",
+   "name": "符号与象征.pdf",
+   "label": "符号与象征",
+   "sizeMB": 98.41,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第二周/第四节/第四节课PPT.pdf",
+   "name": "第四节课PPT.pdf",
+   "label": "第四节课PPT",
+   "sizeMB": 45.21,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第四周/第七节/第七节课ppt.pdf",
+   "name": "第七节课ppt.pdf",
+   "label": "第七节课ppt",
+   "sizeMB": 26.43,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第四周/第七节/网格系统与版式设计.pdf",
+   "name": "网格系统与版式设计.pdf",
+   "label": "网格系统与版式设计",
+   "sizeMB": 21.64,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第四周/第七节/艺术与知视觉.pdf",
+   "name": "艺术与知视觉.pdf",
+   "label": "艺术与知视觉",
+   "sizeMB": 91.51,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第四周/第八节/平面设计200年.pdf",
+   "name": "平面设计200年.pdf",
+   "label": "平面设计200年",
+   "sizeMB": 91.05,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "课件/第四周/第八节/第八节课ppt.pdf",
+   "name": "第八节课ppt.pdf",
+   "label": "第八节课ppt",
+   "sizeMB": 60.21,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "预科/基础图案 (陈圣谋编著) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+   "name": "基础图案 (陈圣谋编著) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+   "label": "基础图案 (陈圣谋编著) (z library.sk, 1lib.sk, z lib.sk)",
+   "sizeMB": 39.27,
+   "rootIndex": 1
+  },
+  {
+   "kind": "pdf",
+   "path": "预科/直播课课件3.20.pdf",
+   "name": "直播课课件3.20.pdf",
+   "label": "直播课课件3.20",
+   "sizeMB": 5.11,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "更多资源访问首页.url",
+   "name": "更多资源访问首页.url",
+   "label": "更多资源访问首页",
+   "sizeMB": 0.0,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "公开课/直播课课件3.20笔记版.psd",
+   "name": "直播课课件3.20笔记版.psd",
+   "label": "直播课课件3.20笔记版",
+   "sizeMB": 45.75,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "笔刷/团练课笔刷（自制）(1).brushset",
+   "name": "团练课笔刷（自制）(1).brushset",
+   "label": "团练课笔刷（自制）(1)",
+   "sizeMB": 0.28,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "笔刷/常用笔刷（网络收集）(1).brushset",
+   "name": "常用笔刷（网络收集）(1).brushset",
+   "label": "常用笔刷（网络收集）(1)",
+   "sizeMB": 4.89,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第一周/第一节/基础几何(1).brushset",
+   "name": "基础几何(1).brushset",
+   "label": "基础几何(1)",
+   "sizeMB": 0.52,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第一周/第一节/第一节课（手写版）.psd",
+   "name": "第一节课（手写版）.psd",
+   "label": "第一节课（手写版）",
+   "sizeMB": 104.58,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第一周/第二节/何川藕片秀场分析笔记（6P）.7z",
+   "name": "何川藕片秀场分析笔记（6P）.7z",
+   "label": "何川藕片秀场分析笔记（6P）",
+   "sizeMB": 11.57,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第一周/第二节/第二节课（新版）（手写版）.psd",
+   "name": "第二节课（新版）（手写版）.psd",
+   "label": "第二节课（新版）（手写版）",
+   "sizeMB": 164.29,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第三周/第五节/第五节课（板书版）.psd",
+   "name": "第五节课（板书版）.psd",
+   "label": "第五节课（板书版）",
+   "sizeMB": 82.85,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第三周/第五节/艺术·设计的立体构成.zip",
+   "name": "艺术·设计的立体构成.zip",
+   "label": "艺术·设计的立体构成",
+   "sizeMB": 104.13,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第三周/第六节/第六节课ppt（板书版）_.psd",
+   "name": "第六节课ppt（板书版）_.psd",
+   "label": "第六节课ppt（板书版）",
+   "sizeMB": 92.42,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第二周/第三节/作业课01(1).psd",
+   "name": "作业课01(1).psd",
+   "label": "作业课01(1)",
+   "sizeMB": 36.67,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第二周/第三节/作业（课上用）.psd",
+   "name": "作业（课上用）.psd",
+   "label": "作业（课上用）",
+   "sizeMB": 110.92,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第二周/第三节/小游戏.psd",
+   "name": "小游戏.psd",
+   "label": "小游戏",
+   "sizeMB": 37.26,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第二周/第三节/第三节课（板书版）.psd",
+   "name": "第三节课（板书版）.psd",
+   "label": "第三节课（板书版）",
+   "sizeMB": 136.26,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第二周/第四节/第二周示范2 psd.psd",
+   "name": "第二周示范2 psd.psd",
+   "label": "第二周示范2 psd",
+   "sizeMB": 24.22,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第四周/第七节/第七节课.psd",
+   "name": "第七节课.psd",
+   "label": "第七节课",
+   "sizeMB": 142.09,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "课件/第四周/第八节/第八节课.psd",
+   "name": "第八节课.psd",
+   "label": "第八节课",
+   "sizeMB": 143.87,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "预科/19号.sut",
+   "name": "19号.sut",
+   "label": "号",
+   "sizeMB": 0.04,
+   "rootIndex": 1
+  },
+  {
+   "kind": "file",
+   "path": "预科/何川笔刷.doc",
+   "name": "何川笔刷.doc",
+   "label": "何川笔刷",
+   "sizeMB": 0.03,
+   "rootIndex": 1
+  },
+  {
+   "kind": "images",
+   "dir": "根目录",
+   "count": 1,
+   "name": "根目录",
+   "label": "根目录",
+   "rootIndex": 1,
+   "totalMB": 0.1,
+   "files": [
+    "更多资源扫二维码访问我的网站.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "课件/第一周/第一节",
+   "count": 3,
+   "name": "课件/第一周/第一节",
+   "label": "第一节",
+   "rootIndex": 1,
+   "totalMB": 0.7,
+   "files": [
+    "课件/第一周/第一节/Image_1777729901886_73.png",
+    "课件/第一周/第一节/Image_1777729904520_114.png",
+    "课件/第一周/第一节/Image_1777729908739_914.png"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "课件/第一周/第二节",
+   "count": 7,
+   "name": "课件/第一周/第二节",
+   "label": "第二节",
+   "rootIndex": 1,
+   "totalMB": 4.6,
+   "files": [
+    "课件/第一周/第二节/Image_1777857717825_644.png",
+    "课件/第一周/第二节/Image_1777857719676_706.png",
+    "课件/第一周/第二节/Image_1777857727689_973.png",
+    "课件/第一周/第二节/Image_1777857757526_650.png",
+    "课件/第一周/第二节/Image_1777857761519_960.png",
+    "课件/第一周/第二节/Image_1777857763570_595.png",
+    "课件/第一周/第二节/更多资源扫二维码访问我的网站.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "课件/第三周/第五节",
+   "count": 6,
+   "name": "课件/第三周/第五节",
+   "label": "第五节",
+   "rootIndex": 1,
+   "totalMB": 8.1,
+   "files": [
+    "课件/第三周/第五节/Image_1778941569736_187.png",
+    "课件/第三周/第五节/Image_1778941573124_249.jpg",
+    "课件/第三周/第五节/Image_1778941591197_377.jpg",
+    "课件/第三周/第五节/Image_1778944801887_184.png",
+    "课件/第三周/第五节/Image_1778944810387_920.png",
+    "课件/第三周/第五节/Image_1778944814652_960.png"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "课件/第三周/第六节",
+   "count": 7,
+   "name": "课件/第三周/第六节",
+   "label": "第六节",
+   "rootIndex": 1,
+   "totalMB": 3.3,
+   "files": [
+    "课件/第三周/第六节/第六节课作业纸（大作业）.png",
+    "课件/第三周/第六节/第六节课课前小游戏图1.png",
+    "课件/第三周/第六节/第六节课课前小游戏图2.png",
+    "课件/第三周/第六节/第六节课课前小游戏图3.png",
+    "课件/第三周/第六节/第六节课课前小游戏图4.png",
+    "课件/第三周/第六节/第六节课课前小游戏图5.png",
+    "课件/第三周/第六节/第六节课课前小游戏图6.png"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "课件/第二周/第三节",
+   "count": 6,
+   "name": "课件/第二周/第三节",
+   "label": "第三节",
+   "rootIndex": 1,
+   "totalMB": 13.2,
+   "files": [
+    "课件/第二周/第三节/小游戏PNG.PNG",
+    "课件/第二周/第三节/第三节课小作业纸1（不计入全勤）.png",
+    "课件/第二周/第三节/第三节课小作业纸1（藕片提示版）.jpg",
+    "课件/第二周/第三节/第三节课小作业纸2（不计入全勤）.png",
+    "课件/第二周/第三节/第三节课小作业纸2（藕片提示版）.jpg",
+    "课件/第二周/第三节/第三节课课前热身.png"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "课件/第二周/第四节",
+   "count": 5,
+   "name": "课件/第二周/第四节",
+   "label": "第四节",
+   "rootIndex": 1,
+   "totalMB": 5.9,
+   "files": [
+    "课件/第二周/第四节/第四节课大作业纸1-抽改ddl为周三12：00前.png",
+    "课件/第二周/第四节/第四节课大作业纸1（藕片提示版）.jpg",
+    "课件/第二周/第四节/第四节课大作业纸2-抽改ddl为周三12：00前.png",
+    "课件/第二周/第四节/第四节课大作业纸2（藕片提示版）.jpg",
+    "课件/第二周/第四节/第四节课课前热身.png"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "课件/第四周/第七节",
+   "count": 2,
+   "name": "课件/第四周/第七节",
+   "label": "第七节",
+   "rootIndex": 1,
+   "totalMB": 0.2,
+   "files": [
+    "课件/第四周/第七节/Image_1779637758114_918.png",
+    "课件/第四周/第七节/更多资源扫二维码访问我的网站.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "预科/预科作业纸",
+   "count": 2,
+   "name": "预科/预科作业纸",
+   "label": "预科作业纸",
+   "rootIndex": 1,
+   "totalMB": 0.3,
+   "files": [
+    "预科/预科作业纸/Image_1776772897945_98.png",
+    "预科/预科作业纸/Image_1776772902608_502.png"
+   ]
+  },
+  {
+   "kind": "pdf",
+   "path": "【190页】PPT或PDF/《古典色彩知识》_20250407081043.pdf",
+   "name": "《古典色彩知识》_20250407081043.pdf",
+   "label": "《古典色彩知识》 20250407081043",
+   "sizeMB": 39.79,
+   "rootIndex": 2
+  },
+  {
+   "kind": "pdf",
+   "path": "【190页】PPT或PDF/《色彩的艺术》    YUAN艺术出品ppt_20250407081223.pdf",
+   "name": "《色彩的艺术》    YUAN艺术出品ppt_20250407081223.pdf",
+   "label": "《色彩的艺术》 YUAN艺术出品ppt 20250407081223",
+   "sizeMB": 20.33,
+   "rootIndex": 2
+  },
+  {
+   "kind": "file",
+   "path": "【190页】PPT或PDF/《古典色彩知识》.pptx",
+   "name": "《古典色彩知识》.pptx",
+   "label": "《古典色彩知识》",
+   "sizeMB": 409.66,
+   "rootIndex": 2
+  },
+  {
+   "kind": "file",
+   "path": "【190页】PPT或PDF/《色彩的艺术》    YUAN艺术出品ppt.pptx",
+   "name": "《色彩的艺术》    YUAN艺术出品ppt.pptx",
+   "label": "《色彩的艺术》 YUAN艺术出品ppt",
+   "sizeMB": 175.81,
+   "rootIndex": 2
+  },
+  {
+   "kind": "images",
+   "dir": "【图片格式】用作浏览/古典的色彩知识",
+   "count": 94,
+   "name": "【图片格式】用作浏览/古典的色彩知识",
+   "label": "古典的色彩知识",
+   "rootIndex": 2,
+   "totalMB": 27.4,
+   "files": [
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_01.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_02.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_03.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_04.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_05.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_06.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_07.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_08.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_09.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_10.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_11.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_12.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_13.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_14.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_15.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_16.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_17.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_18.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_19.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_20.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_21.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_22.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_23.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_24.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_25.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_26.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_27.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_28.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_29.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_30.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_31.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_32.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_33.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_34.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_35.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_36.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_37.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_38.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_39.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_40.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_41.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_42.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_43.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_44.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_45.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_46.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_47.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_48.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_49.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_50.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_51.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_52.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_53.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_54.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_55.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_56.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_57.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_58.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_59.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_60.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_61.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_62.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_63.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_64.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_65.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_66.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_67.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_68.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_69.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_70.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_71.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_72.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_73.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_74.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_75.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_76.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_77.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_78.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_79.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_80.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_81.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_82.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_83.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_84.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_85.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_86.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_87.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_88.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_89.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_90.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_91.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_92.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_93.jpg",
+    "【图片格式】用作浏览/古典的色彩知识/《古典色彩知识》_94.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "【图片格式】用作浏览/色彩的艺术",
+   "count": 95,
+   "name": "【图片格式】用作浏览/色彩的艺术",
+   "label": "色彩的艺术",
+   "rootIndex": 2,
+   "totalMB": 18.5,
+   "files": [
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_01.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_02.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_03.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_04.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_05.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_06.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_07.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_08.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_09.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_10.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_11.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_12.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_13.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_14.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_15.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_16.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_17.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_18.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_19.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_20.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_21.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_22.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_23.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_24.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_25.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_26.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_27.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_28.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_29.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_30.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_31.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_32.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_33.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_34.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_35.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_36.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_37.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_38.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_39.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_40.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_41.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_42.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_43.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_44.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_45.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_46.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_47.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_48.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_49.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_50.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_51.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_52.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_53.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_54.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_55.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_56.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_57.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_58.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_59.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_60.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_61.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_62.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_63.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_64.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_65.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_66.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_67.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_68.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_69.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_70.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_71.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_72.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_73.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_74.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_75.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_76.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_77.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_78.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_79.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_80.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_81.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_82.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_83.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_84.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_85.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_86.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_87.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_88.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_89.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_90.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_91.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_92.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_93.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_94.jpg",
+    "【图片格式】用作浏览/色彩的艺术/《色彩的艺术》    YUAN艺术出品ppt_95.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "【赠送】44张高清知识贴",
+   "count": 45,
+   "name": "【赠送】44张高清知识贴",
+   "label": "【赠送】44张高清知识贴",
+   "rootIndex": 2,
+   "totalMB": 199.0,
+   "files": [
+    "【赠送】44张高清知识贴/1色彩颜色知识.jpg",
+    "【赠送】44张高清知识贴/2色彩颜色知识.jpg",
+    "【赠送】44张高清知识贴/3三原色，间色，复色.jpg",
+    "【赠送】44张高清知识贴/4色相，明度，纯度.jpg",
+    "【赠送】44张高清知识贴/5互补色.jpg",
+    "【赠送】44张高清知识贴/6对比色.jpg",
+    "【赠送】44张高清知识贴/7f49f8474a0c048d7c3a0df21e9b23e.jpg",
+    "【赠送】44张高清知识贴/7临近色.jpg",
+    "【赠送】44张高清知识贴/8临近色2.jpg",
+    "【赠送】44张高清知识贴/9同类色.jpg",
+    "【赠送】44张高清知识贴/10色彩冷暖.jpg",
+    "【赠送】44张高清知识贴/11色彩空间1.jpg",
+    "【赠送】44张高清知识贴/12色彩空间2.jpg",
+    "【赠送】44张高清知识贴/13色彩情绪.jpg",
+    "【赠送】44张高清知识贴/14色彩虚实1.jpg",
+    "【赠送】44张高清知识贴/15色彩虚实2.jpg",
+    "【赠送】44张高清知识贴/16色彩虚实3.jpg",
+    "【赠送】44张高清知识贴/17色彩虚实4.jpg",
+    "【赠送】44张高清知识贴/18色彩虚实5.jpg",
+    "【赠送】44张高清知识贴/19色彩环境色1.jpg",
+    "【赠送】44张高清知识贴/20色彩环境色2.jpg",
+    "【赠送】44张高清知识贴/21互补色调色.jpg",
+    "【赠送】44张高清知识贴/22红绿互补色.jpg",
+    "【赠送】44张高清知识贴/23蓝橙互补色.jpg",
+    "【赠送】44张高清知识贴/24黄紫互补色.jpg",
+    "【赠送】44张高清知识贴/25对比色.jpg",
+    "【赠送】44张高清知识贴/26类似色.jpg",
+    "【赠送】44张高清知识贴/27临近色.jpg",
+    "【赠送】44张高清知识贴/28临近色2.jpg",
+    "【赠送】44张高清知识贴/29色彩基本调色.jpg",
+    "【赠送】44张高清知识贴/30三原色理解.jpg",
+    "【赠送】44张高清知识贴/31白色混色.jpg",
+    "【赠送】44张高清知识贴/32黑色混色.jpg",
+    "【赠送】44张高清知识贴/33互补色调色.jpg",
+    "【赠送】44张高清知识贴/34对比色调色.jpg",
+    "【赠送】44张高清知识贴/35类似色调色.jpg",
+    "【赠送】44张高清知识贴/36同类色调色.jpg",
+    "【赠送】44张高清知识贴/37调色方式.jpg",
+    "【赠送】44张高清知识贴/38临近近色调色.jpg",
+    "【赠送】44张高清知识贴/39色彩搭配1.jpg",
+    "【赠送】44张高清知识贴/40色彩搭配2.jpg",
+    "【赠送】44张高清知识贴/41色彩感觉与联想1.jpg",
+    "【赠送】44张高清知识贴/42色彩感觉与联想2.jpg",
+    "【赠送】44张高清知识贴/43色彩感觉与联想3.jpg",
+    "【赠送】44张高清知识贴/44色彩感觉与联想4.jpg"
+   ]
+  }
+ ],
+ "outline": {
+  "objectives": [
+   "理解点线面与形式美法则，能用构成语言有意识地组织画面而不是堆砌元素",
+   "掌握重复、渐变、近似、发射、对比、密集等构成手法，做出有层次的构成作品",
+   "建立从参考物分析到图形提炼、再到图形语言表达的设计流程",
+   "理解色彩三要素、色环与冷暖关系，能完成可靠的黑白明度稿与配色方案",
+   "独立完成一套平面构成作品与一组主题配色练习，并能讲清自己的设计思路"
+  ],
+  "keypoints": [
+   "点线面的视觉属性与聚散关系，疏密决定画面的呼吸与节奏",
+   "形式法则：对称与均衡、重复与渐变、对比与调和、节奏与比例",
+   "视觉层次与图形语言：大小、疏密、虚实、正负形与遮挡关系",
+   "视觉中心与引导线控制观看顺序，构图决定画面的取景与画幅",
+   "单一元素的变化与单位形组合，骨格与纹样的组织方式",
+   "色彩三要素（色相、明度、纯度）与三原色、色环的推演关系",
+   "明度黑白训练：先看明度再看颜色，是画面不脏的前提",
+   "冷暖的相对性，以及冷暖配比在画面气氛中的作用",
+   "配色方法：同类色、邻近色、对比色与面积比的控制",
+   "图形联想与创意转译，以及减法设计与极简的表达边界"
+  ],
+  "assessment": [
+   "单元作业：每个单元提交对应构成手法的练习稿，按形式法则运用与完成度评分",
+   "构成作品：以单一元素或命题完成一套平面构成作品，含草图与成稿，参与班级展示",
+   "配色练习：完成色环推演、明度渐层与冷暖对比三组练习，并用文字说明用色逻辑",
+   "作业讲评：按作业课与讲评标准提交修改前后对比，记录每次的改进点",
+   "结课展示：整合一套构成作品与一组主题配色，做整体排版呈现"
+  ],
+  "theoryTasks": [
+   "分析一件参考物的视觉元素，写出可提炼的点线面来源与可用的骨格形式",
+   "整理形式美法则清单，每条法则配一张自己画的示意图并注明判断标准",
+   "用文字说明一张构成作品的视觉中心、引导线与层次关系，指出改进空间",
+   "记录色环推演与三原色调和过程，写出补色、邻近色在实际配色中的比例",
+   "摘录三种不同风格的构成作品，比较其图形语言与组织方式的差异"
+  ],
+  "practiceTasks": [
+   "点线面聚散练习：用同一基本元素做疏密、大小、方向三组对比各一张",
+   "单位形组合：把一个单位形用重复、渐变、发射三种手法各做一张构成",
+   "正负形与虚实练习：用黑白两色完成一张正负形互换的构成",
+   "明度黑白训练：把一张彩色图改成九级明度稿，再按明度关系重新配色",
+   "命题构成：以某个角色或主题做一套九章式的图形推演并排版呈现"
+  ]
+ }
+}

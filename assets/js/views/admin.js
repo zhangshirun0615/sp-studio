@@ -245,7 +245,7 @@ export default {
     return `<div class="container">
   <div class="dash-head">
     <div>
-      <div class="eyebrow">Learning Analytics</div>
+      <div class="eyebrow">学习数据</div>
       <h1>数据驾驶舱</h1>
       <p>我的学习数据来自本机浏览器记录；教学成效页展示接入班级埋点后的样例效果。导出 CSV 可归档学习记录。</p>
     </div>

@@ -49,6 +49,8 @@ function defaultData() {
     classes: [],
     tasks: [],
     evaluations: [],
+    courseOverrides: {},
+    customCourses: [],
     lastTaskId: null,
     updatedAt: Date.now()
   };
@@ -183,6 +185,8 @@ const core = {
       classes: Array.isArray(d.classes) ? d.classes : [],
       tasks: Array.isArray(d.tasks) ? d.tasks : [],
       evaluations: Array.isArray(d.evaluations) ? d.evaluations : [],
+      courseOverrides: d.courseOverrides || {},
+      customCourses: Array.isArray(d.customCourses) ? d.customCourses : [],
       lastTaskId: d.lastTaskId || null,
       updatedAt: Date.now()
     };

@@ -1,0 +1,121 @@
+{
+ "id": "animation-master",
+ "title": "动画大师课：分镜与透视",
+ "type": "gallery",
+ "roots": [
+  "动画大师课"
+ ],
+ "modules": [],
+ "resources": [
+  {
+   "section": "动画大师课 · 教材",
+   "items": [
+    {
+     "kind": "pdf",
+     "path": "L08动画大师课：分镜头脚本设计Framed Ink Drawing and Composition for Visual Storytellers (Marcos Mateu-Mestre)  .pdf",
+     "name": "L08动画大师课：分镜头脚本设计Framed Ink Drawing and Composition for Visual Storytellers (Marcos Mateu-Mestre)  .pdf",
+     "label": "《动画大师课：分镜头脚本设计》（原版）",
+     "sizeMB": 40.11,
+     "rootIndex": 0
+    },
+    {
+     "kind": "pdf",
+     "path": "L08动画大师课：分镜头脚本设计《Framed ink》汉化众译版 (victorcloux)  .pdf",
+     "name": "L08动画大师课：分镜头脚本设计《Framed ink》汉化众译版 (victorcloux)  .pdf",
+     "label": "《动画大师课：分镜头脚本设计》（中文译本）",
+     "sizeMB": 68.7,
+     "rootIndex": 0
+    },
+    {
+     "kind": "pdf",
+     "path": "L09动画大师课 画幅与分镜 (（英）马科斯·马特乌-梅斯特编著；薛燕平译)  .pdf",
+     "name": "L09动画大师课 画幅与分镜 (（英）马科斯·马特乌-梅斯特编著；薛燕平译)  .pdf",
+     "label": "《动画大师课：画幅与分镜》（中文译本）",
+     "sizeMB": 79.78,
+     "rootIndex": 0
+    },
+    {
+     "kind": "pdf",
+     "path": "L09动画大师课 画幅与分镜Framed Ink 2 (Marcos Mateu-Mestre)  .pdf",
+     "name": "L09动画大师课 画幅与分镜Framed Ink 2 (Marcos Mateu-Mestre)  .pdf",
+     "label": "《动画大师课：画幅与分镜》（原版）",
+     "sizeMB": 240.89,
+     "rootIndex": 0
+    },
+    {
+     "kind": "pdf",
+     "path": "L10动画大师课 场景透视 (（英）马科斯·马特乌-梅斯特编著；赵袁冰，张云辉译)  .pdf",
+     "name": "L10动画大师课 场景透视 (（英）马科斯·马特乌-梅斯特编著；赵袁冰，张云辉译)  .pdf",
+     "label": "《动画大师课：场景透视》（中文译本）",
+     "sizeMB": 110.1,
+     "rootIndex": 0
+    },
+    {
+     "kind": "pdf",
+     "path": "L10动画大师课 场景透视Framed Perspective, Volume 1 Technical Perspective and Visual Storytelling (Marcos Mateu-Mestre)  .pdf",
+     "name": "L10动画大师课 场景透视Framed Perspective, Volume 1 Technical Perspective and Visual Storytelling (Marcos Mateu-Mestre)  .pdf",
+     "label": "《动画大师课：场景透视》（原版）",
+     "sizeMB": 352.87,
+     "rootIndex": 0
+    },
+    {
+     "kind": "pdf",
+     "path": "L11动画大师课 场景绘图技巧 (（英）马科斯·马特乌-梅斯特编著；薛轶丹译)  .pdf",
+     "name": "L11动画大师课 场景绘图技巧 (（英）马科斯·马特乌-梅斯特编著；薛轶丹译)  .pdf",
+     "label": "《动画大师课：场景绘图技巧》（中文译本）",
+     "sizeMB": 88.07,
+     "rootIndex": 0
+    },
+    {
+     "kind": "pdf",
+     "path": "L12动画大师课 人物透视Framed Perspective, Volume 2 Technical Drawing for Shadows, Volume, and Characters (Marcos Mateu-Mestre)  .pdf",
+     "name": "L12动画大师课 人物透视Framed Perspective, Volume 2 Technical Drawing for Shadows, Volume, and Characters (Marcos Mateu-Mestre)  .pdf",
+     "label": "《动画大师课：人物透视》（原版）",
+     "sizeMB": 179.58,
+     "rootIndex": 0
+    }
+   ]
+  }
+ ],
+ "outline": {
+  "objectives": [
+   "系统掌握动画大师课四部教材的方法体系：分镜头脚本设计、画幅与分镜、场景透视、人物透视。",
+   "能搭建可信的场景透视空间，并在其中正确安排人物比例、站位、阴影与镜头。",
+   "理解画幅比例、镜头焦距与机位高度对叙事信息量和情绪的影响。",
+   "能把文字剧本转译为具备镜头感、空间逻辑与节奏的分镜脚本。",
+   "养成“技术透视 + 视觉叙事”双线并行的画面检查习惯。"
+  ],
+  "keypoints": [
+   "一点、两点、三点透视与三点透视场景的搭建步骤",
+   "相机高度、视平线与焦距对画面观感的影响",
+   "场景透视中的测量、比例传递与网格绘制",
+   "人物在透视空间中的身高比例、站位与地面接触关系",
+   "投影与阴影的几何构造：日光、点光源、面光源",
+   "分镜脚本的镜头表、叙事节拍与信息释放顺序",
+   "画幅比例（宽银幕、4:3、竖幅）对构图与叙事的限制",
+   "视觉引导：视线、明暗、构图线与前中后景层次",
+   "场景绘图技巧：线宽控制、细节取舍与空气透视",
+   "从缩略图到成稿的分镜工作流"
+  ],
+  "assessment": [
+   "阅读笔记：按分镜、画幅、场景透视、人物透视 4 个主题各提交 1 份笔记，附书中图例临摹。",
+   "分镜分析作业：选取 1 部动画电影段落，按书中方法逐镜标注相机高度、焦距与画幅。",
+   "临摹与构图练习：完成 5 张场景透视网格与 3 张带人物的透视构图。",
+   "结课报告：提交 1 段 8 至 12 格分镜脚本（含镜头表与透视草图），附 1000 字设计说明。"
+  ],
+  "theoryTasks": [
+   "阅读《分镜头脚本设计》与《画幅与分镜》，整理画幅比例、镜头焦距与情绪效果的对照表。",
+   "用书中方法为 1 个 2 分钟剧本编写镜头表，包含镜号、景别、机位、时长与画面内容。",
+   "分析《场景透视》中的测量与比例传递方法，写 800 字步骤说明并配 1 张自绘网格。",
+   "比较《人物透视》与其他三册在阴影处理上的不同侧重，各举 1 个图例。",
+   "总结分镜中“信息释放顺序”的 4 种常见策略（先环境后人物、先细节后全貌等），各配 1 个片例。"
+  ],
+  "practiceTasks": [
+   "绘制 1 个两点透视房间网格，放入 3 个不同身高的人物并保持比例一致。",
+   "完成 1 个三点透视街景草图，标注灭点、视平线与相机高度。",
+   "为同一场景画 3 种画幅（16:9、4:3、2.35:1）的构图，比较信息量与视觉重心差异。",
+   "完成 1 段 8 格分镜，包含推、拉、摇、移各 1 处并标注镜头运动方向。",
+   "为 1 个室内场景绘制日光与灯光两种投影方案，说明光源高度对阴影长度的影响。"
+  ]
+ }
+}

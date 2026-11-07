@@ -23,6 +23,7 @@ const TABS = [
   ['tasks', '实训任务', 'target'],
   ['eval', '实训评估', 'layers'],
   ['grades', '成绩汇总', 'grid'],
+  ['courses-admin', '课程管理', 'book'],
   ['server', '发布与访问', 'external']
 ];
 
@@ -134,7 +135,7 @@ function lockScreen(mode) {
   return `<div class="container" style="min-height:70vh;display:grid;place-items:center;padding:60px 24px">
     <div class="card teacher-lock">
       <div class="lock-icon">${icon('user', 26)}</div>
-      <div class="eyebrow">Teacher Console</div>
+      <div class="eyebrow">教师端</div>
       <h2>${setup ? '首次使用：设置教师口令' : '教师端已锁定'}</h2>
       <p>${setup
         ? '口令用于加密本机教师数据（学生名单、成绩、评语），至少 6 位。请妥善保存——忘记口令将无法恢复数据。'
@@ -731,8 +732,233 @@ function bodyForTab() {
   if (state.tab === 'tasks') return tasksTab();
   if (state.tab === 'eval') return evalTab();
   if (state.tab === 'grades') return gradesTab();
+  if (state.tab === 'courses-admin') return coursesAdminTab();
   if (state.tab === 'server') return serverTab();
   return overviewTab();
+}
+
+/* ===== 课程管理 ===== */
+let catalogBase = null;
+
+async function loadCatalogBase() {
+  if (catalogBase) return catalogBase;
+  const res = await fetch('data/catalog.json?v=' + Date.now(), { cache: 'no-store' });
+  if (!res.ok) throw new Error('课程目录加载失败');
+  catalogBase = await res.json();
+  return catalogBase;
+}
+
+function mergedCatalog(base, overrides, customCourses) {
+  const cat = JSON.parse(JSON.stringify(base));
+  cat.courses = (cat.courses || []).map(c => {
+    const o = (overrides || {})[c.id] || {};
+    return Object.assign({}, c, o, {
+      pan: {
+        url: o.panUrl != null ? o.panUrl : ((c.pan && c.pan.url) || ''),
+        pwd: o.panPwd != null ? o.panPwd : ((c.pan && c.pan.pwd) || '')
+      }
+    });
+  }).filter(c => c.visible !== false);
+  (customCourses || []).forEach(c => { if (c && c.id) cat.courses.push(c); });
+  cat.courseCount = cat.courses.length;
+  cat.lessonTotal = cat.courses.reduce((a, c) => a + (c.lessonCount || 0), 0);
+  cat.durationTotal = cat.courses.reduce((a, c) => a + (c.durationSec || 0), 0);
+  return cat;
+}
+
+function coursesAdminTab() {
+  return `<div class="dash-card">
+    <h3>课程管理</h3>
+    <div class="d-sub">编辑课程信息、网盘链接、显示/隐藏课程；发布后学生端刷新即可看到</div>
+    <div id="courseAdminBody"><div class="eval-loading"><div class="typing"><i></i><i></i><i></i></div> 正在加载课程目录…</div></div>
+  </div>`;
+}
+
+async function initCoursesAdmin() {
+  const host = document.getElementById('courseAdminBody');
+  if (!host) return;
+  try {
+    const base = await loadCatalogBase();
+    const overrides = core.data.courseOverrides || {};
+    const custom = core.data.customCourses || [];
+    const rows = (base.courses || []).map(c => {
+      const o = overrides[c.id] || {};
+      const hidden = o.visible === false;
+      return `<tr class="${hidden ? 'course-hidden' : ''}">
+        <td><div class="ca-title"><img src="${esc(c.cover || '')}" alt=""><div><b>${esc(o.title || c.title)}</b><span>${esc(c.category)} · ${c.lessonCount || 0} 课时</span></div></div></td>
+        <td class="mono">${esc(c.type)}</td>
+        <td>${(o.panUrl || (c.pan && c.pan.url)) ? '<span class="tag teal">已配置</span>' : '<span class="tag">未配置</span>'}</td>
+        <td>${hidden ? '<span class="tag">已隐藏</span>' : '<span class="tag copper">显示中</span>'}</td>
+        <td class="student-ops">
+          <button class="btn btn-ghost btn-xs" data-course-edit="${esc(c.id)}">编辑</button>
+          <button class="btn btn-ghost btn-xs" data-course-toggle="${esc(c.id)}">${hidden ? '显示' : '隐藏'}</button>
+          ${o && Object.keys(o).length ? `<button class="btn btn-ghost btn-xs" data-course-reset="${esc(c.id)}">恢复</button>` : ''}
+        </td>
+      </tr>`;
+    }).join('');
+    const customRows = custom.map(c => `<tr>
+        <td><div class="ca-title"><div><b>${esc(c.title)}</b><span>外链课程 · ${esc(c.category || '')}</span></div></div></td>
+        <td class="mono">external</td><td>-</td><td><span class="tag copper">显示中</span></td>
+        <td class="student-ops">
+          <a class="btn btn-ghost btn-xs" href="${esc(c.url || '#')}" target="_blank" rel="noopener">打开</a>
+          <button class="btn btn-ghost btn-xs" data-course-del-custom="${esc(c.id)}">移除</button>
+        </td>
+      </tr>`).join('');
+    host.innerHTML = `
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+        <button class="btn btn-primary btn-sm" id="publishCatalog">${icon('external', 15)} 发布课程目录到服务器</button>
+        <button class="btn btn-ghost btn-sm" id="exportCatalog">${icon('download', 14)} 导出 catalog.json（镜像用）</button>
+        <button class="btn btn-ghost btn-sm" id="addExternalCourse">${icon('check', 14)} 新增外链课程</button>
+        <span style="font-size:12px;color:var(--muted);margin-left:auto">共 ${(base.courses || []).length + custom.length} 门</span>
+      </div>
+      <div class="table-wrap"><table class="data"><thead><tr><th>课程</th><th>类型</th><th>网盘</th><th>状态</th><th style="width:180px">操作</th></tr></thead>
+      <tbody>${rows}${customRows}</tbody></table></div>
+      <div class="settings-note" style="margin-top:14px">
+        修改先保存在本机教师数据；点「发布课程目录到服务器」后，学生端从本地服务器读取最新目录。
+        在线镜像需要把导出的 catalog.json 替换到 site/data/ 后重新部署。
+      </div>`;
+    host.querySelectorAll('[data-course-edit]').forEach(b => b.onclick = () => openCourseEdit(b.dataset.courseEdit, base));
+    host.querySelectorAll('[data-course-toggle]').forEach(b => b.onclick = async () => {
+      const id = b.dataset.courseToggle;
+      const o = core.data.courseOverrides[id] || {};
+      o.visible = o.visible === false;
+      core.data.courseOverrides[id] = o;
+      await core.save();
+      initCoursesAdmin();
+    });
+    host.querySelectorAll('[data-course-reset]').forEach(b => b.onclick = async () => {
+      delete core.data.courseOverrides[b.dataset.courseReset];
+      await core.save();
+      initCoursesAdmin();
+    });
+    host.querySelectorAll('[data-course-del-custom]').forEach(b => b.onclick = async () => {
+      if (!confirm('移除外链课程？')) return;
+      core.data.customCourses = (core.data.customCourses || []).filter(x => x.id !== b.dataset.courseDelCustom);
+      await core.save();
+      initCoursesAdmin();
+    });
+    document.getElementById('publishCatalog').onclick = publishCatalog;
+    document.getElementById('exportCatalog').onclick = exportCatalog;
+    document.getElementById('addExternalCourse').onclick = addExternalCourseModal;
+  } catch (e) {
+    host.innerHTML = `<p style="color:var(--warn)">${esc(e.message)}</p>`;
+  }
+}
+
+function openCourseEdit(id, base) {
+  const c = (base.courses || []).find(x => x.id === id);
+  if (!c) return;
+  const o = core.data.courseOverrides[id] || {};
+  const bd = document.createElement('div');
+  bd.className = 'modal-backdrop show';
+  bd.innerHTML = `<div class="modal" style="position:relative;max-width:620px">
+    <button class="icon-btn m-close">${icon('close', 16)}</button>
+    <h2>编辑课程</h2>
+    <div class="t-grid2" style="margin-top:14px">
+      <label>课程名称<input class="t-input" id="ceTitle" value="${esc(o.title || c.title)}"></label>
+      <label>分类<input class="t-input" id="ceCategory" value="${esc(o.category || c.category)}"></label>
+    </div>
+    <label style="display:block;margin-top:8px">副标题<input class="t-input" id="ceSub" value="${esc(o.subtitle || c.subtitle || '')}"></label>
+    <label style="display:block;margin-top:8px">课程简介<textarea class="t-input t-area" id="ceDesc" rows="3">${esc(o.description || c.description || '')}</textarea></label>
+    <div class="t-grid2" style="margin-top:8px">
+      <label>网盘链接<input class="t-input" id="cePan" value="${esc(o.panUrl != null ? o.panUrl : ((c.pan && c.pan.url) || ''))}" placeholder="https://pan.baidu.com/s/..."></label>
+      <label>提取码<input class="t-input" id="cePwd" value="${esc(o.panPwd != null ? o.panPwd : ((c.pan && c.pan.pwd) || ''))}"></label>
+    </div>
+    <label class="map-check" style="margin-top:10px"><input type="checkbox" id="ceVisible" ${(o.visible !== false) ? 'checked' : ''}> 学生端显示这门课程</label>
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px">
+      <button class="btn btn-ghost btn-sm" id="ceCancel">取消</button>
+      <button class="btn btn-primary btn-sm" id="ceSave">${icon('check', 15)} 保存</button>
+    </div>
+  </div>`;
+  document.body.appendChild(bd);
+  const close = () => bd.remove();
+  bd.querySelector('.m-close').onclick = close;
+  bd.querySelector('#ceCancel').onclick = close;
+  bd.querySelector('#ceSave').onclick = async () => {
+    const patch = {
+      title: bd.querySelector('#ceTitle').value.trim(),
+      category: bd.querySelector('#ceCategory').value.trim(),
+      subtitle: bd.querySelector('#ceSub').value.trim(),
+      description: bd.querySelector('#ceDesc').value.trim(),
+      panUrl: bd.querySelector('#cePan').value.trim(),
+      panPwd: bd.querySelector('#cePwd').value.trim(),
+      visible: bd.querySelector('#ceVisible').checked
+    };
+    core.data.courseOverrides[id] = Object.assign({}, o, patch);
+    await core.save();
+    close();
+    toast('课程信息已保存（发布后学生端生效）', 'ok');
+    initCoursesAdmin();
+  };
+}
+
+function addExternalCourseModal() {
+  const bd = document.createElement('div');
+  bd.className = 'modal-backdrop show';
+  bd.innerHTML = `<div class="modal" style="position:relative;max-width:540px">
+    <button class="icon-btn m-close">${icon('close', 16)}</button>
+    <h2>新增外链课程</h2>
+    <p style="color:var(--muted);font-size:12.5px;margin-top:8px">适合 B 站、网盘或其它平台的课程：只提供课程信息与跳转链接。</p>
+    <label style="display:block;margin-top:12px">课程名称<input class="t-input" id="ecTitle" placeholder="如：影视剪辑进阶课"></label>
+    <label style="display:block;margin-top:8px">分类<input class="t-input" id="ecCat" placeholder="如：影视与剪辑"></label>
+    <label style="display:block;margin-top:8px">课程简介<textarea class="t-input t-area" id="ecDesc" rows="2"></textarea></label>
+    <label style="display:block;margin-top:8px">课程链接<input class="t-input" id="ecUrl" placeholder="https://..."></label>
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px">
+      <button class="btn btn-ghost btn-sm" id="ecCancel">取消</button>
+      <button class="btn btn-primary btn-sm" id="ecSave">${icon('check', 15)} 添加</button>
+    </div>
+  </div>`;
+  document.body.appendChild(bd);
+  const close = () => bd.remove();
+  bd.querySelector('.m-close').onclick = close;
+  bd.querySelector('#ecCancel').onclick = close;
+  bd.querySelector('#ecSave').onclick = async () => {
+    const title = bd.querySelector('#ecTitle').value.trim();
+    const url = bd.querySelector('#ecUrl').value.trim();
+    if (!title || !url) return toast('请填写课程名称和链接');
+    core.data.customCourses = core.data.customCourses || [];
+    core.data.customCourses.push({
+      id: 'ext-' + Date.now().toString(36),
+      type: 'external', url, title,
+      subtitle: '外部课程',
+      category: bd.querySelector('#ecCat').value.trim() || '其他',
+      description: bd.querySelector('#ecDesc').value.trim(),
+      accent: '#ff8a3d', tags: ['外链'], cover: '',
+      lessonCount: 0, durationSec: 0, modules: 0, resources: 0,
+      visible: true, pan: { url: '', pwd: '' }
+    });
+    await core.save();
+    close();
+    toast('外链课程已添加（发布后学生端生效）', 'ok');
+    initCoursesAdmin();
+  };
+}
+
+async function publishCatalog() {
+  try {
+    if (!serverState.key) await ensureServer();
+    const base = await loadCatalogBase();
+    const merged = mergedCatalog(base, core.data.courseOverrides || {}, core.data.customCourses || []);
+    const r = await api('/api/teacher/publish-catalog', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-Teacher-Key': serverState.key },
+      body: JSON.stringify(merged)
+    });
+    toast(`课程目录已发布：${r.courses} 门课程，学生端刷新后生效`, 'ok');
+  } catch (e) {
+    toast('发布失败：' + e.message + '（可先导出 catalog.json 手动部署镜像）', 'err');
+  }
+}
+
+async function exportCatalog() {
+  try {
+    const base = await loadCatalogBase();
+    const merged = mergedCatalog(base, core.data.courseOverrides || {}, core.data.customCourses || []);
+    downloadText('catalog.json', JSON.stringify(merged, null, 1), 'application/json;charset=utf-8');
+    toast('已导出 catalog.json，可替换 site/data/catalog.json 后部署镜像', 'ok');
+  } catch (e) {
+    toast('导出失败：' + e.message, 'err');
+  }
 }
 
 /* ============ 事件与业务 ============ */
@@ -1009,6 +1235,8 @@ async function scanFolder(fileList) {
 function bindTab() {
   const body = document.getElementById('teacherBody');
   if (!body) return;
+
+  if (state.tab === 'courses-admin') initCoursesAdmin();
 
   // 概览快捷
   body.querySelectorAll('[data-goto]').forEach(b => b.onclick = () => switchTab(b.dataset.goto));
