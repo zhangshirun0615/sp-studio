@@ -1,0 +1,958 @@
+{
+ "id": "render",
+ "title": "How to Render · 随书视频",
+ "type": "video",
+ "root": "draw & render\\How to render",
+ "modules": [
+  {
+   "id": "m1",
+   "index": 1,
+   "title": "1.原书视频+素材（对应页码）",
+   "lessons": [
+    {
+     "no": 1,
+     "id": "l1",
+     "title": "p033",
+     "file": "1.原书视频+素材（对应页码）/p033.mp4",
+     "durationSec": 317.7,
+     "sizeMB": 56.1
+    },
+    {
+     "no": 2,
+     "id": "l2",
+     "title": "p037",
+     "file": "1.原书视频+素材（对应页码）/p037.mp4",
+     "durationSec": 452.0,
+     "sizeMB": 72.8
+    },
+    {
+     "no": 3,
+     "id": "l3",
+     "title": "p042",
+     "file": "1.原书视频+素材（对应页码）/p042.mp4",
+     "durationSec": 448.6,
+     "sizeMB": 75.5
+    },
+    {
+     "no": 4,
+     "id": "l4",
+     "title": "p062",
+     "file": "1.原书视频+素材（对应页码）/p062.mp4",
+     "durationSec": 260.9,
+     "sizeMB": 44.0
+    },
+    {
+     "no": 5,
+     "id": "l5",
+     "title": "p064",
+     "file": "1.原书视频+素材（对应页码）/p064.mp4",
+     "durationSec": 207.4,
+     "sizeMB": 34.1
+    },
+    {
+     "no": 6,
+     "id": "l6",
+     "title": "p079",
+     "file": "1.原书视频+素材（对应页码）/p079.mp4",
+     "durationSec": 745.4,
+     "sizeMB": 127.9
+    },
+    {
+     "no": 7,
+     "id": "l7",
+     "title": "p092",
+     "file": "1.原书视频+素材（对应页码）/p092.mp4",
+     "durationSec": 1777.4,
+     "sizeMB": 309.3
+    },
+    {
+     "no": 8,
+     "id": "l8",
+     "title": "p094",
+     "file": "1.原书视频+素材（对应页码）/p094.mp4",
+     "durationSec": 1042.7,
+     "sizeMB": 195.9
+    },
+    {
+     "no": 9,
+     "id": "l9",
+     "title": "p099",
+     "file": "1.原书视频+素材（对应页码）/p099.mp4",
+     "durationSec": 1838.3,
+     "sizeMB": 346.0
+    },
+    {
+     "no": 10,
+     "id": "l10",
+     "title": "p124",
+     "file": "1.原书视频+素材（对应页码）/p124.mp4",
+     "durationSec": 2112.5,
+     "sizeMB": 319.9
+    },
+    {
+     "no": 11,
+     "id": "l11",
+     "title": "p162",
+     "file": "1.原书视频+素材（对应页码）/p162.mp4",
+     "durationSec": 258.9,
+     "sizeMB": 40.6
+    },
+    {
+     "no": 12,
+     "id": "l12",
+     "title": "p164",
+     "file": "1.原书视频+素材（对应页码）/p164.mp4",
+     "durationSec": 2510.2,
+     "sizeMB": 379.4
+    },
+    {
+     "no": 13,
+     "id": "l13",
+     "title": "p167",
+     "file": "1.原书视频+素材（对应页码）/p167.mp4",
+     "durationSec": 3033.6,
+     "sizeMB": 451.7
+    },
+    {
+     "no": 14,
+     "id": "l14",
+     "title": "p172",
+     "file": "1.原书视频+素材（对应页码）/p172.mp4",
+     "durationSec": 3010.5,
+     "sizeMB": 467.2
+    },
+    {
+     "no": 15,
+     "id": "l15",
+     "title": "p189",
+     "file": "1.原书视频+素材（对应页码）/p189.mp4",
+     "durationSec": 2183.5,
+     "sizeMB": 337.4
+    },
+    {
+     "no": 16,
+     "id": "l16",
+     "title": "p193",
+     "file": "1.原书视频+素材（对应页码）/p193.mp4",
+     "durationSec": 1401.2,
+     "sizeMB": 216.5
+    },
+    {
+     "no": 17,
+     "id": "l17",
+     "title": "p195",
+     "file": "1.原书视频+素材（对应页码）/p195.mp4",
+     "durationSec": 1075.5,
+     "sizeMB": 205.5
+    },
+    {
+     "no": 18,
+     "id": "l18",
+     "title": "p209",
+     "file": "1.原书视频+素材（对应页码）/p209.mp4",
+     "durationSec": 1517.6,
+     "sizeMB": 234.9
+    },
+    {
+     "no": 19,
+     "id": "l19",
+     "title": "p214",
+     "file": "1.原书视频+素材（对应页码）/p214.mp4",
+     "durationSec": 3361.0,
+     "sizeMB": 509.1
+    },
+    {
+     "no": 20,
+     "id": "l20",
+     "title": "p218",
+     "file": "1.原书视频+素材（对应页码）/p218.mp4",
+     "durationSec": 826.8,
+     "sizeMB": 148.7
+    },
+    {
+     "no": 21,
+     "id": "l21",
+     "title": "p222",
+     "file": "1.原书视频+素材（对应页码）/p222.mp4",
+     "durationSec": 1491.5,
+     "sizeMB": 229.0
+    },
+    {
+     "no": 22,
+     "id": "l22",
+     "title": "p226",
+     "file": "1.原书视频+素材（对应页码）/p226.mp4",
+     "durationSec": 508.4,
+     "sizeMB": 89.9
+    },
+    {
+     "no": 23,
+     "id": "l23",
+     "title": "p239",
+     "file": "1.原书视频+素材（对应页码）/p239.mp4",
+     "durationSec": 2253.7,
+     "sizeMB": 344.2
+    },
+    {
+     "no": 24,
+     "id": "l24",
+     "title": "p240",
+     "file": "1.原书视频+素材（对应页码）/p240.mp4",
+     "durationSec": 585.4,
+     "sizeMB": 102.4
+    },
+    {
+     "no": 25,
+     "id": "l25",
+     "title": "p247",
+     "file": "1.原书视频+素材（对应页码）/p247.mp4",
+     "durationSec": 1515.8,
+     "sizeMB": 280.5
+    },
+    {
+     "no": 26,
+     "id": "l26",
+     "title": "p249",
+     "file": "1.原书视频+素材（对应页码）/p249.mp4",
+     "durationSec": 3098.5,
+     "sizeMB": 542.8
+    },
+    {
+     "no": 27,
+     "id": "l27",
+     "title": "p251",
+     "file": "1.原书视频+素材（对应页码）/p251.mp4",
+     "durationSec": 2960.4,
+     "sizeMB": 448.9
+    },
+    {
+     "no": 28,
+     "id": "l28",
+     "title": "page 101a Sketch Book Pro intro",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 101a Sketch Book Pro intro.mp4",
+     "durationSec": 727.0,
+     "sizeMB": 29.5
+    },
+    {
+     "no": 29,
+     "id": "l29",
+     "title": "page 101b Photoshop introduction",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 101b Photoshop introduction.mp4",
+     "durationSec": 833.6,
+     "sizeMB": 243.0
+    },
+    {
+     "no": 30,
+     "id": "l30",
+     "title": "page 115 value rendering XYZ forms",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 115 value rendering XYZ forms.mp4",
+     "durationSec": 1865.9,
+     "sizeMB": 156.4
+    },
+    {
+     "no": 31,
+     "id": "l31",
+     "title": "page 129 matte car rendering(720p)",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 129  matte car rendering(720p).MP4",
+     "durationSec": 3615.2,
+     "sizeMB": 202.1
+    },
+    {
+     "no": 32,
+     "id": "l32",
+     "title": "page 132 mech value steps(720p)",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 132  mech value steps(720p).MP4",
+     "durationSec": 2704.6,
+     "sizeMB": 106.1
+    },
+    {
+     "no": 33,
+     "id": "l33",
+     "title": "page 135 matte bunny rendering(720p)",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 135  matte bunny rendering(720p).MP4",
+     "durationSec": 1074.9,
+     "sizeMB": 36.7
+    },
+    {
+     "no": 34,
+     "id": "l34",
+     "title": "page 137 colorizing greyscale images(720p)",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 137  colorizing greyscale images(720p).MP4",
+     "durationSec": 280.1,
+     "sizeMB": 8.4
+    },
+    {
+     "no": 35,
+     "id": "l35",
+     "title": "page 194 red airplane outdoor(720p)",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 194  red airplane outdoor(720p).MP4",
+     "durationSec": 3418.3,
+     "sizeMB": 120.0
+    },
+    {
+     "no": 36,
+     "id": "l36",
+     "title": "page 203 rendering outdoor reflections(720p)",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 203  rendering outdoor reflections(720p).MP4",
+     "durationSec": 6532.3,
+     "sizeMB": 217.5
+    },
+    {
+     "no": 37,
+     "id": "l37",
+     "title": "page 241 mech rendering(720p)",
+     "file": "1.原书视频+素材（对应页码）/re 补充/page 241  mech rendering(720p).MP4",
+     "durationSec": 3093.4,
+     "sizeMB": 221.0
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "index": 2,
+   "title": "6.赠送资源",
+   "lessons": [
+    {
+     "no": 38,
+     "id": "l38",
+     "title": "nap1",
+     "file": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap1.mp4",
+     "durationSec": 7273.9,
+     "sizeMB": 355.4
+    },
+    {
+     "no": 39,
+     "id": "l39",
+     "title": "nap2",
+     "file": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap2.mp4",
+     "durationSec": 668.3,
+     "sizeMB": 54.3
+    },
+    {
+     "no": 40,
+     "id": "l40",
+     "title": "nap3",
+     "file": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap3.mp4",
+     "durationSec": 899.5,
+     "sizeMB": 64.4
+    },
+    {
+     "no": 41,
+     "id": "l41",
+     "title": "nap4",
+     "file": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap4.mp4",
+     "durationSec": 7912.0,
+     "sizeMB": 262.2
+    },
+    {
+     "no": 42,
+     "id": "l42",
+     "title": "nap5",
+     "file": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap5.mp4",
+     "durationSec": 7597.4,
+     "sizeMB": 498.0
+    },
+    {
+     "no": 43,
+     "id": "l43",
+     "title": "nap6",
+     "file": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap6.mp4",
+     "durationSec": 6601.7,
+     "sizeMB": 336.6
+    },
+    {
+     "no": 44,
+     "id": "l44",
+     "title": "nap7",
+     "file": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap7.mp4",
+     "durationSec": 7537.7,
+     "sizeMB": 423.2
+    },
+    {
+     "no": 45,
+     "id": "l45",
+     "title": "nap8",
+     "file": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap8.mp4",
+     "durationSec": 4534.9,
+     "sizeMB": 232.9
+    },
+    {
+     "no": 46,
+     "id": "l46",
+     "title": "nap9",
+     "file": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap9.mp4",
+     "durationSec": 9704.3,
+     "sizeMB": 301.6
+    }
+   ]
+  }
+ ],
+ "resources": [
+  {
+   "kind": "pdf",
+   "path": "3.原版.pdf",
+   "name": "3.原版.pdf",
+   "sizeMB": 301.3
+  },
+  {
+   "kind": "pdf",
+   "path": "4.完全汉化.pdf",
+   "name": "4.完全汉化.pdf",
+   "sizeMB": 463.6
+  },
+  {
+   "kind": "pdf",
+   "path": "5.汉化笔记.pdf",
+   "name": "5.汉化笔记.pdf",
+   "sizeMB": 55.6
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/七日掌握设计配色基础.pdf",
+   "name": "七日掌握设计配色基础.pdf",
+   "sizeMB": 48.2
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/乔纳森传.pdf",
+   "name": "乔纳森传.pdf",
+   "sizeMB": 2.4
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/像艺术家一样思考--右脑绘画--精典教程1(共三本).pdf",
+   "name": "像艺术家一样思考--右脑绘画--精典教程1(共三本).pdf",
+   "sizeMB": 9.3
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/像艺术家一样思考--右脑绘画--精典教程2(共三本).pdf",
+   "name": "像艺术家一样思考--右脑绘画--精典教程2(共三本).pdf",
+   "sizeMB": 8.6
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/像艺术家一样思考--右脑绘画--精典教程3(共三本).pdf",
+   "name": "像艺术家一样思考--右脑绘画--精典教程3(共三本).pdf",
+   "sizeMB": 3.3
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/品牌标志：顶级设计150例.pdf",
+   "name": "品牌标志：顶级设计150例.pdf",
+   "sizeMB": 35.2
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/国内外工业设计大赛精选（red-dot篇）.pdf",
+   "name": "国内外工业设计大赛精选（red-dot篇）.pdf",
+   "sizeMB": 34.2
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/深泽直人-Naoto-Fukasawa-.pdf",
+   "name": "深泽直人-Naoto-Fukasawa-.pdf",
+   "sizeMB": 0.9
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/用户体验与可用性设计(Designing_Interfaces)_中文版.pdf",
+   "name": "用户体验与可用性设计(Designing_Interfaces)_中文版.pdf",
+   "sizeMB": 85.6
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/设计中的设计 原研哉.pdf",
+   "name": "设计中的设计 原研哉.pdf",
+   "sizeMB": 16.3
+  },
+  {
+   "kind": "pdf",
+   "path": "6.赠送资源/设计私语录.pdf",
+   "name": "设计私语录.pdf",
+   "sizeMB": 7.8
+  },
+  {
+   "kind": "images",
+   "dir": "2.完全汉化图片版",
+   "count": 268,
+   "name": "2.完全汉化图片版",
+   "totalMB": 506.8,
+   "files": [
+    "2.完全汉化图片版/001.jpg",
+    "2.完全汉化图片版/002.jpg",
+    "2.完全汉化图片版/003.jpg",
+    "2.完全汉化图片版/004.jpg",
+    "2.完全汉化图片版/005.jpg",
+    "2.完全汉化图片版/006.jpg",
+    "2.完全汉化图片版/007.jpg",
+    "2.完全汉化图片版/008.jpg",
+    "2.完全汉化图片版/009.jpg",
+    "2.完全汉化图片版/010.jpg",
+    "2.完全汉化图片版/011.jpg",
+    "2.完全汉化图片版/012.jpg",
+    "2.完全汉化图片版/013.jpg",
+    "2.完全汉化图片版/014.jpg",
+    "2.完全汉化图片版/015.jpg",
+    "2.完全汉化图片版/016.jpg",
+    "2.完全汉化图片版/017.jpg",
+    "2.完全汉化图片版/018.jpg",
+    "2.完全汉化图片版/019.jpg",
+    "2.完全汉化图片版/020.jpg",
+    "2.完全汉化图片版/021.jpg",
+    "2.完全汉化图片版/022.jpg",
+    "2.完全汉化图片版/023.jpg",
+    "2.完全汉化图片版/024.jpg",
+    "2.完全汉化图片版/025.jpg",
+    "2.完全汉化图片版/26.jpg",
+    "2.完全汉化图片版/027.jpg",
+    "2.完全汉化图片版/028.jpg",
+    "2.完全汉化图片版/029.jpg",
+    "2.完全汉化图片版/030.jpg",
+    "2.完全汉化图片版/031.jpg",
+    "2.完全汉化图片版/032.jpg",
+    "2.完全汉化图片版/033.jpg",
+    "2.完全汉化图片版/034.jpg",
+    "2.完全汉化图片版/035.jpg",
+    "2.完全汉化图片版/036.jpg",
+    "2.完全汉化图片版/037.jpg",
+    "2.完全汉化图片版/038.jpg",
+    "2.完全汉化图片版/039.jpg",
+    "2.完全汉化图片版/040.jpg",
+    "2.完全汉化图片版/041.jpg",
+    "2.完全汉化图片版/042.jpg",
+    "2.完全汉化图片版/043.jpg",
+    "2.完全汉化图片版/044.jpg",
+    "2.完全汉化图片版/045.jpg",
+    "2.完全汉化图片版/046.jpg",
+    "2.完全汉化图片版/047.jpg",
+    "2.完全汉化图片版/048.jpg",
+    "2.完全汉化图片版/049.jpg",
+    "2.完全汉化图片版/050.jpg",
+    "2.完全汉化图片版/051.jpg",
+    "2.完全汉化图片版/052.jpg",
+    "2.完全汉化图片版/053.jpg",
+    "2.完全汉化图片版/054.jpg",
+    "2.完全汉化图片版/055.jpg",
+    "2.完全汉化图片版/056.jpg",
+    "2.完全汉化图片版/057.jpg",
+    "2.完全汉化图片版/058.jpg",
+    "2.完全汉化图片版/059.jpg",
+    "2.完全汉化图片版/060.jpg",
+    "2.完全汉化图片版/061.jpg",
+    "2.完全汉化图片版/062.jpg",
+    "2.完全汉化图片版/063.jpg",
+    "2.完全汉化图片版/064.jpg",
+    "2.完全汉化图片版/065.jpg",
+    "2.完全汉化图片版/066.jpg",
+    "2.完全汉化图片版/067.jpg",
+    "2.完全汉化图片版/068.jpg",
+    "2.完全汉化图片版/069.jpg",
+    "2.完全汉化图片版/070.jpg",
+    "2.完全汉化图片版/071.jpg",
+    "2.完全汉化图片版/072.jpg",
+    "2.完全汉化图片版/073.jpg",
+    "2.完全汉化图片版/074.jpg",
+    "2.完全汉化图片版/075.jpg",
+    "2.完全汉化图片版/076.jpg",
+    "2.完全汉化图片版/077.jpg",
+    "2.完全汉化图片版/078.jpg",
+    "2.完全汉化图片版/079.jpg",
+    "2.完全汉化图片版/080.jpg",
+    "2.完全汉化图片版/081.jpg",
+    "2.完全汉化图片版/082.jpg",
+    "2.完全汉化图片版/083.jpg",
+    "2.完全汉化图片版/084.jpg",
+    "2.完全汉化图片版/085.jpg",
+    "2.完全汉化图片版/086.jpg",
+    "2.完全汉化图片版/087.jpg",
+    "2.完全汉化图片版/088.jpg",
+    "2.完全汉化图片版/089.jpg",
+    "2.完全汉化图片版/090.jpg",
+    "2.完全汉化图片版/091.jpg",
+    "2.完全汉化图片版/092.jpg",
+    "2.完全汉化图片版/093.jpg",
+    "2.完全汉化图片版/094.jpg",
+    "2.完全汉化图片版/095.jpg",
+    "2.完全汉化图片版/096.jpg",
+    "2.完全汉化图片版/097.jpg",
+    "2.完全汉化图片版/098.jpg",
+    "2.完全汉化图片版/099.jpg",
+    "2.完全汉化图片版/100.jpg",
+    "2.完全汉化图片版/101.jpg",
+    "2.完全汉化图片版/102.jpg",
+    "2.完全汉化图片版/103.jpg",
+    "2.完全汉化图片版/104.jpg",
+    "2.完全汉化图片版/105.jpg",
+    "2.完全汉化图片版/106.jpg",
+    "2.完全汉化图片版/107.jpg",
+    "2.完全汉化图片版/108.jpg",
+    "2.完全汉化图片版/109.jpg",
+    "2.完全汉化图片版/110.jpg",
+    "2.完全汉化图片版/111.jpg",
+    "2.完全汉化图片版/112.jpg",
+    "2.完全汉化图片版/113.jpg",
+    "2.完全汉化图片版/114.jpg",
+    "2.完全汉化图片版/115.jpg",
+    "2.完全汉化图片版/116.jpg",
+    "2.完全汉化图片版/117.jpg",
+    "2.完全汉化图片版/118.jpg",
+    "2.完全汉化图片版/119.jpg",
+    "2.完全汉化图片版/120.jpg",
+    "2.完全汉化图片版/121.jpg",
+    "2.完全汉化图片版/122.jpg",
+    "2.完全汉化图片版/123.jpg",
+    "2.完全汉化图片版/124.jpg",
+    "2.完全汉化图片版/125.jpg",
+    "2.完全汉化图片版/126.jpg",
+    "2.完全汉化图片版/127.jpg",
+    "2.完全汉化图片版/128.jpg",
+    "2.完全汉化图片版/129.jpg",
+    "2.完全汉化图片版/130.jpg",
+    "2.完全汉化图片版/131.jpg",
+    "2.完全汉化图片版/132.jpg",
+    "2.完全汉化图片版/133.jpg",
+    "2.完全汉化图片版/134.jpg",
+    "2.完全汉化图片版/135.jpg",
+    "2.完全汉化图片版/136.jpg",
+    "2.完全汉化图片版/137.jpg",
+    "2.完全汉化图片版/138.jpg",
+    "2.完全汉化图片版/139.jpg",
+    "2.完全汉化图片版/140.jpg",
+    "2.完全汉化图片版/141.jpg",
+    "2.完全汉化图片版/142.jpg",
+    "2.完全汉化图片版/143.jpg",
+    "2.完全汉化图片版/144.jpg",
+    "2.完全汉化图片版/145.jpg",
+    "2.完全汉化图片版/146.jpg",
+    "2.完全汉化图片版/147.jpg",
+    "2.完全汉化图片版/148.jpg",
+    "2.完全汉化图片版/149.jpg",
+    "2.完全汉化图片版/150.jpg",
+    "2.完全汉化图片版/151.jpg",
+    "2.完全汉化图片版/152.jpg",
+    "2.完全汉化图片版/153.jpg",
+    "2.完全汉化图片版/154.jpg",
+    "2.完全汉化图片版/155.jpg",
+    "2.完全汉化图片版/156.jpg",
+    "2.完全汉化图片版/157.jpg",
+    "2.完全汉化图片版/158.jpg",
+    "2.完全汉化图片版/159.jpg",
+    "2.完全汉化图片版/160.jpg",
+    "2.完全汉化图片版/161.jpg",
+    "2.完全汉化图片版/162.jpg",
+    "2.完全汉化图片版/163.jpg",
+    "2.完全汉化图片版/164.jpg",
+    "2.完全汉化图片版/165.jpg",
+    "2.完全汉化图片版/166.jpg",
+    "2.完全汉化图片版/167.jpg",
+    "2.完全汉化图片版/168.jpg",
+    "2.完全汉化图片版/169.jpg",
+    "2.完全汉化图片版/170.jpg",
+    "2.完全汉化图片版/171.jpg",
+    "2.完全汉化图片版/172.jpg",
+    "2.完全汉化图片版/173.jpg",
+    "2.完全汉化图片版/174.jpg",
+    "2.完全汉化图片版/175.jpg",
+    "2.完全汉化图片版/176.jpg",
+    "2.完全汉化图片版/177.jpg",
+    "2.完全汉化图片版/178.jpg",
+    "2.完全汉化图片版/179.jpg",
+    "2.完全汉化图片版/180.jpg",
+    "2.完全汉化图片版/181.jpg",
+    "2.完全汉化图片版/182.jpg",
+    "2.完全汉化图片版/183.jpg",
+    "2.完全汉化图片版/184.jpg",
+    "2.完全汉化图片版/185.jpg",
+    "2.完全汉化图片版/186.jpg",
+    "2.完全汉化图片版/187.jpg",
+    "2.完全汉化图片版/188.jpg",
+    "2.完全汉化图片版/189.jpg",
+    "2.完全汉化图片版/190.jpg",
+    "2.完全汉化图片版/191.jpg",
+    "2.完全汉化图片版/192.jpg",
+    "2.完全汉化图片版/193.jpg",
+    "2.完全汉化图片版/194.jpg",
+    "2.完全汉化图片版/195.jpg",
+    "2.完全汉化图片版/196.jpg",
+    "2.完全汉化图片版/197.jpg",
+    "2.完全汉化图片版/198.jpg",
+    "2.完全汉化图片版/199.jpg",
+    "2.完全汉化图片版/200.jpg",
+    "2.完全汉化图片版/201.jpg",
+    "2.完全汉化图片版/202.jpg",
+    "2.完全汉化图片版/203.jpg",
+    "2.完全汉化图片版/204.jpg",
+    "2.完全汉化图片版/205.jpg",
+    "2.完全汉化图片版/206.jpg",
+    "2.完全汉化图片版/207.jpg",
+    "2.完全汉化图片版/208.jpg",
+    "2.完全汉化图片版/209.jpg",
+    "2.完全汉化图片版/210.jpg",
+    "2.完全汉化图片版/211.jpg",
+    "2.完全汉化图片版/212.jpg",
+    "2.完全汉化图片版/213.jpg",
+    "2.完全汉化图片版/214.jpg",
+    "2.完全汉化图片版/215.jpg",
+    "2.完全汉化图片版/216.jpg",
+    "2.完全汉化图片版/217.jpg",
+    "2.完全汉化图片版/218.jpg",
+    "2.完全汉化图片版/219.jpg",
+    "2.完全汉化图片版/220.jpg",
+    "2.完全汉化图片版/221.jpg",
+    "2.完全汉化图片版/222.jpg",
+    "2.完全汉化图片版/223.jpg",
+    "2.完全汉化图片版/224.jpg",
+    "2.完全汉化图片版/225.jpg",
+    "2.完全汉化图片版/226.jpg",
+    "2.完全汉化图片版/227.jpg",
+    "2.完全汉化图片版/228.jpg",
+    "2.完全汉化图片版/229.jpg",
+    "2.完全汉化图片版/230.jpg",
+    "2.完全汉化图片版/231.jpg",
+    "2.完全汉化图片版/232.jpg",
+    "2.完全汉化图片版/233.jpg",
+    "2.完全汉化图片版/234.jpg",
+    "2.完全汉化图片版/235.jpg",
+    "2.完全汉化图片版/236.jpg",
+    "2.完全汉化图片版/237.jpg",
+    "2.完全汉化图片版/238.jpg",
+    "2.完全汉化图片版/239.jpg",
+    "2.完全汉化图片版/240.jpg",
+    "2.完全汉化图片版/241.jpg",
+    "2.完全汉化图片版/242.jpg",
+    "2.完全汉化图片版/243.jpg",
+    "2.完全汉化图片版/244.jpg",
+    "2.完全汉化图片版/245.jpg",
+    "2.完全汉化图片版/246.jpg",
+    "2.完全汉化图片版/247.jpg",
+    "2.完全汉化图片版/248.jpg",
+    "2.完全汉化图片版/249.jpg",
+    "2.完全汉化图片版/250.jpg",
+    "2.完全汉化图片版/251.jpg",
+    "2.完全汉化图片版/252.jpg",
+    "2.完全汉化图片版/253.jpg",
+    "2.完全汉化图片版/254.jpg",
+    "2.完全汉化图片版/255.jpg",
+    "2.完全汉化图片版/256.jpg",
+    "2.完全汉化图片版/257.jpg",
+    "2.完全汉化图片版/258.jpg",
+    "2.完全汉化图片版/259.jpg",
+    "2.完全汉化图片版/260.jpg",
+    "2.完全汉化图片版/261.jpg",
+    "2.完全汉化图片版/262.jpg",
+    "2.完全汉化图片版/263.jpg",
+    "2.完全汉化图片版/264.jpg",
+    "2.完全汉化图片版/265.jpg",
+    "2.完全汉化图片版/266.jpg",
+    "2.完全汉化图片版/267.jpg",
+    "2.完全汉化图片版/268.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap",
+   "count": 1,
+   "name": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap",
+   "totalMB": 4.5,
+   "files": [
+    "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap.jpg"
+   ]
+  },
+  {
+   "kind": "images",
+   "dir": "7.How to render PSD原文件与工具预设/Project_Files",
+   "count": 6,
+   "name": "7.How to render PSD原文件与工具预设/Project_Files",
+   "totalMB": 4.9,
+   "files": [
+    "7.How to render PSD原文件与工具预设/Project_Files/pg_120_print_and_practice_A.jpg",
+    "7.How to render PSD原文件与工具预设/Project_Files/pg_120_print_and_practice_B.jpg",
+    "7.How to render PSD原文件与工具预设/Project_Files/pg_120_print_and_practice_C.jpg",
+    "7.How to render PSD原文件与工具预设/Project_Files/pg_120_print_and_practice_D.jpg",
+    "7.How to render PSD原文件与工具预设/Project_Files/pg_167_chrome_in_desert_1.jpg",
+    "7.How to render PSD原文件与工具预设/Project_Files/pg_167_reflection_plotting_exercise_1.jpg"
+   ]
+  },
+  {
+   "kind": "file",
+   "path": "6.赠送资源/大触超漂亮作品示范全过程NAP/nap/nap.psd",
+   "name": "nap.psd",
+   "sizeMB": 479.1
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_12_indoor_complex.psd",
+   "name": "pg_12_indoor_complex.psd",
+   "sizeMB": 233.8
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_12_layered_bike.psd",
+   "name": "pg_12_layered_bike.psd",
+   "sizeMB": 10.6
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_57_halfway_to_black.psd",
+   "name": "pg_57_halfway_to_black.psd",
+   "sizeMB": 18.6
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_99_truck_value_digital_BONUS.psd",
+   "name": "pg_99_truck_value_digital_BONUS.psd",
+   "sizeMB": 122.6
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_124_rendering_form.psd",
+   "name": "pg_124_rendering_form.psd",
+   "sizeMB": 7.4
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_158_photo_ref_car_rendering.psd",
+   "name": "pg_158_photo_ref_car_rendering.psd",
+   "sizeMB": 34.4
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_163_down_tilt_wall_chrome_1.psd",
+   "name": "pg_163_down_tilt_wall_chrome_1.psd",
+   "sizeMB": 38.2
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_163_spun_wall_chrome_1.psd",
+   "name": "pg_163_spun_wall_chrome_1.psd",
+   "sizeMB": 39.7
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_163_up_tilt_plane_chrome.psd",
+   "name": "pg_163_up_tilt_plane_chrome.psd",
+   "sizeMB": 18.3
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_163_up_tilt_plane_chrome_2.psd",
+   "name": "pg_163_up_tilt_plane_chrome_2.psd",
+   "sizeMB": 18.0
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_167_convex_4_view_construct.psd",
+   "name": "pg_167_convex_4_view_construct.psd",
+   "sizeMB": 31.1
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_167_horiz_cyl_construction.psd",
+   "name": "pg_167_horiz_cyl_construction.psd",
+   "sizeMB": 30.0
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_167_matte_cyl_stripe_ball_cyl.psd",
+   "name": "pg_167_matte_cyl_stripe_ball_cyl.psd",
+   "sizeMB": 40.6
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_189_red_egg_indoor.psd",
+   "name": "pg_189_red_egg_indoor.psd",
+   "sizeMB": 24.2
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_189_red_helmet_layered.psd",
+   "name": "pg_189_red_helmet_layered.psd",
+   "sizeMB": 3.3
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_193_shiny_vehicle_demo.psd",
+   "name": "pg_193_shiny_vehicle_demo.psd",
+   "sizeMB": 26.2
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_194_red_plane.psd",
+   "name": "pg_194_red_plane.psd",
+   "sizeMB": 74.1
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_200_toy_car_demo.psd",
+   "name": "pg_200_toy_car_demo.psd",
+   "sizeMB": 13.1
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_203_outdoor_reflections(1).psd",
+   "name": "pg_203_outdoor_reflections(1).psd",
+   "sizeMB": 211.3
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_203_outdoor_reflections_bonus.psd",
+   "name": "pg_203_outdoor_reflections_bonus.psd",
+   "sizeMB": 14.3
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_214_metallic_airplane.psd",
+   "name": "pg_214_metallic_airplane.psd",
+   "sizeMB": 80.0
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_214_metallic_paint_bonus.psd",
+   "name": "pg_214_metallic_paint_bonus.psd",
+   "sizeMB": 14.9
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_214_speedform_metallic.psd",
+   "name": "pg_214_speedform_metallic.psd",
+   "sizeMB": 133.9
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_222_water_reflection.psd",
+   "name": "pg_222_water_reflection.psd",
+   "sizeMB": 36.0
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_226_semi_gloss_weathering.psd",
+   "name": "pg_226_semi_gloss_weathering.psd",
+   "sizeMB": 226.1
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_239_multiple_materials.psd",
+   "name": "pg_239_multiple_materials.psd",
+   "sizeMB": 28.6
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_240_quick_weathering.psd",
+   "name": "pg_240_quick_weathering.psd",
+   "sizeMB": 67.9
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_241_weathered_mech.psd",
+   "name": "pg_241_weathered_mech.psd",
+   "sizeMB": 62.5
+  },
+  {
+   "kind": "file",
+   "path": "7.How to render PSD原文件与工具预设/Project_Files/pg_248_value_vehicle.psd",
+   "name": "pg_248_value_vehicle.psd",
+   "sizeMB": 35.6
+  }
+ ]
+}

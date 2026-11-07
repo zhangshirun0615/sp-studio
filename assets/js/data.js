@@ -1,4 +1,4 @@
-/* 数据加载：course / videos / quiz / kb / toolbox */
+/* 数据加载：课程目录 / 各课程数据 / SP 课程旧接口 / 视频清单 */
 
 const cache = {};
 
@@ -14,6 +14,63 @@ async function getJson(url) {
 const data = {
   base: 'data/',
 
+  /* ---------- 平台课程目录 ---------- */
+  async catalog() { return getJson(this.base + 'catalog.json'); },
+
+  async courseList() {
+    const cat = await this.catalog();
+    return cat.courses || [];
+  },
+
+  async courseById(id) {
+    const list = await this.courseList();
+    const meta = list.find(c => c.id === id);
+    if (!meta) return null;
+    const payload = await getJson(meta.dataFile);
+    return { meta, data: payload };
+  },
+
+  /* 某门课程的课时数组（拍平，带模块信息） */
+  async lessonsOf(id) {
+    const c = await this.courseById(id);
+    if (!c) return [];
+    if (c.meta.type === 'sp') {
+      const list = [];
+      (c.data.modules || []).forEach(m => m.lessons.forEach(l => {
+        list.push(Object.assign({}, l, {
+          moduleId: m.id, moduleIndex: m.index, moduleTitle: m.title,
+          moduleColor: m.color, courseId: id, key: String(l.no)
+        }));
+      }));
+      return list.sort((a, b) => a.no - b.no);
+    }
+    const list = [];
+    (c.data.modules || []).forEach(m => (m.lessons || []).forEach(l => {
+      list.push(Object.assign({}, l, {
+        moduleId: m.id, moduleIndex: m.index, moduleTitle: m.title,
+        moduleColor: c.meta.accent || '#ff8a3d', courseId: id, key: String(l.no)
+      }));
+    }));
+    return list.sort((a, b) => a.no - b.no);
+  },
+
+  async lessonById(courseId, no) {
+    const list = await this.lessonsOf(courseId);
+    return list.find(l => String(l.no) === String(no)) || null;
+  },
+
+  /* 本地服务器提供课程原始视频/资料 */
+  mediaUrl(courseId, rel) {
+    return '/course-media/' + encodeURIComponent(courseId) + '/' + String(rel).split('/').map(encodeURIComponent).join('/');
+  },
+
+  bilibiliEmbedUrl(bvid, page, cid) {
+    const p = page || 1;
+    const params = 'bvid=' + encodeURIComponent(bvid) + '&page=' + p + '&high_quality=1&danmaku=0&autoplay=0';
+    return 'https://player.bilibili.com/player.html?' + params;
+  },
+
+  /* ---------- SP 课程旧接口（题库 / 知识库 / 驾驶舱沿用） ---------- */
   async course() { return getJson(this.base + 'course.json'); },
   async videos() {
     try { return await getJson(this.base + 'videos.json'); }
@@ -22,8 +79,10 @@ const data = {
   async quiz() { return getJson(this.base + 'quiz.json'); },
   async kb() { return getJson(this.base + 'kb.json'); },
   async toolbox() { return getJson(this.base + 'toolbox.json'); },
+  async faq() {
+    try { return await getJson(this.base + 'faq.json'); } catch (e) { return { faqs: [] }; }
+  },
 
-  /* 拍平课程数据，便于检索 */
   async flatLessons() {
     const c = await this.course();
     const list = [];
@@ -38,11 +97,7 @@ const data = {
     return list.find(l => l.no === Number(no)) || null;
   },
 
-  async modules() {
-    const c = await this.course();
-    return c.modules;
-  },
-
+  async modules() { return (await this.course()).modules; },
   async meta() { return (await this.course()).meta; }
 };
 

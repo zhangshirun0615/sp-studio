@@ -1,0 +1,711 @@
+{
+ "id": "bili-edit",
+ "title": "63 节视听语言课",
+ "type": "bilibili",
+ "modules": [
+  {
+   "id": "m1",
+   "index": 1,
+   "title": "景别",
+   "lessons": [
+    {
+     "no": 1,
+     "id": "l1",
+     "title": "1、远景",
+     "page": 1,
+     "cid": 885189624,
+     "durationSec": 539,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 2,
+     "id": "l2",
+     "title": "2、全景",
+     "page": 3,
+     "cid": 884380838,
+     "durationSec": 536,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 3,
+     "id": "l3",
+     "title": "3、中近景",
+     "page": 4,
+     "cid": 884376580,
+     "durationSec": 660,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 4,
+     "id": "l4",
+     "title": "4、近景",
+     "page": 5,
+     "cid": 884410820,
+     "durationSec": 806,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 5,
+     "id": "l5",
+     "title": "5、取景",
+     "page": 6,
+     "cid": 884377031,
+     "durationSec": 604,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "index": 2,
+   "title": "全部课时",
+   "lessons": [
+    {
+     "no": 6,
+     "id": "l6",
+     "title": "影视后期入门到变现全流程",
+     "page": 2,
+     "cid": 41905096997,
+     "durationSec": 5498,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "index": 3,
+   "title": "构图",
+   "lessons": [
+    {
+     "no": 7,
+     "id": "l7",
+     "title": "1、引导线 三分法",
+     "page": 7,
+     "cid": 884381919,
+     "durationSec": 551,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 8,
+     "id": "l8",
+     "title": "2、留白",
+     "page": 8,
+     "cid": 884400293,
+     "durationSec": 346,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 9,
+     "id": "l9",
+     "title": "3、中心法",
+     "page": 9,
+     "cid": 884382005,
+     "durationSec": 410,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 10,
+     "id": "l10",
+     "title": "4、对称法",
+     "page": 10,
+     "cid": 884385643,
+     "durationSec": 420,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 11,
+     "id": "l11",
+     "title": "5、框架式",
+     "page": 11,
+     "cid": 884387967,
+     "durationSec": 491,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 12,
+     "id": "l12",
+     "title": "6、景深 色调",
+     "page": 12,
+     "cid": 884384308,
+     "durationSec": 443,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m4",
+   "index": 4,
+   "title": "打光",
+   "lessons": [
+    {
+     "no": 13,
+     "id": "l13",
+     "title": "1、光的质感",
+     "page": 13,
+     "cid": 884386968,
+     "durationSec": 516,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 14,
+     "id": "l14",
+     "title": "2、测光",
+     "page": 14,
+     "cid": 884387329,
+     "durationSec": 573,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 15,
+     "id": "l15",
+     "title": "3、逆光",
+     "page": 15,
+     "cid": 884392112,
+     "durationSec": 390,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 16,
+     "id": "l16",
+     "title": "4、其他灯光",
+     "page": 16,
+     "cid": 884389599,
+     "durationSec": 301,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 17,
+     "id": "l17",
+     "title": "5、白平衡",
+     "page": 17,
+     "cid": 884390567,
+     "durationSec": 457,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m5",
+   "index": 5,
+   "title": "机位",
+   "lessons": [
+    {
+     "no": 18,
+     "id": "l18",
+     "title": "1、正面",
+     "page": 18,
+     "cid": 884396225,
+     "durationSec": 424,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 19,
+     "id": "l19",
+     "title": "2、侧面",
+     "page": 19,
+     "cid": 884395846,
+     "durationSec": 317,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 20,
+     "id": "l20",
+     "title": "3、斜侧面",
+     "page": 20,
+     "cid": 884396933,
+     "durationSec": 449,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 21,
+     "id": "l21",
+     "title": "4、背面",
+     "page": 21,
+     "cid": 884395242,
+     "durationSec": 195,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 22,
+     "id": "l22",
+     "title": "5、仰视",
+     "page": 22,
+     "cid": 884398254,
+     "durationSec": 284,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 23,
+     "id": "l23",
+     "title": "6、俯视",
+     "page": 23,
+     "cid": 884397355,
+     "durationSec": 314,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 24,
+     "id": "l24",
+     "title": "7、不稳定构图",
+     "page": 24,
+     "cid": 884407810,
+     "durationSec": 535,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m6",
+   "index": 6,
+   "title": "摄像机移动",
+   "lessons": [
+    {
+     "no": 25,
+     "id": "l25",
+     "title": "1、推镜",
+     "page": 25,
+     "cid": 884405990,
+     "durationSec": 612,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 26,
+     "id": "l26",
+     "title": "2、拉镜",
+     "page": 26,
+     "cid": 895511896,
+     "durationSec": 278,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 27,
+     "id": "l27",
+     "title": "3、摇镜",
+     "page": 27,
+     "cid": 895511498,
+     "durationSec": 298,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 28,
+     "id": "l28",
+     "title": "4、移镜",
+     "page": 28,
+     "cid": 895509941,
+     "durationSec": 255,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 29,
+     "id": "l29",
+     "title": "5、跟镜",
+     "page": 29,
+     "cid": 895515915,
+     "durationSec": 324,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 30,
+     "id": "l30",
+     "title": "6、环绕+总结",
+     "page": 30,
+     "cid": 895513027,
+     "durationSec": 485,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m7",
+   "index": 7,
+   "title": "轴线",
+   "lessons": [
+    {
+     "no": 31,
+     "id": "l31",
+     "title": "1、骑轴",
+     "page": 31,
+     "cid": 895514817,
+     "durationSec": 491,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 32,
+     "id": "l32",
+     "title": "2、摄像机越轴+空境",
+     "page": 32,
+     "cid": 895516198,
+     "durationSec": 277,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 33,
+     "id": "l33",
+     "title": "3、广角+焦距",
+     "page": 33,
+     "cid": 895519204,
+     "durationSec": 333,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 34,
+     "id": "l34",
+     "title": "4、中焦镜头",
+     "page": 34,
+     "cid": 895517545,
+     "durationSec": 291,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 35,
+     "id": "l35",
+     "title": "5、长焦镜头",
+     "page": 35,
+     "cid": 895519862,
+     "durationSec": 267,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 36,
+     "id": "l36",
+     "title": "6、焦点+逆向变焦",
+     "page": 36,
+     "cid": 895521109,
+     "durationSec": 271,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 37,
+     "id": "l37",
+     "title": "7、升格动画",
+     "page": 37,
+     "cid": 895524854,
+     "durationSec": 294,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 38,
+     "id": "l38",
+     "title": "8、逐格和定格",
+     "page": 38,
+     "cid": 895518148,
+     "durationSec": 265,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 39,
+     "id": "l39",
+     "title": "9、延时拍摄",
+     "page": 39,
+     "cid": 895521666,
+     "durationSec": 340,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 40,
+     "id": "l40",
+     "title": "10、抽帧",
+     "page": 40,
+     "cid": 895523425,
+     "durationSec": 331,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m8",
+   "index": 8,
+   "title": "摄像机基础",
+   "lessons": [
+    {
+     "no": 41,
+     "id": "l41",
+     "title": "1、拍摄设备认识",
+     "page": 41,
+     "cid": 895523070,
+     "durationSec": 512,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 42,
+     "id": "l42",
+     "title": "2、光圈的作用",
+     "page": 42,
+     "cid": 895529131,
+     "durationSec": 341,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 43,
+     "id": "l43",
+     "title": "3、快门的作用",
+     "page": 43,
+     "cid": 895523345,
+     "durationSec": 243,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 44,
+     "id": "l44",
+     "title": "4、IOS的作用",
+     "page": 44,
+     "cid": 895524065,
+     "durationSec": 241,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 45,
+     "id": "l45",
+     "title": "5、焦点焦距和景深",
+     "page": 45,
+     "cid": 895533822,
+     "durationSec": 406,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 46,
+     "id": "l46",
+     "title": "6、小结",
+     "page": 46,
+     "cid": 895525601,
+     "durationSec": 473,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m9",
+   "index": 9,
+   "title": "蒙太奇",
+   "lessons": [
+    {
+     "no": 47,
+     "id": "l47",
+     "title": "1、什么是蒙太奇",
+     "page": 47,
+     "cid": 895524944,
+     "durationSec": 214,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 48,
+     "id": "l48",
+     "title": "2、平行蒙太奇",
+     "page": 48,
+     "cid": 895528011,
+     "durationSec": 342,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 49,
+     "id": "l49",
+     "title": "3、交叉蒙太奇",
+     "page": 49,
+     "cid": 895526288,
+     "durationSec": 224,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 50,
+     "id": "l50",
+     "title": "4、颠倒蒙太奇",
+     "page": 50,
+     "cid": 895528800,
+     "durationSec": 396,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 51,
+     "id": "l51",
+     "title": "5、连续蒙太奇",
+     "page": 51,
+     "cid": 895530241,
+     "durationSec": 226,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 52,
+     "id": "l52",
+     "title": "6、心理蒙太奇",
+     "page": 52,
+     "cid": 895532484,
+     "durationSec": 437,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m10",
+   "index": 10,
+   "title": ".蒙太奇",
+   "lessons": [
+    {
+     "no": 53,
+     "id": "l53",
+     "title": "7、隐喻蒙太奇",
+     "page": 53,
+     "cid": 895530065,
+     "durationSec": 367,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 54,
+     "id": "l54",
+     "title": "8、对比蒙太奇",
+     "page": 54,
+     "cid": 895534912,
+     "durationSec": 362,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 55,
+     "id": "l55",
+     "title": "9、广义剪辑",
+     "page": 55,
+     "cid": 895543006,
+     "durationSec": 589,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 56,
+     "id": "l56",
+     "title": "10、动接动，静接静",
+     "page": 56,
+     "cid": 895539897,
+     "durationSec": 739,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  },
+  {
+   "id": "m11",
+   "index": 11,
+   "title": "调色",
+   "lessons": [
+    {
+     "no": 57,
+     "id": "l57",
+     "title": "1、RGBvsCMYK",
+     "page": 57,
+     "cid": 895535653,
+     "durationSec": 332,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 58,
+     "id": "l58",
+     "title": "2、互补色和相邻色",
+     "page": 58,
+     "cid": 895537060,
+     "durationSec": 268,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 59,
+     "id": "l59",
+     "title": "3、HSL色彩空间",
+     "page": 59,
+     "cid": 895535990,
+     "durationSec": 146,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 60,
+     "id": "l60",
+     "title": "4、色彩印象",
+     "page": 60,
+     "cid": 895546323,
+     "durationSec": 779,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 61,
+     "id": "l61",
+     "title": "5、常见颜色搭配",
+     "page": 61,
+     "cid": 895554656,
+     "durationSec": 282,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    },
+    {
+     "no": 62,
+     "id": "l62",
+     "title": "6、PR实操案例分析",
+     "page": 62,
+     "cid": 895547543,
+     "durationSec": 1093,
+     "sizeMB": 0,
+     "bvid": "BV1Tv4y1S7CJ"
+    }
+   ]
+  }
+ ],
+ "resources": [],
+ "bilibili": {
+  "bvid": "BV1Tv4y1S7CJ",
+  "title": "【剪辑教程】63节视听语言课，影视后期纯干货教学，真正教会你剪辑思维，三小时从入门到就业！",
+  "owner": "PR教程零基础",
+  "coverOk": true
+ }
+}

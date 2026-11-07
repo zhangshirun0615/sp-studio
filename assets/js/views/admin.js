@@ -209,8 +209,9 @@ export default {
   async render() {
     const [course, quiz, lessons] = await Promise.all([data.course(), data.quiz(), data.flatLessons()]);
     const s = store.get();
-    const done = Object.keys(s.completed).length;
-    const doneSec = Object.keys(s.completed).reduce((acc, no) => {
+    const spProgress = (s.progress && s.progress.sp) || {};
+    const done = Object.keys(spProgress).length;
+    const doneSec = Object.keys(spProgress).reduce((acc, no) => {
       const l = lessons.find(x => x.no === Number(no));
       return acc + (l ? l.durationSec : 0);
     }, 0);
@@ -235,7 +236,7 @@ export default {
           last: new Date(v.lastAt).toLocaleDateString('zh-CN')
         };
       }),
-      notes: Object.entries(s.notes).slice(-4).reverse().map(([no, text]) => {
+      notes: Object.entries((s.notes && s.notes.sp) || {}).slice(-4).reverse().map(([no, text]) => {
         const l = lessons.find(x => x.no === Number(no));
         return { no, title: l ? l.title : '', text };
       }).filter(n => n.text)

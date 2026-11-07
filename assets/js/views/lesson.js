@@ -2,109 +2,110 @@ import data from '../data.js';
 import store from '../store.js';
 import { esc, icon, fmtDur, levelClass, toast, debounce, copyText } from '../ui.js';
 
-/* 视频来源解析：direct=直链播放，pan=网盘跳转，none=无可用来源 */
-function resolveSource(videos, v) {
+let ctx = null;
+const isMirrorHost = () => /\.github\.io$/i.test(location.hostname);
+
+function resolveSource(course, lesson) {
   const settings = store.getSettings();
-  const mode = settings.videoSource || videos.sourceMode || 'auto';
-  const isMirror = /\.github\.io$/i.test(location.hostname);
-  const panCfg = videos.pan || {};
-  let panUrl = v.pan || panCfg.url || '';
-  const panPwd = (v.panPwd != null && v.panPwd !== '') ? v.panPwd : (panCfg.pwd || '');
-  if (panUrl && panPwd && !/[?&]pwd=/.test(panUrl)) {
-    panUrl += (panUrl.includes('?') ? '&' : '?') + 'pwd=' + encodeURIComponent(panPwd);
-  }
-  const directOk = !isMirror && !!v.src;
+  const mode = settings.videoSource || 'auto';
+  const meta = course.meta;
+  const isMirror = isMirrorHost();
+  let panUrl = (meta.pan && meta.pan.url) ? meta.pan.url : '';
+  const panPwd = (meta.pan && meta.pan.pwd) || '';
+  if (panUrl && panPwd && !/[?&]pwd=/.test(panUrl)) panUrl += (panUrl.includes('?') ? '&' : '?') + 'pwd=' + encodeURIComponent(panPwd);
+
+  let directSrc = '';
+  if (meta.type === 'sp' && ctx && ctx.spVideo && ctx.spVideo.src) directSrc = ctx.spVideo.src;
+  if (meta.type === 'video' && lesson.file) directSrc = data.mediaUrl(meta.id, lesson.file);
+  if (isMirror) directSrc = '';
+
   let source = 'none';
-  if (mode === 'pan') source = panUrl ? 'pan' : 'none';
-  else if (mode === 'local') source = directOk ? 'direct' : (panUrl ? 'pan' : 'none');
-  else source = directOk ? 'direct' : (panUrl ? 'pan' : 'none');
-  return {
-    mode,
-    source,
-    directSrc: directOk ? v.src : '',
-    poster: v.poster || '',
-    panUrl,
-    panPwd,
-    panLabel: panCfg.label || '百度网盘',
-    panNote: panCfg.note || ''
-  };
+  if (meta.type === 'bilibili') source = 'bilibili';
+  else if (mode === 'pan') source = panUrl ? 'pan' : (directSrc ? 'direct' : 'none');
+  else if (mode === 'local') source = directSrc ? 'direct' : (panUrl ? 'pan' : 'none');
+  else source = directSrc ? 'direct' : (panUrl ? 'pan' : 'none');
+
+  return { mode, source, directSrc, panUrl, panPwd, isMirror };
 }
 
-function panPlayerHtml(lesson, s) {
-  const fileName = lesson.file || ('第' + lesson.no + '课.mp4');
-  return `<div class="pan-player" id="panPlayer">
-    <span class="tag copper">${icon('info', 13)} ${esc(s.panLabel)} · 外部观看</span>
-    <h3>本节视频在${esc(s.panLabel)}</h3>
-    <p>点击下方按钮打开课程分享文件夹，按文件名找到本课视频播放。网盘观看需登录百度账号，倍速可能需要会员；平台内的学习目标、知识点、笔记和练习不受影响。</p>
-    <div class="pan-file">${icon('play', 13)} <code>${esc(fileName)}</code></div>
-    <div class="pan-actions">
-      <a class="btn btn-primary" href="${esc(s.panUrl)}" target="_blank" rel="noopener">${icon('external', 15)} 打开${esc(s.panLabel)}</a>
-      <button class="btn btn-ghost" id="copyPanLink">${icon('copy', 15)} 复制链接</button>
-      ${s.panPwd ? `<span class="pan-pwd">提取码：<b>${esc(s.panPwd)}</b></span>` : ''}
-    </div>
-    <p class="pan-tip">${esc(s.panNote || '')}</p>
+function bilibiliPlayer(lesson) {
+  const embed = data.bilibiliEmbedUrl(lesson.bvid, lesson.page);
+  const watch = 'https://www.bilibili.com/video/' + lesson.bvid + '?p=' + (lesson.page || 1);
+  return `<div class="bili-wrap">
+    <iframe src="${esc(embed)}" allowfullscreen="allowfullscreen" scrolling="no" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe>
+  </div>
+  <div class="video-actions">
+    <a class="btn btn-primary btn-sm" href="${esc(watch)}" target="_blank" rel="noopener">${icon('external', 15)} 在 B 站打开本课</a>
+    <span class="video-size">B 站外链播放 · 清晰度取决于 B 站账号</span>
   </div>`;
 }
 
-function playerHtml(lesson, s) {
+function panPlayer(course, lesson, s) {
+  return `<div class="pan-player" id="panPlayer">
+    <span class="tag copper">${icon('info', 13)} 网盘 / 外部资源</span>
+    <h3>本课视频在外部网盘</h3>
+    <p>点击下方按钮打开课程资源，按文件名找到本课视频。网盘观看需登录对应账号，速度取决于网盘。</p>
+    <div class="pan-file">${icon('play', 13)} <code>${esc(lesson.file ? lesson.file.split('/').pop() : lesson.title)}</code></div>
+    <div class="pan-actions">
+      <a class="btn btn-primary" href="${esc(s.panUrl)}" target="_blank" rel="noopener">${icon('external', 15)} 打开网盘</a>
+      <button class="btn btn-ghost" id="copyPanLink">${icon('copy', 15)} 复制链接</button>
+      ${s.panPwd ? `<span class="pan-pwd">提取码：<b>${esc(s.panPwd)}</b></span>` : ''}
+    </div>
+    <p class="pan-tip">如果本机已运行「启动学习平台」，切换到「直连」可以直接内嵌播放本地视频。</p>
+  </div>`;
+}
+
+function playerHtml(course, lesson, s) {
+  if (s.source === 'bilibili') return `<div class="player-wrap bili-player" id="playerWrap">${bilibiliPlayer(lesson)}</div>`;
   if (s.source === 'direct') {
-    return `<div class="player-wrap" id="playerWrap">
-      <video id="lessonVideo" controls playsinline preload="metadata" ${s.poster ? `poster="${esc(s.poster)}"` : ''}>
-        <source src="${esc(s.directSrc)}" type="video/mp4">
-      </video>
-    </div>`;
+    return `<div class="player-wrap" id="playerWrap"><video id="lessonVideo" controls playsinline preload="metadata">
+      <source src="${esc(s.directSrc)}" type="video/mp4"></video></div>`;
   }
-  if (s.source === 'pan') {
-    return `<div class="player-wrap pan-wrap" id="playerWrap">${panPlayerHtml(lesson, s)}</div>`;
+  if (s.source === 'pan') return `<div class="player-wrap pan-wrap" id="playerWrap">${panPlayer(course, lesson, s)}</div>`;
+  if (s.isMirror) {
+    return `<div class="player-wrap" id="playerWrap"><div class="player-fallback show">
+      <span class="tag gold">${icon('info', 13)} 本地视频</span>
+      <h3>本课视频在本地服务器上</h3>
+      <p>这门课程的视频存放在教师电脑上。请在运行「启动学习平台」的电脑上打开，或用教师分享的局域网 / IPv6 地址访问，即可直接播放。</p>
+      <p style="font-size:12px;color:var(--muted)">在线镜像只同步课程目录与资料，不含大体积视频。</p>
+    </div></div>`;
   }
-  const isMirror = /\.github\.io$/i.test(location.hostname);
-  const localPath = `D:\\课程资源\\琅泽_老高课堂_SP教程(Substance Painter2019教程)中文版\\${lesson.file || ''}`;
   return `<div class="player-wrap" id="playerWrap"><div class="player-fallback show">
-    <span class="tag gold">${icon('info', 13)} ${isMirror ? '镜像版 · 不含视频' : '暂无可用视频源'}</span>
-    <h3>${isMirror ? '这是在线镜像页面' : '这一课还没有可播放的视频源'}</h3>
-    <p>${isMirror
-      ? '在线镜像只同步了课程、知识库、题库与练习。请在运行「启动学习平台」的电脑上打开，或用分享页里的地址访问，即可在线播放。'
-      : '请确认 media/encoded 下的视频文件存在，或在 data/videos.json 中配置直链 / 网盘地址。'}</p>
-    ${isMirror ? '' : `<code>${esc(localPath)}</code>`}
+    <span class="tag gold">${icon('info', 13)} 暂无可用视频源</span>
+    <h3>这一课还没有可播放的视频</h3>
+    <p>请在教师端「课程管理」中检查文件路径，或在课程详情页查看资料。</p>
   </div></div>`;
 }
 
-function zoneHtml(lesson, s, mod, v, isDone) {
-  const sources = [
-    ['auto', '自动'],
-    ['local', '直连'],
-    ['pan', '网盘']
-  ];
-  return `${playerHtml(lesson, s)}
+function zoneHtml(course, lesson, s, isDone) {
+  const sources = [['auto', '自动'], ['local', '直连'], ['pan', '网盘']];
+  const showSwitch = course.meta.type !== 'bilibili' && (s.panUrl || s.directSrc);
+  return `${playerHtml(course, lesson, s)}
     <div class="video-actions">
       <button class="btn ${isDone ? 'btn-ghost' : 'btn-primary'} btn-sm" id="markDone">
         ${icon(isDone ? 'check' : 'target', 15)} ${isDone ? '已完成（点击取消）' : '标记为已学完'}
       </button>
-      <a class="btn btn-ghost btn-sm" href="#/quiz/${mod.id}">${icon('bolt', 15)} 本模块闯关</a>
+      <a class="btn btn-ghost btn-sm" href="#/course/${course.meta.id}">${icon('map', 15)} 课程目录</a>
+      ${course.meta.type === 'sp' ? `<a class="btn btn-ghost btn-sm" href="#/quiz">${icon('bolt', 15)} 闯关练习</a>` : ''}
       <button class="btn btn-ghost btn-sm" id="askLesson">${icon('bot', 15)} 问 AI 助教</button>
-      ${s.source === 'pan' ? `<a class="btn btn-ghost btn-sm" href="${esc(s.panUrl)}" target="_blank" rel="noopener">${icon('external', 14)} 网盘观看</a>` : ''}
-      <div class="source-switch" title="切换视频来源">
-        <span>视频源</span>
-        ${sources.map(([k, label]) => `<button class="chip ${s.mode === k ? 'active' : ''}" data-source="${k}">${label}</button>`).join('')}
-      </div>
-      ${v.sizeBytes && s.source === 'direct' ? `<span class="video-size">视频 ${Math.round(v.sizeBytes / 1048576)} MB · 720P</span>` : ''}
+      ${showSwitch ? `<div class="source-switch" title="切换视频来源"><span>视频源</span>${sources.map(([k, label]) => `<button class="chip ${s.mode === k ? 'active' : ''}" data-source="${k}">${label}</button>`).join('')}</div>` : ''}
+      ${lesson.sizeMB ? `<span class="video-size">${Math.round(lesson.sizeMB)} MB</span>` : ''}
     </div>`;
 }
 
-function bindZone(lesson, s, mod) {
-  const no = lesson.no;
+function bindZone(course, lesson, s) {
+  const cid = course.meta.id;
+  const key = String(lesson.no);
   const video = document.getElementById('lessonVideo');
   const markBtn = document.getElementById('markDone');
 
+  store.setLastIn(cid, key);
+
   if (video) {
-    store.setLast(no);
     video.addEventListener('ended', () => {
-      store.complete(no);
+      store.markIn(cid, key);
       toast('本节已完成，进度已记录', 'ok');
-      if (markBtn) {
-        markBtn.className = 'btn btn-ghost btn-sm';
-        markBtn.innerHTML = `${icon('check', 15)} 已完成（点击取消）`;
-      }
+      if (markBtn) { markBtn.className = 'btn btn-ghost btn-sm'; markBtn.innerHTML = `${icon('check', 15)} 已完成（点击取消）`; }
     });
     video.addEventListener('error', () => {
       const wrap = document.getElementById('playerWrap');
@@ -112,22 +113,20 @@ function bindZone(lesson, s, mod) {
       wrap.innerHTML = `<div class="player-fallback show">
         <span class="tag gold">视频加载失败</span>
         <h3>暂时无法播放本节视频</h3>
-        <p>可能是网络波动或视频文件缺失。可以切换上方「视频源」改用网盘观看，或稍后刷新重试。</p>
+        <p>可能是本地服务未运行，或视频文件路径变化。请确认已双击「启动学习平台」，也可以切换视频源或使用网盘。</p>
       </div>`;
     }, { once: true });
-  } else {
-    store.setLast(no);
   }
 
   if (markBtn) {
     markBtn.addEventListener('click', () => {
-      if (store.isDone(no)) {
-        store.uncomplete(no);
+      if (store.isDoneIn(cid, key)) {
+        store.unmarkIn(cid, key);
         markBtn.className = 'btn btn-primary btn-sm';
         markBtn.innerHTML = `${icon('target', 15)} 标记为已学完`;
         toast('已取消完成标记');
       } else {
-        store.complete(no);
+        store.markIn(cid, key);
         markBtn.className = 'btn btn-ghost btn-sm';
         markBtn.innerHTML = `${icon('check', 15)} 已完成（点击取消）`;
         toast('本节已完成，进度已记录', 'ok');
@@ -136,78 +135,83 @@ function bindZone(lesson, s, mod) {
   }
 
   const copyBtn = document.getElementById('copyPanLink');
-  if (copyBtn && s.panUrl) {
-    copyBtn.addEventListener('click', () => copyText(s.panUrl, '网盘链接已复制'));
-  }
+  if (copyBtn && s.panUrl) copyBtn.addEventListener('click', () => copyText(s.panUrl, '链接已复制'));
 
   document.querySelectorAll('[data-source]').forEach(btn => {
     btn.addEventListener('click', () => {
       const nextMode = btn.dataset.source;
       store.setSetting('videoSource', nextMode);
-      const videos = (ctx && ctx.videos) || data.__videosCache || {};
       const zone = document.getElementById('videoZone');
-      if (!zone) return;
-      const vv = (videos.videos || {})[no] || {};
-      const newS = resolveSource(videos, vv);
-      zone.innerHTML = zoneHtml(lesson, newS, mod, vv, store.isDone(no));
-      ctx = { lesson, mod, v: vv, s: newS, videos, isDone: store.isDone(no) };
-      bindZone(lesson, newS, mod);
-      const names = { auto: '自动', local: '直连', pan: '网盘' };
-      toast('视频源已切换为「' + names[nextMode] + '」');
+      if (!zone || !ctx) return;
+      const newS = resolveSource(course, lesson);
+      zone.innerHTML = zoneHtml(course, lesson, newS, store.isDoneIn(cid, key));
+      ctx.s = newS;
+      bindZone(course, lesson, newS);
+      toast('视频源已切换为「' + ({ auto: '自动', local: '直连', pan: '网盘' })[nextMode] + '」');
     });
   });
 
   const askBtn = document.getElementById('askLesson');
   if (askBtn) {
     askBtn.addEventListener('click', () => {
-      try {
-        sessionStorage.setItem('spstudio.ask', `我想了解第${no}课的「${lesson.title}」，请帮我梳理重点。`);
-      } catch (e) { }
+      const q = course.meta.type === 'sp'
+        ? `我想了解第${lesson.no}课的「${lesson.title}」，请帮我梳理重点。`
+        : `我在学《${course.meta.title}》里的「${lesson.title}」，请用通俗的方式讲讲这一课的核心概念和练习建议。`;
+      try { sessionStorage.setItem('spstudio.ask', q); } catch (e) { }
       location.hash = '#/assistant';
     });
   }
 }
 
-/* 当前页面上下文（render 时写入，mount 与视频源切换复用） */
-let ctx = null;
-
 export default {
   async render(params) {
-    const no = Number(params.no);
-    const lessons = await data.flatLessons();
-    const lesson = lessons.find(l => l.no === no);
+    const cid = params.courseId || 'sp';
+    const no = params.no;
+    const course = await data.courseById(cid);
+    if (!course) {
+      return `<div class="container" style="padding:80px 24px"><div class="card" style="text-align:center;padding:50px">
+        <h2>课程不存在</h2><a class="btn btn-primary" href="#/courses" style="margin-top:16px">返回课程中心</a></div></div>`;
+    }
+    const lessons = await data.lessonsOf(cid);
+    const idx = lessons.findIndex(l => String(l.no) === String(no));
+    const lesson = idx >= 0 ? lessons[idx] : null;
     if (!lesson) {
       return `<div class="container" style="padding:80px 24px"><div class="card" style="text-align:center;padding:50px">
-        <h2>没有找到第 ${esc(params.no)} 课</h2>
-        <p style="color:var(--muted);margin:10px 0 22px">课程编号可能不在本套教程范围内。</p>
-        <a class="btn btn-primary" href="#/map">返回课程地图</a>
-      </div></div>`;
+        <h2>没有找到这一课</h2><p style="color:var(--muted);margin:10px 0 22px">课程目录可能已更新。</p>
+        <a class="btn btn-primary" href="#/course/${cid}">返回课程目录</a></div></div>`;
     }
-    const videos = await data.videos();
-    data.__videosCache = videos;
-    const v = (videos.videos || {})[lesson.no] || {};
-    const course = await data.course();
-    const mod = course.modules.find(m => m.id === lesson.moduleId);
-    const idxInMod = mod.lessons.findIndex(l => l.no === lesson.no);
-    const prev = lessons.find(l => l.no === lesson.no - 1) || null;
-    const next = lessons.find(l => l.no === lesson.no + 1) || null;
-    const isDone = store.isDone(lesson.no);
-    const s = resolveSource(videos, v);
-    ctx = { lesson, mod, v, s, videos, isDone };
+    const meta = course.meta;
+    const d = course.data;
+    const mod = (d.modules || []).find(m => m.id === lesson.moduleId) || { title: '', lessons };
+    const prev = idx > 0 ? lessons[idx - 1] : null;
+    const next = idx < lessons.length - 1 ? lessons[idx + 1] : null;
+    const isSP = meta.type === 'sp';
+    const isDone = store.isDoneIn(cid, String(lesson.no));
+    const spVideo = isSP ? ((await data.videos()).videos || {})[lesson.no] || {} : {};
+    ctx = { course, lesson, spVideo, s: null };
 
-    const sideLessons = mod.lessons.map(l => `<a class="side-lesson ${l.no === lesson.no ? 'current' : ''}" href="#/lesson/${l.no}">
-      <span class="sno">${String(l.no).padStart(2, '0')}</span>
-      <span>${esc(l.title)}</span>
-    </a>`).join('');
+    const s = resolveSource(course, lesson);
+    ctx.s = s;
+
+    const sideLessons = (mod.lessons || []).map(l => `<a class="side-lesson ${String(l.no) === String(lesson.no) ? 'current' : ''}" href="#/lesson/${cid}/${l.no}">
+      <span class="sno">${String(l.no).padStart(2, '0')}</span><span>${esc(l.title)}</span></a>`).join('');
 
     const objectives = (lesson.objectives || []).map((o, i) => `<li><span class="dot">${i + 1}</span><span>${esc(o)}</span></li>`).join('');
     const keypoints = (lesson.keypoints || []).map((k, i) => `<div class="kp-item"><i>${String(i + 1).padStart(2, '0')}</i><span>${esc(k)}</span></div>`).join('');
     const tags = (lesson.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('');
-
-    const quickAsks = [
+    const moduleDone = (mod.lessons || []).filter(l => store.isDoneIn(cid, String(l.no))).length;
+    const modPct = mod.lessons && mod.lessons.length ? Math.round(moduleDone / mod.lessons.length * 100) : 0;
+    const courseDone = store.doneCountIn(cid);
+    const coursePct = lessons.length ? Math.round(courseDone / lessons.length * 100) : 0;
+    const resources = (d.resources || []);
+    const quickAsks = isSP ? [
       `第${lesson.no}课「${lesson.title}」的核心要点是什么？`,
       `第${lesson.no}课里的操作容易出错的地方有哪些？`,
       `怎么练习「${lesson.title}」这一课的内容？`
+    ] : [
+      `《${meta.title}》这门课的学习路线是什么？`,
+      `「${lesson.title}」这一课的核心概念是什么？`,
+      `学完这一课，我应该做哪些练习？`
     ];
 
     return `<div class="container">
@@ -215,48 +219,39 @@ export default {
     <div>
       <nav class="breadcrumb" aria-label="面包屑">
         <a href="#/">首页</a> ${icon('chevron-right', 12)}
-        <a href="#/map">课程地图</a> ${icon('chevron-right', 12)}
-        <a href="#/map">${esc(mod.title)}</a> ${icon('chevron-right', 12)}
+        <a href="#/courses">课程中心</a> ${icon('chevron-right', 12)}
+        <a href="#/course/${cid}">${esc(meta.title)}</a> ${icon('chevron-right', 12)}
         <span>第 ${lesson.no} 课</span>
       </nav>
 
       <div class="lesson-head">
         <h1>${esc(lesson.title)}</h1>
         <div class="lh-meta">
-          <span class="tag copper">模块 ${String(mod.index).padStart(2, '0')} · ${esc(mod.title.split(' · ')[0])}</span>
-          <span class="tag ${levelClass(lesson.difficulty)}">${esc(lesson.difficulty || '进阶')}</span>
-          <span class="tag">${icon('clock', 12)} ${fmtDur(lesson.durationSec)}</span>
-          <span class="tag">第 ${idxInMod + 1} / ${mod.lessons.length} 节</span>
+          <span class="tag copper">${esc(mod.title || meta.category)}</span>
+          ${isSP && lesson.difficulty ? `<span class="tag ${levelClass(lesson.difficulty)}">${esc(lesson.difficulty)}</span>` : ''}
+          ${lesson.durationSec ? `<span class="tag">${icon('clock', 12)} ${fmtDur(lesson.durationSec)}</span>` : ''}
+          <span class="tag">第 ${lesson.no} / ${lessons.length} 节</span>
           ${isDone ? `<span class="tag teal">${icon('check', 12)} 已完成</span>` : ''}
         </div>
       </div>
 
-      <div id="videoZone">${zoneHtml(lesson, s, mod, v, isDone)}</div>
+      <div id="videoZone">${zoneHtml(course, lesson, s, isDone)}</div>
 
-      <section class="lesson-section">
-        <h2>本节要讲什么</h2>
-        <p style="color:var(--text-2);line-height:1.85;font-size:14.5px">${esc(lesson.summary || '')}</p>
-      </section>
-
-      <section class="lesson-section">
-        <h2>学习目标</h2>
-        <ul class="obj-list">${objectives || '<li style="color:var(--muted)">暂无</li>'}</ul>
-      </section>
-
-      <section class="lesson-section">
-        <h2>核心知识点</h2>
-        <div class="kp-grid">${keypoints || '<div style="color:var(--muted)">暂无</div>'}</div>
-      </section>
-
-      ${lesson.practice ? `<section class="lesson-section">
-        <h2>动手练一练</h2>
-        <div class="practice-box">${esc(lesson.practice)}</div>
-      </section>` : ''}
+      ${isSP ? `
+      <section class="lesson-section"><h2>本节要讲什么</h2>
+        <p style="color:var(--text-2);line-height:1.85;font-size:14.5px">${esc(lesson.summary || '')}</p></section>
+      <section class="lesson-section"><h2>学习目标</h2><ul class="obj-list">${objectives || '<li style="color:var(--muted)">暂无</li>'}</ul></section>
+      <section class="lesson-section"><h2>核心知识点</h2><div class="kp-grid">${keypoints || '<div style="color:var(--muted)">暂无</div>'}</div></section>
+      ${lesson.practice ? `<section class="lesson-section"><h2>动手练一练</h2><div class="practice-box">${esc(lesson.practice)}</div></section>` : ''}`
+        : `<section class="lesson-section"><h2>课程信息</h2>
+        <p style="color:var(--text-2);line-height:1.9">本课属于《${esc(meta.title)}》${esc(mod.title ? '· ' + mod.title : '')}。${esc(meta.description || '')}</p>
+        ${resources.length ? `<p style="margin-top:10px"><a class="link-arrow" href="#/course/${cid}">查看课程资料（${resources.length} 份）${icon('arrow-right', 13)}</a></p>` : ''}
+      </section>`}
 
       <section class="lesson-section">
         <h2>我的笔记</h2>
         <div class="note-box">
-          <textarea id="noteArea" placeholder="记下参数、快捷键、踩过的坑……笔记只会保存在本机浏览器。">${esc(store.getNote(lesson.no))}</textarea>
+          <textarea id="noteArea" placeholder="记下笔记、参数、踩过的坑……笔记只保存在本机浏览器。">${esc(store.getNoteIn(cid, String(lesson.no)))}</textarea>
           <div class="note-hint"><span>自动保存 · 仅本机可见</span><span id="noteState"></span></div>
         </div>
       </section>
@@ -269,52 +264,48 @@ export default {
       </section>
 
       <nav class="lesson-nav" aria-label="课时导航">
-        ${prev ? `<a href="#/lesson/${prev.no}"><span class="nl">${icon('arrow-left', 12)} 上一课</span><span class="nt">${esc(prev.title)}</span></a>` : '<span></span>'}
-        ${next ? `<a class="next" href="#/lesson/${next.no}"><span class="nl">下一课 ${icon('arrow-right', 12)}</span><span class="nt">${esc(next.title)}</span></a>` : '<span></span>'}
+        ${prev ? `<a href="#/lesson/${cid}/${prev.no}"><span class="nl">${icon('arrow-left', 12)} 上一课</span><span class="nt">${esc(prev.title)}</span></a>` : '<span></span>'}
+        ${next ? `<a class="next" href="#/lesson/${cid}/${next.no}"><span class="nl">下一课 ${icon('arrow-right', 12)}</span><span class="nt">${esc(next.title)}</span></a>` : '<span></span>'}
       </nav>
     </div>
 
     <aside class="lesson-side">
       <div class="card side-card">
-        <h3>本模块进度</h3>
+        <h3>课程进度</h3>
         <div style="display:flex;align-items:center;gap:14px">
-          <div class="progress-ring" style="--p:${Math.round(mod.lessons.filter(l => store.isDone(l.no)).length / mod.lessons.length * 100)}"><b>${Math.round(mod.lessons.filter(l => store.isDone(l.no)).length / mod.lessons.length * 100)}%</b></div>
-          <div style="font-size:13px;color:var(--muted)">${esc(mod.title)}<br>${mod.lessons.filter(l => store.isDone(l.no)).length} / ${mod.lessons.length} 节已学</div>
+          <div class="progress-ring" style="--p:${coursePct}"><b>${coursePct}%</b></div>
+          <div style="font-size:13px;color:var(--muted)">${esc(meta.title)}<br>${courseDone} / ${lessons.length} 节已学</div>
         </div>
       </div>
       <div class="card side-card">
-        <h3>阶段目标</h3>
-        <ul class="side-list">${(mod.goals || []).map(g => `<li>${icon('target', 14)}<span>${esc(g)}</span></li>`).join('') || '<li style="color:var(--muted)">暂无</li>'}</ul>
+        <h3>当前模块</h3>
+        <div class="module-progress" style="margin-bottom:10px"><i style="width:${modPct}%;--m-color:${meta.accent}"></i></div>
+        <div style="font-size:13px;color:var(--muted)">${esc(mod.title || '')} · ${moduleDone}/${(mod.lessons || []).length} 节</div>
       </div>
       <div class="card side-card">
         <h3>本模块课时</h3>
         <div class="side-lessons">${sideLessons}</div>
       </div>
-      <div class="card side-card">
-        <h3>标签</h3>
-        <div style="display:flex;flex-wrap:wrap;gap:7px">${tags || '<span style="color:var(--muted);font-size:13px">暂无</span>'}</div>
-      </div>
+      ${isSP ? `<div class="card side-card"><h3>标签</h3><div style="display:flex;flex-wrap:wrap;gap:7px">${tags || '<span style="color:var(--muted);font-size:13px">暂无</span>'}</div></div>` : ''}
+      ${resources.length ? `<div class="card side-card"><h3>课程资料</h3><a class="link-arrow" href="#/course/${cid}">${resources.length} 份资料 ${icon('arrow-right', 13)}</a></div>` : ''}
     </aside>
   </div>
 </div>`;
   },
 
   mount(params) {
-    const no = Number(params.no);
-    if (ctx && ctx.lesson && ctx.lesson.no === no) {
-      bindZone(ctx.lesson, ctx.s, ctx.mod);
-    }
-
+    bindZone(ctx.course, ctx.lesson, ctx.s);
     const noteArea = document.getElementById('noteArea');
     const noteState = document.getElementById('noteState');
+    const cid = ctx.course.meta.id;
+    const key = String(ctx.lesson.no);
     if (noteArea) {
       const save = debounce(() => {
-        store.setNote(no, noteArea.value);
+        store.setNoteIn(cid, key, noteArea.value);
         if (noteState) noteState.textContent = '已保存 ' + new Date().toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
       }, 400);
       noteArea.addEventListener('input', save);
     }
-
     document.querySelectorAll('[data-ask]').forEach(btn => {
       btn.addEventListener('click', () => {
         try { sessionStorage.setItem('spstudio.ask', btn.dataset.ask); } catch (e) { }

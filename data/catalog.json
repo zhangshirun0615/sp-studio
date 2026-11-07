@@ -1,0 +1,347 @@
+{
+ "platform": {
+  "title": "数字媒体设计学习平台",
+  "subtitle": "三维 · 影视 · 概念设计 · 平面构成 · 绘画基础",
+  "intro": "汇聚 Substance Painter、ZBrush、影视概念设计、平面构成、色彩、分镜与剪辑等课程，配套 AI 助教、知识库、闯关练习与作品评估。"
+ },
+ "updated": "2026-11-07 19:01",
+ "categories": [
+  {
+   "id": "all",
+   "name": "全部"
+  },
+  {
+   "id": "三维与材质",
+   "name": "三维与材质"
+  },
+  {
+   "id": "概念设计",
+   "name": "概念设计"
+  },
+  {
+   "id": "影视与分镜",
+   "name": "影视与分镜"
+  },
+  {
+   "id": "影视与剪辑",
+   "name": "影视与剪辑"
+  },
+  {
+   "id": "平面构成",
+   "name": "平面构成"
+  },
+  {
+   "id": "色彩与绘画",
+   "name": "色彩与绘画"
+  },
+  {
+   "id": "绘画基础",
+   "name": "绘画基础"
+  }
+ ],
+ "courses": [
+  {
+   "id": "sp",
+   "type": "sp",
+   "category": "三维与材质",
+   "title": "《Substance Painter 2019》材质表现系统课",
+   "subtitle": "琅泽 · 老高课堂 SP 教程",
+   "description": "本课程由老高课堂主讲，围绕 Substance Painter 2019 拆解 PBR 材质制作全流程。从软件安装与界面认识讲起，依次讲透纹理集、图层与遮罩、烘焙数据贴图、生成器、锚点、滤镜特效、置换与细分、贴图映射、动态笔刷与物理绘制，最后进入 UV 拆分与 UDIM 多象限整理。全程以真实道具与小怪兽模型为案例，边讲原理边动手，学完能独立完成从高低模烘焙到贴图导出的整套工作，也能把材质交付到常用渲染器，适合零基础转材质方向的同学。",
+   "cover": "assets/posters/lesson-13.jpg",
+   "dataFile": "data/course.json",
+   "hasQuiz": true,
+   "hasKB": true,
+   "lessonCount": 58,
+   "durationSec": 52080,
+   "accent": "#ff8a3d",
+   "tags": [
+    "PBR",
+    "材质",
+    "贴图"
+   ],
+   "pan": {
+    "url": "https://pan.baidu.com/s/5xG23RcZNHd_C57HJtD9xPw",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "thyan",
+   "type": "video",
+   "category": "概念设计",
+   "title": "影视概念设计",
+   "subtitle": "天何言 · 徐天华 / 金啸镝 / 康晨曦",
+   "description": "影视概念设计系统课：从概念设计师杂谈、素描与光影基础，到场景设计、材质贴图与完整项目流程，分三个阶段递进。",
+   "accent": "#ff8a3d",
+   "tags": [
+    "概念设计",
+    "场景",
+    "影视"
+   ],
+   "cover": "assets/courses/thyan.jpg",
+   "dataFile": "data/courses/thyan.json",
+   "lessonCount": 104,
+   "durationSec": 1084503,
+   "modules": 3,
+   "resources": 0,
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "zbrush",
+   "type": "video",
+   "category": "三维与材质",
+   "title": "ZBrush 基础教程",
+   "subtitle": "19 章 · 从界面到雕刻实战",
+   "description": "从工具栏、笔刷、Alpha 到建模、纹理、灯光渲染与 Z 球、卡通人头、玉龙/戟龙/宝箱等实战案例，系统掌握数字雕刻基础。",
+   "accent": "#b3a1ff",
+   "tags": [
+    "雕刻",
+    "三维",
+    "ZBrush"
+   ],
+   "cover": "assets/courses/zbrush.jpg",
+   "dataFile": "data/courses/zbrush.json",
+   "lessonCount": 224,
+   "durationSec": 175569,
+   "modules": 19,
+   "resources": 5,
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "gz-weekly",
+   "type": "video",
+   "category": "平面构成",
+   "title": "平面构成 · 周更团练",
+   "subtitle": "团练已完结 + 系统已完结",
+   "description": "以周更团练形式推进的平面构成训练：从基础元素、形式法则到完整画面组织，配合系统课巩固设计方法。",
+   "accent": "#ffd166",
+   "tags": [
+    "平面构成",
+    "团练",
+    "设计基础"
+   ],
+   "cover": "assets/courses/gz-weekly.jpg",
+   "dataFile": "data/courses/gz-weekly.json",
+   "lessonCount": 37,
+   "durationSec": 305949,
+   "modules": 2,
+   "resources": 78,
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "gz-hechuan",
+   "type": "video",
+   "category": "平面构成",
+   "title": "九章平面构成设计入门",
+   "subtitle": "何川 · 理论 + 带练",
+   "description": "何川「藕片形衍」九章平面构成入门：按步骤丰富图形、点线面与对比、创意联想、层次与视觉引导，理论与带练结合。",
+   "accent": "#ffb347",
+   "tags": [
+    "平面构成",
+    "理论",
+    "带练"
+   ],
+   "cover": "assets/courses/gz-hechuan.jpg",
+   "dataFile": "data/courses/gz-hechuan.json",
+   "lessonCount": 14,
+   "durationSec": 123142,
+   "modules": 2,
+   "resources": 52,
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "color",
+   "type": "video",
+   "category": "色彩与绘画",
+   "title": "色彩的艺术",
+   "subtitle": "12 节色彩视频 + 知识贴",
+   "description": "色彩基础与配色方法：从色彩三属性、对比与调和到画面配色实践，附 44 张高清知识贴与 190 页图文资料。",
+   "accent": "#ff9ec7",
+   "tags": [
+    "色彩",
+    "配色",
+    "绘画基础"
+   ],
+   "cover": "assets/courses/color.jpg",
+   "dataFile": "data/courses/color.json",
+   "lessonCount": 12,
+   "durationSec": 1223,
+   "modules": 1,
+   "resources": 7,
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "draw",
+   "type": "video",
+   "category": "绘画基础",
+   "title": "How to Draw · 随书视频",
+   "subtitle": "Scott Robertson · 透视与绘制",
+   "description": "Scott Robertson《How to Draw》随书视频（41 节）+ 原版/汉化 PDF、图片版与赠送资源，系统训练透视、形体与工业设计绘制。",
+   "accent": "#6bc5ff",
+   "tags": [
+    "透视",
+    "绘制",
+    "工业设计"
+   ],
+   "cover": "assets/courses/draw.jpg",
+   "dataFile": "data/courses/draw.json",
+   "lessonCount": 41,
+   "durationSec": 91168,
+   "modules": 2,
+   "resources": 53,
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "render",
+   "type": "video",
+   "category": "绘画基础",
+   "title": "How to Render · 随书视频",
+   "subtitle": "Scott Robertson · 渲染与光影",
+   "description": "Scott Robertson《How to Render》随书视频（46 节）+ PDF 与 PSD 原文件，讲解光影、材质、反射与渲染表现。",
+   "accent": "#7ee0c3",
+   "tags": [
+    "渲染",
+    "光影",
+    "材质表现"
+   ],
+   "cover": "assets/courses/render.jpg",
+   "dataFile": "data/courses/render.json",
+   "lessonCount": 46,
+   "durationSec": 117670,
+   "modules": 2,
+   "resources": 47,
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "framedink",
+   "type": "gallery",
+   "category": "影视与分镜",
+   "title": "Framed Ink · 欧美漫画分镜",
+   "subtitle": "图文资料 · 汉化版 + 英文版",
+   "description": "经典分镜教材《Framed Ink》中文/英文 PDF 与逐页图片，学习镜头语言、构图与叙事分镜。",
+   "accent": "#ff7a2f",
+   "tags": [
+    "分镜",
+    "漫画",
+    "构图"
+   ],
+   "cover": "assets/courses/framedink.jpg",
+   "dataFile": "data/courses/framedink.json",
+   "lessonCount": 0,
+   "durationSec": 0,
+   "modules": 0,
+   "resources": 4,
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "framedink2",
+   "type": "video",
+   "category": "影视与分镜",
+   "title": "Framed Ink 2 · Draw & Render",
+   "subtitle": "图文 + 视频资料",
+   "description": "《Framed Ink 2》教材：分镜与画面绘制进阶，含 PDF、128 张 PNG 页面与补充视频、126-128 页修订内容。",
+   "accent": "#ffd166",
+   "tags": [
+    "分镜",
+    "绘制",
+    "进阶"
+   ],
+   "cover": "assets/courses/framedink2.jpg",
+   "dataFile": "data/courses/framedink2.json",
+   "lessonCount": 1,
+   "durationSec": 92,
+   "modules": 1,
+   "resources": 6,
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "bili-edit",
+   "type": "bilibili",
+   "category": "影视与剪辑",
+   "title": "63 节视听语言课",
+   "subtitle": "B 站 · PR教程零基础 · 剪辑思维",
+   "description": "从景别、镜头、转场到节奏与剪辑思维，62 个视频分 P 系统讲解影视后期剪辑，适合零基础入门。",
+   "accent": "#6bc5ff",
+   "tags": [
+    "剪辑",
+    "视听语言",
+    "PR"
+   ],
+   "cover": "assets/courses/bili-edit.jpg",
+   "dataFile": "data/courses/bili-edit.json",
+   "lessonCount": 62,
+   "durationSec": 30483,
+   "modules": 11,
+   "resources": 0,
+   "bilibili": {
+    "bvid": "BV1Tv4y1S7CJ",
+    "title": "【剪辑教程】63节视听语言课，影视后期纯干货教学，真正教会你剪辑思维，三小时从入门到就业！",
+    "owner": "PR教程零基础",
+    "coverOk": true
+   },
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  },
+  {
+   "id": "bili-pr",
+   "type": "bilibili",
+   "category": "影视与剪辑",
+   "title": "PR 零基础入门教程",
+   "subtitle": "B 站 · 从零开始学剪辑",
+   "description": "Premiere Pro 零基础实用教程：软件设置、界面、素材管理、时间线、字幕、调色与导出，33 个分 P 循序渐进。",
+   "accent": "#ff8a3d",
+   "tags": [
+    "Premiere",
+    "剪辑",
+    "入门"
+   ],
+   "cover": "assets/courses/bili-pr.jpg",
+   "dataFile": "data/courses/bili-pr.json",
+   "lessonCount": 33,
+   "durationSec": 21298,
+   "modules": 4,
+   "resources": 0,
+   "bilibili": {
+    "bvid": "BV1AK411g7xc",
+    "title": "pr教程 从零基础开始学剪辑（新手入门实用版2027）",
+    "owner": "pr教程剪辑视频",
+    "coverOk": true
+   },
+   "pan": {
+    "url": "",
+    "pwd": ""
+   }
+  }
+ ],
+ "courseCount": 12,
+ "lessonTotal": 632,
+ "durationTotal": 2003177
+}

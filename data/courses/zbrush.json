@@ -1,0 +1,1965 @@
+{
+ "id": "zbrush",
+ "title": "ZBrush 基础教程",
+ "type": "video",
+ "root": "13.ZBrush基础教程",
+ "modules": [
+  {
+   "id": "m1",
+   "index": 1,
+   "title": "第一章：基础知识",
+   "lessons": [
+    {
+     "no": 1,
+     "id": "l1",
+     "title": "课时1：教程简介",
+     "file": "第一章：基础知识/课时1：教程简介.mp4",
+     "durationSec": 577.2,
+     "sizeMB": 32.1
+    },
+    {
+     "no": 2,
+     "id": "l2",
+     "title": "课时2：软件介绍",
+     "file": "第一章：基础知识/课时2：软件介绍.mp4",
+     "durationSec": 457.0,
+     "sizeMB": 43.0
+    },
+    {
+     "no": 3,
+     "id": "l3",
+     "title": "课时3：项目设置",
+     "file": "第一章：基础知识/课时3：项目设置.mp4",
+     "durationSec": 513.6,
+     "sizeMB": 23.4
+    },
+    {
+     "no": 4,
+     "id": "l4",
+     "title": "课时4：基本操作",
+     "file": "第一章：基础知识/课时4：基本操作.mp4",
+     "durationSec": 371.6,
+     "sizeMB": 17.5
+    },
+    {
+     "no": 5,
+     "id": "l5",
+     "title": "课时5：参数化和Polymesh3d",
+     "file": "第一章：基础知识/课时5：参数化和Polymesh3d.mp4",
+     "durationSec": 208.9,
+     "sizeMB": 9.8
+    },
+    {
+     "no": 6,
+     "id": "l6",
+     "title": "课时6：雕刻概念及案例",
+     "file": "第一章：基础知识/课时6：雕刻概念及案例.mp4",
+     "durationSec": 390.9,
+     "sizeMB": 16.2
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "index": 2,
+   "title": "第二章：工具栏",
+   "lessons": [
+    {
+     "no": 7,
+     "id": "l7",
+     "title": "课时7：子工具",
+     "file": "第二章：工具栏/课时7：子工具.mp4",
+     "durationSec": 1152.4,
+     "sizeMB": 57.8
+    },
+    {
+     "no": 8,
+     "id": "l8",
+     "title": "课时8：动态细分",
+     "file": "第二章：工具栏/课时8：动态细分.mp4",
+     "durationSec": 465.2,
+     "sizeMB": 32.8
+    },
+    {
+     "no": 9,
+     "id": "l9",
+     "title": "课时9：边缘环",
+     "file": "第二章：工具栏/课时9：边缘环.mp4",
+     "durationSec": 619.7,
+     "sizeMB": 44.0
+    },
+    {
+     "no": 10,
+     "id": "l10",
+     "title": "课时10：折边",
+     "file": "第二章：工具栏/课时10：折边.mp4",
+     "durationSec": 459.9,
+     "sizeMB": 27.4
+    },
+    {
+     "no": 11,
+     "id": "l11",
+     "title": "课时11：Dynamesh",
+     "file": "第二章：工具栏/课时11：Dynamesh.mp4",
+     "durationSec": 665.4,
+     "sizeMB": 50.5
+    },
+    {
+     "no": 12,
+     "id": "l12",
+     "title": "课时12：ZRemesher",
+     "file": "第二章：工具栏/课时12：ZRemesher.mp4",
+     "durationSec": 755.2,
+     "sizeMB": 51.9
+    },
+    {
+     "no": 13,
+     "id": "l13",
+     "title": "课时13：修改拓补",
+     "file": "第二章：工具栏/课时13：修改拓补.mp4",
+     "durationSec": 641.4,
+     "sizeMB": 61.1
+    },
+    {
+     "no": 14,
+     "id": "l14",
+     "title": "课时14：图层",
+     "file": "第二章：工具栏/课时14：图层.mp4",
+     "durationSec": 295.8,
+     "sizeMB": 15.6
+    },
+    {
+     "no": 15,
+     "id": "l15",
+     "title": "课时15：表面噪波",
+     "file": "第二章：工具栏/课时15：表面噪波.mp4",
+     "durationSec": 455.9,
+     "sizeMB": 49.2
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "index": 3,
+   "title": "第三章：常用笔刷介绍",
+   "lessons": [
+    {
+     "no": 16,
+     "id": "l16",
+     "title": "课时16：变形",
+     "file": "第三章：常用笔刷介绍/课时16：变形.mp4",
+     "durationSec": 837.7,
+     "sizeMB": 64.1
+    },
+    {
+     "no": 17,
+     "id": "l17",
+     "title": "课时17：遮罩",
+     "file": "第三章：常用笔刷介绍/课时17：遮罩.mp4",
+     "durationSec": 589.7,
+     "sizeMB": 43.1
+    },
+    {
+     "no": 18,
+     "id": "l18",
+     "title": "课时18：多边形组",
+     "file": "第三章：常用笔刷介绍/课时18：多边形组.mp4",
+     "durationSec": 689.5,
+     "sizeMB": 57.5
+    },
+    {
+     "no": 19,
+     "id": "l19",
+     "title": "课时19：多边形绘制",
+     "file": "第三章：常用笔刷介绍/课时19：多边形绘制.mp4",
+     "durationSec": 450.4,
+     "sizeMB": 27.6
+    },
+    {
+     "no": 20,
+     "id": "l20",
+     "title": "课时20：各类贴图",
+     "file": "第三章：常用笔刷介绍/课时20：各类贴图.mp4",
+     "durationSec": 603.8,
+     "sizeMB": 60.0
+    },
+    {
+     "no": 21,
+     "id": "l21",
+     "title": "课时21：其他功能",
+     "file": "第三章：常用笔刷介绍/课时21：其他功能.mp4",
+     "durationSec": 406.8,
+     "sizeMB": 31.2
+    },
+    {
+     "no": 22,
+     "id": "l22",
+     "title": "课时22：笔刷快捷键",
+     "file": "第三章：常用笔刷介绍/课时22：笔刷快捷键.mp4",
+     "durationSec": 368.9,
+     "sizeMB": 21.7
+    },
+    {
+     "no": 23,
+     "id": "l23",
+     "title": "课时23：Clay",
+     "file": "第三章：常用笔刷介绍/课时23：Clay.mp4",
+     "durationSec": 361.5,
+     "sizeMB": 18.5
+    },
+    {
+     "no": 24,
+     "id": "l24",
+     "title": "课时24：Move",
+     "file": "第三章：常用笔刷介绍/课时24：Move.mp4",
+     "durationSec": 316.7,
+     "sizeMB": 17.5
+    },
+    {
+     "no": 25,
+     "id": "l25",
+     "title": "课时25：Standard",
+     "file": "第三章：常用笔刷介绍/课时25：Standard.mp4",
+     "durationSec": 387.8,
+     "sizeMB": 18.1
+    },
+    {
+     "no": 26,
+     "id": "l26",
+     "title": "课时26：光滑笔刷",
+     "file": "第三章：常用笔刷介绍/课时26：光滑笔刷.mp4",
+     "durationSec": 289.3,
+     "sizeMB": 16.4
+    },
+    {
+     "no": 27,
+     "id": "l27",
+     "title": "课时27：抛光笔刷",
+     "file": "第三章：常用笔刷介绍/课时27：抛光笔刷.mp4",
+     "durationSec": 347.5,
+     "sizeMB": 16.9
+    },
+    {
+     "no": 28,
+     "id": "l28",
+     "title": "课时28：CureTube",
+     "file": "第三章：常用笔刷介绍/课时28：CureTube.mp4",
+     "durationSec": 246.1,
+     "sizeMB": 12.9
+    },
+    {
+     "no": 29,
+     "id": "l29",
+     "title": "课时29：遮罩笔刷",
+     "file": "第三章：常用笔刷介绍/课时29：遮罩笔刷.mp4",
+     "durationSec": 474.1,
+     "sizeMB": 17.4
+    },
+    {
+     "no": 30,
+     "id": "l30",
+     "title": "课时30：选择笔刷",
+     "file": "第三章：常用笔刷介绍/课时30：选择笔刷.mp4",
+     "durationSec": 350.6,
+     "sizeMB": 20.0
+    },
+    {
+     "no": 31,
+     "id": "l31",
+     "title": "课时31：切割笔刷",
+     "file": "第三章：常用笔刷介绍/课时31：切割笔刷.mp4",
+     "durationSec": 562.1,
+     "sizeMB": 36.5
+    },
+    {
+     "no": 32,
+     "id": "l32",
+     "title": "课时32：Topology",
+     "file": "第三章：常用笔刷介绍/课时32：Topology.mp4",
+     "durationSec": 519.5,
+     "sizeMB": 26.0
+    },
+    {
+     "no": 33,
+     "id": "l33",
+     "title": "课时33：素材笔刷",
+     "file": "第三章：常用笔刷介绍/课时33：素材笔刷.mp4",
+     "durationSec": 601.9,
+     "sizeMB": 46.8
+    },
+    {
+     "no": 34,
+     "id": "l34",
+     "title": "课时34：膨胀笔刷",
+     "file": "第三章：常用笔刷介绍/课时34：膨胀笔刷.mp4",
+     "durationSec": 294.0,
+     "sizeMB": 17.4
+    },
+    {
+     "no": 35,
+     "id": "l35",
+     "title": "课时35：snakehook",
+     "file": "第三章：常用笔刷介绍/课时35：snakehook.mp4",
+     "durationSec": 340.2,
+     "sizeMB": 21.0
+    },
+    {
+     "no": 36,
+     "id": "l36",
+     "title": "课时36：创建InsertMesh",
+     "file": "第三章：常用笔刷介绍/课时36：创建InsertMesh.mp4",
+     "durationSec": 437.9,
+     "sizeMB": 25.5
+    },
+    {
+     "no": 37,
+     "id": "l37",
+     "title": "课时37：导入笔刷材质球方法",
+     "file": "第三章：常用笔刷介绍/课时37：导入笔刷材质球方法.mp4",
+     "durationSec": 262.9,
+     "sizeMB": 24.8
+    }
+   ]
+  },
+  {
+   "id": "m4",
+   "index": 4,
+   "title": "第四章：笔刷与笔触",
+   "lessons": [
+    {
+     "no": 38,
+     "id": "l38",
+     "title": "课时38：快捷图标与曲线",
+     "file": "第四章：笔刷与笔触/课时38：快捷图标与曲线.mp4",
+     "durationSec": 600.5,
+     "sizeMB": 32.2
+    },
+    {
+     "no": 39,
+     "id": "l39",
+     "title": "课时39：采样",
+     "file": "第四章：笔刷与笔触/课时39：采样.mp4",
+     "durationSec": 217.5,
+     "sizeMB": 13.8
+    },
+    {
+     "no": 40,
+     "id": "l40",
+     "title": "课时40：修改器",
+     "file": "第四章：笔刷与笔触/课时40：修改器.mp4",
+     "durationSec": 402.8,
+     "sizeMB": 22.6
+    },
+    {
+     "no": 41,
+     "id": "l41",
+     "title": "课时41：自动遮罩",
+     "file": "第四章：笔刷与笔触/课时41：自动遮罩.mp4",
+     "durationSec": 432.5,
+     "sizeMB": 26.9
+    },
+    {
+     "no": 42,
+     "id": "l42",
+     "title": "课时42：其他功能",
+     "file": "第四章：笔刷与笔触/课时42：其他功能.mp4",
+     "durationSec": 300.6,
+     "sizeMB": 16.0
+    }
+   ]
+  },
+  {
+   "id": "m5",
+   "index": 5,
+   "title": "第五章：建模基础知识",
+   "lessons": [
+    {
+     "no": 43,
+     "id": "l43",
+     "title": "课时43：点线面概念",
+     "file": "第五章：建模基础知识/课时43：点线面概念.mp4",
+     "durationSec": 468.3,
+     "sizeMB": 33.0
+    },
+    {
+     "no": 44,
+     "id": "l44",
+     "title": "课时44：ZModeler01",
+     "file": "第五章：建模基础知识/课时44：ZModeler01.mp4",
+     "durationSec": 952.7,
+     "sizeMB": 54.7
+    },
+    {
+     "no": 45,
+     "id": "l45",
+     "title": "课时45：ZModeler02",
+     "file": "第五章：建模基础知识/课时45：ZModeler02.mp4",
+     "durationSec": 831.1,
+     "sizeMB": 47.5
+    },
+    {
+     "no": 46,
+     "id": "l46",
+     "title": "课时46：ZModeler03",
+     "file": "第五章：建模基础知识/课时46：ZModeler03.mp4",
+     "durationSec": 517.2,
+     "sizeMB": 27.5
+    },
+    {
+     "no": 47,
+     "id": "l47",
+     "title": "课时47：拓扑布线与UV",
+     "file": "第五章：建模基础知识/课时47：拓扑布线与UV.mp4",
+     "durationSec": 593.0,
+     "sizeMB": 49.6
+    }
+   ]
+  },
+  {
+   "id": "m6",
+   "index": 6,
+   "title": "第六章：工具栏补充",
+   "lessons": [
+    {
+     "no": 48,
+     "id": "l48",
+     "title": "课时48：NanoMesh与ArrayMesh",
+     "file": "第六章：工具栏补充/课时48：NanoMesh与ArrayMesh.mp4",
+     "durationSec": 793.2,
+     "sizeMB": 33.1
+    },
+    {
+     "no": 49,
+     "id": "l49",
+     "title": "课时49：鳞片制作01",
+     "file": "第六章：工具栏补充/课时49：鳞片制作01.mp4",
+     "durationSec": 650.1,
+     "sizeMB": 28.7
+    },
+    {
+     "no": 50,
+     "id": "l50",
+     "title": "课时50：鳞片制作02",
+     "file": "第六章：工具栏补充/课时50：鳞片制作02.mp4",
+     "durationSec": 678.9,
+     "sizeMB": 65.6
+    },
+    {
+     "no": 51,
+     "id": "l51",
+     "title": "课时51：Fibermesh",
+     "file": "第六章：工具栏补充/课时51：Fibermesh.mp4",
+     "durationSec": 763.3,
+     "sizeMB": 55.0
+    },
+    {
+     "no": 52,
+     "id": "l52",
+     "title": "课时52：Fibermesh02",
+     "file": "第六章：工具栏补充/课时52：Fibermesh02.mp4",
+     "durationSec": 436.7,
+     "sizeMB": 26.1
+    }
+   ]
+  },
+  {
+   "id": "m7",
+   "index": 7,
+   "title": "第七章：Alpha的使用",
+   "lessons": [
+    {
+     "no": 53,
+     "id": "l53",
+     "title": "课时53：Alpha概念",
+     "file": "第七章：Alpha的使用/课时53：Alpha概念.mp4",
+     "durationSec": 333.0,
+     "sizeMB": 29.2
+    },
+    {
+     "no": 54,
+     "id": "l54",
+     "title": "课时54：修改栏",
+     "file": "第七章：Alpha的使用/课时54：修改栏.mp4",
+     "durationSec": 352.8,
+     "sizeMB": 25.2
+    },
+    {
+     "no": 55,
+     "id": "l55",
+     "title": "课时55：NoiseMaker创建",
+     "file": "第七章：Alpha的使用/课时55：NoiseMaker创建.mp4",
+     "durationSec": 320.6,
+     "sizeMB": 32.7
+    },
+    {
+     "no": 56,
+     "id": "l56",
+     "title": "课时56：生成3D",
+     "file": "第七章：Alpha的使用/课时56：生成3D.mp4",
+     "durationSec": 399.7,
+     "sizeMB": 28.6
+    },
+    {
+     "no": 57,
+     "id": "l57",
+     "title": "课时57：使用技巧",
+     "file": "第七章：Alpha的使用/课时57：使用技巧.mp4",
+     "durationSec": 471.9,
+     "sizeMB": 35.1
+    }
+   ]
+  },
+  {
+   "id": "m8",
+   "index": 8,
+   "title": "第八章：纹理设置",
+   "lessons": [
+    {
+     "no": 58,
+     "id": "l58",
+     "title": "课时58：颜色的使用",
+     "file": "第八章：纹理设置/课时58：颜色的使用.mp4",
+     "durationSec": 289.8,
+     "sizeMB": 14.2
+    },
+    {
+     "no": 59,
+     "id": "l59",
+     "title": "课时59：贴图的简单绘制技巧",
+     "file": "第八章：纹理设置/课时59：贴图的简单绘制技巧.mp4",
+     "durationSec": 732.8,
+     "sizeMB": 42.7
+    },
+    {
+     "no": 60,
+     "id": "l60",
+     "title": "课时60：纹理导入",
+     "file": "第八章：纹理设置/课时60：纹理导入.mp4",
+     "durationSec": 223.5,
+     "sizeMB": 12.2
+    },
+    {
+     "no": 61,
+     "id": "l61",
+     "title": "课时61：聚光灯",
+     "file": "第八章：纹理设置/课时61：聚光灯.mp4",
+     "durationSec": 490.1,
+     "sizeMB": 27.6
+    },
+    {
+     "no": 62,
+     "id": "l62",
+     "title": "课时62：映射方法",
+     "file": "第八章：纹理设置/课时62：映射方法.mp4",
+     "durationSec": 966.3,
+     "sizeMB": 62.4
+    },
+    {
+     "no": 63,
+     "id": "l63",
+     "title": "课时63：图像平面",
+     "file": "第八章：纹理设置/课时63：图像平面.mp4",
+     "durationSec": 298.8,
+     "sizeMB": 19.2
+    },
+    {
+     "no": 64,
+     "id": "l64",
+     "title": "课时64：材质栏介绍",
+     "file": "第八章：纹理设置/课时64：材质栏介绍.mp4",
+     "durationSec": 529.9,
+     "sizeMB": 32.0
+    }
+   ]
+  },
+  {
+   "id": "m9",
+   "index": 9,
+   "title": "第九章：灯光与渲染",
+   "lessons": [
+    {
+     "no": 65,
+     "id": "l65",
+     "title": "课时65：灯光的简单运用",
+     "file": "第九章：灯光与渲染/课时65：灯光的简单运用.mp4",
+     "durationSec": 341.6,
+     "sizeMB": 20.8
+    },
+    {
+     "no": 66,
+     "id": "l66",
+     "title": "课时66：LightCap",
+     "file": "第九章：灯光与渲染/课时66：LightCap.mp4",
+     "durationSec": 525.6,
+     "sizeMB": 36.6
+    },
+    {
+     "no": 67,
+     "id": "l67",
+     "title": "课时67：灯光类型",
+     "file": "第九章：灯光与渲染/课时67：灯光类型.mp4",
+     "durationSec": 394.7,
+     "sizeMB": 22.2
+    },
+    {
+     "no": 68,
+     "id": "l68",
+     "title": "课时68：预设渲染设置",
+     "file": "第九章：灯光与渲染/课时68：预设渲染设置.mp4",
+     "durationSec": 347.5,
+     "sizeMB": 24.5
+    },
+    {
+     "no": 69,
+     "id": "l69",
+     "title": "课时69：渲染属性",
+     "file": "第九章：灯光与渲染/课时69：渲染属性.mp4",
+     "durationSec": 644.5,
+     "sizeMB": 25.0
+    },
+    {
+     "no": 70,
+     "id": "l70",
+     "title": "课时70：BPR",
+     "file": "第九章：灯光与渲染/课时70：BPR.mp4",
+     "durationSec": 622.1,
+     "sizeMB": 25.5
+    },
+    {
+     "no": 71,
+     "id": "l71",
+     "title": "课时71：BRP滤镜",
+     "file": "第九章：灯光与渲染/课时71：BRP滤镜.mp4",
+     "durationSec": 491.3,
+     "sizeMB": 27.9
+    },
+    {
+     "no": 72,
+     "id": "l72",
+     "title": "课时72：其他功能",
+     "file": "第九章：灯光与渲染/课时72：其他功能.mp4",
+     "durationSec": 453.4,
+     "sizeMB": 23.8
+    },
+    {
+     "no": 73,
+     "id": "l73",
+     "title": "课时73：Keyshot",
+     "file": "第九章：灯光与渲染/课时73：Keyshot.mp4",
+     "durationSec": 370.4,
+     "sizeMB": 25.5
+    }
+   ]
+  },
+  {
+   "id": "m10",
+   "index": 10,
+   "title": "第十章：其他栏目",
+   "lessons": [
+    {
+     "no": 74,
+     "id": "l74",
+     "title": "课时74：文档画布设置",
+     "file": "第十章：其他栏目/课时74：文档画布设置.mp4",
+     "durationSec": 265.4,
+     "sizeMB": 10.9
+    },
+    {
+     "no": 75,
+     "id": "l75",
+     "title": "课时75：背景填充裁剪",
+     "file": "第十章：其他栏目/课时75：背景填充裁剪.mp4",
+     "durationSec": 342.0,
+     "sizeMB": 14.6
+    },
+    {
+     "no": 76,
+     "id": "l76",
+     "title": "课时76：摄像机透视",
+     "file": "第十章：其他栏目/课时76：摄像机透视.mp4",
+     "durationSec": 284.0,
+     "sizeMB": 12.4
+    },
+    {
+     "no": 77,
+     "id": "l77",
+     "title": "课时77：快照网格",
+     "file": "第十章：其他栏目/课时77：快照网格.mp4",
+     "durationSec": 491.2,
+     "sizeMB": 28.5
+    },
+    {
+     "no": 78,
+     "id": "l78",
+     "title": "课时78：历史记录计数器",
+     "file": "第十章：其他栏目/课时78：历史记录计数器.mp4",
+     "durationSec": 210.8,
+     "sizeMB": 10.6
+    },
+    {
+     "no": 79,
+     "id": "l79",
+     "title": "课时79：各种功能介绍",
+     "file": "第十章：其他栏目/课时79：各种功能介绍.mp4",
+     "durationSec": 467.6,
+     "sizeMB": 20.7
+    }
+   ]
+  },
+  {
+   "id": "m11",
+   "index": 11,
+   "title": "第十一章：首选项",
+   "lessons": [
+    {
+     "no": 80,
+     "id": "l80",
+     "title": "课时80：自定义UI配置",
+     "file": "第十一章：首选项/课时80：自定义UI配置.mp4",
+     "durationSec": 584.0,
+     "sizeMB": 19.7
+    },
+    {
+     "no": 81,
+     "id": "l81",
+     "title": "课时81：自定义用户界面颜色",
+     "file": "第十一章：首选项/课时81：自定义用户界面颜色.mp4",
+     "durationSec": 455.0,
+     "sizeMB": 18.8
+    },
+    {
+     "no": 82,
+     "id": "l82",
+     "title": "课时82：快速保存",
+     "file": "第十一章：首选项/课时82：快速保存.mp4",
+     "durationSec": 282.3,
+     "sizeMB": 10.1
+    },
+    {
+     "no": 83,
+     "id": "l83",
+     "title": "课时83：GOZ",
+     "file": "第十一章：首选项/课时83：GOZ.mp4",
+     "durationSec": 194.6,
+     "sizeMB": 10.6
+    },
+    {
+     "no": 84,
+     "id": "l84",
+     "title": "课时84：其他功能",
+     "file": "第十一章：首选项/课时84：其他功能.mp4",
+     "durationSec": 403.3,
+     "sizeMB": 13.9
+    }
+   ]
+  },
+  {
+   "id": "m12",
+   "index": 12,
+   "title": "第十二章：Z插件",
+   "lessons": [
+    {
+     "no": 85,
+     "id": "l85",
+     "title": "课时85：3D打印工具集",
+     "file": "第十二章：Z插件/课时85：3D打印工具集.mp4",
+     "durationSec": 417.1,
+     "sizeMB": 16.6
+    },
+    {
+     "no": 86,
+     "id": "l86",
+     "title": "课时86：Maya Blendshapes",
+     "file": "第十二章：Z插件/课时86：Maya Blendshapes.mp4",
+     "durationSec": 322.8,
+     "sizeMB": 16.2
+    },
+    {
+     "no": 87,
+     "id": "l87",
+     "title": "课时87：减面大师",
+     "file": "第十二章：Z插件/课时87：减面大师.mp4",
+     "durationSec": 408.5,
+     "sizeMB": 23.3
+    },
+    {
+     "no": 88,
+     "id": "l88",
+     "title": "课时88：FBX导入导出",
+     "file": "第十二章：Z插件/课时88：FBX导入导出.mp4",
+     "durationSec": 417.1,
+     "sizeMB": 17.3
+    },
+    {
+     "no": 89,
+     "id": "l89",
+     "title": "课时89：多重贴图导出器",
+     "file": "第十二章：Z插件/课时89：多重贴图导出器.mp4",
+     "durationSec": 660.4,
+     "sizeMB": 38.6
+    },
+    {
+     "no": 90,
+     "id": "l90",
+     "title": "课时90：PolyGrouplt",
+     "file": "第十二章：Z插件/课时90：PolyGrouplt.mp4",
+     "durationSec": 339.1,
+     "sizeMB": 21.5
+    },
+    {
+     "no": 91,
+     "id": "l91",
+     "title": "课时91：缩放大师",
+     "file": "第十二章：Z插件/课时91：缩放大师.mp4",
+     "durationSec": 298.6,
+     "sizeMB": 12.7
+    },
+    {
+     "no": 92,
+     "id": "l92",
+     "title": "课时92：子工具大师",
+     "file": "第十二章：Z插件/课时92：子工具大师.mp4",
+     "durationSec": 481.1,
+     "sizeMB": 21.0
+    },
+    {
+     "no": 93,
+     "id": "l93",
+     "title": "课时93：3D文字",
+     "file": "第十二章：Z插件/课时93：3D文字.mp4",
+     "durationSec": 265.0,
+     "sizeMB": 14.6
+    },
+    {
+     "no": 94,
+     "id": "l94",
+     "title": "课时94：UV大师",
+     "file": "第十二章：Z插件/课时94：UV大师.mp4",
+     "durationSec": 419.1,
+     "sizeMB": 24.8
+    },
+    {
+     "no": 95,
+     "id": "l95",
+     "title": "课时95：其他功能介绍",
+     "file": "第十二章：Z插件/课时95：其他功能介绍.mp4",
+     "durationSec": 247.3,
+     "sizeMB": 11.7
+    }
+   ]
+  },
+  {
+   "id": "m13",
+   "index": 13,
+   "title": "第十三章：实用技巧",
+   "lessons": [
+    {
+     "no": 96,
+     "id": "l96",
+     "title": "课时96：透明模式",
+     "file": "第十三章：实用技巧/课时96：透明模式.mp4",
+     "durationSec": 303.4,
+     "sizeMB": 20.5
+    },
+    {
+     "no": 97,
+     "id": "l97",
+     "title": "课时97：对称模式",
+     "file": "第十三章：实用技巧/课时97：对称模式.mp4",
+     "durationSec": 319.2,
+     "sizeMB": 15.6
+    },
+    {
+     "no": 98,
+     "id": "l98",
+     "title": "课时98：smoomth光滑与松弛",
+     "file": "第十三章：实用技巧/课时98：smoomth光滑与松弛.mp4",
+     "durationSec": 214.7,
+     "sizeMB": 17.9
+    },
+    {
+     "no": 99,
+     "id": "l99",
+     "title": "课时99：修改模型坐标轴",
+     "file": "第十三章：实用技巧/课时99：修改模型坐标轴.mp4",
+     "durationSec": 324.8,
+     "sizeMB": 16.7
+    },
+    {
+     "no": 100,
+     "id": "l100",
+     "title": "课时100：非世界对称的雕刻",
+     "file": "第十三章：实用技巧/课时100：非世界对称的雕刻.mp4",
+     "durationSec": 393.5,
+     "sizeMB": 15.1
+    },
+    {
+     "no": 101,
+     "id": "l101",
+     "title": "课时101：一次性导入多个笔刷",
+     "file": "第十三章：实用技巧/课时101：一次性导入多个笔刷.mp4",
+     "durationSec": 212.5,
+     "sizeMB": 12.8
+    },
+    {
+     "no": 102,
+     "id": "l102",
+     "title": "课时102：局部细分",
+     "file": "第十三章：实用技巧/课时102：局部细分.mp4",
+     "durationSec": 270.6,
+     "sizeMB": 18.3
+    },
+    {
+     "no": 103,
+     "id": "l103",
+     "title": "课时103：绘制直线方法",
+     "file": "第十三章：实用技巧/课时103：绘制直线方法.mp4",
+     "durationSec": 332.6,
+     "sizeMB": 13.0
+    },
+    {
+     "no": 104,
+     "id": "l104",
+     "title": "课时104：给同一模型添加不同材质",
+     "file": "第十三章：实用技巧/课时104：给同一模型添加不同材质.mp4",
+     "durationSec": 298.6,
+     "sizeMB": 17.5
+    },
+    {
+     "no": 105,
+     "id": "l105",
+     "title": "课时105：模型统一操作",
+     "file": "第十三章：实用技巧/课时105：模型统一操作.mp4",
+     "durationSec": 312.2,
+     "sizeMB": 16.6
+    },
+    {
+     "no": 106,
+     "id": "l106",
+     "title": "课时106：模型转化为alpha",
+     "file": "第十三章：实用技巧/课时106：模型转化为alpha.mp4",
+     "durationSec": 294.0,
+     "sizeMB": 14.3
+    },
+    {
+     "no": 107,
+     "id": "l107",
+     "title": "课时107：插入统一大小模型",
+     "file": "第十三章：实用技巧/课时107：插入统一大小模型.mp4",
+     "durationSec": 289.2,
+     "sizeMB": 16.1
+    },
+    {
+     "no": 108,
+     "id": "l108",
+     "title": "课时108：重复操作",
+     "file": "第十三章：实用技巧/课时108：重复操作.mp4",
+     "durationSec": 309.6,
+     "sizeMB": 15.4
+    },
+    {
+     "no": 109,
+     "id": "l109",
+     "title": "课时109：显示全部子工具的布线",
+     "file": "第十三章：实用技巧/课时109：显示全部子工具的布线.mp4",
+     "durationSec": 235.7,
+     "sizeMB": 19.2
+    },
+    {
+     "no": 110,
+     "id": "l110",
+     "title": "课时110：ZB导出曲线",
+     "file": "第十三章：实用技巧/课时110：ZB导出曲线.mp4",
+     "durationSec": 239.2,
+     "sizeMB": 18.0
+    },
+    {
+     "no": 111,
+     "id": "l111",
+     "title": "课时111：输出旋转动画",
+     "file": "第十三章：实用技巧/课时111：输出旋转动画.mp4",
+     "durationSec": 308.8,
+     "sizeMB": 13.3
+    },
+    {
+     "no": 112,
+     "id": "l112",
+     "title": "课时112：快速复制模型",
+     "file": "第十三章：实用技巧/课时112：快速复制模型.mp4",
+     "durationSec": 144.1,
+     "sizeMB": 8.7
+    },
+    {
+     "no": 113,
+     "id": "l113",
+     "title": "课时113：填充洞方法",
+     "file": "第十三章：实用技巧/课时113：填充洞方法.mp4",
+     "durationSec": 297.9,
+     "sizeMB": 22.1
+    },
+    {
+     "no": 114,
+     "id": "l114",
+     "title": "课时114：Transform Type",
+     "file": "第十三章：实用技巧/课时114：Transform Type.mp4",
+     "durationSec": 470.5,
+     "sizeMB": 30.0
+    },
+    {
+     "no": 115,
+     "id": "l115",
+     "title": "课时115：导入带UV姿势的模型",
+     "file": "第十三章：实用技巧/课时115：导入带UV姿势的模型.mp4",
+     "durationSec": 322.1,
+     "sizeMB": 28.7
+    },
+    {
+     "no": 116,
+     "id": "l116",
+     "title": "课时116：导出面数过高的模型",
+     "file": "第十三章：实用技巧/课时116：导出面数过高的模型.mp4",
+     "durationSec": 460.9,
+     "sizeMB": 36.5
+    },
+    {
+     "no": 117,
+     "id": "l117",
+     "title": "课时117：快速选取特定区域",
+     "file": "第十三章：实用技巧/课时117：快速选取特定区域.mp4",
+     "durationSec": 309.3,
+     "sizeMB": 29.3
+    },
+    {
+     "no": 118,
+     "id": "l118",
+     "title": "课时118：调整最大笔刷大小",
+     "file": "第十三章：实用技巧/课时118：调整最大笔刷大小.mp4",
+     "durationSec": 131.2,
+     "sizeMB": 8.4
+    }
+   ]
+  },
+  {
+   "id": "m14",
+   "index": 14,
+   "title": "第十四章：卡通人头实战案例",
+   "lessons": [
+    {
+     "no": 119,
+     "id": "l119",
+     "title": "课时119：准备和基础大型",
+     "file": "第十四章：卡通人头实战案例/课时119：准备和基础大型.mp4",
+     "durationSec": 1166.4,
+     "sizeMB": 57.4
+    },
+    {
+     "no": 120,
+     "id": "l120",
+     "title": "课时120：五官基础",
+     "file": "第十四章：卡通人头实战案例/课时120：五官基础.mp4",
+     "durationSec": 1205.4,
+     "sizeMB": 58.5
+    },
+    {
+     "no": 121,
+     "id": "l121",
+     "title": "课时121：拓补布线及细节",
+     "file": "第十四章：卡通人头实战案例/课时121：拓补布线及细节.mp4",
+     "durationSec": 1520.9,
+     "sizeMB": 75.2
+    },
+    {
+     "no": 122,
+     "id": "l122",
+     "title": "课时122：睫毛眉毛制作",
+     "file": "第十四章：卡通人头实战案例/课时122：睫毛眉毛制作.mp4",
+     "durationSec": 952.9,
+     "sizeMB": 50.9
+    },
+    {
+     "no": 123,
+     "id": "l123",
+     "title": "课时123：头发大型制作",
+     "file": "第十四章：卡通人头实战案例/课时123：头发大型制作.mp4",
+     "durationSec": 1390.6,
+     "sizeMB": 67.9
+    },
+    {
+     "no": 124,
+     "id": "l124",
+     "title": "课时124：角大型",
+     "file": "第十四章：卡通人头实战案例/课时124：角大型.mp4",
+     "durationSec": 923.0,
+     "sizeMB": 51.5
+    },
+    {
+     "no": 125,
+     "id": "l125",
+     "title": "课时125：帽子大型",
+     "file": "第十四章：卡通人头实战案例/课时125：帽子大型.mp4",
+     "durationSec": 1079.3,
+     "sizeMB": 64.9
+    },
+    {
+     "no": 126,
+     "id": "l126",
+     "title": "课时126：衣服大型",
+     "file": "第十四章：卡通人头实战案例/课时126：衣服大型.mp4",
+     "durationSec": 1396.5,
+     "sizeMB": 70.6
+    },
+    {
+     "no": 127,
+     "id": "l127",
+     "title": "课时127：配件制作",
+     "file": "第十四章：卡通人头实战案例/课时127：配件制作.mp4",
+     "durationSec": 2991.9,
+     "sizeMB": 195.8
+    },
+    {
+     "no": 128,
+     "id": "l128",
+     "title": "课时128：各部分细化",
+     "file": "第十四章：卡通人头实战案例/课时128：各部分细化.mp4",
+     "durationSec": 2162.3,
+     "sizeMB": 120.6
+    },
+    {
+     "no": 129,
+     "id": "l129",
+     "title": "课时129：头发细化",
+     "file": "第十四章：卡通人头实战案例/课时129：头发细化.mp4",
+     "durationSec": 2619.3,
+     "sizeMB": 203.5
+    },
+    {
+     "no": 130,
+     "id": "l130",
+     "title": "课时130：颜色绘制",
+     "file": "第十四章：卡通人头实战案例/课时130：颜色绘制.mp4",
+     "durationSec": 2771.6,
+     "sizeMB": 217.8
+    },
+    {
+     "no": 131,
+     "id": "l131",
+     "title": "课时131：ZB Toolbag渲染",
+     "file": "第十四章：卡通人头实战案例/课时131：ZB Toolbag渲染.mp4",
+     "durationSec": 2271.5,
+     "sizeMB": 172.0
+    }
+   ]
+  },
+  {
+   "id": "m15",
+   "index": 15,
+   "title": "第十五章：Z球实战案例【鼠达人】",
+   "lessons": [
+    {
+     "no": 132,
+     "id": "l132",
+     "title": "课时132：Z球基础",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时132：Z球基础.mp4",
+     "durationSec": 589.9,
+     "sizeMB": 26.8
+    },
+    {
+     "no": 133,
+     "id": "l133",
+     "title": "课时133：Z球骨架搭建及绑定",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时133：Z球骨架搭建及绑定.mp4",
+     "durationSec": 1077.5,
+     "sizeMB": 60.5
+    },
+    {
+     "no": 134,
+     "id": "l134",
+     "title": "课时134：Z球拓补流程",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时134：Z球拓补流程.mp4",
+     "durationSec": 395.1,
+     "sizeMB": 21.0
+    },
+    {
+     "no": 135,
+     "id": "l135",
+     "title": "课时135：Z球初步大型搭建",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时135：Z球初步大型搭建.mp4",
+     "durationSec": 1320.4,
+     "sizeMB": 63.6
+    },
+    {
+     "no": 136,
+     "id": "l136",
+     "title": "课时136：Dynamesh形体塑造",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时136：Dynamesh形体塑造.mp4",
+     "durationSec": 2154.6,
+     "sizeMB": 102.1
+    },
+    {
+     "no": 137,
+     "id": "l137",
+     "title": "课时137：服装大型制作",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时137：服装大型制作.mp4",
+     "durationSec": 2289.9,
+     "sizeMB": 120.1
+    },
+    {
+     "no": 138,
+     "id": "l138",
+     "title": "课时138：脸部大型雕刻",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时138：脸部大型雕刻.mp4",
+     "durationSec": 1881.1,
+     "sizeMB": 106.6
+    },
+    {
+     "no": 139,
+     "id": "l139",
+     "title": "课时139：配件制作1",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时139：配件制作1.mp4",
+     "durationSec": 1567.3,
+     "sizeMB": 104.0
+    },
+    {
+     "no": 140,
+     "id": "l140",
+     "title": "课时140：配件制作2",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时140：配件制作2.mp4",
+     "durationSec": 1795.7,
+     "sizeMB": 121.0
+    },
+    {
+     "no": 141,
+     "id": "l141",
+     "title": "课时141：头部配件及围巾制作",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时141：头部配件及围巾制作.mp4",
+     "durationSec": 1549.6,
+     "sizeMB": 84.7
+    },
+    {
+     "no": 142,
+     "id": "l142",
+     "title": "课时142：配件制作",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时142：配件制作.mp4",
+     "durationSec": 2003.4,
+     "sizeMB": 136.8
+    },
+    {
+     "no": 143,
+     "id": "l143",
+     "title": "课时143：手部雕刻",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时143：手部雕刻.mp4",
+     "durationSec": 1042.2,
+     "sizeMB": 57.8
+    },
+    {
+     "no": 144,
+     "id": "l144",
+     "title": "课时144：腿部雕刻",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时144：腿部雕刻.mp4",
+     "durationSec": 1149.3,
+     "sizeMB": 58.4
+    },
+    {
+     "no": 145,
+     "id": "l145",
+     "title": "课时145：重新布线及细化",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时145：重新布线及细化.mp4",
+     "durationSec": 1074.5,
+     "sizeMB": 76.0
+    },
+    {
+     "no": 146,
+     "id": "l146",
+     "title": "课时146：毛发细化",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时146：毛发细化.mp4",
+     "durationSec": 800.0,
+     "sizeMB": 51.5
+    },
+    {
+     "no": 147,
+     "id": "l147",
+     "title": "课时147：颜色绘制",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时147：颜色绘制.mp4",
+     "durationSec": 1372.6,
+     "sizeMB": 93.7
+    },
+    {
+     "no": 148,
+     "id": "l148",
+     "title": "课时148：Zbrush渲染出图",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时148：Zbrush渲染出图.mp4",
+     "durationSec": 862.4,
+     "sizeMB": 43.3
+    },
+    {
+     "no": 149,
+     "id": "l149",
+     "title": "课时149：Toolbag渲染出图",
+     "file": "第十五章：Z球实战案例【鼠达人】/课时149：Toolbag渲染出图.mp4",
+     "durationSec": 1430.1,
+     "sizeMB": 98.3
+    }
+   ]
+  },
+  {
+   "id": "m16",
+   "index": 16,
+   "title": "第十六章：zbrush+Maya流程教学【宝箱案例】",
+   "lessons": [
+    {
+     "no": 150,
+     "id": "l150",
+     "title": "课时150：Maya主体部分建模",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时150：Maya主体部分建模.mp4",
+     "durationSec": 1483.1,
+     "sizeMB": 98.2
+    },
+    {
+     "no": 151,
+     "id": "l151",
+     "title": "课时151：Maya主体部分卡线改线",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时151：Maya主体部分卡线改线.mp4",
+     "durationSec": 1184.8,
+     "sizeMB": 98.6
+    },
+    {
+     "no": 152,
+     "id": "l152",
+     "title": "课时152：Maya零件部分建模与卡线",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时152：Maya零件部分建模与卡线.mp4",
+     "durationSec": 1110.6,
+     "sizeMB": 93.5
+    },
+    {
+     "no": 153,
+     "id": "l153",
+     "title": "课时153：Zbrush自定义UI热键与笔刷导入",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时153：Zbrush自定义UI热键与笔刷导入.mp4",
+     "durationSec": 390.9,
+     "sizeMB": 19.7
+    },
+    {
+     "no": 154,
+     "id": "l154",
+     "title": "课时154：Zbrush中雕刻前模型准备工作",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时154：Zbrush中雕刻前模型准备工作.mp4",
+     "durationSec": 777.9,
+     "sizeMB": 57.3
+    },
+    {
+     "no": 155,
+     "id": "l155",
+     "title": "课时155：宝箱上部分木纹雕刻",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时155：宝箱上部分木纹雕刻.mp4",
+     "durationSec": 1921.7,
+     "sizeMB": 89.1
+    },
+    {
+     "no": 156,
+     "id": "l156",
+     "title": "课时156：宝箱下部分木纹雕刻",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时156：宝箱下部分木纹雕刻.mp4",
+     "durationSec": 1703.7,
+     "sizeMB": 89.1
+    },
+    {
+     "no": 157,
+     "id": "l157",
+     "title": "课时157：宝箱上部分金属雕刻",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时157：宝箱上部分金属雕刻.mp4",
+     "durationSec": 2127.1,
+     "sizeMB": 151.2
+    },
+    {
+     "no": 158,
+     "id": "l158",
+     "title": "课时158：宝箱下部分金属雕刻",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时158：宝箱下部分金属雕刻.mp4",
+     "durationSec": 1384.2,
+     "sizeMB": 101.3
+    },
+    {
+     "no": 159,
+     "id": "l159",
+     "title": "课时159：Maya Zbrush宝箱骷髅头雕刻",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时159：Maya Zbrush宝箱骷髅头雕刻.mp4",
+     "durationSec": 1567.6,
+     "sizeMB": 111.3
+    },
+    {
+     "no": 160,
+     "id": "l160",
+     "title": "课时160节：对模型进行减面",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时160节：对模型进行减面.mp4",
+     "durationSec": 316.8,
+     "sizeMB": 19.5
+    },
+    {
+     "no": 161,
+     "id": "l161",
+     "title": "课时161节：Maya低模上面部分制作",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时161节：Maya低模上面部分制作.mp4",
+     "durationSec": 1708.8,
+     "sizeMB": 115.0
+    },
+    {
+     "no": 162,
+     "id": "l162",
+     "title": "课时162节：Maya低模剩余部分制作",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时162节：Maya低模剩余部分制作.mp4",
+     "durationSec": 1877.5,
+     "sizeMB": 106.5
+    },
+    {
+     "no": 163,
+     "id": "l163",
+     "title": "课时163节：对模型分UV",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时163节：对模型分UV.mp4",
+     "durationSec": 1244.3,
+     "sizeMB": 98.4
+    },
+    {
+     "no": 164,
+     "id": "l164",
+     "title": "课时164节：对模型分配软硬边",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时164节：对模型分配软硬边.mp4",
+     "durationSec": 440.2,
+     "sizeMB": 28.8
+    },
+    {
+     "no": 165,
+     "id": "l165",
+     "title": "课时165节：模型贴图烘焙",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时165节：模型贴图烘焙.mp4",
+     "durationSec": 603.3,
+     "sizeMB": 35.2
+    },
+    {
+     "no": 166,
+     "id": "l166",
+     "title": "课时166节：金属部分贴图制作主体部分",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时166节：金属部分贴图制作主体部分.mp4",
+     "durationSec": 1971.5,
+     "sizeMB": 154.3
+    },
+    {
+     "no": 167,
+     "id": "l167",
+     "title": "课时167节：使金属部分贴图制作细节添加与修改",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时167节：使金属部分贴图制作细节添加与修改.mp4",
+     "durationSec": 621.4,
+     "sizeMB": 50.2
+    },
+    {
+     "no": 168,
+     "id": "l168",
+     "title": "课时168节：木纹部分贴图制作",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时168节：木纹部分贴图制作.mp4",
+     "durationSec": 1773.3,
+     "sizeMB": 139.0
+    },
+    {
+     "no": 169,
+     "id": "l169",
+     "title": "课时169节：贴图导出设置",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时169节：贴图导出设置.mp4",
+     "durationSec": 171.4,
+     "sizeMB": 8.2
+    },
+    {
+     "no": 170,
+     "id": "l170",
+     "title": "课时170节：Marmoset Toolbag模型渲染",
+     "file": "第十六章：zbrush+Maya流程教学【宝箱案例】/课时170节：Marmoset Toolbag模型渲染.mp4",
+     "durationSec": 821.1,
+     "sizeMB": 46.1
+    }
+   ]
+  },
+  {
+   "id": "m17",
+   "index": 17,
+   "title": "第十七章：zbrush+SP材质教学【玉龙案例】",
+   "lessons": [
+    {
+     "no": 171,
+     "id": "l171",
+     "title": "课时171：龙玉课程简介",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时171：龙玉课程简介.mp4",
+     "durationSec": 208.8,
+     "sizeMB": 15.7
+    },
+    {
+     "no": 172,
+     "id": "l172",
+     "title": "课时172：玉龙大型比例",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时172：玉龙大型比例.mp4",
+     "durationSec": 1054.0,
+     "sizeMB": 68.3
+    },
+    {
+     "no": 173,
+     "id": "l173",
+     "title": "课时173：玉龙大型调整",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时173：玉龙大型调整.mp4",
+     "durationSec": 1094.7,
+     "sizeMB": 73.9
+    },
+    {
+     "no": 174,
+     "id": "l174",
+     "title": "课时174：玉龙纹理位置",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时174：玉龙纹理位置.mp4",
+     "durationSec": 1248.7,
+     "sizeMB": 84.0
+    },
+    {
+     "no": 175,
+     "id": "l175",
+     "title": "课时175：玉龙纹理位置",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时175：玉龙纹理位置.mp4",
+     "durationSec": 1546.0,
+     "sizeMB": 98.2
+    },
+    {
+     "no": 176,
+     "id": "l176",
+     "title": "课时176：玉龙纹理细节刻画",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时176：玉龙纹理细节刻画.mp4",
+     "durationSec": 1420.7,
+     "sizeMB": 109.6
+    },
+    {
+     "no": 177,
+     "id": "l177",
+     "title": "课时177：底座的制作",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时177：底座的制作.mp4",
+     "durationSec": 1120.4,
+     "sizeMB": 70.7
+    },
+    {
+     "no": 178,
+     "id": "l178",
+     "title": "课时178：玉龙玉质材质表现",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时178：玉龙玉质材质表现.mp4",
+     "durationSec": 1342.4,
+     "sizeMB": 91.6
+    },
+    {
+     "no": 179,
+     "id": "l179",
+     "title": "课时179：ZBrush与其雕刻与复古文物底部制作",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时179：ZBrush与其雕刻与复古文物底部制作.mp4",
+     "durationSec": 1485.5,
+     "sizeMB": 93.9
+    },
+    {
+     "no": 180,
+     "id": "l180",
+     "title": "课时180：整体材质细化",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时180：整体材质细化.mp4",
+     "durationSec": 949.7,
+     "sizeMB": 62.9
+    },
+    {
+     "no": 181,
+     "id": "l181",
+     "title": "课时181：八猴渲染",
+     "file": "第十七章：zbrush+SP材质教学【玉龙案例】/课时181：八猴渲染.mp4",
+     "durationSec": 1014.0,
+     "sizeMB": 56.4
+    }
+   ]
+  },
+  {
+   "id": "m18",
+   "index": 18,
+   "title": "第十八章：zbrush艺术品雕刻【戟龙案例】",
+   "lessons": [
+    {
+     "no": 182,
+     "id": "l182",
+     "title": "课时182：素材分析",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时182：素材分析.mp4",
+     "durationSec": 420.2,
+     "sizeMB": 35.9
+    },
+    {
+     "no": 183,
+     "id": "l183",
+     "title": "课时183：素材模型修改",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时183：素材模型修改.mp4",
+     "durationSec": 1174.3,
+     "sizeMB": 87.2
+    },
+    {
+     "no": 184,
+     "id": "l184",
+     "title": "课时184：max 调整大型",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时184：max 调整大型.mp4",
+     "durationSec": 766.4,
+     "sizeMB": 51.3
+    },
+    {
+     "no": 185,
+     "id": "l185",
+     "title": "课时185：软件配合添加细节",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时185：软件配合添加细节.mp4",
+     "durationSec": 696.4,
+     "sizeMB": 63.0
+    },
+    {
+     "no": 186,
+     "id": "l186",
+     "title": "课时186：犄角添加与调节",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时186：犄角添加与调节.mp4",
+     "durationSec": 1092.2,
+     "sizeMB": 86.4
+    },
+    {
+     "no": 187,
+     "id": "l187",
+     "title": "课时187：大型雕刻与重拓扑",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时187：大型雕刻与重拓扑.mp4",
+     "durationSec": 697.6,
+     "sizeMB": 52.8
+    },
+    {
+     "no": 188,
+     "id": "l188",
+     "title": "课时188：max中添加犄角",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时188：max中添加犄角.mp4",
+     "durationSec": 883.7,
+     "sizeMB": 92.7
+    },
+    {
+     "no": 189,
+     "id": "l189",
+     "title": "课时189：脸部大型刻画",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时189：脸部大型刻画.mp4",
+     "durationSec": 999.0,
+     "sizeMB": 71.4
+    },
+    {
+     "no": 190,
+     "id": "l190",
+     "title": "课时190：头骨大型刻画",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时190：头骨大型刻画.mp4",
+     "durationSec": 1266.7,
+     "sizeMB": 80.7
+    },
+    {
+     "no": 191,
+     "id": "l191",
+     "title": "课时191：ZBrush鳞片制作案例",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时191：ZBrush鳞片制作案例.mp4",
+     "durationSec": 1278.7,
+     "sizeMB": 84.8
+    },
+    {
+     "no": 192,
+     "id": "l192",
+     "title": "课时192：详解遮罩制作鳞片",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时192：详解遮罩制作鳞片.mp4",
+     "durationSec": 1089.4,
+     "sizeMB": 68.1
+    },
+    {
+     "no": 193,
+     "id": "l193",
+     "title": "课时193：详解排列鳞片的制作方法",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时193：详解排列鳞片的制作方法.mp4",
+     "durationSec": 1141.9,
+     "sizeMB": 69.4
+    },
+    {
+     "no": 194,
+     "id": "l194",
+     "title": "课时194：脊骨鳞片雕刻",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时194：脊骨鳞片雕刻.mp4",
+     "durationSec": 1138.7,
+     "sizeMB": 75.4
+    },
+    {
+     "no": 195,
+     "id": "l195",
+     "title": "课时195：头顶对称鳞片规划",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时195：头顶对称鳞片规划.mp4",
+     "durationSec": 1293.9,
+     "sizeMB": 96.0
+    },
+    {
+     "no": 196,
+     "id": "l196",
+     "title": "课时196：身体形体丰富",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时196：身体形体丰富.mp4",
+     "durationSec": 1295.6,
+     "sizeMB": 82.1
+    },
+    {
+     "no": 197,
+     "id": "l197",
+     "title": "课时197：脸部细节丰富",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时197：脸部细节丰富.mp4",
+     "durationSec": 1211.8,
+     "sizeMB": 91.2
+    },
+    {
+     "no": 198,
+     "id": "l198",
+     "title": "课时198：嘴部纹理雕刻",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时198：嘴部纹理雕刻.mp4",
+     "durationSec": 998.6,
+     "sizeMB": 75.8
+    },
+    {
+     "no": 199,
+     "id": "l199",
+     "title": "课时199：眼部细节丰富",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时199：眼部细节丰富.mp4",
+     "durationSec": 911.9,
+     "sizeMB": 64.1
+    },
+    {
+     "no": 200,
+     "id": "l200",
+     "title": "课时200：皮肤纹理雕刻",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时200：皮肤纹理雕刻.mp4",
+     "durationSec": 1326.1,
+     "sizeMB": 107.7
+    },
+    {
+     "no": 201,
+     "id": "l201",
+     "title": "课时201：肩部纹理刻画",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时201：肩部纹理刻画.mp4",
+     "durationSec": 1297.7,
+     "sizeMB": 61.9
+    },
+    {
+     "no": 202,
+     "id": "l202",
+     "title": "课时202：纹理对称及犄角纹理添加",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时202：纹理对称及犄角纹理添加.mp4",
+     "durationSec": 1260.4,
+     "sizeMB": 75.3
+    },
+    {
+     "no": 203,
+     "id": "l203",
+     "title": "课时203：zbrush自带Alpha绘制皮肤",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时203：zbrush自带Alpha绘制皮肤.mp4",
+     "durationSec": 1089.0,
+     "sizeMB": 93.6
+    },
+    {
+     "no": 204,
+     "id": "l204",
+     "title": "课时204：Alpha绘制皮肤毛孔效果",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时204：Alpha绘制皮肤毛孔效果.mp4",
+     "durationSec": 1187.3,
+     "sizeMB": 106.7
+    },
+    {
+     "no": 205,
+     "id": "l205",
+     "title": "课时205：伤疤及断角的制作",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时205：伤疤及断角的制作.mp4",
+     "durationSec": 643.9,
+     "sizeMB": 64.0
+    },
+    {
+     "no": 206,
+     "id": "l206",
+     "title": "课时206：Unfold3D UV拆分及调整",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时206：Unfold3D UV拆分及调整.mp4",
+     "durationSec": 1158.1,
+     "sizeMB": 149.3
+    },
+    {
+     "no": 207,
+     "id": "l207",
+     "title": "课时207：模型色调铺设",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时207：模型色调铺设.mp4",
+     "durationSec": 994.1,
+     "sizeMB": 91.6
+    },
+    {
+     "no": 208,
+     "id": "l208",
+     "title": "课时208：模型色调过渡与丰富",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时208：模型色调过渡与丰富.mp4",
+     "durationSec": 1385.2,
+     "sizeMB": 133.7
+    },
+    {
+     "no": 209,
+     "id": "l209",
+     "title": "课时209：身体小部件铺色",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时209：身体小部件铺色.mp4",
+     "durationSec": 752.7,
+     "sizeMB": 58.7
+    },
+    {
+     "no": 210,
+     "id": "l210",
+     "title": "课时210：颜色整体调节",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时210：颜色整体调节.mp4",
+     "durationSec": 1213.4,
+     "sizeMB": 109.0
+    },
+    {
+     "no": 211,
+     "id": "l211",
+     "title": "课时211：模型整体色调丰富",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时211：模型整体色调丰富.mp4",
+     "durationSec": 1269.0,
+     "sizeMB": 100.5
+    },
+    {
+     "no": 212,
+     "id": "l212",
+     "title": "课时212：利用遮罩绘制丰富细节",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时212：利用遮罩绘制丰富细节.mp4",
+     "durationSec": 1169.2,
+     "sizeMB": 102.4
+    },
+    {
+     "no": 213,
+     "id": "l213",
+     "title": "课时213：细节纹理色彩丰富",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时213：细节纹理色彩丰富.mp4",
+     "durationSec": 984.4,
+     "sizeMB": 88.5
+    },
+    {
+     "no": 214,
+     "id": "l214",
+     "title": "课时214：zbrush渲染设置",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时214：zbrush渲染设置.mp4",
+     "durationSec": 1158.3,
+     "sizeMB": 82.6
+    },
+    {
+     "no": 215,
+     "id": "l215",
+     "title": "课时215：zbrush分层渲染与导出",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时215：zbrush分层渲染与导出.mp4",
+     "durationSec": 1331.8,
+     "sizeMB": 95.2
+    },
+    {
+     "no": 216,
+     "id": "l216",
+     "title": "课时216：PS后期合成处理",
+     "file": "第十八章：zbrush艺术品雕刻【戟龙案例】/课时216：PS后期合成处理.mp4",
+     "durationSec": 440.7,
+     "sizeMB": 22.8
+    }
+   ]
+  },
+  {
+   "id": "m19",
+   "index": 19,
+   "title": "第十九章：2020新功能",
+   "lessons": [
+    {
+     "no": 217,
+     "id": "l217",
+     "title": "课时217：缩略图",
+     "file": "第十九章：2020新功能/课时217：缩略图.mp4",
+     "durationSec": 421.1,
+     "sizeMB": 20.2
+    },
+    {
+     "no": 218,
+     "id": "l218",
+     "title": "课时218：视图导览",
+     "file": "第十九章：2020新功能/课时218：视图导览.mp4",
+     "durationSec": 304.5,
+     "sizeMB": 17.1
+    },
+    {
+     "no": 219,
+     "id": "l219",
+     "title": "课时219：调整色彩",
+     "file": "第十九章：2020新功能/课时219：调整色彩.mp4",
+     "durationSec": 343.4,
+     "sizeMB": 26.5
+    },
+    {
+     "no": 220,
+     "id": "l220",
+     "title": "课时220：Deco笔刷",
+     "file": "第十九章：2020新功能/课时220：Deco笔刷.mp4",
+     "durationSec": 360.6,
+     "sizeMB": 22.0
+    },
+    {
+     "no": 221,
+     "id": "l221",
+     "title": "课时221：From笔刷",
+     "file": "第十九章：2020新功能/课时221：From笔刷.mp4",
+     "durationSec": 396.1,
+     "sizeMB": 28.2
+    },
+    {
+     "no": 222,
+     "id": "l222",
+     "title": "课时222：Hatch笔刷",
+     "file": "第十九章：2020新功能/课时222：Hatch笔刷.mp4",
+     "durationSec": 346.6,
+     "sizeMB": 23.2
+    },
+    {
+     "no": 223,
+     "id": "l223",
+     "title": "课时223：HistoryRecall",
+     "file": "第十九章：2020新功能/课时223：HistoryRecall.mp4",
+     "durationSec": 510.4,
+     "sizeMB": 35.2
+    },
+    {
+     "no": 224,
+     "id": "l224",
+     "title": "课时224：其他功能介绍",
+     "file": "第十九章：2020新功能/课时224：其他功能介绍.mp4",
+     "durationSec": 316.4,
+     "sizeMB": 20.7
+    }
+   ]
+  }
+ ],
+ "resources": [
+  {
+   "kind": "file",
+   "path": "2021_Win 64位.zip",
+   "name": "2021_Win 64位.zip",
+   "sizeMB": 1378.1
+  },
+  {
+   "kind": "file",
+   "path": "素材/zbrush UI.zip",
+   "name": "zbrush UI.zip",
+   "sizeMB": 0.0
+  },
+  {
+   "kind": "file",
+   "path": "素材/zb资料补充.zip",
+   "name": "zb资料补充.zip",
+   "sizeMB": 8.6
+  },
+  {
+   "kind": "file",
+   "path": "素材/案例源文件.zip",
+   "name": "案例源文件.zip",
+   "sizeMB": 795.9
+  },
+  {
+   "kind": "file",
+   "path": "素材/课程文件.zip",
+   "name": "课程文件.zip",
+   "sizeMB": 1695.9
+  }
+ ]
+}

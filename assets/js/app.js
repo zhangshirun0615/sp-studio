@@ -1,6 +1,8 @@
 /* 应用入口：哈希路由 + 导航 + 全局交互 */
 import home from './views/home.js';
-import mapView from './views/map.js';
+import courses from './views/courses.js';
+import course from './views/course.js';
+import gallery from './views/gallery.js';
 import lessonView from './views/lesson.js';
 import assistant from './views/assistant.js';
 import toolbox from './views/toolbox.js';
@@ -12,8 +14,12 @@ import { observeReveal, icon, esc } from './ui.js';
 
 const routes = [
   { re: /^\/?$/, view: home, nav: 'home' },
-  { re: /^\/map\/?$/, view: mapView, nav: 'map' },
-  { re: /^\/lesson\/(\d+)\/?$/, view: lessonView, nav: 'map', keys: ['no'] },
+  { re: /^\/courses\/?$/, view: courses, nav: 'courses' },
+  { re: /^\/map\/?$/, view: courses, nav: 'courses' },                 // 旧地址兼容
+  { re: /^\/course\/([\w-]+)\/?$/, view: course, nav: 'courses', keys: ['id'] },
+  { re: /^\/lesson\/([\w-]+)\/(\d+)\/?$/, view: lessonView, nav: 'courses', keys: ['courseId', 'no'] },
+  { re: /^\/lesson\/(\d+)\/?$/, view: lessonView, nav: 'courses', keys: ['no'] },  // 旧地址 → SP
+  { re: /^\/gallery\/([\w-]+)\/?$/, view: gallery, nav: 'courses', keys: ['id'] },
   { re: /^\/assistant\/?$/, view: assistant, nav: 'assistant' },
   { re: /^\/toolbox\/?$/, view: toolbox, nav: 'toolbox' },
   { re: /^\/kb\/?$/, view: kb, nav: 'kb' },
@@ -95,11 +101,12 @@ async function renderRoute() {
     let view = target.view;
     if (!view && target.loader) view = await target.loader();
     if (token !== renderToken) return;
-    if (view.preload) await view.preload(params);
-    const html = await view.render(params);
+    const merged = Object.assign({ query }, params);
+    if (view.preload) await view.preload(merged);
+    const html = await view.render(merged);
     if (token !== renderToken) return;
     app.innerHTML = html;
-    if (view.mount) await view.mount(Object.assign({ query }, params));
+    if (view.mount) await view.mount(merged);
     observeReveal();
   } catch (err) {
     console.error(err);

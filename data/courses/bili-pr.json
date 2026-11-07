@@ -1,0 +1,372 @@
+{
+ "id": "bili-pr",
+ "title": "PR 零基础入门教程",
+ "type": "bilibili",
+ "modules": [
+  {
+   "id": "m1",
+   "index": 1,
+   "title": "零基础篇",
+   "lessons": [
+    {
+     "no": 1,
+     "id": "l1",
+     "title": "影视剪辑入门必看",
+     "page": 1,
+     "cid": 31111121306,
+     "durationSec": 5048,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "index": 2,
+   "title": "基础篇",
+   "lessons": [
+    {
+     "no": 2,
+     "id": "l2",
+     "title": "软件基础设置",
+     "page": 2,
+     "cid": 30854414960,
+     "durationSec": 281,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 3,
+     "id": "l3",
+     "title": "软件界面认识",
+     "page": 3,
+     "cid": 30854414826,
+     "durationSec": 607,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 4,
+     "id": "l4",
+     "title": "如何设置工作区域",
+     "page": 4,
+     "cid": 30854415353,
+     "durationSec": 548,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 5,
+     "id": "l5",
+     "title": "素材的导入方法",
+     "page": 5,
+     "cid": 30854415421,
+     "durationSec": 333,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 6,
+     "id": "l6",
+     "title": "项目窗口的学习",
+     "page": 6,
+     "cid": 30854415492,
+     "durationSec": 541,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 7,
+     "id": "l7",
+     "title": "新建序列的方式",
+     "page": 7,
+     "cid": 30854415788,
+     "durationSec": 612,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 8,
+     "id": "l8",
+     "title": "轨道按钮学习",
+     "page": 8,
+     "cid": 30854416061,
+     "durationSec": 620,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 9,
+     "id": "l9",
+     "title": "时间轴小按钮",
+     "page": 9,
+     "cid": 30854416262,
+     "durationSec": 598,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 10,
+     "id": "l10",
+     "title": "标记点的运用",
+     "page": 10,
+     "cid": 30854416504,
+     "durationSec": 462,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 11,
+     "id": "l11",
+     "title": "工具栏1",
+     "page": 11,
+     "cid": 30854416777,
+     "durationSec": 1299,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 12,
+     "id": "l12",
+     "title": "工具栏2",
+     "page": 12,
+     "cid": 30854417507,
+     "durationSec": 545,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 13,
+     "id": "l13",
+     "title": "子项目",
+     "page": 13,
+     "cid": 30854418350,
+     "durationSec": 279,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 14,
+     "id": "l14",
+     "title": "新建项",
+     "page": 14,
+     "cid": 30854418384,
+     "durationSec": 884,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "index": 3,
+   "title": "进阶篇",
+   "lessons": [
+    {
+     "no": 15,
+     "id": "l15",
+     "title": "视频实操",
+     "page": 15,
+     "cid": 30854480221,
+     "durationSec": 1175,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 16,
+     "id": "l16",
+     "title": "转场效果",
+     "page": 16,
+     "cid": 30854481568,
+     "durationSec": 435,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 17,
+     "id": "l17",
+     "title": "视频效果",
+     "page": 17,
+     "cid": 30854481663,
+     "durationSec": 567,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 18,
+     "id": "l18",
+     "title": "键控",
+     "page": 18,
+     "cid": 30854482168,
+     "durationSec": 448,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 19,
+     "id": "l19",
+     "title": "音频过渡",
+     "page": 19,
+     "cid": 30854482920,
+     "durationSec": 421,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 20,
+     "id": "l20",
+     "title": "声音效果",
+     "page": 20,
+     "cid": 30854482870,
+     "durationSec": 650,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 21,
+     "id": "l21",
+     "title": "基本声音",
+     "page": 21,
+     "cid": 30854483342,
+     "durationSec": 349,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 22,
+     "id": "l22",
+     "title": "音轨混合器",
+     "page": 22,
+     "cid": 30854483467,
+     "durationSec": 379,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 23,
+     "id": "l23",
+     "title": "基本图形",
+     "page": 23,
+     "cid": 30854483722,
+     "durationSec": 496,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 24,
+     "id": "l24",
+     "title": "lumetri范围",
+     "page": 24,
+     "cid": 30854483864,
+     "durationSec": 236,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 25,
+     "id": "l25",
+     "title": "lumetri基础校正",
+     "page": 25,
+     "cid": 30854545467,
+     "durationSec": 608,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 26,
+     "id": "l26",
+     "title": "lumetri创意",
+     "page": 26,
+     "cid": 30854545944,
+     "durationSec": 360,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 27,
+     "id": "l27",
+     "title": "lumetri曲线",
+     "page": 27,
+     "cid": 30854546128,
+     "durationSec": 750,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 28,
+     "id": "l28",
+     "title": "lumetri色轮和匹配",
+     "page": 28,
+     "cid": 30854546499,
+     "durationSec": 342,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 29,
+     "id": "l29",
+     "title": "lumetri HSL辅助",
+     "page": 29,
+     "cid": 30854546801,
+     "durationSec": 601,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 30,
+     "id": "l30",
+     "title": "输出设置",
+     "page": 30,
+     "cid": 30854548408,
+     "durationSec": 429,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 31,
+     "id": "l31",
+     "title": "广告音乐制作",
+     "page": 31,
+     "cid": 270993772,
+     "durationSec": 262,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    },
+    {
+     "no": 32,
+     "id": "l32",
+     "title": "4k高清导演剪辑",
+     "page": 32,
+     "cid": 288243434,
+     "durationSec": 31,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    }
+   ]
+  },
+  {
+   "id": "m4",
+   "index": 4,
+   "title": "最终篇",
+   "lessons": [
+    {
+     "no": 33,
+     "id": "l33",
+     "title": "学习总结",
+     "page": 33,
+     "cid": 30854611797,
+     "durationSec": 102,
+     "sizeMB": 0,
+     "bvid": "BV1AK411g7xc"
+    }
+   ]
+  }
+ ],
+ "resources": [],
+ "bilibili": {
+  "bvid": "BV1AK411g7xc",
+  "title": "pr教程 从零基础开始学剪辑（新手入门实用版2027）",
+  "owner": "pr教程剪辑视频",
+  "coverOk": true
+ }
+}

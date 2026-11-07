@@ -1,30 +1,54 @@
-/* 本地状态：进度、笔记、答题、AI 提问、活动记录（localStorage） */
+/* 本地状态：按课程记录进度/笔记，答题、AI 提问、活动记录（localStorage） */
 
-const KEY = 'spstudio.v1';
+const KEY = 'spstudio.v2';
 
 const defaults = () => ({
   name: '',
-  completed: {},          // { lessonNo: timestamp }
-  notes: {},              // { lessonNo: text }
+  progress: {},           // { courseId: { lessonKey: timestamp } }
+  notes: {},              // { courseId: { lessonKey: text } }
+  last: {},               // { courseId: lessonKey }
   quiz: {},               // { moduleId: { best, total, attempts, lastAt } }
   ai: { asked: 0, history: [] },
-  kb: { views: {} },      // { term: count }
-  activity: [],           // [{ type, ts, lesson?, module? }]
+  kb: { views: {} },
+  activity: [],
   settings: { apiBase: 'https://api.deepseek.com', apiKey: '', model: 'deepseek-chat', videoSource: 'auto' },
-  lastLesson: null,
   createdAt: Date.now()
 });
 
 let state = null;
 
+function migrate(s) {
+  // v1 → v2：旧 completed / notes / lastLesson 归入 sp 课程
+  if (s.completed && Object.keys(s.completed).length) {
+    s.progress = s.progress || {};
+    s.progress.sp = Object.assign({}, s.completed, s.progress.sp || {});
+    delete s.completed;
+  }
+  if (s.notes && s.notes.sp === undefined) {
+    // v1 notes 直接以课号为键
+    const flat = Object.keys(s.notes).every(k => /^\d+$/.test(k));
+    if (flat) { s.notes = { sp: s.notes }; }
+  }
+  if (s.lastLesson != null) {
+    s.last = s.last || {};
+    s.last.sp = s.last.sp || s.lastLesson;
+    delete s.lastLesson;
+  }
+  s.progress = s.progress || {};
+  s.notes = s.notes || {};
+  s.last = s.last || {};
+  return s;
+}
+
 function load() {
   if (state) return state;
   try {
-    const raw = localStorage.getItem(KEY);
-    state = raw ? Object.assign(defaults(), JSON.parse(raw)) : defaults();
-    // 结构兜底
-    state.completed = state.completed || {};
+    let raw = localStorage.getItem(KEY);
+    if (!raw) raw = localStorage.getItem('spstudio.v1');
+    state = raw ? migrate(Object.assign(defaults(), JSON.parse(raw))) : defaults();
+    state.progress = state.progress || {};
     state.notes = state.notes || {};
+    state.last = state.last || {};
     state.quiz = state.quiz || {};
     state.activity = Array.isArray(state.activity) ? state.activity : [];
     state.settings = Object.assign({ apiBase: 'https://api.deepseek.com', apiKey: '', model: 'deepseek-chat', videoSource: 'auto' }, state.settings || {});
@@ -37,7 +61,7 @@ function load() {
 }
 
 function save() {
-  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* 忽略配额错误 */ }
+  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* 忽略配额 */ }
 }
 
 const store = {
@@ -46,30 +70,51 @@ const store = {
 
   update(fn) { fn(load()); save(); return state; },
 
-  complete(no) {
+  /* ---------- 按课程 ---------- */
+  markIn(cid, key) {
     const s = load();
-    s.completed[no] = Date.now();
-    s.lastLesson = no;
-    store.activity('complete', { lesson: no });
+    s.progress[cid] = s.progress[cid] || {};
+    s.progress[cid][key] = Date.now();
+    s.last[cid] = key;
+    store.activity('complete', { course: cid, key });
     save();
   },
-  uncomplete(no) {
+  unmarkIn(cid, key) {
     const s = load();
-    delete s.completed[no];
+    if (s.progress[cid]) delete s.progress[cid][key];
     save();
   },
-  isDone(no) { return !!load().completed[no]; },
-  doneCount() { return Object.keys(load().completed).length; },
-
-  setNote(no, text) {
+  isDoneIn(cid, key) {
     const s = load();
-    if (text && text.trim()) s.notes[no] = text; else delete s.notes[no];
+    return !!(s.progress[cid] && s.progress[cid][key]);
+  },
+  doneCountIn(cid) {
+    const s = load();
+    return Object.keys(s.progress[cid] || {}).length;
+  },
+  setNoteIn(cid, key, text) {
+    const s = load();
+    s.notes[cid] = s.notes[cid] || {};
+    if (text && text.trim()) s.notes[cid][key] = text; else delete s.notes[cid][key];
     save();
   },
-  getNote(no) { return load().notes[no] || ''; },
+  getNoteIn(cid, key) {
+    const s = load();
+    return (s.notes[cid] || {})[key] || '';
+  },
+  setLastIn(cid, key) { const s = load(); s.last[cid] = key; save(); },
+  lastIn(cid) { return load().last[cid] || null; },
 
-  setLast(no) { const s = load(); s.lastLesson = no; save(); },
+  /* ---------- 兼容旧接口（SP 课程） ---------- */
+  complete(no) { store.markIn('sp', String(no)); },
+  uncomplete(no) { store.unmarkIn('sp', String(no)); },
+  isDone(no) { return store.isDoneIn('sp', String(no)); },
+  doneCount() { return store.doneCountIn('sp'); },
+  setNote(no, text) { store.setNoteIn('sp', String(no), text); },
+  getNote(no) { return store.getNoteIn('sp', String(no)); },
+  setLast(no) { store.setLastIn('sp', String(no)); },
 
+  /* ---------- 答题 / AI / 知识库 ---------- */
   quizSave(moduleId, score, total) {
     const s = load();
     const prev = s.quiz[moduleId];

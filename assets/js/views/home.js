@@ -1,195 +1,153 @@
 import data from '../data.js';
 import store from '../store.js';
-import { esc, icon, fmtDur, pct } from '../ui.js';
+import { esc, icon, pct } from '../ui.js';
+
+function hours(sec) { return Math.round(sec / 3600); }
 
 function statItem(num, unit, label) {
-  return `<div class="stat-item reveal">
-    <div class="num">${num}${unit ? `<small>${unit}</small>` : ''}</div>
-    <div class="lbl">${label}</div>
-  </div>`;
+  return `<div class="stat-item reveal"><div class="num">${num}${unit ? `<small>${unit}</small>` : ''}</div><div class="lbl">${label}</div></div>`;
 }
 
-function featureCard(ico, title, desc, href, linkText) {
-  return `<a class="card hoverable feature-card reveal" href="${href}">
-    <span class="f-icon">${icon(ico, 20)}</span>
-    <h3>${title}</h3>
-    <p>${desc}</p>
-    <span class="f-link">${linkText} ${icon('arrow-right', 13)}</span>
+function courseCard(c) {
+  const done = store.doneCountIn(c.id);
+  const total = c.lessonCount || 0;
+  const p = total ? pct(done, total) : 0;
+  return `<a class="course-card reveal" href="#/course/${c.id}" style="--accent:${c.accent || '#ff8a3d'}">
+    <div class="cc-cover">${c.cover ? `<img src="${esc(c.cover)}" alt="" loading="lazy">` : ''}
+      <span class="cc-cat">${esc(c.category)}</span>
+      <span class="cc-type">${c.type === 'bilibili' ? 'B 站' : c.type === 'gallery' ? '图文' : '视频课'}</span>
+    </div>
+    <div class="cc-body">
+      <h3>${esc(c.title)}</h3>
+      <p class="cc-sub">${esc(c.subtitle || '')}</p>
+      <div class="cc-meta"><span>${icon('play', 12)} ${total} 节</span><span>${icon('clock', 12)} ${hours(c.durationSec || 0)} 小时</span></div>
+      ${total ? `<div class="cc-progress"><i style="width:${p}%"></i></div>` : ''}
+    </div>
   </a>`;
 }
 
 export default {
   async render() {
-    const course = await data.course();
-    const meta = course.meta;
-    const modules = course.modules;
-    const lessons = await data.flatLessons();
-    const done = store.doneCount();
+    const cat = await data.catalog();
+    const courses = cat.courses || [];
+    const totalHours = Math.round(cat.durationTotal / 3600);
+    const sp = courses.find(c => c.id === 'sp');
+    const others = courses.filter(c => c.id !== 'sp').slice(0, 8);
 
-    let quizTotal = 0;
-    try {
-      const q = await data.quiz();
-      quizTotal = Object.values(q.modules).reduce((n, m) => n + m.questions.length, 0);
-    } catch (e) { /* 题库可能未就绪 */ }
+    // 继续学习：找最近有记录的课程
+    let cont = null;
+    const lastMap = store.get().last || {};
+    for (const cid of Object.keys(lastMap)) {
+      const c = courses.find(x => x.id === cid);
+      if (!c) continue;
+      const lessons = await data.lessonsOf(cid);
+      const l = lessons.find(x => String(x.no) === String(lastMap[cid]));
+      if (l) { cont = { course: c, lesson: l }; break; }
+    }
+    if (!cont && courses.length) {
+      const c = sp || courses[0];
+      const lessons = await data.lessonsOf(c.id);
+      if (lessons.length) cont = { course: c, lesson: lessons[0] };
+    }
 
-    let kbTotal = 0;
-    try {
-      const k = await data.kb();
-      kbTotal = (k.terms || []).length;
-    } catch (e) { /* 忽略 */ }
+    const featureCards = [
+      ['bot', 'AI 答疑助教', '概念、参数、排错，中文提问即时回答（SP 课程内置本地知识引擎）', '#/assistant'],
+      ['sparkles', 'AIGC 工具箱', '材质参考、PBR 拆解、作品文案等提示词，一键复制到任意 AI', '#/toolbox'],
+      ['book', '术语知识库', '133 条 Substance Painter 术语，中英对照、分类检索', '#/kb'],
+      ['bolt', '闯关练习', '119 道 SP 课程练习题，即时解析与错题重练', '#/quiz'],
+      ['user', '学生登录', '学号 + 口令查看实训任务、成绩与教师评语（本地服务器）', '#/student']
+    ].map(([ic, title, desc, href]) => `<a class="card hoverable feature-card reveal" href="${href}">
+      <span class="f-icon">${icon(ic, 20)}</span><h3>${title}</h3><p>${desc}</p>
+      <span class="f-link">进入 ${icon('arrow-right', 13)}</span></a>`);
+    const features = featureCards.join('');
 
-    const last = store.get().lastLesson;
-    const nextLesson = last ? lessons.find(l => l.no === last) : lessons[0];
-    const nextNo = nextLesson ? nextLesson.no : 1;
-
-    const stats = [
-      statItem(meta.totalLessons, '节', '视频课程'),
-      statItem(meta.moduleCount, '大', '学习模块'),
-      statItem(meta.totalHours, '小时', '课程总时长'),
-      statItem(quizTotal || '120', '+', '闯关练习题')
-    ].join('');
-
-    const features = [
-      featureCard('map', '课程地图', '7 大模块、58 节课按学习路径排好，学完一节自动打勾，进度一目了然。', '#/map', '查看路线'),
-      featureCard('bot', 'AI 答疑助教', '概念讲不清、参数看不懂、报错不会解？用中文提问，即时给出结构化解答与相关课程。', '#/assistant', '开始提问'),
-      featureCard('sparkles', 'AIGC 工具箱', '材质参考、PBR 描述、UV 方案、排错清单——把提示词直接复制到你的 AI 工具里用。', '#/toolbox', '打开工具箱'),
-      featureCard('book', '术语知识库', kbTotal ? `${kbTotal} 条 SP 专业术语，中英对照、分类检索，随手查、随堂记。` : 'SP 专业术语中英对照、分类检索，随手查、随堂记。', '#/kb', '进入知识库'),
-      featureCard('bolt', '闯关练习', '按模块刷题，答完即看解析，错题可重练，把“看懂了”变成“做对了”。', '#/quiz', '开始闯关')
-    ].join('');
-
-    const moduleCards = modules.map(m => {
-      const mDone = m.lessons.filter(l => store.isDone(l.no)).length;
-      const p = pct(mDone, m.lessons.length);
-      const mins = Math.round(m.lessons.reduce((s, l) => s + l.durationSec, 0) / 60);
-      return `<a class="card hoverable module-card reveal" href="#/map" style="--m-color:${m.color}">
-        <div class="m-top">
-          <span class="module-num"><b>模块 ${String(m.index).padStart(2, '0')}</b> · ${m.lessons.length} 节</span>
-          <span class="tag ${p === 100 ? 'teal' : ''}">${p}%</span>
+    return `<section class="hero platform-hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="hero-badge"><b>数字媒体设计</b><span>课程学习 · 实训评估 · AI 辅助</span></div>
+          <h1><span class="line">把每一门课，</span><span class="line gradient-text">连成一条成长路径。</span></h1>
+          <p class="hero-lead">三维材质、ZBrush 雕刻、影视概念设计、平面构成、色彩、分镜与剪辑——<strong>${courses.length} 门课程、${cat.lessonTotal} 个课时、约 ${totalHours} 小时</strong>，配套 AI 助教、知识库、闯关练习与学生成绩入口。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#/courses">${icon('grid', 16)} 进入课程中心</a>
+            <a class="btn btn-ghost" href="#/assistant">${icon('bot', 16)} 问问 AI 助教</a>
+          </div>
+          <div class="hero-meta">
+            <span>${icon('layers', 15)} ${courses.length} 门课程</span>
+            <span>${icon('play', 14)} ${cat.lessonTotal} 个课时</span>
+            <span>${icon('clock', 15)} 约 ${totalHours} 小时</span>
+            <span>${icon('user', 15)} 学生成绩入口</span>
+          </div>
         </div>
-        <h3>${esc(m.title)}</h3>
-        <p class="m-sub">${esc(m.subtitle)}</p>
-        <div class="module-progress"><i style="width:${p}%"></i></div>
-        <div class="m-meta"><span>${icon('clock', 13)} ${mins} 分钟</span><span>${icon('play', 12)} ${m.lessons.length} 节视频</span></div>
-      </a>`;
-    }).join('');
-
-    const steps = [
-      ['看', '跟着视频学', '按模块顺序观看 58 节录屏课，遇到不懂的暂停、记笔记。'],
-      ['练', '动手做一遍', '每节课都有小练习，打开 SP 跟着做，素材和参数都记下来。'],
-      ['问', '不懂就问 AI', '把疑问交给 AI 助教，用中文描述现象，拿到排查思路与相关课程。'],
-      ['测', '闯关查漏', '按模块刷题，用解析补上知识盲点，再把错题重练一遍。']
-    ].map((s, i) => `<div class="card step-card reveal">
-      ${i < 3 ? '<span class="s-line"></span>' : ''}
-      <span class="tag copper">${s[0]}</span>
-      <h3>${s[1]}</h3>
-      <p>${s[2]}</p>
-    </div>`).join('');
-
-    const continueText = last
-      ? `继续学习：第 ${nextLesson.no} 课 · ${esc(nextLesson.title)}`
-      : `从第 1 课开始：${esc(lessons[0] ? lessons[0].title : '认识 Substance Painter')}`;
-
-    return `
-<section class="hero">
-  <div class="container hero-inner">
-    <div>
-      <div class="hero-badge"><b>AI 学习空间</b><span>数字媒体技术 · 专业核心课</span></div>
-      <h1>
-        <span class="line">让材质，</span>
-        <span class="line gradient-text">自己会说话。</span>
-      </h1>
-      <p class="hero-lead">
-        以 <strong>琅泽 · 老高课堂《Substance Painter 2019》</strong> 58 节系统课为主干，
-        配合 AI 助教、术语知识库与闯关练习，陪你从界面与烘焙出发，
-        一路走到图层、特效、笔刷、UV 与复杂材质表现。
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#/map">${icon('play', 16)} 进入课程地图</a>
-        <a class="btn btn-ghost" href="#/assistant">${icon('bot', 16)} 问问 AI 助教</a>
+        <div class="hero-art" aria-hidden="true">
+          <div class="material-orbit small">
+            <span class="sphere s-teal"></span><span class="sphere s-gold"></span>
+            <span class="sphere s-steel"></span><span class="sphere s-main"></span>
+            <span class="orbit-label l1">3D · 雕刻</span><span class="orbit-label l2">概念 · 分镜</span><span class="orbit-label l3">构成 · 色彩</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-meta">
-        <span>${icon('layers', 15)} ${meta.moduleCount} 大模块</span>
-        <span>${icon('play', 14)} ${meta.totalLessons} 节视频</span>
-        <span>${icon('clock', 15)} 约 ${meta.totalHours} 小时</span>
-        <span>${icon('bolt', 15)} ${quizTotal || 120} 道练习</span>
-      </div>
-    </div>
-    <div class="hero-art" aria-hidden="true">
-      <div class="material-orbit">
-        <span class="sphere s-teal"></span>
-        <span class="sphere s-gold"></span>
-        <span class="sphere s-steel"></span>
-        <span class="sphere s-blush"></span>
-        <span class="sphere s-main"></span>
-        <span class="orbit-label l1">metallic · 铜</span>
-        <span class="orbit-label l2">roughness · 0.4</span>
-        <span class="orbit-label l3">normal · 法线</span>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="section tight">
-  <div class="container">
-    <div class="stat-strip">${stats}</div>
-  </div>
-</section>
+    <section class="section tight"><div class="container"><div class="stat-strip">
+      ${statItem(courses.length, '门', '课程')}
+      ${statItem(cat.lessonTotal, '节', '课时总数')}
+      ${statItem(totalHours, '小时', '课程总时长')}
+      ${statItem(courses.filter(c => c.hasQuiz).length, '门', '含闯关练习')}
+    </div></div></section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Learning Suite</div>
-        <h2 class="section-title">为这门课，准备了五位一体的学习装备</h2>
-        <p class="section-sub">课程地图带你走完知识线，AI 助教与知识库负责答疑查漏，工具箱与闯关练习负责把知识变成能力。</p>
+    ${cont ? `<section class="section tight"><div class="container">
+      <div class="card reveal" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;padding:26px 30px;background:linear-gradient(120deg,rgba(255,138,61,.12),rgba(255,255,255,.02) 55%);border-color:rgba(255,138,61,.22)">
+        <div style="flex:1;min-width:240px">
+          <div class="eyebrow" style="margin-bottom:6px">继续学习</div>
+          <h2 style="font-size:clamp(20px,2.4vw,26px)">${esc(cont.course.title)}</h2>
+          <p style="color:var(--muted);font-size:13.5px;margin-top:6px">${esc(cont.lesson.title)}</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="#/lesson/${cont.course.id}/${cont.lesson.no}">${icon('play', 15)} 继续</a>
+          <a class="btn btn-ghost" href="#/course/${cont.course.id}">${icon('map', 15)} 课程目录</a>
+        </div>
       </div>
-      <a class="link-arrow" href="#/map">全部装备 ${icon('arrow-right', 14)}</a>
-    </div>
-    <div class="feature-grid">${features}</div>
-  </div>
-</section>
+    </div></section>` : ''}
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Course Map</div>
-        <h2 class="section-title">七大模块，一条从“会用”到“会做”的路</h2>
-        <p class="section-sub">课程按软件认知 → 数据贴图 → 图层材质 → 光照特效 → 遮罩置换 → 映射笔刷 → UV 拆分递进，每一模块都有明确的能力目标。</p>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="eyebrow">Course Center</div>
+            <h2 class="section-title">课程中心</h2>
+            <p class="section-sub">按方向选择课程：三维与材质、概念设计、影视与分镜、平面构成、色彩与绘画、剪辑。</p></div>
+          <a class="link-arrow" href="#/courses">全部 ${courses.length} 门 ${icon('arrow-right', 14)}</a>
+        </div>
+        <div class="course-grid">${(sp ? [sp, ...others] : courses).slice(0, 5).map(courseCard).join('')}</div>
+        <div style="margin-top:18px"><a class="btn btn-ghost" href="#/courses">${icon('grid', 15)} 浏览全部课程</a></div>
       </div>
-      <a class="link-arrow" href="#/map">打开完整地图 ${icon('arrow-right', 14)}</a>
-    </div>
-    <div class="module-grid">${moduleCards}</div>
-  </div>
-</section>
+    </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Study Loop</div>
-        <h2 class="section-title">看 · 练 · 问 · 测，四步一个循环</h2>
-        <p class="section-sub">不必一次学会全部，按循环推进：看完一小节就动手，卡住就问，最后用练习确认掌握。</p>
+    ${sp ? `<section class="section tight"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">Featured</div>
+        <h2 class="section-title" style="font-size:28px">核心课程 · ${esc(sp.title)}</h2>
+        <p class="section-sub">${esc(sp.description || '')}</p></div>
+        <a class="link-arrow" href="#/course/sp">进入课程 ${icon('arrow-right', 14)}</a></div>
+      <div class="feature-grid" style="grid-template-columns:repeat(3,1fr)">
+        ${featureCards.slice(0, 3).join('')}
       </div>
-    </div>
-    <div class="steps">${steps}</div>
-  </div>
-</section>
+    </div></section>` : ''}
 
-<section class="section tight">
-  <div class="container">
-    <div class="card reveal" style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;padding:32px 34px;background:linear-gradient(120deg,rgba(255,138,61,.12),rgba(255,255,255,.02) 55%);border-color:rgba(255,138,61,.22)">
-      <div style="flex:1;min-width:260px">
-        <div class="eyebrow" style="margin-bottom:8px">Continue</div>
-        <h2 style="font-size:clamp(22px,2.6vw,30px)">${done > 0 ? `已学完 ${done} / ${meta.totalLessons} 节课` : '准备好了吗？从第一课开始'}</h2>
-        <p style="color:var(--muted);margin-top:8px;font-size:14px">${continueText}</p>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Learning Suite</div>
+          <h2 class="section-title">学习工具</h2>
+          <p class="section-sub">课程之外，这些工具帮你把「看懂」变成「学会」。</p></div></div>
+        <div class="feature-grid" style="grid-template-columns:repeat(3,1fr)">${features}</div>
       </div>
-      <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <a class="btn btn-primary" href="#/lesson/${nextNo}">${icon('play', 15)} 继续学习</a>
-        <a class="btn btn-ghost" href="#/quiz">${icon('bolt', 15)} 去闯关</a>
+    </section>
+
+    <section class="section tight"><div class="container">
+      <div class="steps" style="grid-template-columns:repeat(4,1fr)">
+        <div class="card step-card"><span class="tag copper">看</span><h3>按课程目录学</h3><p>视频 / B 站 / 图文资料，一门课一条线，进度自动记录。</p></div>
+        <div class="card step-card"><span class="tag copper">练</span><h3>动手做作品</h3><p>跟着案例练，SP 课程还有 119 道闯关题巩固知识点。</p></div>
+        <div class="card step-card"><span class="tag copper">问</span><h3>问 AI 助教</h3><p>概念、参数、报错都能问；教师端还支持 AI 评审作品。</p></div>
+        <div class="card step-card"><span class="tag copper">评</span><h3>看成绩与评语</h3><p>学生用学号登录查看实训成绩；教师端做检测与评分。</p></div>
       </div>
-    </div>
-  </div>
-</section>`;
+    </div></section>`;
   }
 };
