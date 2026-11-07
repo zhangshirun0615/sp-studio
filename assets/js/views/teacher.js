@@ -1232,7 +1232,6 @@ function bindTab() {
     if (publishBtn) publishBtn.onclick = async () => {
       if (!serverState.key) return toast('请先连接本地服务');
       try {
-        const origToast = toast;
         await publishToServer();
       } catch (e) { toast('发布失败：' + e.message, 'err'); }
     };
