@@ -110,9 +110,34 @@ async function renderRoute() {
 
 window.addEventListener('hashchange', renderRoute);
 
+/* 在线镜像（GitHub Pages）提示条：视频走百度网盘 */
+function maybeMirrorBanner() {
+  if (!/\.github\.io$/i.test(location.hostname)) return;
+  try { if (localStorage.getItem('spstudio.mirrorBannerDismissed') === '1') return; } catch (e) {}
+  fetch('data/videos.json', { cache: 'no-cache' })
+    .then(r => r.ok ? r.json() : null)
+    .then(v => {
+      const urls = (v && v.pan && v.pan.url) ? v.pan.url : '';
+      if (!urls || document.getElementById('mirrorBanner')) return;
+      const bar = document.createElement('div');
+      bar.className = 'mirror-banner';
+      bar.id = 'mirrorBanner';
+      bar.innerHTML = `<span>${icon('info', 14)} 在线镜像版：视频请通过「百度网盘」观看</span>
+        <a href="${esc(urls)}" target="_blank" rel="noopener">打开网盘</a>
+        <button class="mb-close" aria-label="关闭提示">${icon('close', 14)}</button>`;
+      if (siteNav && siteNav.parentNode) siteNav.insertAdjacentElement('afterend', bar);
+      bar.querySelector('.mb-close').addEventListener('click', () => {
+        bar.remove();
+        try { localStorage.setItem('spstudio.mirrorBannerDismissed', '1'); } catch (e) {}
+      });
+    })
+    .catch(() => {});
+}
+
 function boot() {
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
+  maybeMirrorBanner();
   renderRoute();
 }
 

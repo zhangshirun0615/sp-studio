@@ -128,6 +128,21 @@ input, textarea, select { font-family: inherit; font-size: inherit; color: inher
 .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
 
+/* 在线镜像提示条 */
+.mirror-banner {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  padding: 9px 18px; font-size: 12.5px; color: #ffe0c4;
+  background: rgba(255, 138, 61, .12); border-bottom: 1px solid rgba(255, 138, 61, .28);
+  flex-wrap: wrap;
+}
+.mirror-banner a { color: var(--copper-2); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.mirror-banner a:hover { color: var(--gold); }
+.mirror-banner .mb-close {
+  width: 26px; height: 26px; border-radius: 8px; border: 1px solid var(--line);
+  color: var(--muted); display: inline-grid; place-items: center;
+}
+.mirror-banner .mb-close:hover { color: #fff; border-color: var(--line-strong); }
+
 /* ---------- 布局与通用 ---------- */
 .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .section { padding: 74px 0; }

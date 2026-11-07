@@ -17,11 +17,15 @@
     .qr-host { display: flex; gap: 26px; align-items: center; margin-top: 18px; flex-wrap: wrap; }
     .qr-host .qr { background: #fff; padding: 10px; border-radius: 12px; line-height: 0; }
     .qr-host .qr svg { width: 168px; height: 168px; }
-    .qr-host .qr-tip { font-size: 12.5px; color: var(--muted); line-height: 1.9; max-width: 360px; }
+    .qr-host .qr-tip { font-size: 12.5px; color: var(--muted); line-height: 1.9; max-width: 380px; }
     .status { display: inline-flex; gap: 7px; align-items: center; font-size: 12px; color: var(--ok); }
     .status i { width: 6px; height: 6px; border-radius: 50%; background: var(--ok); }
     .brand-mini { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
     .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--copper-2); margin-top: 26px; font-weight: 700; font-size: 13.5px; }
+    .sub-card { border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-top: 14px; background: rgba(255,255,255,.02); }
+    .sub-card h4 { font-size: 14.5px; display: flex; align-items: center; gap: 8px; }
+    .tag-line { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px; border-radius: 7px;
+      background: rgba(255,138,61,.12); color: #ffcf9e; font-size: 11px; border: 1px solid rgba(255,138,61,.3); }
   </style>
 </head>
 <body>
@@ -36,51 +40,78 @@
     </div>
     <div class="eyebrow">Share &amp; Access</div>
     <h1 style="font-size:clamp(26px,3.6vw,38px)">把学习空间分享出去</h1>
-    <p style="color:var(--muted);margin-top:12px;line-height:1.8;max-width:640px">
-      这个页面由你电脑上的“启动学习平台”脚本生成。同学用手机扫码、或复制下面的链接，就能访问同一套课程、视频与练习；学习数据各自保存在自己的浏览器里。
+    <p style="color:var(--muted);margin-top:12px;line-height:1.8;max-width:660px">
+      同学用手机扫码或复制链接，就能打开同一套课程、地图、题库与练习；学习进度各存各的浏览器。
+      视频有两种来源：<strong>在线版走百度网盘</strong>，<strong>本地直连版内嵌播放</strong>（需要在开着课程的电脑上运行启动脚本）。
     </p>
 
     <div class="share-card">
-      <h3>📱 手机 / 外网访问 <span class="status" id="v6state"><i></i>检测中</span></h3>
-      <p class="hint">这是通过你家宽带的公网 IPv6 地址直连，速度快、可播视频。<strong>电脑需保持开机并运行启动脚本</strong>；手机建议用 4G/5G 流量（大部分运营商已支持 IPv6）。</p>
+      <h3>🌐 在线地址 <span class="status" id="onlineState"><i></i>可直接打开</span></h3>
+      <p class="hint">部署在 GitHub Pages 的在线镜像版：<strong>不依赖你的电脑开机</strong>，课程、地图、AI 助教、知识库、闯关练习都能用；视频会自动走「网盘」模式。</p>
       <div class="url-box">
-        <code id="urlV6">读取中…</code>
-        <button class="btn btn-primary btn-sm" id="copyV6">复制链接</button>
+        <code id="urlOnline">读取中…</code>
+        <button class="btn btn-primary btn-sm" id="copyOnline">复制链接</button>
       </div>
       <div class="qr-host">
-        <div class="qr" id="qrV6"></div>
+        <div class="qr" id="qrOnline"></div>
         <div class="qr-tip">
           手机扫码直接打开。<br>
-          若扫码打不开：① 手机用流量再试；② 检查路由器是否开启了“IPv6 防火墙/防蹭网”拦截入站；③ 改用下方隧道地址。
+          国内访问 GitHub Pages 可能较慢，打不开时：① 换个网络再试；② 用下面的百度网盘看视频；③ 在开课的电脑上运行启动脚本用本地版。
         </div>
       </div>
     </div>
 
     <div class="share-card">
-      <h3>🌐 备用隧道（IPv4 网络也能访问） <span class="status" id="tunnelState" style="color:var(--warn)"><i style="background:var(--warn)"></i>等待中</span></h3>
-      <p class="hint">如果对方网络只有 IPv4（部分老旧宽带/校园网），可用这个隧道地址。隧道经境外中转，<strong>打开页面会稍慢，视频可能缓冲</strong>，适合看讲义、查知识库、做练习。</p>
+      <h3>🎬 视频：百度网盘 <span class="tag-line" id="panState">全校共享</span></h3>
+      <p class="hint">视频文件在百度网盘里，点开分享文件夹后按课时文件名（如「第13课_...mp4」）找到对应视频。需要登录百度账号，倍速可能需要会员。</p>
       <div class="url-box">
-        <code id="urlTunnel">启动脚本会自动生成…</code>
-        <button class="btn btn-ghost btn-sm" id="copyTunnel">复制链接</button>
+        <code id="urlPan">读取中…</code>
+        <button class="btn btn-primary btn-sm" id="copyPan">复制链接</button>
+        <a class="btn btn-ghost btn-sm" id="openPan" target="_blank" rel="noopener">打开网盘</a>
       </div>
+      <p class="hint" id="panPwd" style="display:none"></p>
     </div>
 
-    <div class="share-card">
-      <h3>🏫 同一 WiFi / 教室局域网</h3>
-      <p class="hint">如果同学和你在同一个网络（比如教室或家里的 WiFi），可以直接用局域网地址，速度最快：</p>
-      <div class="url-box">
-        <code id="urlLan">读取中…</code>
-        <button class="btn btn-ghost btn-sm" id="copyLan">复制链接</button>
+    <div class="share-card" id="localCard" style="display:none">
+      <h3>💻 本地直连（同样可内嵌播放视频）</h3>
+      <p class="hint">在这台电脑上运行「启动学习平台」后，下面这些地址可用，视频直接从本机读取、速度最快；关掉启动窗口后失效。</p>
+
+      <div class="sub-card">
+        <h4>📱 公网 IPv6 <span class="status" id="v6state"><i></i>已就绪</span></h4>
+        <div class="url-box">
+          <code id="urlV6">启动脚本会自动生成…</code>
+          <button class="btn btn-ghost btn-sm" id="copyV6">复制链接</button>
+        </div>
+      </div>
+
+      <div class="sub-card">
+        <h4>🌐 备用隧道（IPv4 网络可用）</h4>
+        <div class="url-box">
+          <code id="urlTunnel">启动脚本会自动生成…</code>
+          <button class="btn btn-ghost btn-sm" id="copyTunnel">复制链接</button>
+        </div>
+      </div>
+
+      <div class="sub-card">
+        <h4>🏫 同一 WiFi / 教室局域网</h4>
+        <div class="url-box">
+          <code id="urlLan">读取中…</code>
+          <button class="btn btn-ghost btn-sm" id="copyLan">复制链接</button>
+        </div>
       </div>
     </div>
 
     <p style="color:var(--muted);font-size:12px;margin-top:22px;line-height:1.8">
-      提示：公网 IPv6 地址可能随路由器重启变化；每次启动脚本都会重新检测并更新本页。关闭启动脚本窗口后，以上链接会失效。
+      提示：公网 IPv6 与隧道地址每次启动可能变化，脚本会自动更新本页；在线镜像版地址固定不变。
     </p>
     <a class="back-link" href="index.html">← 返回学习空间</a>
   </main>
+
   <script src="assets/js/qrcode.js"></script>
   <script>
+    const $ = (id) => document.getElementById(id);
+    const copy = async (text) => { try { await navigator.clipboard.writeText(text); } catch (e) {} };
+
     const setQR = (hostEl, text) => {
       if (!text || !window.qrcode) return;
       try {
@@ -90,39 +121,61 @@
         hostEl.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 2 });
       } catch (e) { hostEl.textContent = '二维码生成失败'; }
     };
-    const copy = async (text) => {
-      try { await navigator.clipboard.writeText(text); } catch (e) {}
-    };
-    fetch('data/endpoints.json', { cache: 'no-cache' })
-      .then(r => r.json())
-      .then(d => {
-        if (d.ipv6) {
-          document.getElementById('urlV6').textContent = d.ipv6;
-          setQR(document.getElementById('qrV6'), d.ipv6);
-          document.getElementById('v6state').innerHTML = '<i></i>已就绪';
-          document.getElementById('copyV6').onclick = () => copy(d.ipv6);
-        }
-        if (d.lan) {
-          document.getElementById('urlLan').textContent = d.lan;
-          document.getElementById('copyLan').onclick = () => copy(d.lan);
-        }
-        if (d.tunnel) {
-          document.getElementById('urlTunnel').textContent = d.tunnel;
-          document.getElementById('tunnelState').innerHTML = '<i style="background:var(--ok)"></i>已就绪';
-          document.getElementById('copyTunnel').onclick = () => copy(d.tunnel);
+
+    // 1) 在线地址 = 当前目录（去掉 share.html）
+    const onlineUrl = new URL('./', location.href).href;
+    $('urlOnline').textContent = onlineUrl;
+    setQR($('qrOnline'), onlineUrl);
+    $('copyOnline').onclick = () => copy(onlineUrl);
+
+    // 2) 网盘地址来自 data/videos.json
+    fetch('data/videos.json', { cache: 'no-cache' })
+      .then(r => r.ok ? r.json() : null)
+      .then(v => {
+        const pan = (v && v.pan) || {};
+        if (pan.url) {
+          $('urlPan').textContent = pan.url;
+          $('openPan').href = pan.url;
+          $('copyPan').onclick = () => copy(pan.url);
+          if (pan.pwd) {
+            $('panPwd').style.display = '';
+            $('panPwd').innerHTML = '提取码：<b style="color:var(--gold)">' + pan.pwd + '</b>';
+          }
+        } else {
+          $('urlPan').textContent = '未配置网盘地址';
+          $('openPan').style.display = 'none';
         }
       })
-      .catch(() => {
-        document.getElementById('urlV6').textContent = '请先运行“启动学习平台”脚本';
-      });
-    setInterval(() => {
-      fetch('data/endpoints.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
-        if (d.tunnel) {
-          document.getElementById('urlTunnel').textContent = d.tunnel;
-          document.getElementById('tunnelState').innerHTML = '<i style="background:var(--ok)"></i>已就绪';
+      .catch(() => { $('urlPan').textContent = '未配置网盘地址'; });
+
+    // 3) 本地直连地址来自 data/endpoints.json（仅本地启动器会生成）
+    fetch('data/endpoints.json', { cache: 'no-cache' })
+      .then(r => r.ok ? r.json() : null)
+      .then(d => {
+        if (!d) return;
+        $('localCard').style.display = '';
+        if (d.ipv6) {
+          $('urlV6').textContent = d.ipv6;
+          $('copyV6').onclick = () => copy(d.ipv6);
         }
-      }).catch(() => {});
-    }, 4000);
+        if (d.lan) {
+          $('urlLan').textContent = d.lan;
+          $('copyLan').onclick = () => copy(d.lan);
+        }
+        if (d.tunnel) {
+          $('urlTunnel').textContent = d.tunnel;
+          $('copyTunnel').onclick = () => copy(d.tunnel);
+          $('tunnelState') && ($('tunnelState').innerHTML = '<i></i>已就绪');
+        }
+        setInterval(() => {
+          fetch('data/endpoints.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(x => {
+            if (!x) return;
+            if (x.tunnel) $('urlTunnel').textContent = x.tunnel;
+            if (x.ipv6) $('urlV6').textContent = x.ipv6;
+          }).catch(() => {});
+        }, 5000);
+      })
+      .catch(() => { /* 在线镜像：没有 endpoints.json，保持隐藏 */ });
   </script>
 </body>
 </html>
