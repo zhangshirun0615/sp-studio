@@ -7,6 +7,7 @@ export default {
     const c = await data.courseById(id);
     if (!c) return `<div class="container" style="padding:80px 24px"><div class="card">课程不存在</div></div>`;
     const dir = (params.query && params.query.dir) || '';
+    const isMirror = /\.github\.io$/i.test(location.hostname);
     const groups = (c.data.resources || []).filter(r => r.kind === 'images');
     const group = groups.find(g => g.dir === dir);
     const meta = c.meta;
@@ -23,6 +24,7 @@ export default {
           <p class="section-sub">${group ? `${group.count} 张图片 · 共 ${group.totalMB} MB · 点击图片查看大图` : '选择要浏览的图片资料'}</p>
         </div>
       </div>
+      ${isMirror ? '<div style="padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:rgba(255,191,94,.06);color:#ffe0b0;font-size:13px;margin-bottom:14px">在线镜像只同步课程目录；完整图片资料请在运行「启动学习平台」的电脑上访问。</div>' : ''}
       ${!group ? `<div class="gallery-groups">${groups.map(g => `<a class="res-item" href="#/gallery/${id}?dir=${encodeURIComponent(g.dir)}">
           <span class="res-icon">${icon('grid', 16)}</span><span class="res-name">${esc(g.name)}</span><span class="res-size">${g.count} 张</span><span class="res-open">${icon('arrow-right', 14)}</span></a>`).join('')}</div>`
         : `<div class="gallery-grid">${(group.files || []).map(f => `<a class="gallery-item" href="${data.mediaUrl(id, f)}" target="_blank" rel="noopener">

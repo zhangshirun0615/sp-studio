@@ -54,10 +54,12 @@ export default {
       </section>`;
     }).join('');
 
+    const isMirror = /\.github\.io$/i.test(location.hostname);
     const pdfs = resources.filter(r => r.kind === 'pdf' || r.kind === 'file');
     const imageDirs = resources.filter(r => r.kind === 'images');
     const resHtml = (pdfs.length || imageDirs.length) ? `<section class="lesson-section" id="resources-${id}">
       <h2>课程资料</h2>
+      ${isMirror ? '<p style="color:var(--muted);font-size:12.5px;margin-bottom:10px">在线镜像不包含本地视频与图片资料，完整资料请在运行启动器的电脑上查看。</p>' : ''}
       <div class="resource-list">
         ${pdfs.map(r => `<a class="res-item" href="${data.mediaUrl(id, r.path)}" target="_blank" rel="noopener">
           <span class="res-icon">${icon('book', 16)}</span><span class="res-name">${esc(r.name)}</span><span class="res-size">${r.sizeMB} MB</span><span class="res-open">${icon('external', 14)}</span>
