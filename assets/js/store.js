@@ -10,7 +10,7 @@ const defaults = () => ({
   ai: { asked: 0, history: [] },
   kb: { views: {} },      // { term: count }
   activity: [],           // [{ type, ts, lesson?, module? }]
-  settings: { apiBase: 'https://api.deepseek.com', apiKey: '', model: 'deepseek-chat' },
+  settings: { apiBase: 'https://api.deepseek.com', apiKey: '', model: 'deepseek-chat', videoSource: 'auto' },
   lastLesson: null,
   createdAt: Date.now()
 });
@@ -27,7 +27,7 @@ function load() {
     state.notes = state.notes || {};
     state.quiz = state.quiz || {};
     state.activity = Array.isArray(state.activity) ? state.activity : [];
-    state.settings = Object.assign({ apiBase: 'https://api.deepseek.com', apiKey: '', model: 'deepseek-chat' }, state.settings || {});
+    state.settings = Object.assign({ apiBase: 'https://api.deepseek.com', apiKey: '', model: 'deepseek-chat', videoSource: 'auto' }, state.settings || {});
     state.ai = Object.assign({ asked: 0, history: [] }, state.ai || {});
     state.kb = Object.assign({ views: {} }, state.kb || {});
   } catch (e) {

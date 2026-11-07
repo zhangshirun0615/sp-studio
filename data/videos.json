@@ -291,5 +291,12 @@
    "poster": "assets/posters/lesson-59.jpg",
    "sizeBytes": 36248310
   }
+ },
+ "sourceMode": "auto",
+ "pan": {
+  "url": "https://pan.baidu.com/s/5xG23RcZNHd_C57HJtD9xPw",
+  "pwd": "",
+  "label": "百度网盘",
+  "note": "整包课程分享。打开后按课时文件名（如「第13课_...mp4」）找到对应视频；部分浏览器/设备需登录百度账号，倍速播放可能需要网盘会员。"
  }
 }

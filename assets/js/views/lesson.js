@@ -1,6 +1,175 @@
 import data from '../data.js';
 import store from '../store.js';
-import { esc, icon, fmtDur, levelClass, toast, debounce } from '../ui.js';
+import { esc, icon, fmtDur, levelClass, toast, debounce, copyText } from '../ui.js';
+
+/* 视频来源解析：direct=直链播放，pan=网盘跳转，none=无可用来源 */
+function resolveSource(videos, v) {
+  const settings = store.getSettings();
+  const mode = settings.videoSource || videos.sourceMode || 'auto';
+  const isMirror = /\.github\.io$/i.test(location.hostname);
+  const panCfg = videos.pan || {};
+  let panUrl = v.pan || panCfg.url || '';
+  const panPwd = (v.panPwd != null && v.panPwd !== '') ? v.panPwd : (panCfg.pwd || '');
+  if (panUrl && panPwd && !/[?&]pwd=/.test(panUrl)) {
+    panUrl += (panUrl.includes('?') ? '&' : '?') + 'pwd=' + encodeURIComponent(panPwd);
+  }
+  const directOk = !isMirror && !!v.src;
+  let source = 'none';
+  if (mode === 'pan') source = panUrl ? 'pan' : 'none';
+  else if (mode === 'local') source = directOk ? 'direct' : (panUrl ? 'pan' : 'none');
+  else source = directOk ? 'direct' : (panUrl ? 'pan' : 'none');
+  return {
+    mode,
+    source,
+    directSrc: directOk ? v.src : '',
+    poster: v.poster || '',
+    panUrl,
+    panPwd,
+    panLabel: panCfg.label || '百度网盘',
+    panNote: panCfg.note || ''
+  };
+}
+
+function panPlayerHtml(lesson, s) {
+  const fileName = lesson.file || ('第' + lesson.no + '课.mp4');
+  return `<div class="pan-player" id="panPlayer">
+    <span class="tag copper">${icon('info', 13)} ${esc(s.panLabel)} · 外部观看</span>
+    <h3>本节视频在${esc(s.panLabel)}</h3>
+    <p>点击下方按钮打开课程分享文件夹，按文件名找到本课视频播放。网盘观看需登录百度账号，倍速可能需要会员；平台内的学习目标、知识点、笔记和练习不受影响。</p>
+    <div class="pan-file">${icon('play', 13)} <code>${esc(fileName)}</code></div>
+    <div class="pan-actions">
+      <a class="btn btn-primary" href="${esc(s.panUrl)}" target="_blank" rel="noopener">${icon('external', 15)} 打开${esc(s.panLabel)}</a>
+      <button class="btn btn-ghost" id="copyPanLink">${icon('copy', 15)} 复制链接</button>
+      ${s.panPwd ? `<span class="pan-pwd">提取码：<b>${esc(s.panPwd)}</b></span>` : ''}
+    </div>
+    <p class="pan-tip">${esc(s.panNote || '')}</p>
+  </div>`;
+}
+
+function playerHtml(lesson, s) {
+  if (s.source === 'direct') {
+    return `<div class="player-wrap" id="playerWrap">
+      <video id="lessonVideo" controls playsinline preload="metadata" ${s.poster ? `poster="${esc(s.poster)}"` : ''}>
+        <source src="${esc(s.directSrc)}" type="video/mp4">
+      </video>
+    </div>`;
+  }
+  if (s.source === 'pan') {
+    return `<div class="player-wrap pan-wrap" id="playerWrap">${panPlayerHtml(lesson, s)}</div>`;
+  }
+  const isMirror = /\.github\.io$/i.test(location.hostname);
+  const localPath = `D:\\课程资源\\琅泽_老高课堂_SP教程(Substance Painter2019教程)中文版\\${lesson.file || ''}`;
+  return `<div class="player-wrap" id="playerWrap"><div class="player-fallback show">
+    <span class="tag gold">${icon('info', 13)} ${isMirror ? '镜像版 · 不含视频' : '暂无可用视频源'}</span>
+    <h3>${isMirror ? '这是在线镜像页面' : '这一课还没有可播放的视频源'}</h3>
+    <p>${isMirror
+      ? '在线镜像只同步了课程、知识库、题库与练习。请在运行「启动学习平台」的电脑上打开，或用分享页里的地址访问，即可在线播放。'
+      : '请确认 media/encoded 下的视频文件存在，或在 data/videos.json 中配置直链 / 网盘地址。'}</p>
+    ${isMirror ? '' : `<code>${esc(localPath)}</code>`}
+  </div></div>`;
+}
+
+function zoneHtml(lesson, s, mod, v, isDone) {
+  const sources = [
+    ['auto', '自动'],
+    ['local', '直连'],
+    ['pan', '网盘']
+  ];
+  return `${playerHtml(lesson, s)}
+    <div class="video-actions">
+      <button class="btn ${isDone ? 'btn-ghost' : 'btn-primary'} btn-sm" id="markDone">
+        ${icon(isDone ? 'check' : 'target', 15)} ${isDone ? '已完成（点击取消）' : '标记为已学完'}
+      </button>
+      <a class="btn btn-ghost btn-sm" href="#/quiz/${mod.id}">${icon('bolt', 15)} 本模块闯关</a>
+      <button class="btn btn-ghost btn-sm" id="askLesson">${icon('bot', 15)} 问 AI 助教</button>
+      ${s.source === 'pan' ? `<a class="btn btn-ghost btn-sm" href="${esc(s.panUrl)}" target="_blank" rel="noopener">${icon('external', 14)} 网盘观看</a>` : ''}
+      <div class="source-switch" title="切换视频来源">
+        <span>视频源</span>
+        ${sources.map(([k, label]) => `<button class="chip ${s.mode === k ? 'active' : ''}" data-source="${k}">${label}</button>`).join('')}
+      </div>
+      ${v.sizeBytes && s.source === 'direct' ? `<span class="video-size">视频 ${Math.round(v.sizeBytes / 1048576)} MB · 720P</span>` : ''}
+    </div>`;
+}
+
+function bindZone(lesson, s, mod) {
+  const no = lesson.no;
+  const video = document.getElementById('lessonVideo');
+  const markBtn = document.getElementById('markDone');
+
+  if (video) {
+    store.setLast(no);
+    video.addEventListener('ended', () => {
+      store.complete(no);
+      toast('本节已完成，进度已记录', 'ok');
+      if (markBtn) {
+        markBtn.className = 'btn btn-ghost btn-sm';
+        markBtn.innerHTML = `${icon('check', 15)} 已完成（点击取消）`;
+      }
+    });
+    video.addEventListener('error', () => {
+      const wrap = document.getElementById('playerWrap');
+      if (!wrap) return;
+      wrap.innerHTML = `<div class="player-fallback show">
+        <span class="tag gold">视频加载失败</span>
+        <h3>暂时无法播放本节视频</h3>
+        <p>可能是网络波动或视频文件缺失。可以切换上方「视频源」改用网盘观看，或稍后刷新重试。</p>
+      </div>`;
+    }, { once: true });
+  } else {
+    store.setLast(no);
+  }
+
+  if (markBtn) {
+    markBtn.addEventListener('click', () => {
+      if (store.isDone(no)) {
+        store.uncomplete(no);
+        markBtn.className = 'btn btn-primary btn-sm';
+        markBtn.innerHTML = `${icon('target', 15)} 标记为已学完`;
+        toast('已取消完成标记');
+      } else {
+        store.complete(no);
+        markBtn.className = 'btn btn-ghost btn-sm';
+        markBtn.innerHTML = `${icon('check', 15)} 已完成（点击取消）`;
+        toast('本节已完成，进度已记录', 'ok');
+      }
+    });
+  }
+
+  const copyBtn = document.getElementById('copyPanLink');
+  if (copyBtn && s.panUrl) {
+    copyBtn.addEventListener('click', () => copyText(s.panUrl, '网盘链接已复制'));
+  }
+
+  document.querySelectorAll('[data-source]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const nextMode = btn.dataset.source;
+      store.setSetting('videoSource', nextMode);
+      const videos = (ctx && ctx.videos) || data.__videosCache || {};
+      const zone = document.getElementById('videoZone');
+      if (!zone) return;
+      const vv = (videos.videos || {})[no] || {};
+      const newS = resolveSource(videos, vv);
+      zone.innerHTML = zoneHtml(lesson, newS, mod, vv, store.isDone(no));
+      ctx = { lesson, mod, v: vv, s: newS, videos, isDone: store.isDone(no) };
+      bindZone(lesson, newS, mod);
+      const names = { auto: '自动', local: '直连', pan: '网盘' };
+      toast('视频源已切换为「' + names[nextMode] + '」');
+    });
+  });
+
+  const askBtn = document.getElementById('askLesson');
+  if (askBtn) {
+    askBtn.addEventListener('click', () => {
+      try {
+        sessionStorage.setItem('spstudio.ask', `我想了解第${no}课的「${lesson.title}」，请帮我梳理重点。`);
+      } catch (e) { }
+      location.hash = '#/assistant';
+    });
+  }
+}
+
+/* 当前页面上下文（render 时写入，mount 与视频源切换复用） */
+let ctx = null;
 
 export default {
   async render(params) {
@@ -15,18 +184,16 @@ export default {
       </div></div>`;
     }
     const videos = await data.videos();
+    data.__videosCache = videos;
     const v = (videos.videos || {})[lesson.no] || {};
-    const isMirror = /\.github\.io$/i.test(location.hostname);
     const course = await data.course();
     const mod = course.modules.find(m => m.id === lesson.moduleId);
     const idxInMod = mod.lessons.findIndex(l => l.no === lesson.no);
     const prev = lessons.find(l => l.no === lesson.no - 1) || null;
     const next = lessons.find(l => l.no === lesson.no + 1) || null;
     const isDone = store.isDone(lesson.no);
-
-    const src = isMirror ? '' : (v.src || '');
-    const poster = v.poster || '';
-    const localPath = `D:\\课程资源\\琅泽_老高课堂_SP教程(Substance Painter2019教程)中文版\\${lesson.file || ''}`;
+    const s = resolveSource(videos, v);
+    ctx = { lesson, mod, v, s, videos, isDone };
 
     const sideLessons = mod.lessons.map(l => `<a class="side-lesson ${l.no === lesson.no ? 'current' : ''}" href="#/lesson/${l.no}">
       <span class="sno">${String(l.no).padStart(2, '0')}</span>
@@ -64,29 +231,7 @@ export default {
         </div>
       </div>
 
-      <div class="player-wrap" id="playerWrap">
-        ${src
-          ? `<video id="lessonVideo" controls playsinline preload="metadata" ${poster ? `poster="${esc(poster)}"` : ''}>
-               <source src="${esc(src)}" type="video/mp4">
-             </video>`
-          : `<div class="player-fallback show" id="fallback">
-               <span class="tag gold">${icon('info', 13)} ${isMirror ? '镜像版 · 不含视频' : '视频未挂载'}</span>
-               <h3>${isMirror ? '这是在线镜像页面，视频请用分享链接观看' : '本节视频尚未挂载到服务'}</h3>
-               <p>${isMirror
-                 ? '在线镜像只同步了课程、知识库、题库与练习，视频文件较大没有上传。请在运行「启动学习平台」的电脑上打开，或用分享页里的地址 / 二维码访问，即可在线播放。'
-                 : '启动器会把本地视频目录接通，若仍无法播放，请确认 media/encoded 下的视频文件存在。'}</p>
-               ${isMirror ? '' : `<code>${esc(localPath)}</code>`}
-             </div>`}
-      </div>
-
-      <div class="video-actions">
-        <button class="btn ${isDone ? 'btn-ghost' : 'btn-primary'} btn-sm" id="markDone">
-          ${icon(isDone ? 'check' : 'target', 15)} ${isDone ? '已完成（点击取消）' : '标记为已学完'}
-        </button>
-        <a class="btn btn-ghost btn-sm" href="#/quiz/${mod.id}">${icon('bolt', 15)} 本模块闯关</a>
-        <button class="btn btn-ghost btn-sm" id="askLesson">${icon('bot', 15)} 问 AI 助教</button>
-        ${v.sizeBytes ? `<span style="margin-left:auto;font-size:12px;color:var(--muted)">视频 ${Math.round(v.sizeBytes / 1048576)} MB · 720P</span>` : ''}
-      </div>
+      <div id="videoZone">${zoneHtml(lesson, s, mod, v, isDone)}</div>
 
       <section class="lesson-section">
         <h2>本节要讲什么</h2>
@@ -119,7 +264,7 @@ export default {
       <section class="lesson-section">
         <h2>用 AI 助教继续深挖</h2>
         <div style="display:flex;flex-wrap:wrap;gap:8px">
-          ${quickAsks.map((q, i) => `<button class="chip" data-ask="${esc(q)}">${icon('bot', 13)} ${esc(q.length > 22 ? q.slice(0, 22) + '…' : q)}</button>`).join('')}
+          ${quickAsks.map((q) => `<button class="chip" data-ask="${esc(q)}">${icon('bot', 13)} ${esc(q.length > 22 ? q.slice(0, 22) + '…' : q)}</button>`).join('')}
         </div>
       </section>
 
@@ -156,50 +301,12 @@ export default {
 
   mount(params) {
     const no = Number(params.no);
-    const video = document.getElementById('lessonVideo');
-    const markBtn = document.getElementById('markDone');
+    if (ctx && ctx.lesson && ctx.lesson.no === no) {
+      bindZone(ctx.lesson, ctx.s, ctx.mod);
+    }
+
     const noteArea = document.getElementById('noteArea');
     const noteState = document.getElementById('noteState');
-
-    if (video) {
-      store.setLast(no);
-      video.addEventListener('ended', () => {
-        store.complete(no);
-        toast('本节已完成，进度已记录', 'ok');
-        if (markBtn) {
-          markBtn.className = 'btn btn-ghost btn-sm';
-          markBtn.innerHTML = `${icon('check', 15)} 已完成（点击取消）`;
-        }
-      });
-      video.addEventListener('error', () => {
-        const wrap = document.getElementById('playerWrap');
-        if (!wrap) return;
-        wrap.innerHTML = `<div class="player-fallback show">
-          <span class="tag gold">视频加载失败</span>
-          <h3>暂时无法播放本节视频</h3>
-          <p>可能是网络波动或视频仍在部署中。稍后刷新页面重试；也可以先阅读下方的学习目标与知识点。</p>
-        </div>`;
-      }, { once: true });
-    } else {
-      store.setLast(no);
-    }
-
-    if (markBtn) {
-      markBtn.addEventListener('click', () => {
-        if (store.isDone(no)) {
-          store.uncomplete(no);
-          markBtn.className = 'btn btn-primary btn-sm';
-          markBtn.innerHTML = `${icon('target', 15)} 标记为已学完`;
-          toast('已取消完成标记');
-        } else {
-          store.complete(no);
-          markBtn.className = 'btn btn-ghost btn-sm';
-          markBtn.innerHTML = `${icon('check', 15)} 已完成（点击取消）`;
-          toast('本节已完成，进度已记录', 'ok');
-        }
-      });
-    }
-
     if (noteArea) {
       const save = debounce(() => {
         store.setNote(no, noteArea.value);
@@ -210,17 +317,9 @@ export default {
 
     document.querySelectorAll('[data-ask]').forEach(btn => {
       btn.addEventListener('click', () => {
-        try { sessionStorage.setItem('spstudio.ask', btn.dataset.ask); } catch (e) {}
+        try { sessionStorage.setItem('spstudio.ask', btn.dataset.ask); } catch (e) { }
         location.hash = '#/assistant';
       });
     });
-
-    const askBtn = document.getElementById('askLesson');
-    if (askBtn) {
-      askBtn.addEventListener('click', () => {
-        try { sessionStorage.setItem('spstudio.ask', `我想了解第${no}课的「${document.querySelector('.lesson-head h1').textContent}」，请帮我梳理重点。`); } catch (e) {}
-        location.hash = '#/assistant';
-      });
-    }
   }
 };

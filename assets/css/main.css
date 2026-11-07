@@ -393,6 +393,21 @@ button.chip:hover { color: #fff; border-color: rgba(255, 138, 61, .45); }
 .player-fallback p { color: var(--muted); font-size: 13px; max-width: 460px; }
 .player-fallback code { font-family: var(--mono); font-size: 11.5px; color: #ffcfa8; word-break: break-all; }
 .video-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; align-items: center; }
+.source-switch { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; font-size: 12px; color: var(--muted); }
+.source-switch .chip { padding: 5px 10px; font-size: 12px; }
+.video-size { font-size: 12px; color: var(--muted); margin-left: 6px; }
+.pan-wrap { aspect-ratio: auto; min-height: 360px; display: flex; background:
+  radial-gradient(900px 400px at 20% 0%, rgba(255, 138, 61, .14), transparent 60%), #0c0a09; }
+.pan-player { width: 100%; padding: 34px 36px; display: flex; flex-direction: column; gap: 13px; justify-content: center; align-items: flex-start; }
+.pan-player h3 { font-size: clamp(20px, 2.4vw, 27px); }
+.pan-player p { color: var(--muted); font-size: 13.5px; line-height: 1.85; max-width: 660px; margin: 0; }
+.pan-file { display: inline-flex; align-items: center; gap: 9px; padding: 9px 13px; border-radius: 10px;
+  background: rgba(0, 0, 0, .35); border: 1px dashed var(--line-strong); font-size: 12.5px; color: #ffe0c4; word-break: break-all; }
+.pan-file code { font-family: var(--mono); }
+.pan-actions { display: flex; align-items: center; gap: 11px; flex-wrap: wrap; }
+.pan-pwd { font-size: 12.5px; color: var(--muted); }
+.pan-pwd b { color: var(--gold); font-family: var(--mono); }
+.pan-tip { font-size: 12px !important; color: var(--muted); }
 .lesson-section { margin-top: 30px; }
 .lesson-section h2 { font-size: 18px; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
 .lesson-section h2::before { content: ""; width: 4px; height: 18px; border-radius: 3px; background: linear-gradient(180deg, var(--copper), var(--gold)); }
