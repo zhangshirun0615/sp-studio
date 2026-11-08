@@ -105,7 +105,10 @@
      "给金属板开启置换与细分，由高度生成法线，对比开关置换前后侧视轮廓与高光的差异",
      "在 UVLayout 中完成一件硬表面道具的切割、展平、拉直与自动整理，记录填充率与最大拉伸率"
     ]
-   }
+   },
+   "panUrl": "https://pan.baidu.com/s/5xG23RcZNHd_C57HJtD9xPw",
+   "panPwd": "",
+   "visible": true
   },
   {
    "id": "thyan",
@@ -187,13 +190,16 @@
      "完成红鬼题材气氛图，交付草图、白模截图与成图三份文件"
     ]
    },
-   "hasQuiz": true
+   "hasQuiz": true,
+   "panUrl": "https://pan.baidu.com/s/1fzLWtT-WYUJaK5JUY1t19Q?pwd=8d9r",
+   "panPwd": "8d9r",
+   "visible": true
   },
   {
    "id": "zbrush",
    "type": "video",
    "category": "三维与材质",
-   "title": "ZBrush 基础教程",
+   "title": "ZBrush 基础",
    "subtitle": "19 章 · 从界面到雕刻实战",
    "description": "从工具栏、笔刷、Alpha 到建模、纹理、灯光渲染与 Z 球、卡通人头、玉龙/戟龙/宝箱等实战案例，系统掌握数字雕刻基础。",
    "accent": "#b3a1ff",
@@ -264,13 +270,16 @@
      "完成卡通人头的颜色绘制与 BPR 出图，含分层渲染与 PS 后期合成"
     ]
    },
-   "hasQuiz": true
+   "hasQuiz": true,
+   "panUrl": "https://pan.baidu.com/s/1TozssTII3f2PZdtHf3Q6ZQ?pwd=8d9r",
+   "panPwd": "8d9r",
+   "visible": true
   },
   {
    "id": "design-foundation",
    "type": "video",
    "category": "平面构成",
-   "title": "构成设计与色彩基础",
+   "title": "构成与色彩",
    "subtitle": "平面构成（周更团练 + 九章）+ 色彩的艺术",
    "description": "三门设计基础课合并：平面构成周更团练、何川九章平面构成、色彩的艺术，覆盖点线面、形式法则、构图与配色方法。",
    "accent": "#ffd166",
@@ -346,7 +355,10 @@
      "命题构成：以某个角色或主题做一套九章式的图形推演并排版呈现"
     ]
    },
-   "hasQuiz": true
+   "hasQuiz": true,
+   "panUrl": "https://pan.baidu.com/s/1WmgKy0tUSdGXj4lhtEH9wQ?pwd=8d9r",
+   "panPwd": "8d9r",
+   "visible": true
   },
   {
    "id": "draw-render",
@@ -585,8 +597,8 @@
   {
    "id": "illustration-magic",
    "type": "video",
-   "category": "平面构成",
-   "title": "平面构成魔法课：让设计效果翻倍",
+   "category": "数字绘画",
+   "title": "插画魔法课：让设计效果翻倍",
    "subtitle": "42 节 · 元素 / 骨格 / 构图 / 插画应用",
    "description": "从点线面元素、单位形组合、骨格与纹样，到构图方法、立体表现与插画质感，配合挑战关卡与直播点评，系统训练平面构成能力。",
    "accent": "#ff9ec7",
@@ -656,13 +668,16 @@
      "完成 1 张完整插画，包含构图骨架、二分阴影、材质笔刷与点缀，附 300 字设计说明。"
     ]
    },
-   "hasQuiz": true
+   "hasQuiz": true,
+   "panUrl": "https://pan.baidu.com/s/5oIDGOaqj8rKw_RtXy-Tr-A",
+   "panPwd": "",
+   "visible": true
   },
   {
    "id": "bili-edit",
    "type": "bilibili",
    "category": "影视与剪辑",
-   "title": "63 节视听语言课",
+   "title": "视听语言课",
    "subtitle": "B 站 · 剪辑思维与镜头语言",
    "description": "从景别、镜头、转场到节奏与剪辑思维，62 个视频分 P 系统讲解影视后期剪辑，适合零基础入门。",
    "accent": "#6bc5ff",
@@ -732,7 +747,10 @@
    "hasQuiz": true,
    "theme": {
     "pattern": "grid"
-   }
+   },
+   "panUrl": "",
+   "panPwd": "",
+   "visible": true
   },
   {
    "id": "bili-pr",
