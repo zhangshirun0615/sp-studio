@@ -4,7 +4,7 @@
   "subtitle": "三维 · 影视 · 概念设计 · 平面构成 · 绘画与渲染",
   "intro": "汇聚 Substance Painter、ZBrush、影视概念设计、平面构成、色彩、分镜、动画与剪辑课程，配套 AI 助教、知识库、闯关练习与实训评估。"
  },
- "updated": "2026-11-08 09:44",
+ "updated": "2026-11-08 13:16",
  "categories": [
   {
    "id": "all",
@@ -508,10 +508,16 @@
    "modules": 0,
    "resources": 8,
    "pan": {
-    "url": "",
-    "pwd": ""
+    "url": "https://pan.baidu.com/s/1fz4ENmuLW07P4ThgX_KOcw?pwd=9p68",
+    "pwd": "9p68"
    },
-   "panLinks": [],
+   "panLinks": [
+    {
+     "label": "L动画大师课系列",
+     "url": "https://pan.baidu.com/s/1fz4ENmuLW07P4ThgX_KOcw?pwd=9p68",
+     "pwd": "9p68"
+    }
+   ],
    "outline": {
     "objectives": [
      "系统掌握动画大师课四部教材的方法体系：分镜头脚本设计、画幅与分镜、场景透视、人物透视。",
