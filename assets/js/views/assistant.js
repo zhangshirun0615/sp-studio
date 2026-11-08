@@ -1,5 +1,6 @@
 import store from '../store.js';
 import { esc, icon, toast } from '../ui.js';
+import data from '../data.js';
 import { getReply, suggestions } from '../ai.js';
 
 function botMsg(html) {
@@ -7,14 +8,14 @@ function botMsg(html) {
 }
 
 function greeting() {
-  return `<h4>你好，我是材质工坊助教</h4>
-  <p>我可以帮你梳理 58 节课的知识点、解释 SP 的专业术语、排查常见操作问题，并指到对应的课时。</p>
+  return `<h4>你好，我是学习平台 AI 助教</h4>
+  <p>我覆盖平台上的全部课程：三维材质（Substance Painter）、ZBrush、影视概念设计、平面构成、色彩、绘画渲染、分镜、动画大师课、插画魔法课、视听语言与 PR 剪辑。</p>
   <ul>
-    <li>默认使用<strong>本地知识引擎</strong>，无需联网也能回答</li>
-    <li>在右上角「设置」里填入大模型 API Key，可获得更强的对话能力</li>
-    <li>回答下方会附上相关课时链接，点开就能边看边学</li>
+    <li>可以问“某门课怎么学”“某一节课讲什么”，我会给出课程定位、知识点与对应课时；</li>
+    <li>也可以问知识图谱、闯关练习、学生登录、教师端使用等平台问题；</li>
+    <li>默认使用<strong>本地知识引擎</strong>；配置在线大模型 Key 后会优先调用模型，失败自动回退本地。</li>
   </ul>
-  <p style="color:var(--muted);font-size:12.5px">试试下面的问题，或直接输入你的疑问。</p>`;
+  <p style="color:var(--muted);font-size:12.5px">先从下面选一门课，或直接输入你的问题。</p>`;
 }
 
 function renderHistory(history) {
@@ -31,6 +32,8 @@ export default {
     const hist = store.aiHistory();
     const hasKey = !!store.getSettings().apiKey;
     const chips = suggestions.map((s, i) => `<button class="suggest-btn" data-suggest="${esc(s)}"><span>0${i + 1}</span>${esc(s)}</button>`).join('');
+    const cat = await data.catalog().catch(() => ({ courses: [] }));
+    const courseChips = (cat.courses || []).map(c => `<button class="chip" data-course-ask="${esc(c.title)}" style="font-size:11.5px;padding:3px 9px">${esc(c.title)}</button>`).join('');
 
     return `<div class="container">
   <div class="assistant-layout">
@@ -40,12 +43,16 @@ export default {
         <div style="display:flex;flex-direction:column;gap:4px">${chips}</div>
       </div>
       <div class="side-panel">
+        <h3>可问课程</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">${courseChips}</div>
+      </div>
+      <div class="side-panel">
         <h3>能力范围</h3>
         <ul class="side-list">
-          <li>${icon('book', 14)}<span>概念解释：术语、参数、面板</span></li>
-          <li>${icon('layers', 14)}<span>操作路径：步骤、先后顺序</span></li>
-          <li>${icon('target', 14)}<span>排错思路：烘焙、UV、置换</span></li>
-          <li>${icon('bolt', 14)}<span>练习建议：怎么练、练什么</span></li>
+          <li>${icon('book', 14)}<span>课程定位：一门课/一节课讲什么</span></li>
+          <li>${icon('layers', 14)}<span>知识点：概念、步骤、术语</span></li>
+          <li>${icon('target', 14)}<span>学习路线：先学哪章、怎么练</span></li>
+          <li>${icon('bolt', 14)}<span>平台用法：题库、图谱、学生/教师端</span></li>
         </ul>
       </div>
       <div class="side-panel">
@@ -61,7 +68,7 @@ export default {
       <div class="chat-head">
         <span class="chat-avatar">${icon('bot', 19)}</span>
         <div>
-          <h3>材质工坊助教</h3>
+          <h3>学习平台 AI 助教</h3>
           <p>${hasKey ? '在线模型 + 本地知识库' : '本地知识引擎 · 秒回'}</p>
         </div>
         <span class="chat-status"><i></i>在线</span>
@@ -74,10 +81,10 @@ export default {
         ${hist.length ? renderHistory(hist) : `<div class="msg bot"><span class="avatar">${icon('bot', 16)}</span><div class="bubble">${greeting()}</div></div>`}
       </div>
       <div class="chat-input-bar">
-        <textarea id="chatInput" rows="1" placeholder="问我任何 Substance Painter 的问题，Enter 发送，Shift+Enter 换行…" aria-label="输入问题"></textarea>
+        <textarea id="chatInput" rows="1" placeholder="问我任何课程的问题，例如「ZBrush 的 Dynamesh 怎么用」「影视概念设计第二阶段学什么」…" aria-label="输入问题"></textarea>
         <button class="chat-send" id="chatSend" title="发送" aria-label="发送">${icon('send', 18)}</button>
       </div>
-      <div class="chat-note">回答由课程知识库生成，仅用于学习参考；如配置了在线模型，问题会发送到你填写的接口。</div>
+      <div class="chat-note">回答基于平台 10 门课程的知识点、课程大纲、题库与平台说明生成，仅用于学习参考；如配置了在线模型，问题会发送到你填写的接口。</div>
     </div>
   </div>
 </div>`;
@@ -87,6 +94,14 @@ export default {
     const body = document.getElementById('chatBody');
     const input = document.getElementById('chatInput');
     const sendBtn = document.getElementById('chatSend');
+    document.querySelectorAll('[data-course-ask]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const inputEl = document.getElementById('chatInput');
+        if (!inputEl) return;
+        inputEl.value = '《' + btn.dataset.courseAsk + '》这门课怎么学？';
+        inputEl.focus();
+      });
+    });
     let busy = false;
 
     const scroll = () => { body.scrollTop = body.scrollHeight; };
