@@ -12,7 +12,7 @@ import quiz from './views/quiz.js';
 import admin from './views/admin.js';
 import student from './views/student.js';
 import data from './data.js';
-import { observeReveal, icon, esc } from './ui.js';
+import { observeReveal, icon, esc, clearCourseTheme } from './ui.js';
 
 const routes = [
   { re: /^\/?$/, view: home, nav: 'home' },
@@ -92,6 +92,7 @@ const loadingHtml = `<div class="container" style="padding-top:60px;padding-bott
 
 let renderToken = 0;
 async function renderRoute() {
+  clearCourseTheme();
   const token = ++renderToken;
   const { path, query } = parseHash();
   const m = match(path);

@@ -4,7 +4,7 @@
   "subtitle": "三维 · 影视 · 概念设计 · 平面构成 · 绘画与渲染",
   "intro": "汇聚 Substance Painter、ZBrush、影视概念设计、平面构成、色彩、分镜、动画与剪辑课程，配套 AI 助教、知识库、闯关练习与实训评估。"
  },
- "updated": "2026-11-08 13:33",
+ "updated": "2026-11-08 13:55",
  "categories": [
   {
    "id": "all",
@@ -61,6 +61,9 @@
    },
    "panLinks": [],
    "resources": 0,
+   "theme": {
+    "pattern": "hex"
+   },
    "outline": {
     "objectives": [
      "能独立跑通 Substance Painter 2019 从模型导入、高低模烘焙到贴图导出的完整 PBR 材质流程",
@@ -139,6 +142,9 @@
      "pwd": ""
     }
    ],
+   "theme": {
+    "pattern": "lines"
+   },
    "outline": {
     "objectives": [
      "建立影视概念设计的工作认知，能把文字设定拆解成时代、地域、材质与情绪四项视觉需求",
@@ -213,6 +219,9 @@
      "pwd": "8d9r"
     }
    ],
+   "theme": {
+    "pattern": "rings"
+   },
    "outline": {
     "objectives": [
      "熟练 ZBrush 界面、子工具、动态细分与 Dynamesh、ZRemesher 等基础操作",
@@ -292,6 +301,9 @@
      "pwd": ""
     }
    ],
+   "theme": {
+    "pattern": "grid"
+   },
    "outline": {
     "objectives": [
      "理解点线面与形式美法则，能用构成语言有意识地组织画面而不是堆砌元素",
@@ -367,6 +379,9 @@
      "pwd": "8d9r"
     }
    ],
+   "theme": {
+    "pattern": "waves"
+   },
    "outline": {
     "objectives": [
      "掌握一点、两点、三点透视的作图方法，能用视锥、地平线与灭点系统搭建可信的三维空间。",
@@ -446,6 +461,9 @@
      "pwd": "8d9r"
     }
    ],
+   "theme": {
+    "pattern": "lines"
+   },
    "outline": {
     "objectives": [
      "建立“分镜即视觉叙事”的核心观念，能用画面而非台词交代人物、空间与冲突。",
@@ -518,6 +536,9 @@
      "pwd": "9p68"
     }
    ],
+   "theme": {
+    "pattern": "dots"
+   },
    "outline": {
     "objectives": [
      "系统掌握动画大师课四部教材的方法体系：分镜头脚本设计、画幅与分镜、场景透视、人物透视。",
@@ -591,6 +612,9 @@
      "pwd": ""
     }
    ],
+   "theme": {
+    "pattern": "blobs"
+   },
    "outline": {
     "objectives": [
      "掌握点、线、面元素与单位形组合方法，把抽象概念转化为可用的设计语言。",

@@ -143,3 +143,18 @@ export function dayLabel(ts) {
   const d = new Date(ts);
   return `${d.getMonth() + 1}月${d.getDate()}日`;
 }
+
+
+const THEME_PATTERNS = ['dots', 'grid', 'lines', 'waves', 'hex', 'rings', 'blobs'];
+
+export function applyCourseTheme(meta) {
+  clearCourseTheme();
+  const pattern = meta && meta.theme && meta.theme.pattern;
+  if (pattern && THEME_PATTERNS.includes(pattern)) document.body.classList.add('theme-' + pattern);
+  if (meta && meta.accent) document.documentElement.style.setProperty('--accent', meta.accent);
+}
+
+export function clearCourseTheme() {
+  THEME_PATTERNS.forEach(p => document.body.classList.remove('theme-' + p));
+  document.documentElement.style.removeProperty('--accent');
+}

@@ -1,6 +1,6 @@
 import data from '../data.js';
 import store from '../store.js';
-import { esc, icon, fmtDur, pct } from '../ui.js';
+import { esc, icon, fmtDur, pct, applyCourseTheme } from '../ui.js';
 
 function hours(sec) { return (sec / 3600).toFixed(1); }
 
@@ -91,10 +91,11 @@ export default {
     if (pan && !panLinks.some(x => x.url === pan.url)) panLinks.unshift(pan);
     const isMirror = /\.github\.io$/i.test(location.hostname);
     const outline = d.outline || meta.outline || null;
+    applyCourseTheme(meta);
     const resCount = flatRes.length + sections.reduce((a, s) => a + (s.items || []).length, 0);
 
     const modulesHtml = (d.modules || []).map((m, idx) => {
-      const ls = m.lessons || [];
+      const ls = (m.lessons || []).filter(l => !l.hidden);
       if (!ls.length) return '';
       const mDone = ls.filter(l => store.isDoneIn(id, String(l.no))).length;
       const mp = pct(mDone, ls.length);

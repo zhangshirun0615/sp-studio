@@ -794,6 +794,8 @@ async function initCoursesAdmin() {
         <td class="student-ops">
           <button class="btn btn-ghost btn-xs" data-course-edit="${esc(c.id)}">编辑</button>
           <button class="btn btn-ghost btn-xs" data-course-toggle="${esc(c.id)}">${hidden ? '显示' : '隐藏'}</button>
+          <button class="btn btn-ghost btn-xs" data-course-lessons="${esc(c.id)}">课时</button>
+          <button class="btn btn-ghost btn-xs" data-course-graph="${esc(c.id)}">图谱</button>
           ${o && Object.keys(o).length ? `<button class="btn btn-ghost btn-xs" data-course-reset="${esc(c.id)}">恢复</button>` : ''}
         </td>
       </tr>`;
@@ -810,6 +812,7 @@ async function initCoursesAdmin() {
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
         <button class="btn btn-primary btn-sm" id="publishCatalog">${icon('external', 15)} 发布课程目录到服务器</button>
         <button class="btn btn-ghost btn-sm" id="exportCatalog">${icon('download', 14)} 导出 catalog.json（镜像用）</button>
+        <button class="btn btn-ghost btn-sm" id="deployMirror">${icon('refresh', 14)} 部署到在线镜像</button>
         <button class="btn btn-ghost btn-sm" id="addExternalCourse">${icon('check', 14)} 新增外链课程</button>
         <span style="font-size:12px;color:var(--muted);margin-left:auto">共 ${(base.courses || []).length + custom.length} 门</span>
       </div>
@@ -845,6 +848,10 @@ async function initCoursesAdmin() {
     document.getElementById('publishCatalog').onclick = publishCatalog;
     document.getElementById('exportCatalog').onclick = exportCatalog;
     document.getElementById('addExternalCourse').onclick = addExternalCourseModal;
+    const dm = document.getElementById('deployMirror');
+    if (dm) dm.onclick = deployMirror;
+    host.querySelectorAll('[data-course-lessons]').forEach(b => b.onclick = () => openLessonEditor(b.dataset.courseLessons));
+    host.querySelectorAll('[data-course-graph]').forEach(b => b.onclick = () => openGraphEditor(b.dataset.courseGraph));
   } catch (e) {
     host.innerHTML = `<p style="color:var(--warn)">${esc(e.message)}</p>`;
   }
@@ -870,6 +877,17 @@ function openCourseEdit(id, base) {
       <label>网盘链接<input class="t-input" id="cePan" value="${esc(o.panUrl != null ? o.panUrl : ((c.pan && c.pan.url) || ''))}" placeholder="https://pan.baidu.com/s/..."></label>
       <label>提取码<input class="t-input" id="cePwd" value="${esc(o.panPwd != null ? o.panPwd : ((c.pan && c.pan.pwd) || ''))}"></label>
     </div>
+    <div class="t-grid2" style="margin-top:8px">
+      <label>主题色<input type="color" id="ceAccent" value="${esc(o.accent || c.accent || '#ff8a3d')}" style="width:100%;height:34px;padding:2px;background:none;border:1px solid var(--line);border-radius:8px"></label>
+      <label>主题图案
+        <select class="t-input" id="cePattern">
+          ${['dots','grid','lines','waves','hex','rings','blobs','none'].map(pt => {
+            const cur = (o.theme && o.theme.pattern) || (c.theme && c.theme.pattern) || 'grid';
+            return `<option value="${pt}" ${pt === cur ? 'selected' : ''}>${({dots:'圆点',grid:'网格',lines:'斜线',waves:'波纹',hex:'六边',rings:'同心圆',blobs:'色块',none:'无'})[pt]}</option>`;
+          }).join('')}
+        </select>
+      </label>
+    </div>
     <label class="map-check" style="margin-top:10px"><input type="checkbox" id="ceVisible" ${(o.visible !== false) ? 'checked' : ''}> 学生端显示这门课程</label>
     <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px">
       <button class="btn btn-ghost btn-sm" id="ceCancel">取消</button>
@@ -888,6 +906,8 @@ function openCourseEdit(id, base) {
       description: bd.querySelector('#ceDesc').value.trim(),
       panUrl: bd.querySelector('#cePan').value.trim(),
       panPwd: bd.querySelector('#cePwd').value.trim(),
+      accent: bd.querySelector('#ceAccent').value,
+      theme: { pattern: bd.querySelector('#cePattern').value },
       visible: bd.querySelector('#ceVisible').checked
     };
     core.data.courseOverrides[id] = Object.assign({}, o, patch);
@@ -897,6 +917,202 @@ function openCourseEdit(id, base) {
     initCoursesAdmin();
   };
 }
+
+function courseDataUrl(cid) {
+  return cid === 'sp' ? 'data/course.json' : 'data/courses/' + cid + '.json';
+}
+
+async function loadCourseData(cid) {
+  const res = await fetch(courseDataUrl(cid) + '?v=' + Date.now(), { cache: 'no-store' });
+  if (!res.ok) throw new Error('课程数据加载失败');
+  return res.json();
+}
+
+async function ensureTeacherApi() {
+  if (!serverState.key) await ensureServer();
+}
+
+async function deployMirror() {
+  try {
+    await ensureTeacherApi();
+    toast('正在部署在线镜像，请稍候（1~10 分钟）…');
+    const r = await api('/api/teacher/deploy-mirror', {
+      method: 'POST',
+      headers: { 'X-Teacher-Key': serverState.key }
+    });
+    toast('镜像已部署：' + (r.output || '').split('\n').slice(-1)[0], 'ok');
+  } catch (e) {
+    toast('镜像部署失败：' + e.message, 'err');
+  }
+}
+
+async function openLessonEditor(cid) {
+  let data;
+  try { data = await loadCourseData(cid); }
+  catch (e) { toast(e.message, 'err'); return; }
+  const items = [];
+  (data.modules || []).forEach(m => (m.lessons || []).forEach(l => {
+    items.push({ id: l.id || ('l' + l.no), no: l.no, title: l.title, hidden: !!l.hidden, module: m.title });
+  }));
+  const bd = document.createElement('div');
+  bd.className = 'modal-backdrop show';
+  bd.innerHTML = `<div class="modal" style="position:relative;max-width:760px;max-height:86vh;display:flex;flex-direction:column">
+    <button class="icon-btn m-close">${icon('close', 16)}</button>
+    <h2>课时管理 · ${esc(data.title || cid)}</h2>
+    <p style="color:var(--muted);font-size:12.5px;margin-top:6px">可修改每节课名称、勾选隐藏；保存后课程页刷新即生效，在线镜像需再点「部署到在线镜像」。</p>
+    <input class="t-input" id="leSearch" placeholder="搜索课时标题…" style="margin-top:10px">
+    <div id="leList" style="overflow:auto;margin-top:10px;flex:1;min-height:200px">
+      ${items.map(it => `<div class="le-row" data-id="${esc(it.id)}" data-no="${it.no}" data-module="${esc(it.module)}" style="display:flex;gap:10px;align-items:center;padding:6px 0;border-bottom:1px dashed var(--line)">
+        <span class="mono" style="width:42px;color:var(--muted)">${String(it.no).padStart(3, '0')}</span>
+        <input class="t-input le-title" value="${esc(it.title)}" style="flex:1">
+        <label style="display:flex;align-items:center;gap:4px;font-size:12px;color:var(--muted)"><input type="checkbox" class="le-hide" ${it.hidden ? 'checked' : ''}>隐藏</label>
+      </div>`).join('')}
+    </div>
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:14px">
+      <button class="btn btn-ghost btn-sm" id="leCancel">取消</button>
+      <button class="btn btn-primary btn-sm" id="leSave">${icon('check', 15)} 保存课时</button>
+    </div>
+  </div>`;
+  document.body.appendChild(bd);
+  const close = () => bd.remove();
+  bd.querySelector('.m-close').onclick = close;
+  bd.querySelector('#leCancel').onclick = close;
+  const search = bd.querySelector('#leSearch');
+  search.addEventListener('input', () => {
+    const q = search.value.trim().toLowerCase();
+    bd.querySelectorAll('.le-row').forEach(row => {
+      row.style.display = !q || row.querySelector('.le-title').value.toLowerCase().includes(q) ? '' : 'none';
+    });
+  });
+  bd.querySelector('#leSave').onclick = async () => {
+    const lessons = [...bd.querySelectorAll('.le-row')].map(row => ({
+      id: row.dataset.id,
+      title: row.querySelector('.le-title').value.trim(),
+      hidden: row.querySelector('.le-hide').checked
+    }));
+    try {
+      await ensureTeacherApi();
+      const r = await api('/api/teacher/save-lessons', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Teacher-Key': serverState.key },
+        body: JSON.stringify({ courseId: cid, lessons })
+      });
+      toast(`已保存 ${r.count} 节课时；刷新课程页生效，镜像请点「部署到在线镜像」`, 'ok');
+      close();
+    } catch (e) { toast('保存失败：' + e.message, 'err'); }
+  };
+}
+
+async function openGraphEditor(cid) {
+  let data;
+  try { data = await loadCourseData(cid); }
+  catch (e) { toast(e.message, 'err'); return; }
+  const g = data.graph;
+  if (!g || !(g.nodes || []).length) { toast('该课程还没有知识图谱'); return; }
+  const modules = g.nodes.filter(n => n.type === 'module' || n.type === 'chapter');
+  const concepts = g.nodes.filter(n => n.type === 'concept');
+  const linkSource = {};
+  (g.links || []).forEach(l => { if (!linkSource[l.target]) linkSource[l.target] = l.source; });
+  const moduleIds = new Set(modules.map(m => m.id));
+  const groups = modules.map(m => ({
+    id: m.id, label: m.label, type: m.type, group: m.group,
+    items: concepts.filter(c => (linkSource[c.id] || ('m' + c.group)) === m.id || (linkSource[c.id] && linkSource[c.id] === m.id))
+  }));
+  const bd = document.createElement('div');
+  bd.className = 'modal-backdrop show';
+  bd.innerHTML = `<div class="modal" style="position:relative;max-width:820px;max-height:88vh;display:flex;flex-direction:column">
+    <button class="icon-btn m-close">${icon('close', 16)}</button>
+    <h2>知识图谱编辑 · ${esc(data.title || cid)}</h2>
+    <p style="color:var(--muted);font-size:12.5px;margin-top:6px">可修改模块名与知识点名称、删除知识点、新增知识点；保存后图谱页刷新生效。</p>
+    <div id="kgEditList" style="overflow:auto;margin-top:10px;flex:1;min-height:220px">
+      ${groups.map(gr => `<div class="kg-edit-group" data-mid="${esc(gr.id)}" style="margin-bottom:14px">
+        <label style="display:flex;gap:8px;align-items:center"><b style="min-width:120px">模块</b>
+          <input class="t-input kg-mod-label" value="${esc(gr.label)}" style="flex:1"></label>
+        <div style="display:flex;flex-direction:column;gap:6px;margin-top:8px">
+          ${gr.items.map(c => `<div class="kg-edit-row" data-cid="${esc(c.id)}" style="display:flex;gap:8px;align-items:center">
+            <input class="t-input kg-c-label" value="${esc(c.label)}" style="flex:1">
+            <label style="font-size:12px;color:var(--muted);display:flex;gap:4px;align-items:center"><input type="checkbox" class="kg-c-del">删除</label>
+          </div>`).join('')}
+        </div>
+      </div>`).join('')}
+    </div>
+    <div style="display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap">
+      <select class="t-input" id="kgAddGroup" style="width:220px">
+        ${modules.map(m => `<option value="${esc(m.id)}">${esc(m.label)}</option>`).join('')}
+      </select>
+      <input class="t-input" id="kgAddLabel" placeholder="新增知识点名称" style="flex:1;min-width:180px">
+      <button class="btn btn-ghost btn-sm" id="kgAddBtn">${icon('check', 14)} 添加</button>
+    </div>
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:14px">
+      <button class="btn btn-ghost btn-sm" id="kgCancel">取消</button>
+      <button class="btn btn-primary btn-sm" id="kgSave">${icon('check', 15)} 保存图谱</button>
+    </div>
+  </div>`;
+  document.body.appendChild(bd);
+  const close = () => bd.remove();
+  const added = [];
+  bd.querySelector('.m-close').onclick = close;
+  bd.querySelector('#kgCancel').onclick = close;
+  bd.querySelector('#kgAddBtn').onclick = () => {
+    const mid = bd.querySelector('#kgAddGroup').value;
+    const label = bd.querySelector('#kgAddLabel').value.trim();
+    if (!label) return toast('请输入知识点名称');
+    const id = 'concept-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 5);
+    added.push({ id, label, group: mid });
+    const host = bd.querySelector('.kg-edit-group[data-mid="' + mid + '"]');
+    const row = document.createElement('div');
+    row.className = 'kg-edit-row';
+    row.dataset.cid = id;
+    row.style.cssText = 'display:flex;gap:8px;align-items:center';
+    row.innerHTML = `<input class="t-input kg-c-label" value="${esc(label)}" style="flex:1"><label style="font-size:12px;color:var(--muted);display:flex;gap:4px;align-items:center"><input type="checkbox" class="kg-c-del">删除</label>`;
+    host.appendChild(row);
+    bd.querySelector('#kgAddLabel').value = '';
+  };
+  bd.querySelector('#kgSave').onclick = async () => {
+    const nodes = [];
+    const courseNode = g.nodes.find(n => n.type === 'course');
+    if (courseNode) nodes.push(Object.assign({}, courseNode));
+    const kept = new Set();
+    bd.querySelectorAll('.kg-edit-group').forEach(gr => {
+      const mid = gr.dataset.mid;
+      const mod = modules.find(m => m.id === mid);
+      if (!mod) return;
+      const label = gr.querySelector('.kg-mod-label').value.trim() || mod.label;
+      nodes.push(Object.assign({}, mod, { label }));
+      kept.add(mid);
+    });
+    bd.querySelectorAll('.kg-edit-row').forEach(row => {
+      const cid2 = row.dataset.cid;
+      const group = row.closest('.kg-edit-group').dataset.mid;
+      if (row.querySelector('.kg-c-del').checked) return;
+      const label = row.querySelector('.kg-c-label').value.trim();
+      if (!label) return;
+      const old = concepts.find(c => c.id === cid2);
+      nodes.push(Object.assign({}, old || { id: cid2, type: 'concept', group: modules.find(m => m.id === group) ? modules.find(m => m.id === group).group : 1 }, { label, group: modules.find(m => m.id === group) ? modules.find(m => m.id === group).group : 1 }));
+      kept.add(cid2);
+    });
+    added.forEach(a => {
+      const mod = modules.find(m => m.id === a.group);
+      if (!mod) return;
+      nodes.push({ id: a.id, label: a.label, type: 'concept', group: mod.group });
+      kept.add(a.id);
+    });
+    const links = (g.links || []).filter(l => kept.has(l.source) && kept.has(l.target));
+    added.forEach(a => { if (kept.has(a.group) && kept.has(a.id)) links.push({ source: a.group, target: a.id }); });
+    const graph = { nodes, links };
+    try {
+      await ensureTeacherApi();
+      await api('/api/teacher/save-graph', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Teacher-Key': serverState.key },
+        body: JSON.stringify({ courseId: cid, graph })
+      });
+      toast('知识图谱已保存；刷新图谱页生效，镜像请点「部署到在线镜像」', 'ok');
+      close();
+    } catch (e) { toast('保存图谱失败：' + e.message, 'err'); }
+  };
+}
+
 
 function addExternalCourseModal() {
   const bd = document.createElement('div');
@@ -950,7 +1166,7 @@ async function publishCatalog() {
       headers: { 'Content-Type': 'application/json', 'X-Teacher-Key': serverState.key },
       body: JSON.stringify(merged)
     });
-    toast(`课程目录已发布：${r.courses} 门课程，学生端刷新后生效`, 'ok');
+    toast(`已发布到本地服务器（${r.courses} 门课程）。在线镜像请点「部署到在线镜像」，等待 1~10 分钟。`, 'ok');
   } catch (e) {
     toast('发布失败：' + e.message + '（可先导出 catalog.json 手动部署镜像）', 'err');
   }

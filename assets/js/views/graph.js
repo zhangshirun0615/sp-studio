@@ -1,5 +1,5 @@
 import data from '../data.js';
-import { esc, icon } from '../ui.js';
+import { esc, icon, downloadText } from '../ui.js';
 
 const PALETTE = ['#ff8a3d', '#ffd166', '#7ee0c3', '#6bc5ff', '#b3a1ff', '#ff9ec7',
   '#ffb347', '#7ee0c3', '#8fd6a8', '#e8b7ff', '#ffb27a', '#9ad6ff'];
@@ -34,7 +34,11 @@ export default {
           <h1 style="font-size:clamp(24px,3vw,34px)">${esc(meta.title)} · 知识图谱</h1>
           <p class="section-sub">${modules} 个章节 · ${concepts} 个知识节点 · 拖拽/点击查看关系，双击画布重置视图</p>
         </div>
-        <a class="btn btn-ghost btn-sm" href="#/quiz/${meta.id}">${icon('bolt', 15)} 去闯关练习</a>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <a class="btn btn-ghost btn-sm" href="#/quiz/${meta.id}">${icon('bolt', 15)} 去闯关练习</a>
+          <button class="btn btn-ghost btn-sm" id="kgExportPng">${icon('download', 14)} 导出图片</button>
+          <button class="btn btn-ghost btn-sm" id="kgExportJson">${icon('download', 14)} 导出数据</button>
+        </div>
       </div>
       <div class="graph-wrap">
         <canvas id="kgCanvas" aria-label="课程知识图谱"></canvas>
@@ -68,6 +72,7 @@ export default {
     const ctx = canvas.getContext('2d');
     const wrap = canvas.parentElement;
     const graph = this._course && this._course.data.graph;
+    const meta = this._course && this._course.meta;
     if (!graph) return;
 
     const nodes = graph.nodes.map((n, i) => ({
@@ -299,6 +304,26 @@ export default {
       draw();
     }, { passive: false });
 
+    const expPng = document.getElementById('kgExportPng');
+    if (expPng) {
+      expPng.addEventListener('click', () => {
+        canvas.toBlob((blob) => {
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = (meta ? meta.id : 'course') + '-knowledge-graph.png';
+          a.click();
+          setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+        }, 'image/png');
+      });
+    }
+    const expJson = document.getElementById('kgExportJson');
+    if (expJson) {
+      expJson.addEventListener('click', () => {
+        downloadText((meta ? meta.id : 'course') + '-knowledge-graph.json',
+          JSON.stringify({ course: meta ? meta.title : '', graph: graph }, null, 1),
+          'application/json;charset=utf-8');
+      });
+    }
     const labelToggle = document.getElementById('kgLabels');
     if (labelToggle) {
       labelToggle.addEventListener('change', () => { showLabels = labelToggle.checked; draw(); });

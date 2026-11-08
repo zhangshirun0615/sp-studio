@@ -45,7 +45,7 @@ const data = {
     if (!c) return [];
     if (c.meta.type === 'sp') {
       const list = [];
-      (c.data.modules || []).forEach(m => m.lessons.forEach(l => {
+      (c.data.modules || []).forEach(m => (m.lessons||[]).filter(l => !l.hidden).forEach(l => {
         list.push(Object.assign({}, l, {
           moduleId: m.id, moduleIndex: m.index, moduleTitle: m.title,
           moduleColor: m.color, courseId: id, key: String(l.no)
@@ -54,7 +54,7 @@ const data = {
       return list.sort((a, b) => a.no - b.no);
     }
     const list = [];
-    (c.data.modules || []).forEach(m => (m.lessons || []).forEach(l => {
+    (c.data.modules || []).forEach(m => (m.lessons || []).filter(l => !l.hidden).forEach(l => {
       list.push(Object.assign({}, l, {
         moduleId: m.id, moduleIndex: m.index, moduleTitle: m.title,
         moduleColor: c.meta.accent || '#ff8a3d', courseId: id, key: String(l.no)

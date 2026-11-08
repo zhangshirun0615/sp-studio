@@ -1,6 +1,6 @@
 import data from '../data.js';
 import store from '../store.js';
-import { esc, icon, fmtDur, levelClass, toast, debounce, copyText } from '../ui.js';
+import { esc, icon, fmtDur, levelClass, toast, debounce, copyText, applyCourseTheme } from '../ui.js';
 
 let ctx = null;
 const isMirrorHost = () => /\.github\.io$/i.test(location.hostname);
@@ -191,6 +191,7 @@ export default {
     const next = idx < lessons.length - 1 ? lessons[idx + 1] : null;
     const isSP = meta.type === 'sp';
     const isDone = store.isDoneIn(cid, String(lesson.no));
+    applyCourseTheme(meta);
     const spVideo = isSP ? ((await data.videos()).videos || {})[lesson.no] || {} : {};
     ctx = { course, lesson, spVideo, s: null };
 
