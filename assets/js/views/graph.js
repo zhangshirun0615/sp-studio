@@ -42,8 +42,22 @@ export default {
           <span><i style="background:#ff8a3d"></i>课程</span>
           <span><i style="background:#6bc5ff"></i>章节 / 模块</span>
           <span><i style="background:#7ee0c3"></i>知识点</span>
+          <label class="kg-toggle"><input type="checkbox" id="kgLabels" checked> 显示知识点名称</label>
           <span class="graph-hint">滚轮缩放 · 拖拽画布平移 · 点击节点高亮</span>
         </div>
+      </div>
+      <div class="graph-concepts">
+        <div class="kg-head"><b>知识点索引</b><span>共 ${concepts} 个节点 · 点击定位到画布</span></div>
+        <div class="kg-body">${(() => {
+          const groups = {};
+          g.nodes.forEach(n => { if (n.type === 'module' || n.type === 'chapter') groups[n.group] = n.label; });
+          const byGroup = {};
+          g.nodes.forEach(n => { if (n.type === 'concept') (byGroup[n.group] = byGroup[n.group] || []).push(n); });
+          return Object.keys(byGroup).sort((a, b) => a - b).map(gp =>
+            `<div class="kg-group"><h4>${esc(groups[gp] || '知识点')}</h4><div class="kg-chips">` +
+            byGroup[gp].map(n => `<button type="button" class="chip" data-kgid="${esc(n.id)}" title="${esc(n.label)}">${esc(n.label)}</button>`).join('') +
+            '</div></div>').join('');
+        })()}</div>
       </div>
     </div>`;
   },
@@ -76,6 +90,11 @@ export default {
     });
 
     let view = { scale: 1, x: 0, y: 0 };
+    let showLabels = true;
+    const tip = document.createElement('div');
+    tip.className = 'kg-tip';
+    tip.style.display = 'none';
+    wrap.appendChild(tip);
     let hover = null;
     let selected = null;
     let dragging = null;
@@ -192,6 +211,13 @@ export default {
           ctx.textAlign = 'center';
           const label = n.label.length > 16 ? n.label.slice(0, 15) + '…' : n.label;
           ctx.fillText(label, n.x, n.y - n.r - 6);
+        } else if (isFocus || (showLabels && view.scale >= 0.85)) {
+          ctx.globalAlpha = dim ? 0.25 : 1;
+          ctx.fillStyle = isFocus ? '#ffffff' : 'rgba(235,228,215,.88)';
+          ctx.font = '10px "Noto Sans SC", system-ui, sans-serif';
+          ctx.textAlign = 'center';
+          const label = n.label.length > 20 ? n.label.slice(0, 19) + '…' : n.label;
+          ctx.fillText(label, n.x, n.y - n.r - 4);
         }
         ctx.globalAlpha = 1;
       });
@@ -231,6 +257,14 @@ export default {
       }
       const n = hitTest(mx, my);
       canvas.style.cursor = n ? 'pointer' : 'grab';
+      if (n) {
+        tip.textContent = n.label;
+        tip.style.display = 'block';
+        tip.style.left = Math.min(mx + 14, graphW - 260) + 'px';
+        tip.style.top = Math.max(10, my - 18) + 'px';
+      } else {
+        tip.style.display = 'none';
+      }
       if (n !== hover) { hover = n; draw(); }
     });
 
@@ -246,7 +280,7 @@ export default {
       panning = null;
       draw();
     });
-    canvas.addEventListener('mouseleave', () => { hover = null; draw(); });
+    canvas.addEventListener('mouseleave', () => { hover = null; tip.style.display = 'none'; draw(); });
     canvas.addEventListener('click', (e) => {
       const { mx, my } = pos(e);
       const n = hitTest(mx, my);
@@ -265,6 +299,25 @@ export default {
       draw();
     }, { passive: false });
 
+    const labelToggle = document.getElementById('kgLabels');
+    if (labelToggle) {
+      labelToggle.addEventListener('change', () => { showLabels = labelToggle.checked; draw(); });
+    }
+    document.querySelectorAll('.graph-concepts [data-kgid]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const node = nodes.find(n => n.id === btn.dataset.kgid);
+        if (!node) return;
+        selected = node;
+        view.scale = Math.max(view.scale, 1);
+        view.x = -node.x * view.scale;
+        view.y = -node.y * view.scale;
+        tip.textContent = node.label;
+        tip.style.display = 'block';
+        tip.style.left = '14px';
+        tip.style.top = '14px';
+        draw();
+      });
+    });
     window.addEventListener('resize', () => { dpr = Math.min(window.devicePixelRatio || 1, 2); resize(); draw(); });
 
     // 初始布局

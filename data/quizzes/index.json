@@ -4,43 +4,43 @@
    "id": "animation-master",
    "title": "动画大师课：分镜与透视",
    "modules": 8,
-   "questions": 24
+   "questions": 48
   },
   {
    "id": "bili-edit",
    "title": "63 节视听语言课",
    "modules": 10,
-   "questions": 40
+   "questions": 80
   },
   {
    "id": "bili-pr",
    "title": "PR 零基础入门教程",
    "modules": 4,
-   "questions": 24
+   "questions": 48
   },
   {
    "id": "design-foundation",
    "title": "构成设计与色彩基础",
    "modules": 4,
-   "questions": 24
+   "questions": 60
   },
   {
    "id": "draw-render",
    "title": "绘画与渲染：透视、形体与光影",
    "modules": 2,
-   "questions": 16
+   "questions": 40
   },
   {
    "id": "framed-ink",
    "title": "分镜与构图经典（第一、二册）",
    "modules": 6,
-   "questions": 18
+   "questions": 36
   },
   {
    "id": "illustration-magic",
    "title": "平面构成魔法课：让设计效果翻倍",
-   "modules": 1,
-   "questions": 8
+   "modules": 5,
+   "questions": 60
   },
   {
    "id": "sp",
@@ -52,13 +52,13 @@
    "id": "thyan",
    "title": "影视概念设计",
    "modules": 3,
-   "questions": 24
+   "questions": 75
   },
   {
    "id": "zbrush",
    "title": "ZBrush 基础教程",
    "modules": 19,
-   "questions": 95
+   "questions": 152
   }
  ]
 }

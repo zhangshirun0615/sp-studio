@@ -779,6 +779,8 @@ async function initCoursesAdmin() {
   if (!host) return;
   try {
     const base = await loadCatalogBase();
+    core.data.courseOverrides = core.data.courseOverrides || {};
+    core.data.customCourses = core.data.customCourses || [];
     const overrides = core.data.courseOverrides || {};
     const custom = core.data.customCourses || [];
     const rows = (base.courses || []).map(c => {
@@ -817,7 +819,10 @@ async function initCoursesAdmin() {
         修改先保存在本机教师数据；点「发布课程目录到服务器」后，学生端从本地服务器读取最新目录。
         在线镜像需要把导出的 catalog.json 替换到 site/data/ 后重新部署。
       </div>`;
-    host.querySelectorAll('[data-course-edit]').forEach(b => b.onclick = () => openCourseEdit(b.dataset.courseEdit, base));
+    host.querySelectorAll('[data-course-edit]').forEach(b => b.onclick = () => {
+      try { openCourseEdit(b.dataset.courseEdit, base); }
+      catch (e) { toast('打开编辑失败：' + e.message, 'err'); }
+    });
     host.querySelectorAll('[data-course-toggle]').forEach(b => b.onclick = async () => {
       const id = b.dataset.courseToggle;
       const o = core.data.courseOverrides[id] || {};
@@ -847,7 +852,8 @@ async function initCoursesAdmin() {
 
 function openCourseEdit(id, base) {
   const c = (base.courses || []).find(x => x.id === id);
-  if (!c) return;
+  if (!c) { toast('没有找到这门课程'); return; }
+  core.data.courseOverrides = core.data.courseOverrides || {};
   const o = core.data.courseOverrides[id] || {};
   const bd = document.createElement('div');
   bd.className = 'modal-backdrop show';
@@ -1539,6 +1545,52 @@ function bindShell() {
 }
 
 /* ============ 对外视图 ============ */
+function isLoopbackHost() {
+  const h = location.hostname;
+  return h === '127.0.0.1' || h === 'localhost' || h === '::1' || h === '[::1]';
+}
+
+function remoteAccessScreen() {
+  return `<div class="container" style="padding:56px 24px 80px;max-width:860px">
+    <div class="page-head" style="margin-bottom:18px">
+      <div class="eyebrow">教师端</div>
+      <h1>教师端仅限本机访问</h1>
+      <p class="lead">为了保护学生名单、成绩与教师数据，教师端只允许在运行启动器的这台电脑上用 <code>127.0.0.1</code> 打开。你现在使用的是 ${esc(location.host)}，所以被拦住了——学生端不受影响。</p>
+    </div>
+    <div class="card" style="padding:22px 24px;margin-bottom:14px">
+      <h3 style="margin-bottom:6px">异地使用教师端的三种方式</h3>
+      <p style="color:var(--muted);font-size:13px;line-height:1.8">推荐程度从高到低；共同点是最终都在「运行平台的电脑」上以 127.0.0.1 打开教师端。</p>
+    </div>
+    <div class="card" style="padding:20px 24px;margin-bottom:12px">
+      <h3>方式一：远程桌面（推荐，零改造）</h3>
+      <ul class="obj-list" style="margin-top:8px">
+        <li><span class="dot">1</span><span>在主机安装 ToDesk / 向日葵 / 使用 Windows 远程桌面（RDP）。</span></li>
+        <li><span class="dot">2</span><span>异地电脑连上主机桌面，在主机浏览器打开 <b>http://127.0.0.1:8899/#/teacher</b>。</span></li>
+        <li><span class="dot">3</span><span>数据、密钥、导出备份都在主机上，最安全、最省事。</span></li>
+      </ul>
+    </div>
+    <div class="card" style="padding:20px 24px;margin-bottom:12px">
+      <h3>方式二：SSH 隧道（无需图形远程）</h3>
+      <p style="color:var(--muted);font-size:13px;line-height:1.8">在主机启用 OpenSSH Server 后，异地电脑执行（把用户名/IP 换成主机的）：</p>
+      <div class="code-block" style="margin-top:8px">ssh -L 8899:127.0.0.1:8899 用户名@主机IP</div>
+      <p style="color:var(--muted);font-size:13px;line-height:1.8">保持终端不关，异地浏览器打开 <b>http://127.0.0.1:8899/#/teacher</b>。隧道由主机发起，教师端会视为本机访问。</p>
+    </div>
+    <div class="card" style="padding:20px 24px;margin-bottom:12px">
+      <h3>方式三：组网工具 + 远程桌面</h3>
+      <p style="color:var(--muted);font-size:13px;line-height:1.8">用 Tailscale / ZeroTier 把两台电脑组进同一虚拟局域网，再用远程桌面连接主机（不要直接把 8899 暴露到公网）。</p>
+    </div>
+    <div class="card" style="padding:20px 24px">
+      <h3>异地使用前要准备什么</h3>
+      <ul class="obj-list" style="margin-top:8px">
+        <li><span class="dot">1</span><span>教师数据保存在浏览器的加密存储里：如果最终是在另一台电脑的浏览器打开教师端，需要先在主机「教师端 → 设置 → 导出备份」，再到异地导入并输入原口令。</span></li>
+        <li><span class="dot">2</span><span>教师口令与 <code>data/server/teacher_key.txt</code> 不要通过聊天工具明文发送；用远程桌面方式则无需传递。</span></li>
+        <li><span class="dot">3</span><span>学生端、课程视频、闯关练习仍可正常用局域网地址访问，不需要这些步骤。</span></li>
+      </ul>
+      <p style="margin-top:14px"><a class="btn btn-ghost btn-sm" href="#/courses">${icon('grid', 14)} 去课程中心</a></p>
+    </div>
+  </div>`;
+}
+
 export default {
   async render() {
     try {
@@ -1550,6 +1602,7 @@ export default {
         <h2>教师端未启用</h2><p style="color:var(--muted);margin-top:10px">请在 data/teacher.json 中把 enabled 设为 true。</p>
         <a class="btn btn-primary" href="#/" style="margin-top:20px">返回首页</a></div></div>`;
     }
+    if (!isLoopbackHost()) return remoteAccessScreen();
     if (!core.hasStore()) {
       state.tab = 'overview';
       return lockScreen('setup');
