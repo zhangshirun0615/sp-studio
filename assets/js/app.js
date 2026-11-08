@@ -11,6 +11,7 @@ import kb from './views/kb.js';
 import quiz from './views/quiz.js';
 import admin from './views/admin.js';
 import student from './views/student.js';
+import data from './data.js';
 import { observeReveal, icon, esc } from './ui.js';
 
 const routes = [
@@ -150,9 +151,26 @@ function maybeMirrorBanner() {
     .catch(() => {});
 }
 
+async function syncBranding() {
+  try {
+    const cat = await data.catalog();
+    const p = cat.platform || {};
+    const title = p.title || '';
+    if (!title) return;
+    document.title = title + ' · 课程中心';
+    const strong = document.querySelector('.brand-text strong');
+    const em = document.querySelector('.brand-text em');
+    const mark = document.querySelector('.footer-mark');
+    if (strong) strong.textContent = title;
+    if (em) em.textContent = p.subtitle || '课程学习平台';
+    if (mark) mark.textContent = title;
+  } catch (e) { /* 品牌同步失败不影响使用 */ }
+}
+
 function boot() {
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
+  syncBranding();
   maybeMirrorBanner();
   renderRoute();
 }
