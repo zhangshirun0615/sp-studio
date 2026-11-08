@@ -86,7 +86,9 @@ export default {
     const resources = d.resources || [];
     const sections = resources.filter(r => r && r.section);
     const flatRes = resources.filter(r => r && !r.section);
-    const pan = (meta.pan && meta.pan.url) ? meta.pan : null;
+    const panLinks = (meta.panLinks || []).filter(x => x && x.url);
+    const pan = (meta.pan && meta.pan.url) ? meta.pan : (panLinks[0] || null);
+    if (pan && !panLinks.some(x => x.url === pan.url)) panLinks.unshift(pan);
     const isMirror = /\.github\.io$/i.test(location.hostname);
     const outline = d.outline || meta.outline || null;
     const resCount = flatRes.length + sections.reduce((a, s) => a + (s.items || []).length, 0);
@@ -149,7 +151,7 @@ export default {
         </div>
         <div class="ch-actions">
           ${startLesson ? `<a class="btn btn-primary" href="#/lesson/${id}/${startLesson.no}">${icon('play', 16)} ${last ? '继续学习' : '开始学习'}</a>` : ''}
-          ${pan ? `<a class="btn btn-ghost" href="${esc(pan.url)}" target="_blank" rel="noopener">${icon('external', 15)} 网盘资源</a>` : ''}
+          ${panLinks.map(l => `<a class="btn btn-ghost" href="${esc(l.url)}" target="_blank" rel="noopener">${icon('external', 15)} ${esc(l.label || '网盘资源')}</a>`).join('')}
           ${meta.type === 'external' && meta.url ? `<a class="btn btn-primary" href="${esc(meta.url)}" target="_blank" rel="noopener">${icon('external', 15)} 打开课程</a>` : ''}
           ${resources.length ? `<a class="btn btn-ghost" href="#resources-${id}">${icon('book', 15)} 课程资料</a>` : ''}
           ${meta.hasQuiz ? `<a class="btn btn-ghost" href="#/quiz/${id}">${icon('bolt', 15)} 闯关练习</a>` : ''}
@@ -165,6 +167,15 @@ export default {
         <h2>课程内容</h2>
         <p style="color:var(--muted);line-height:1.9">这门课程以图文教材为主，点击下方资料在线阅读，或进入图片资料逐页浏览。</p>
       </section>` : `<div class="section-head" style="margin-bottom:18px"><div><div class="eyebrow">课程目录</div><h2 class="section-title" style="font-size:26px">课程目录</h2></div></div>${modulesHtml}`}
+      ${panLinks.length ? `<section class="lesson-section" id="pan-${id}">
+        <h2>网盘资源</h2>
+        <div class="resource-list">${panLinks.map(l => `<a class="res-item" href="${esc(l.url)}" target="_blank" rel="noopener">
+          <span class="res-icon">${icon('external', 16)}</span>
+          <span class="res-name">${esc(l.label || '网盘资源')}</span>
+          <span class="res-size">${l.pwd ? '提取码 ' + esc(l.pwd) : '公开分享'}</span>
+          <span class="res-open">${icon('external', 14)}</span>
+        </a>`).join('')}</div>
+      </section>` : ''}
       ${chaptersHtml(id, d.chapters, meta)}
       ${resHtml}
       <div class="lesson-nav" style="margin-top:26px">

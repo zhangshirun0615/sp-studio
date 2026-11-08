@@ -4,7 +4,7 @@
   "subtitle": "三维 · 影视 · 概念设计 · 平面构成 · 绘画与渲染",
   "intro": "汇聚 Substance Painter、ZBrush、影视概念设计、平面构成、色彩、分镜、动画与剪辑课程，配套 AI 助教、知识库、闯关练习与实训评估。"
  },
- "updated": "2026-11-07 23:26",
+ "updated": "2026-11-08 09:44",
  "categories": [
   {
    "id": "all",
@@ -59,6 +59,7 @@
     "url": "https://pan.baidu.com/s/5xG23RcZNHd_C57HJtD9xPw",
     "pwd": ""
    },
+   "panLinks": [],
    "resources": 0,
    "outline": {
     "objectives": [
@@ -123,9 +124,21 @@
    "modules": 3,
    "resources": 0,
    "pan": {
-    "url": "",
-    "pwd": ""
+    "url": "https://pan.baidu.com/s/1fzLWtT-WYUJaK5JUY1t19Q?pwd=8d9r",
+    "pwd": "8d9r"
    },
+   "panLinks": [
+    {
+     "label": "影视概念设计（主分享）",
+     "url": "https://pan.baidu.com/s/1fzLWtT-WYUJaK5JUY1t19Q?pwd=8d9r",
+     "pwd": "8d9r"
+    },
+    {
+     "label": "影视概念设计（备用分享）",
+     "url": "https://pan.baidu.com/s/5N9tXvN_9tIbABw61y4glNA",
+     "pwd": ""
+    }
+   ],
    "outline": {
     "objectives": [
      "建立影视概念设计的工作认知，能把文字设定拆解成时代、地域、材质与情绪四项视觉需求",
@@ -190,9 +203,16 @@
    "modules": 19,
    "resources": 5,
    "pan": {
-    "url": "",
-    "pwd": ""
+    "url": "https://pan.baidu.com/s/1TozssTII3f2PZdtHf3Q6ZQ?pwd=8d9r",
+    "pwd": "8d9r"
    },
+   "panLinks": [
+    {
+     "label": "13.ZBrush 基础教程",
+     "url": "https://pan.baidu.com/s/1TozssTII3f2PZdtHf3Q6ZQ?pwd=8d9r",
+     "pwd": "8d9r"
+    }
+   ],
    "outline": {
     "objectives": [
      "熟练 ZBrush 界面、子工具、动态细分与 Dynamesh、ZRemesher 等基础操作",
@@ -257,9 +277,21 @@
    "modules": 4,
    "resources": 142,
    "pan": {
-    "url": "",
-    "pwd": ""
+    "url": "https://pan.baidu.com/s/1WmgKy0tUSdGXj4lhtEH9wQ?pwd=8d9r",
+    "pwd": "8d9r"
    },
+   "panLinks": [
+    {
+     "label": "色彩的艺术",
+     "url": "https://pan.baidu.com/s/1WmgKy0tUSdGXj4lhtEH9wQ?pwd=8d9r",
+     "pwd": "8d9r"
+    },
+    {
+     "label": "九章平面构成（何川）",
+     "url": "https://pan.baidu.com/s/54mruwtl0v7DoqTIoGnjBIw",
+     "pwd": ""
+    }
+   ],
    "outline": {
     "objectives": [
      "理解点线面与形式美法则，能用构成语言有意识地组织画面而不是堆砌元素",
@@ -325,9 +357,16 @@
    "modules": 2,
    "resources": 62,
    "pan": {
-    "url": "",
-    "pwd": ""
+    "url": "https://pan.baidu.com/s/1yJXAxFjqYCC7sGVa8-ul7g?pwd=8d9r",
+    "pwd": "8d9r"
    },
+   "panLinks": [
+    {
+     "label": "绘画与渲染（How to Draw & Render）",
+     "url": "https://pan.baidu.com/s/1yJXAxFjqYCC7sGVa8-ul7g?pwd=8d9r",
+     "pwd": "8d9r"
+    }
+   ],
    "outline": {
     "objectives": [
      "掌握一点、两点、三点透视的作图方法，能用视锥、地平线与灭点系统搭建可信的三维空间。",
@@ -392,9 +431,21 @@
    "modules": 0,
    "resources": 11,
    "pan": {
-    "url": "",
-    "pwd": ""
+    "url": "https://pan.baidu.com/s/1fa4tyHL6HodgoY7iufbJjg?pwd=8d9r",
+    "pwd": "8d9r"
    },
+   "panLinks": [
+    {
+     "label": "Framed Ink（第一册）",
+     "url": "https://pan.baidu.com/s/1fa4tyHL6HodgoY7iufbJjg?pwd=8d9r",
+     "pwd": "8d9r"
+    },
+    {
+     "label": "Framed Ink 2（第二册）",
+     "url": "https://pan.baidu.com/s/1PT1GLsAED-WKDVr-XguI7g?pwd=8d9r",
+     "pwd": "8d9r"
+    }
+   ],
    "outline": {
     "objectives": [
      "建立“分镜即视觉叙事”的核心观念，能用画面而非台词交代人物、空间与冲突。",
@@ -460,6 +511,7 @@
     "url": "",
     "pwd": ""
    },
+   "panLinks": [],
    "outline": {
     "objectives": [
      "系统掌握动画大师课四部教材的方法体系：分镜头脚本设计、画幅与分镜、场景透视、人物透视。",
@@ -523,9 +575,16 @@
    "modules": 1,
    "resources": 3,
    "pan": {
-    "url": "",
+    "url": "https://pan.baidu.com/s/5oIDGOaqj8rKw_RtXy-Tr-A",
     "pwd": ""
    },
+   "panLinks": [
+    {
+     "label": "平面构成魔法课",
+     "url": "https://pan.baidu.com/s/5oIDGOaqj8rKw_RtXy-Tr-A",
+     "pwd": ""
+    }
+   ],
    "outline": {
     "objectives": [
      "掌握点、线、面元素与单位形组合方法，把抽象概念转化为可用的设计语言。",
@@ -598,6 +657,7 @@
     "url": "",
     "pwd": ""
    },
+   "panLinks": [],
    "outline": {
     "objectives": [
      "掌握景别、构图、打光、机位、摄像机移动等视听语言基本元素的表意功能。",
@@ -670,6 +730,7 @@
     "url": "",
     "pwd": ""
    },
+   "panLinks": [],
    "outline": {
     "objectives": [
      "从零掌握 Premiere Pro 的项目设置、界面布局、素材管理与序列建立。",

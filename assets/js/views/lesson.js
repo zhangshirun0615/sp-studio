@@ -10,8 +10,10 @@ function resolveSource(course, lesson) {
   const mode = settings.videoSource || 'auto';
   const meta = course.meta;
   const isMirror = isMirrorHost();
-  let panUrl = (meta.pan && meta.pan.url) ? meta.pan.url : '';
-  const panPwd = (meta.pan && meta.pan.pwd) || '';
+  const panLinks = (meta.panLinks || []).filter(x => x && x.url);
+  let panUrl = (meta.pan && meta.pan.url) ? meta.pan.url : (panLinks[0] ? panLinks[0].url : '');
+  let panPwd = (meta.pan && meta.pan.pwd) || '';
+  if (!panPwd && panLinks[0]) panPwd = panLinks[0].pwd || '';
   if (panUrl && panPwd && !/[?&]pwd=/.test(panUrl)) panUrl += (panUrl.includes('?') ? '&' : '?') + 'pwd=' + encodeURIComponent(panPwd);
 
   let directSrc = '';
@@ -25,7 +27,7 @@ function resolveSource(course, lesson) {
   else if (mode === 'local') source = directSrc ? 'direct' : (panUrl ? 'pan' : 'none');
   else source = directSrc ? 'direct' : (panUrl ? 'pan' : 'none');
 
-  return { mode, source, directSrc, panUrl, panPwd, isMirror };
+  return { mode, source, directSrc, panUrl, panPwd, panLinks, isMirror };
 }
 
 function bilibiliPlayer(lesson) {
@@ -46,10 +48,9 @@ function panPlayer(course, lesson, s) {
     <h3>本课视频在外部网盘</h3>
     <p>点击下方按钮打开课程资源，按文件名找到本课视频。网盘观看需登录对应账号，速度取决于网盘。</p>
     <div class="pan-file">${icon('play', 13)} <code>${esc(lesson.file ? lesson.file.split('/').pop() : lesson.title)}</code></div>
-    <div class="pan-actions">
-      <a class="btn btn-primary" href="${esc(s.panUrl)}" target="_blank" rel="noopener">${icon('external', 15)} 打开网盘</a>
+    <div class="pan-actions" style="flex-wrap:wrap">
+      ${(s.panLinks && s.panLinks.length ? s.panLinks : [{ label: '打开网盘', url: s.panUrl, pwd: s.panPwd }]).map((l, i) => `<a class="btn ${i === 0 ? 'btn-primary' : 'btn-ghost'}" href="${esc(l.url)}" target="_blank" rel="noopener">${icon('external', 15)} ${esc(l.label || '打开网盘')}${l.pwd ? '（提取码 ' + esc(l.pwd) + '）' : ''}</a>`).join('')}
       <button class="btn btn-ghost" id="copyPanLink">${icon('copy', 15)} 复制链接</button>
-      ${s.panPwd ? `<span class="pan-pwd">提取码：<b>${esc(s.panPwd)}</b></span>` : ''}
     </div>
     <p class="pan-tip">如果本机已运行「启动学习平台」，切换到「直连」可以直接内嵌播放本地视频。</p>
   </div>`;
