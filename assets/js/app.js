@@ -91,10 +91,30 @@ const loadingHtml = `<div class="container" style="padding-top:60px;padding-bott
   </div></div>`;
 
 let renderToken = 0;
+
+function syncTeacherReturn(path) {
+  let el = document.getElementById('teacherReturn');
+  let active = false;
+  try { active = sessionStorage.getItem('spstudio.teacherActive') === '1'; } catch (e) { }
+  if (active && path !== '/teacher') {
+    if (!el) {
+      el = document.createElement('a');
+      el.id = 'teacherReturn';
+      el.className = 'teacher-return';
+      el.href = '#/teacher';
+      el.innerHTML = '教师端';
+      document.body.appendChild(el);
+    }
+  } else if (el) {
+    el.remove();
+  }
+}
+
 async function renderRoute() {
   clearCourseTheme();
   const token = ++renderToken;
   const { path, query } = parseHash();
+  syncTeacherReturn(path);
   const m = match(path);
   const target = m ? m.route : routes[0];
   const params = m ? m.params : {};

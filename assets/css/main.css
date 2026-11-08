@@ -877,3 +877,9 @@ table.data .mono { font-family: var(--mono); }
 .course-hero .btn-primary { background: linear-gradient(135deg, var(--accent, var(--copper)), var(--gold)); }
 .lesson-head h1 { position: relative; padding-left: 14px; }
 .lesson-head h1::before { content: ""; position: absolute; left: 0; top: 12%; bottom: 12%; width: 4px; border-radius: 99px; background: var(--accent, var(--copper)); }
+
+/* 教师模式下的返回入口 */
+.teacher-return { position: fixed; right: 22px; bottom: 24px; z-index: 400; padding: 10px 16px; border-radius: 999px;
+  background: linear-gradient(135deg, var(--copper), var(--gold)); color: #1a120c; font-weight: 800; font-size: 13px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.4); border: 1px solid rgba(255,255,255,.25); letter-spacing: .04em; }
+.teacher-return:hover { transform: translateY(-2px); }

@@ -119,7 +119,7 @@ function shell(content) {
       <div class="teacher-actions">
         <button class="btn btn-ghost btn-sm" id="tLock">${icon('settings', 14)} 锁定</button>
         <button class="btn btn-ghost btn-sm" id="tSettings">${icon('settings', 14)} 设置</button>
-        <a class="btn btn-ghost btn-sm" href="#/">返回学生端</a>
+        <a class="btn btn-ghost btn-sm" href="#/" id="tExit">返回学生端</a>
       </div>
     </div>
     <div class="teacher-tabs" id="teacherTabs">
@@ -1749,6 +1749,7 @@ function rerender() {
 }
 
 function renderShell() {
+  try { sessionStorage.setItem('spstudio.teacherActive', '1'); } catch (e) { }
   return shell(bodyForTab());
 }
 
@@ -1758,6 +1759,8 @@ function bindShell() {
   if (lock) lock.onclick = () => { core.lock(); location.reload(); };
   const set = document.getElementById('tSettings');
   if (set) set.onclick = () => settingsModal();
+  const exit = document.getElementById('tExit');
+  if (exit) exit.onclick = () => { try { sessionStorage.removeItem('spstudio.teacherActive'); } catch (e) { } };
 }
 
 /* ============ 对外视图 ============ */
