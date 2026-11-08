@@ -117,7 +117,7 @@
    "title": "影视概念设计",
    "subtitle": "天何言 · 徐天华 / 金啸镝 / 康晨曦",
    "description": "影视概念设计系统课：从概念设计师杂谈、素描与光影基础，到场景设计、材质贴图与完整项目流程，分三个阶段递进。",
-   "accent": "#ff8a3d",
+   "accent": "#3dff9b",
    "tags": [
     "概念设计",
     "场景",
@@ -282,7 +282,7 @@
    "title": "构成与色彩",
    "subtitle": "平面构成（周更团练 + 九章）+ 色彩的艺术",
    "description": "三门设计基础课合并：平面构成周更团练、何川九章平面构成、色彩的艺术，覆盖点线面、形式法则、构图与配色方法。",
-   "accent": "#ffd166",
+   "accent": "#f5569b",
    "tags": [
     "平面构成",
     "色彩",
@@ -436,7 +436,10 @@
      "用 Photoshop 完成 1 张彩色渲染，包含 2 种以上材质，并加入 1 处做旧或磨损效果。"
     ]
    },
-   "hasQuiz": true
+   "hasQuiz": true,
+   "panUrl": "https://pan.baidu.com/s/1yJXAxFjqYCC7sGVa8-ul7g?pwd=8d9r",
+   "panPwd": "8d9r",
+   "visible": true
   },
   {
    "id": "framed-ink",
@@ -445,7 +448,7 @@
    "title": "分镜与构图经典（第一、二册）",
    "subtitle": "原版与中文版 PDF + 逐页图片",
    "description": "合并两册分镜经典教材：镜头语言、构图、视觉叙事与绘制进阶，附原版与中文版资料。",
-   "accent": "#ff7a2f",
+   "accent": "#656383",
    "tags": [
     "分镜",
     "漫画",
@@ -516,7 +519,10 @@
      "把 1 段现成电影片段改画为 6 格漫画分镜，保留原有镜头关系并重排画格尺寸。"
     ]
    },
-   "hasQuiz": true
+   "hasQuiz": true,
+   "panUrl": "https://pan.baidu.com/s/1fa4tyHL6HodgoY7iufbJjg?pwd=8d9r",
+   "panPwd": "8d9r",
+   "visible": true
   },
   {
    "id": "animation-master",
@@ -592,7 +598,10 @@
      "为 1 个室内场景绘制日光与灯光两种投影方案，说明光源高度对阴影长度的影响。"
     ]
    },
-   "hasQuiz": true
+   "hasQuiz": true,
+   "panUrl": "https://pan.baidu.com/s/1fz4ENmuLW07P4ThgX_KOcw?pwd=9p68",
+   "panPwd": "9p68",
+   "visible": true
   },
   {
    "id": "illustration-magic",
@@ -601,7 +610,7 @@
    "title": "插画魔法课：让设计效果翻倍",
    "subtitle": "42 节 · 元素 / 骨格 / 构图 / 插画应用",
    "description": "从点线面元素、单位形组合、骨格与纹样，到构图方法、立体表现与插画质感，配合挑战关卡与直播点评，系统训练平面构成能力。",
-   "accent": "#ff9ec7",
+   "accent": "#1002d4",
    "tags": [
     "平面构成",
     "插画",
@@ -759,7 +768,7 @@
    "title": "PR 零基础入门教程",
    "subtitle": "B 站 · 从零开始学剪辑",
    "description": "Premiere Pro 零基础实用教程：软件设置、界面、素材管理、时间线、字幕、调色与导出，33 个分 P 循序渐进。",
-   "accent": "#ff8a3d",
+   "accent": "#4baf64",
    "tags": [
     "Premiere",
     "剪辑",
@@ -826,7 +835,10 @@
    "hasQuiz": true,
    "theme": {
     "pattern": "waves"
-   }
+   },
+   "panUrl": "",
+   "panPwd": "",
+   "visible": true
   }
  ],
  "courseCount": 10,
