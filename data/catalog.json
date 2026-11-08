@@ -729,7 +729,10 @@
      "用 Lumetri 完成 1 段素材的一级校正与风格化调色，输出前后对比图。"
     ]
    },
-   "hasQuiz": true
+   "hasQuiz": true,
+   "theme": {
+    "pattern": "grid"
+   }
   },
   {
    "id": "bili-pr",
@@ -802,7 +805,10 @@
      "用 Lumetri 完成 1 段素材的校正与风格化调色，输出前后对比图。"
     ]
    },
-   "hasQuiz": true
+   "hasQuiz": true,
+   "theme": {
+    "pattern": "waves"
+   }
   }
  ],
  "courseCount": 10,
